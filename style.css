@@ -1,4 +1,49 @@
-/*
-Theme Name: My Store Theme
-Author: MMD
-*/
+/* Theme Name: Belle Robe
+Author: T. R. S. Hansen, E. H. Møller */
+
+/* Website colors */
+:root {
+  --primary-color: #F5FAF7;
+  --secondary-color: #C2DEB0;
+  --tertiary-color: #779A66;
+  --quaternary-color: #5C4833;
+  --white: #F5FAF7;
+  --brown: #5C4833;
+  --forms: #F9FCFA;
+}
+
+/* Website fonts */
+
+h1,
+h2,
+h3 {
+  font-family: "garamond-premier-pro", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+p, a {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Styling */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: var(--primary-color);
+  color: var(--brown);
+  padding: 5rem 10rem;
+}
+
+
+/* Navigationsbar */
+
+
+/* Product Category Pages */
+  
