@@ -7,3 +7,10 @@
     <?php wp_head() ?>
 </head>
 <body>
+
+<nav>
+    <ul>
+        <li><a href="/frontpage">Forside</a></li>
+        <li><a href="/shop">Shop</a></li>
+    </ul>
+</nav>
