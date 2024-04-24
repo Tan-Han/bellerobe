@@ -49,6 +49,20 @@ a {
 
 /* Navigationsbar */
 
+nav {
+  background-color: var(--tertiary-color);
+  color: var(--white);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline solid 1px var(--white);
+}
 
 /* Product Category Pages */
   
