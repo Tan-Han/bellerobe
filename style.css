@@ -51,6 +51,7 @@ a {
 
 nav {
   background-color: var(--tertiary-color);
+  pad: 2rem;
 }
 
 nav ul {
