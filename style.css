@@ -54,6 +54,7 @@ main {
   justify-items: center;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 3rem;
+  column-gap: 3rem;
 }
 
 .product {
