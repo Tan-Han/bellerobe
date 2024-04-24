@@ -35,7 +35,7 @@ p, a {
   padding: 0;
 }
 
-main {
+body {
   background-color: var(--primary-color);
   color: var(--brown);
   padding: 5rem 10rem;
