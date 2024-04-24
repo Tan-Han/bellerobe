@@ -51,7 +51,7 @@ a {
 
 nav {
   background-color: var(--tertiary-color);
-  padding: 2rem;
+  padding: 1rem;
 }
 
 nav ul {
@@ -62,7 +62,7 @@ nav ul {
 
 nav ul li a {
   color: var(--white);
-  font-size: 35px;
+  font-size: 22px;
   font-weight: 700;
 }
 
