@@ -41,6 +41,11 @@ body {
   padding: 5rem 10rem;
 }
 
+a {
+  text-decoration: none;
+  color: var(--brown);
+}
+
 
 /* Navigationsbar */
 
