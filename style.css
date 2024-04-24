@@ -51,13 +51,18 @@ a {
 
 nav {
   background-color: var(--tertiary-color);
-  color: var(--white);
 }
 
 nav ul {
   list-style: none;
   display: flex;
   gap: 1rem;
+}
+
+nav ul li a {
+  color: var(--white);
+  font-size: 35px;
+  font-weight: 700;
 }
 
 nav ul li a:hover {
