@@ -97,25 +97,25 @@ nav ul li a:hover {
   overflow: hidden;
 }
 
-.woocommerce-LoopProduct-link {
+.products .woocommerce-LoopProduct-link {
   width: 100%;
   height: 100%;
 }
 
-.product img {
+.products .product img {
   position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.product h2 {
+.products .product h2 {
   position: absolute;
   bottom: 6rem;
   left: 2rem;
 }
 
-.product .price {
+.products .product .price {
   position: absolute;
   bottom: 4rem;
   left: 2rem;
