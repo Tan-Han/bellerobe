@@ -11,6 +11,9 @@
 <nav>
     <ul>
         <li><a href="/frontpage">Forside</a></li>
-        <li><a href="/shop">Shop</a></li>
+        <li><a href="/shop">Shop</a></li>        
+        <li><a href="/product-category/brudekjoler">Brudekjoler</a></li>
+        <li><a href="/product-category/gallakjoler">Fest- & Gallakjoler</a></li>
+        <li><a href="/product-category/konfirmationskjoler">Konfirmationskjoler</a></li>
     </ul>
 </nav>
