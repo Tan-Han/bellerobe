@@ -16,4 +16,5 @@
         <li><a href="/product-category/gallakjoler">Fest- & Gallakjoler</a></li>
         <li><a href="/product-category/konfirmationskjoler">Konfirmationskjoler</a></li>
     </ul>
+    <a href="/cart"><button>Kurv</button></a>
 </nav>
