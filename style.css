@@ -184,3 +184,24 @@ nav a button {
 }
 
 /* PRODUCT PAGES */
+
+.woocommerce-product-gallery {
+  display: flex;
+  position: relative;
+  gap: 1rem;
+}
+
+.woocommerce-product-gallery__trigger {
+  position: absolute;
+  top: .5rem;
+  left: .5rem;
+  z-index: 1;
+}
+
+.woocommerce-product-gallery ol {
+  list-style: none;
+}
+
+.woocommerce-product-gallery img {
+  border-radius: 10px;
+}
