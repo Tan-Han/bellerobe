@@ -244,8 +244,9 @@ nav a button {
   display: inline;
   margin: 0 5px 0 0;
   padding: 0.5rem!important;
-  padding-bottom: 0!important;
   background-color: #dadada;
+  position: relative;
+  z-index: 0;
 }
 
 .woocommerce-tabs ul li a {
@@ -257,6 +258,8 @@ nav a button {
 .woocommerce-Tabs-panel {
   padding: 1rem;
   background-color: #fff;
+  position: relative;
+  z-index: 1;
 }
 
 .woocommerce-tabs h2 {
@@ -279,4 +282,6 @@ nav a button {
 
 .active {
   background: white!important;
+  position: relative;
+  z-index: 2;
 }
