@@ -123,6 +123,11 @@ nav a button {
     object-fit: cover;
 }
 
+.products .product img::after {
+    background-image: linear-gradient(180deg, #28d6e4, #04f44f);
+    opacity: 0.4;
+}
+
 .products .product h2 {
   position: absolute;
   bottom: 6rem;
