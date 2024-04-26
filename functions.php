@@ -31,5 +31,3 @@ function insert_product_title()
 }
 
 add_action('woocommerce_single_product_summary', 'insert_product_title', 3);
-
-add_action('woocommerce_after_add_to_cart_form', 'insert_product_info', 3);
