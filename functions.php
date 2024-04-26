@@ -17,7 +17,7 @@ add_action("init", "ad_remove_gutenberg");
 
 // Removing WooCommerce CSS
 
-// add_filter("woocommerce_enqueue_styles", "__return_empty_array");
+add_filter("woocommerce_enqueue_styles", "__return_empty_array");
 
 // Action hooks
 
