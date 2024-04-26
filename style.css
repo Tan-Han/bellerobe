@@ -22,7 +22,8 @@ h3 {
   font-style: normal;
 }
 
-p, a {
+p,
+a {
   font-family: proxima-nova, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -85,7 +86,7 @@ nav a button {
 }
 
 /* PRODUCT CATEGORY PAGES */
-  
+
 /* Sorting */
 
 .woocommerce-ordering {
@@ -118,9 +119,9 @@ nav a button {
 
 .products .product img {
   position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .products .product:hover:after {
@@ -133,14 +134,18 @@ nav a button {
   left: 0;
   opacity: 0.55;
   z-index: 0;
-}
-
-.products .product:after {
-    background-image: linear-gradient(180deg, #f5faf700 2%, #f5faf74d 40%, #f5faf780 60%, #f5faf7 100%);
-    opacity: 0.7;
+  background-image: linear-gradient(180deg, #f5faf700 2%, #f5faf74d 40%, #f5faf780 60%, #f5faf7 100%);
+  opacity: 0.7;
 }
 
 .products .product h2 {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 1;
+}
+
+.products .product:hover h2 {
   position: absolute;
   bottom: 6rem;
   left: 2rem;
@@ -152,14 +157,19 @@ nav a button {
   bottom: 4rem;
   left: 2rem;
   z-index: 1;
+  opacity: 0;
 }
 
-html body.customize-support div.woocommerce.columns-3 ul.products.columns-3 li.product.type-product.post-62.status-publish.first.instock.product_cat-brudekjoler.has-post-thumbnail.shipping-taxable.purchasable.product-type-variable a.button.product_type_variable.add_to_cart_button {
+.products .product .product_type_variable.add_to_cart_button {
   position: absolute;
   bottom: 2rem;
   left: 2rem;
   z-index: 1;
+  opacity: 0;
+}
+
+.products .product:hover .price, .products .product:hover .product_type_variable.add_to_cart_button {
+  opacity: 1;
 }
 
 /* PRODUCT PAGES */
-
