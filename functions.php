@@ -33,14 +33,3 @@ function insert_product_title()
 add_action('woocommerce_single_product_summary', 'insert_product_title', 3);
 
 add_action('woocommerce_after_add_to_cart_form', 'insert_product_info', 3);
-
-function insert_cart() {
-    echo '<div class="shopping-cart">'; ?>
-        <a href="/cart" class="added_to_cart wc-forward">View cart</a>
-    <?php
-    echo '</div>';
-}
-
-add_action('woocommerce_before_shop_loop', 'insert_cart', 2);
-
-add_action('woocommerce_before_single_product_summary', 'insert_cart', 2);
