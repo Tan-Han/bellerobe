@@ -203,6 +203,16 @@ nav a button {
   list-style: none;
 }
 
-.woocommerce-product-gallery ol img, .woocommerce-product-gallery__image {
+.woocommerce-product-gallery ol img, .flex-viewport {
   border-radius: 10px;
+}
+
+.flex-viewport {
+  width: 75%;
+}
+
+.wp-post-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
