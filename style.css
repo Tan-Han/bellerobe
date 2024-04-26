@@ -209,6 +209,7 @@ nav a button {
 
 .woocommerce-product-gallery ol li {
   padding-bottom: 1rem;
+  height: fit-content;
 }
 
 .flex-viewport {
