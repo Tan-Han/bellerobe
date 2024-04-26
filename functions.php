@@ -18,3 +18,9 @@ add_action("init", "ad_remove_gutenberg");
 // Removing WooCommerce CSS
 
 add_filter("woocommerce_enqueue_styles", "__return_empty_array");
+
+// Only styling the product category for bryllupskjoler
+
+if(has_term("bryllupskjoler", "product_cat") ) {
+  wp_enqueue_script("bryllupskjole", get_stylesheet_directory_uri() . "/bryllupskjoler.css");
+}
