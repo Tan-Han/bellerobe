@@ -196,6 +196,7 @@ nav a button {
 
 .single-product .product .woocommerce-tabs, .single-product .product .related {
   width: 100%;
+  padding-top: 2rem;
 }
 
 .woocommerce-product-gallery {
@@ -245,7 +246,6 @@ nav a button {
 
 .woocommerce-tabs {
   width: 100%;
-  padding-top: 2rem;
 }
 
 .woocommerce-tabs ul {
@@ -306,7 +306,6 @@ nav a button {
 .related {
   display: flex;
   flex-direction: column;
-  padding-top: 2rem;
 }
 
 .related h2 {
