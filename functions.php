@@ -17,5 +17,17 @@ add_action("init", "ad_remove_gutenberg");
 
 // Removing WooCommerce CSS
 
-// add_filter("woocommerce_enqueue_styles", "__return_empty_array");
+add_filter("woocommerce_enqueue_styles", "__return_empty_array");
 
+// Action hooks
+
+function insert_product_title()
+{
+    ?>
+    <h2 class="product-title">
+        <?php the_title() ?>
+    </h2>
+    <?php
+}
+
+add_action('woocommerce_single_product_summary', 'insert_product_title', 3);
