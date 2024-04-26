@@ -299,3 +299,16 @@ nav a button {
   position: relative;
   z-index: 2;
 }
+
+
+
+
+.related {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+}
+
+.related h2 {
+  text-align: center;
+}
