@@ -169,6 +169,12 @@ nav a button {
   z-index: 1;
   opacity: 0;
   background-color: var(--tertiary-color);
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
 }
 
 .products .product:hover .price, .products .product:hover .product_type_variable.add_to_cart_button {
