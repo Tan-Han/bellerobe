@@ -226,3 +226,57 @@ nav a button {
   height: 100%;
   object-fit: cover;
 }
+
+
+
+
+
+.woocommerce-tabs {
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.woocommerce-tabs ul {
+  list-style: none;
+}
+
+.woocommerce-tabs ul li {
+  display: inline;
+  margin: 0 5px 0 0;
+  padding: 0.5rem!important;
+  padding-bottom: 0!important;
+  background-color: #dadada;
+}
+
+.woocommerce-tabs ul li a {
+  text-decoration: none;
+  color: #170703;
+  padding: 0 10px;
+}
+
+.woocommerce-Tabs-panel {
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.woocommerce-tabs h2 {
+  padding-bottom: 0.5rem;
+}
+
+#tab-description p {
+  padding-bottom: 0.5rem;
+}
+
+.woocommerce-product-attributes th {
+  text-align: left;
+  width: 125px;
+  padding-bottom: 0.25rem;
+}
+
+.woocommerce-product-attributes td {
+  padding-bottom: 0.25rem;
+}
+
+.active {
+  background: white!important;
+}
