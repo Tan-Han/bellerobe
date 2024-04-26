@@ -123,7 +123,7 @@ nav a button {
     object-fit: cover;
 }
 
-.products .product:after {
+.products .product img:after {
   content: '';
   display: block;
   position: absolute;
@@ -134,7 +134,7 @@ nav a button {
   opacity: 0.55;
 }
 
-.products .product::after {
+.products .product img::after {
     background-image: linear-gradient(180deg, #28d6e4, #04f44f);
     opacity: 1;
 }
