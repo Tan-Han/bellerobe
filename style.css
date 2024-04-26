@@ -123,7 +123,7 @@ nav a button {
     object-fit: cover;
 }
 
-.products .product:after {
+.products .product:hover:after {
   content: '';
   display: block;
   position: absolute;
