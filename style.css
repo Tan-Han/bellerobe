@@ -189,6 +189,7 @@ nav a button {
   display: flex;
   position: relative;
   gap: 1rem;
+  width: 50%;
 }
 
 .woocommerce-product-gallery__trigger {
@@ -202,6 +203,6 @@ nav a button {
   list-style: none;
 }
 
-.woocommerce-product-gallery img {
+.woocommerce-product-gallery ol img, .woocommerce-product-gallery__image {
   border-radius: 10px;
 }
