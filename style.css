@@ -150,14 +150,14 @@ nav a button {
 
 .products .product:hover h2 {
   position: absolute;
-  bottom: 6rem;
+  bottom: 5rem;
   left: 2rem;
   z-index: 1;
 }
 
 .products .product .price {
   position: absolute;
-  bottom: 4rem;
+  bottom: 2.5rem;
   left: 2rem;
   z-index: 1;
   opacity: 0;
@@ -166,7 +166,7 @@ nav a button {
 .products .product .product_type_variable.add_to_cart_button {
   position: absolute;
   bottom: 2rem;
-  left: 2rem;
+  right: 2rem;
   z-index: 1;
   opacity: 0;
   background-color: var(--secondary-color);
