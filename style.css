@@ -207,8 +207,16 @@ nav a button {
   border-radius: 10px;
 }
 
+.woocommerce-product-gallery ol li {
+  padding-bottom: 1rem;
+}
+
 .flex-viewport {
   width: 75%;
+}
+
+.woocommerce-product-gallery__image {
+  height: 100%;
 }
 
 .wp-post-image {
