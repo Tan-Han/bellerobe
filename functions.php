@@ -3,11 +3,6 @@ function enqueue_parent_theme_style()
 {
   wp_enqueue_style("style", get_template_directory_uri() . "/style.css"); // Linking stylesheet
   wp_enqueue_style("adobe", "https://use.typekit.net/slb7mne.css"); // Linking Adobe fonts
-
-  // Only styling the product category for bryllupskjoler
-  if(has_term("brudekjoler", "product_category") ) {
-    wp_enqueue_script("brudekjoler", get_stylesheet_directory_uri() . "/brudekjoler.css");
-  }
 }
 add_action('wp_enqueue_scripts', 'enqueue_parent_theme_style');
 
