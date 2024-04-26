@@ -188,7 +188,7 @@ nav a button {
 .single-product .product {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two columns of equal width */
-  grid-gap: 10px; /* Gap between grid items */
+  grid-gap: 1rem; /* Gap between grid items */
 }
 
 .woocommerce-product-gallery, .single-product .product .summary {
@@ -207,7 +207,7 @@ nav a button {
   display: flex;
   position: relative;
   gap: 1rem;
-  width: 50%;
+  width: 100%;
 }
 
 .woocommerce-product-gallery__trigger {
