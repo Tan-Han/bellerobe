@@ -267,6 +267,8 @@ nav a button {
 
 .woocommerce-tabs ul .active {
   background-color: var(--secondary-color);
+  position: relative;
+  z-index: 2;
 }
 
 .woocommerce-tabs ul li a {
@@ -304,12 +306,6 @@ nav a button {
 
 .woocommerce-product-attributes td {
   padding-bottom: 0.25rem;
-}
-
-.active {
-  background: white!important;
-  position: relative;
-  z-index: 2;
 }
 
 /* Related products */
