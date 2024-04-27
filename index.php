@@ -5,7 +5,7 @@
         <?php the_content() ?>
     <?php endwhile ?>
 </main>
-<?php get_footer() ?>
+
 
 <script>
     $(".flex-viewport")
@@ -33,3 +33,5 @@
   });
 
 </script>
+
+<?php get_footer() ?>
