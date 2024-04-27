@@ -217,7 +217,7 @@ nav a button {
   list-style: none;
 }
 
-.woocommerce-product-gallery ol img, .flex-viewport {
+.woocommerce-product-gallery ol img, .flex-viewport, .pswp__img {
   border-radius: 10px;
 }
 
