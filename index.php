@@ -8,7 +8,7 @@
 <?php get_footer() ?>
 
 <script>
-    $(".woocommerce-product-gallery__image")
+    $(".flex-viewport")
   // tile mouse actions
   .on("mouseover", function() {
     $(this)

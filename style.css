@@ -233,13 +233,13 @@ nav a button {
   width: 75%;
   max-height: 80vh;
   box-shadow: 3px 3px 5px #5C48337D;
+  cursor: zoom-in;
+  position: relative;
+  overflow: hidden;
 }
 
 .woocommerce-product-gallery__image, .woocommerce-product-gallery__wrapper {
   height: 100%;
-  cursor: zoom-in;
-  position: relative;
-  overflow: hidden;
 }
 
 .woocommerce-product-gallery__image img {
