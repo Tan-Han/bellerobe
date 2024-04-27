@@ -255,12 +255,10 @@ nav a button {
 
 /* Short description */
 
-.summary .variations_form {
-  display: flex;
-}
-
 .summary .variations_form .single_variation_wrap .variations_button {
   display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 /* More information */
