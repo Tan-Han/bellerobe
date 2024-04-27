@@ -229,6 +229,7 @@ nav a button {
 .flex-viewport {
   width: 75%;
   max-height: 80vh;
+  box-shadow: 3px 3px 5px #5C483364
 }
 
 .woocommerce-product-gallery__image, .woocommerce-product-gallery__wrapper {
