@@ -224,6 +224,7 @@ nav a button {
 .woocommerce-product-gallery ol li {
   padding-bottom: 0.5rem;
   height: 100px;
+  box-shadow: 3px 3px 5px #5C483364
 }
 
 .flex-viewport {
