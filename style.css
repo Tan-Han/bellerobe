@@ -192,11 +192,6 @@ nav a button {
   justify-content: space-between;
 }
 
-.woocommerce-product-gallery,
-.single-product .product .summary {
-  width: 48%;
-}
-
 .single-product .product .woocommerce-tabs,
 .single-product .product .related {
   width: 100%;
@@ -204,6 +199,10 @@ nav a button {
 }
 
 /* Product gallery */
+
+.woocommerce-product-gallery {
+  width: 65%;
+}
 
 .woocommerce-product-gallery {
   display: flex;
@@ -254,6 +253,18 @@ nav a button {
 }
 
 /* Short description */
+
+.single-product .product .summary {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.variations_form {
+  display: flex;
+  justify-content: space-between;
+}
 
 .variations tr {
   display: flex;
