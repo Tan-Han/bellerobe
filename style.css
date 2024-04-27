@@ -233,9 +233,6 @@ nav a button {
   width: 75%;
   max-height: 80vh;
   box-shadow: 3px 3px 5px #5C48337D;
-  cursor: zoom-in;
-  position: relative;
-  overflow: hidden;
 }
 
 .woocommerce-product-gallery__image, .woocommerce-product-gallery__wrapper {
@@ -243,11 +240,9 @@ nav a button {
 }
 
 .woocommerce-product-gallery__image img {
-  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease-out;
 }
 
 /* More information */
