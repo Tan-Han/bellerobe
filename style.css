@@ -227,11 +227,12 @@ nav a button {
 
 .flex-viewport {
   width: 75%;
+  max-height: 80vh;
 }
 
 .woocommerce-product-gallery__image, .woocommerce-product-gallery__wrapper {
   height: 100%;
-  width: auto;
+  width: 100%!important;
 }
 
 .wp-post-image {
