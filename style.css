@@ -240,9 +240,7 @@ nav a button {
   object-fit: cover;
 }
 
-
-
-
+/* More information */
 
 .woocommerce-tabs {
   width: 100%;
@@ -260,11 +258,12 @@ nav a button {
   position: relative;
   z-index: 0;
   border-radius: 10px 10px 0 0;
+  box-shadow: 3px 3px 2px #5C483364;
 }
 
 .woocommerce-tabs ul li a {
   text-decoration: none;
-  color: #170703;
+  color: var(--brown);
   padding: 0 10px;
 }
 
@@ -274,6 +273,7 @@ nav a button {
   position: relative;
   z-index: 1;
   border-radius: 0 10px 10px 10px;
+  box-shadow: 3px 3px 2px #5C483364;
 }
 
 .woocommerce-tabs h2 {
@@ -300,8 +300,7 @@ nav a button {
   z-index: 2;
 }
 
-
-
+/* Related products */
 
 .related {
   display: flex;
