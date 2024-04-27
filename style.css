@@ -222,8 +222,9 @@ nav a button {
 }
 
 .woocommerce-product-gallery ol li {
-  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
   height: 100px;
+  border-radius: 10px;
 }
 
 .flex-viewport {
