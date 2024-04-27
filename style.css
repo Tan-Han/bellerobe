@@ -255,6 +255,15 @@ nav a button {
 
 /* Short description */
 
+.variations tr {
+  display: flex;
+  flex-direction: column;
+}
+
+.variations tr .label {
+  text-align: start;
+}
+
 .summary .variations_form .single_variation_wrap .variations_button {
   display: flex;
   align-items: center;
