@@ -261,6 +261,18 @@ nav a button {
   gap: 1rem;
 }
 
+.single-product .product .summary h2 {
+  font-size: 45px;
+}
+
+.single-product .product .summary .price {
+  font-size: 45px;
+}
+
+.single-product .product .summary .woocommerce-product-details__short-description p {
+  font-size: 18px
+}
+
 .variations_form {
   display: flex;
   justify-content: space-between;
