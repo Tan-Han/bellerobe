@@ -2,7 +2,7 @@
 
 
 
-<!-- ABC this is the coding for the frontpage for the website-->
+<!-- this is the coding for the frontpage for the website-->
 
 <main>
 
