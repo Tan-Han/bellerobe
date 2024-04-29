@@ -190,7 +190,6 @@ nav a button {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two columns */
   grid-template-rows: repeat(3, auto);
-  row-gap: 8rem;
   column-gap: 8rem;
 }
 
