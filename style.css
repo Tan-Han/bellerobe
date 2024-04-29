@@ -377,6 +377,7 @@ nav a button {
 .related {
   display: flex;
   flex-direction: column;
+  padding-top: 8rem;
 }
 
 .related h2 {
