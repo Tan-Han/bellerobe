@@ -7,7 +7,10 @@
 <main>
 
 <section class="frontpage_hero">
-
+  <div>
+    <?php $heroEmbed = get_field("hero_on_frontpage") ?>
+    <img src="<?php echo $heroEmbed["sizes"]["large"] ?>" alt="">
+  </div>
 </section>
 
 <section class="frontpage_introduction">
