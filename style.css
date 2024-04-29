@@ -266,15 +266,16 @@ nav a button {
 }
 
 .single-product .product .summary h2 {
-  font-size: 45px;
+  font-size: 50px;
 }
 
 .single-product .product .summary .price {
-  font-size: 45px;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 .single-product .product .summary .woocommerce-product-details__short-description p {
-  font-size: 18px
+  font-size: 22px
 }
 
 .variations_form {
