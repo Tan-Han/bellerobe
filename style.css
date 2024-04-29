@@ -221,7 +221,9 @@ nav a button {
 /* Product gallery */
 
 .woocommerce-product-gallery {
-  width: 65%;
+  /* width: 65%; */
+  grid-column: 1;
+  grid-row: span 2;
 }
 
 .woocommerce-product-gallery {
