@@ -14,7 +14,7 @@
 </section>
 
 <section class="frontpage_introduction">
-  <p><?php $frontpage_introduction = the_field("introduction_on_frontpage") ?></p>
+  <p><?php the_field("introduction_on_frontpage") ?></p>
 </section>
 
 <section class="frontpage_categories">
