@@ -8,8 +8,7 @@
 
 <section class="frontpage_hero">
   <div>
-    <?php $heroEmbed = get_field("hero_on_frontpage") ?>
-    <img src="<?php echo $heroEmbed["sizes"]["large"] ?>" alt="">
+    <iframe width="966" height="543" src="https://www.youtube.com/embed/Tc6T3JF4UJw" title="The Prince of Egypt  // Danish National Symphony Orchestra, Concert Choir &amp; DR Big Band (Live)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </div>
 </section>
 
