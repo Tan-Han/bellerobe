@@ -187,24 +187,20 @@ nav a button {
 /* PRODUCT PAGES */
 
 .single-product .product {
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; */
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two columns */
   grid-template-rows: repeat(3, auto);
+  row-gap: 8rem;
+  column-gap: 8rem;
 }
 
 /* .single-product .product .woocommerce-tabs, */
 .single-product .product .related {
-  /* width: 100%; */
-  padding-top: 2rem;
   grid-column: 1 / span 2;
   grid-row: 3;
 }
 
 .single-product .product .summary {
-  /* width: 35%; */
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -221,7 +217,6 @@ nav a button {
 /* Product gallery */
 
 .woocommerce-product-gallery {
-  /* width: 65%; */
   grid-column: 1;
   grid-row: span 2;
 }
@@ -387,4 +382,5 @@ nav a button {
 
 .related h2 {
   text-align: center;
+  font-size: 50px;
 }
