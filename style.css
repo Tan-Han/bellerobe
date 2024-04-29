@@ -244,6 +244,9 @@ nav a button {
 .woocommerce-product-gallery__image,
 .woocommerce-product-gallery__wrapper {
   height: 100%;
+}
+
+.woocommerce-product-gallery__image {
   width: auto!important;
 }
 
