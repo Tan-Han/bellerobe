@@ -101,14 +101,14 @@ nav a button {
 .products {
   display: grid;
   justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   row-gap: 3rem;
   column-gap: 3rem;
 }
 
 .products .product {
-  width: 350px;
-  height: 500px;
+  width: 375px;
+  height: 550px;
   border-radius: 10px;
   box-shadow: 3px 3px 5px #5C48337D;
   position: relative;
