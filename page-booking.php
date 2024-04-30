@@ -344,7 +344,8 @@
         border-radius: 10px;
         overflow: hidden;
         display: flex;
-        height: fit-content;
+        height: 250px;
+        align-items: center;
     }
 
     .img-box {
