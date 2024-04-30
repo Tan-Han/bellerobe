@@ -346,7 +346,7 @@
 
     .booking-headline {
         font-size: 35px;
-        padding-bottom: 1.5rem;
+        padding-bottom: 1rem;
     }
 
     /* Booking cards */
@@ -465,7 +465,7 @@
         border-radius: 10px;
         border: 1px solid var(--quaternary-color)!important;
     }
-    
+
 </style>
 
 <?php get_footer() ?>
