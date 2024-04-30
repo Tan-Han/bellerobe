@@ -57,7 +57,7 @@
     <section>
         <div class="opening-hours">
             <h2>Åbningstider</h2>
-            <div class="address-box">
+            <div class="opening-hours-box info-box">
                 <?php
                 $openingHours = get_field('opening_hours');
                 if ($openingHours): ?>
@@ -72,7 +72,7 @@
             </div>
             <div class="address">
                 <h2>Adresse</h2>
-                <div class="address-box">
+                <div class="address-box info-box">
                     <?php
                     $address = get_field('location');
                     if ($address): ?>
@@ -91,10 +91,16 @@
 </main>
 
 <style>
-    .booking-list {
+    main {
         display: grid;
         justify-items: center;
-        grid-template-columns: repeat(1fr, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .booking-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
 
     .booking-card {
