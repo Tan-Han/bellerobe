@@ -356,7 +356,7 @@
     .booking-list {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
     }
 
     .booking-card {
@@ -407,7 +407,7 @@
     .booking-description {
         -webkit-box-orient: vertical;
         display: -webkit-box;
-        -webkit-line-clamp: 3;
+        -webkit-line-clamp: 2;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: normal;
