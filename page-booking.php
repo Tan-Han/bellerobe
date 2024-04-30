@@ -278,7 +278,7 @@
 
         </div>
     </section>
-    <section>
+    <section class="store-info">
         <div class="opening-hours">
             <h2 class="booking-headline">Åbningstider</h2>
             <div class="opening-hours-box info-box">
@@ -429,6 +429,14 @@
         font-size: 16px;
     }
 
+    /* OPENING HOURS AND ADDRESS */
+    
+.store-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+    
     /* Opening hours */
 
     .opening-hours-box {
