@@ -94,7 +94,7 @@
     .booking-list {
         display: grid;
         justify-items: center;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1fr, 1fr);
     }
 
     .booking-card {
