@@ -29,6 +29,8 @@
     color: var(--white);
     background-color: var(--tertiary-color)!important;
     font-weight: 700;
+    border-radius: 10px!important;
+    padding: .8rem 1rem;
 }
 </style>
 
