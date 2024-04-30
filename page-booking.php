@@ -22,11 +22,6 @@
     </script>
     <!-- end Google Calendar Appointment Scheduling -->
 
-
-
-
-
-
 </main>
 
 <style>
