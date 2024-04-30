@@ -325,10 +325,12 @@
                 if ($address): ?>
                     <p><?php echo $address['address'] ?></p>
 
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4505.774172981708!2d8.478445877117661!3d55.621380402105835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b1e67d2f3d7db%3A0x1edb8a96de66a4e9!2sBelle%20Robe%20bridal%20and%20party%20dresses!5e0!3m2!1sen!2sdk!4v1714492742855!5m2!1sen!2sdk"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="maps">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4505.774172981708!2d8.478445877117661!3d55.621380402105835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b1e67d2f3d7db%3A0x1edb8a96de66a4e9!2sBelle%20Robe%20bridal%20and%20party%20dresses!5e0!3m2!1sen!2sdk!4v1714492742855!5m2!1sen!2sdk"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
 
                 <?php endif; ?>
             </div>
@@ -347,6 +349,8 @@
     .booking-headline {
         font-size: 35px;
     }
+
+    /* Booking cards */
 
     .booking-list {
         display: flex;
@@ -425,6 +429,8 @@
         font-size: 16px;
     }
 
+    /* Opening hours */
+
     .opening-hours-box {
         background-color: var(--secondary-color);
         padding: 2rem;
@@ -441,6 +447,15 @@
         font-style: italic;
         padding: .5rem 0;
     }
+
+    /* Address and Maps */
+
+    .maps {
+        border-radius: 10px;
+        border: 1px solid var(--quaternary-color);
+        overflow: hidden;
+    }
+    
 </style>
 
 <?php get_footer() ?>
