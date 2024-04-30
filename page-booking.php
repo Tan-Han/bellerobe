@@ -54,6 +54,34 @@
             <div class="booking-card"></div>
         </div>
     </section>
+    <section>
+        <div class="opening-hours">
+        <h2>Åbningstider</h2>
+            <div class="address-box">
+                <?php
+                $openingHours = get_field('opening_hours');
+                if ($openingHours): ?>
+                    <p>Mandag: <?php echo $openingHours['mandag'] ?></p>
+                    <p>Tirsdag: <?php echo $openingHours['tirsdag'] ?></p>
+                    <p>Onsdag: <?php echo $openingHours['onsdag'] ?></p>
+                    <p>Torsdag: <?php echo $openingHours['torsdag'] ?></p>
+                    <p>Fredag: <?php echo $openingHours['fredag'] ?></p>
+                    <p>Lørdag: <?php echo $openingHours['lordag'] ?></p>
+                    <p>Søndag og helligdage: <?php echo $openingHours['sondag'] ?></p>
+                <?php endif; ?>
+        </div>
+        <div class="address">
+            <h2>Adresse</h2>
+            <div class="address-box">
+                <?php
+                $address = get_field('location');
+                if ($address): ?>
+                    <p><?php echo $address['address'] ?></p>
+                    <iframe src="<?php echo $address['google_maps'] ?>" frameborder="0"></iframe>
+                <?php endif; ?>
+            </div>
+        </div>
+    </section>
 
 </main>
 
@@ -63,6 +91,7 @@
         flex-direction: column;
         gap: 1rem;
     }
+
     .booking-card {
         background-color: var(--secondary-color);
         border-radius: 10px;
@@ -79,6 +108,18 @@
 
     .booking-info {
         padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .booking-card-headline {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .price-time {
+        display: flex;
     }
 
     .qxCTlb {
