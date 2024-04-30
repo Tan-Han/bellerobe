@@ -8,35 +8,40 @@
         <div class="booking-card">
             <?php
             $bookingWeddingDress = get_field('provning_af_brudekjole');
-            if( $bookingWeddingDress ): ?>
+            if ($bookingWeddingDress): ?>
 
-            <img src="<?php echo esc_url( $bookingWeddingDress['dress_img']['sizes']['thumbnail'] ); ?>" alt="">
-            <div class="booking-info">
-                <div class="booking-card-headline">
-                    <h3> <?php echo $bookingWeddingDress['booking_headline']; ?> </h3>
-                    <p>DKK <?php echo $bookingWeddingDress['booking_price']; ?> | <?php echo $bookingWeddingDress['booking_time']?></p>
-                </div>
-                <p><?php echo $bookingWeddingDress['booking_description']; ?></p>
-                <div class="booking-btn">
-                    <!-- Google Calendar Appointment Scheduling begin -->
-                    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-                    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-                    <script>
-                        (function () {
-                            var target = document.currentScript;
-                            window.addEventListener('load', function () {
-                                calendar.schedulingButton.load({
-                                    url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3rgkfC1es-OaLCs0claeBuIIy4neu6WscyHa7LYYbgm8ulq4kQINGqZuL8PLHzoya-HcC_aiEM?gv=true',
-                                    color: '#039BE5',
-                                    label: "Book pr\xF8vning",
-                                    target,
+                <img src="<?php echo esc_url($bookingWeddingDress['dress_img']['sizes']['thumbnail']); ?>" alt="">
+                <div class="booking-info">
+                    <div class="booking-card-headline">
+                        <h3> <?php echo $bookingWeddingDress['booking_headline']; ?> </h3>
+
+                        <?php if (get_sub_field('booking_price')): ?>
+                            <p>DKK <?php echo $bookingWeddingDress['booking_price']; ?> |</p>
+                        <?php endif; ?>
+                            <p><?php echo $bookingWeddingDress['booking_time'] ?></p>
+
+                    </div>
+                    <p><?php echo $bookingWeddingDress['booking_description']; ?></p>
+                    <div class="booking-btn">
+                        <!-- Google Calendar Appointment Scheduling begin -->
+                        <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+                        <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+                        <script>
+                            (function () {
+                                var target = document.currentScript;
+                                window.addEventListener('load', function () {
+                                    calendar.schedulingButton.load({
+                                        url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3rgkfC1es-OaLCs0claeBuIIy4neu6WscyHa7LYYbgm8ulq4kQINGqZuL8PLHzoya-HcC_aiEM?gv=true',
+                                        color: '#039BE5',
+                                        label: "Book pr\xF8vning",
+                                        target,
+                                    });
                                 });
-                            });
-                        })();
-                    </script>
-                    <!-- end Google Calendar Appointment Scheduling -->
+                            })();
+                        </script>
+                        <!-- end Google Calendar Appointment Scheduling -->
+                    </div>
                 </div>
-            </div>
             <?php endif; ?>
         </div>
         <div class="booking-card"></div>
@@ -48,9 +53,6 @@
 </main>
 
 <style>
-
-
-
     .qxCTlb {
         color: var(--white);
         background-color: var(--tertiary-color) !important;
