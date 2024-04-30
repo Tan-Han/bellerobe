@@ -10,15 +10,18 @@
             $bookingWeddingDress = get_field('provning_af_brudekjole');
             if ($bookingWeddingDress): ?>
 
-                <img src="<?php echo esc_url($bookingWeddingDress['dress_img']['sizes']['thumbnail']); ?>" alt="">
+                <img class="booking-img" src="<?php echo esc_url($bookingWeddingDress['dress_img']['sizes']['medium']); ?>"
+                    alt="">
                 <div class="booking-info">
                     <div class="booking-card-headline">
-                        <h3> <?php echo $bookingWeddingDress['booking_headline']; ?> </h3>
-                
-                        <?php if (!empty($bookingWeddingDress['booking_price'])) : ?>
-                            <p>DKK <?php echo $bookingWeddingDress['booking_price']; ?> | </p>
-                        <?php endif ?>
-                        <p><?php echo $bookingWeddingDress['booking_time'] ?></p>
+                        <h3><?php echo $bookingWeddingDress['booking_headline']; ?></h3>
+
+                        <div class="price-time">
+                            <?php if (!empty($bookingWeddingDress['booking_price'])): ?>
+                                <p>DKK <?php echo $bookingWeddingDress['booking_price']; ?> |&nbsp;</p>
+                            <?php endif ?>
+                            <p><?php echo $bookingWeddingDress['booking_time'] ?></p>
+                        </div>
 
                     </div>
                     <p><?php echo $bookingWeddingDress['booking_description']; ?></p>
@@ -53,6 +56,23 @@
 </main>
 
 <style>
+    .booking-card {
+        background-color: var(--secondary-color);
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+    }
+
+    .booking-img {
+        width: 20%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.booking-info {
+    padding: 1.5rem;
+}
+
     .qxCTlb {
         color: var(--white);
         background-color: var(--tertiary-color) !important;
