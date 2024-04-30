@@ -13,6 +13,7 @@
     window.addEventListener('load', function() {
         calendar.schedulingButton.load({
         url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3dfzNhX3Dbm8eYZF1PHTrTYGqW7ZPnZOdHddNivtZhD6Jk_XccNHxsNS-UHsuHj-VfqhIcBd8w?gv=true',
+        color: '#ff0000',
         label: "Book pr\xF8vning af brudekjole",
         target,
         });
@@ -24,9 +25,10 @@
 </main>
 
 <style>
-.qxCTlb {
+.wedding-dress-btn {
     color: var(--white);
-    background-color: var(--tertiary-color);
+    background-color: var(--tertiary-color)!important;
+    font-weight: 700;
 }
 </style>
 
