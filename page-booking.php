@@ -59,6 +59,8 @@
 
 <style>
     .booking-list {
+        display: flex;
+        flex-direction: column;
         gap: 2rem;
     }
     .booking-card {
