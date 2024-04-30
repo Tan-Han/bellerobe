@@ -42,34 +42,6 @@
         <div class="booking-card"></div>
     </section>
 
-
-
-
-
-
-
-
-
-
-    <!-- Knap til brudekjole prøvning -->
-    <!-- Google Calendar Appointment Scheduling begin -->
-    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
-    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
-    <script>
-        (function () {
-            var target = document.currentScript;
-            window.addEventListener('load', function () {
-                calendar.schedulingButton.load({
-                    url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3rgkfC1es-OaLCs0claeBuIIy4neu6WscyHa7LYYbgm8ulq4kQINGqZuL8PLHzoya-HcC_aiEM?gv=true',
-                    color: '#039BE5',
-                    label: "Book pr\xF8vning",
-                    target,
-                });
-            });
-        })();
-    </script>
-    <!-- end Google Calendar Appointment Scheduling -->
-
 </main>
 
 <style>
