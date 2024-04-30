@@ -279,7 +279,6 @@
         </div>
     </section>
     <section>
-        <div class="opening-hours">
             <h2 class="booking-headline">Åbningstider</h2>
             <div class="opening-hours-box info-box">
                 <?php
@@ -358,7 +357,7 @@
         border-radius: 10px;
         overflow: hidden;
         display: flex;
-        height: 250px;
+        height: 200px;
         align-items: center;
     }
 
@@ -371,6 +370,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        object-position: top;
     }
 
     .booking-info {
