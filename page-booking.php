@@ -323,7 +323,7 @@
                 <?php
                 $address = get_field('location');
                 if ($address): ?>
-                    <p><?php echo $address['address'] ?></p>
+                    <p class="store-address"><?php echo $address['address'] ?></p>
 
                     <div class="maps">
                         <iframe
@@ -348,6 +348,7 @@
 
     .booking-headline {
         font-size: 35px;
+        padding-bottom: 1.5rem;
     }
 
     /* Booking cards */
@@ -355,7 +356,7 @@
     .booking-list {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        gap: 2rem;
     }
 
     .booking-card {
@@ -430,13 +431,13 @@
     }
 
     /* OPENING HOURS AND ADDRESS */
-    
-.store-info {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-    
+
+    .store-info {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
     /* Opening hours */
 
     .opening-hours-box {
@@ -458,12 +459,15 @@
 
     /* Address and Maps */
 
+    .store-address {
+        padding-bottom: 1.5rem;
+    }
+
     .maps {
         border-radius: 10px;
         border: 1px solid var(--quaternary-color);
         overflow: hidden;
     }
-    
 </style>
 
 <?php get_footer() ?>
