@@ -463,7 +463,7 @@
 
     .maps {
         border-radius: 10px;
-        border: 1px solid var(--quaternary-color);
+        border: 1px solid var(--quaternary-color)!important;
     }
 </style>
 
