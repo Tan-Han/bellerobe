@@ -6,15 +6,17 @@
     <section>
         <h2>Book tid</h2>
         <div class="booking-card">
-            <img src="" alt="">
+            <?php
+            $bookingWeddingDress = get_field('provning_af_brudekjole');
+            if( $bookingWeddingDress ): ?>
+
+            <img src="<?php echo esc_url( $bookingWeddingDress['dress_img']['sizes']['thumbnail'] ); ?>" alt="">
             <div class="booking-info">
                 <div class="booking-card-headline">
-                    <h3>Prøvning af brudekjole</h3>
-                    <p>DKK 250 | 1 time 30 minutter</p>
+                    <h3><?php the_sub_field("booking_headline")?></h3>
+                    <p>DKK <?php the_sub_field("booking_price")?> | <?php the_sub_field("booking_time")?></p>
                 </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut odio reprehenderit porro atque neque
-                    inventore, nihil mollitia, tenetur cumque aliquam aliquid obcaecati esse autem similique explicabo
-                    facere doloremque necessitatibus qui?</p>
+                <p><?php the_sub_field("booking_description")?></p>
                 <div class="booking-btn">
                     <!-- Google Calendar Appointment Scheduling begin -->
                     <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
@@ -35,6 +37,7 @@
                     <!-- end Google Calendar Appointment Scheduling -->
                 </div>
             </div>
+            <?php endif; ?>
         </div>
         <div class="booking-card"></div>
         <div class="booking-card"></div>
@@ -45,6 +48,9 @@
 </main>
 
 <style>
+
+
+
     .qxCTlb {
         color: var(--white);
         background-color: var(--tertiary-color) !important;
