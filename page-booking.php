@@ -4,7 +4,7 @@
 <main>
 
     <section>
-        <h2>Book tid</h2>
+        <h2 class="booking-headline">Book tid</h2>
         <div class="booking-list">
             <div class="booking-card">
                 <?php
@@ -56,22 +56,23 @@
     </section>
     <section>
         <div class="opening-hours">
-            <h2>Åbningstider</h2>
+            <h2 class="booking-headline">Åbningstider</h2>
             <div class="opening-hours-box info-box">
                 <?php
                 $openingHours = get_field('opening_hours');
                 if ($openingHours): ?>
-                    <p>Mandag: <?php echo $openingHours['mandag'] ?></p>
-                    <p>Tirsdag: <?php echo $openingHours['tirsdag'] ?></p>
-                    <p>Onsdag: <?php echo $openingHours['onsdag'] ?></p>
-                    <p>Torsdag: <?php echo $openingHours['torsdag'] ?></p>
-                    <p>Fredag: <?php echo $openingHours['fredag'] ?></p>
-                    <p>Lørdag: <?php echo $openingHours['lordag'] ?></p>
-                    <p>Søndag og helligdage: <?php echo $openingHours['sondag'] ?></p>
-                <?php endif; ?>
+                    <b>Mandag:&nbsp;</b><p><?php echo $openingHours['mandag'] ?></p>
+                    <b>Tirsdag:&nbsp;</b><p><?php echo $openingHours['tirsdag'] ?></p>
+                    <b>Onsdag:&nbsp;</b><p><?php echo $openingHours['onsdag'] ?></p>
+                    <b>Torsdag:&nbsp;</b><p><?php echo $openingHours['torsdag'] ?></p>
+                    <b>Fredag:&nbsp;</b><p><?php echo $openingHours['fredag'] ?></p>
+                    <b>Lørdag:&nbsp;</b><p><?php echo $openingHours['lordag'] ?></p>
+                    <b>Søndag og helligdage:&nbsp;</b><p><?php echo $openingHours['sondag'] ?></p>
+                    <p class="more-times"><?php echo $openingHours['flere-tider'] ?></p>
+                    <?php endif; ?>
             </div>
             <div class="address">
-                <h2>Adresse</h2>
+                <h2 class="booking-headline">Adresse</h2>
                 <div class="address-box info-box">
                     <?php
                     $address = get_field('location');
@@ -97,6 +98,10 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .booking-headline {
+        font-size: 35px;
+    }
+
     .booking-list {
         display: flex;
         flex-direction: column;
@@ -108,7 +113,7 @@
         border-radius: 10px;
         overflow: hidden;
         display: flex;
-        height: 150px;
+        height: fit-content;
     }
 
     .booking-img {
@@ -143,6 +148,15 @@
         line-height: normal !important;
         letter-spacing: normal !important;
         font-size: 18px;
+    }
+
+    .opening-hours-box {
+        background-color: var(--secondary-color);
+
+    }
+
+    .more-times {
+        font-style: italic;
     }
 </style>
 
