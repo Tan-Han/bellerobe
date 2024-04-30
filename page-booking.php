@@ -349,7 +349,7 @@
     }
 
     .img-box {
-        width: 20%;
+        width: 25%;
         height: 100%;
     }
 
@@ -364,7 +364,7 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        width: 80%;
+        width: 75%;
     }
 
     .booking-card-headline {
@@ -396,7 +396,7 @@
     .booking-btn {
         padding: 0 2rem;
     }
-    
+
     .qxCTlb {
         color: var(--white)!important;
         background-color: var(--quaternary-color) !important;
