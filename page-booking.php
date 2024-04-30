@@ -370,10 +370,16 @@
     .booking-card-headline {
         display: flex;
         gap: 1rem;
+        align-items: first baseline;
+    }
+
+    .booking-card-headline h3 {
+        font-size: 22px;
     }
 
     .price-time {
         display: flex;
+        font-size: 16px;
     }
 
     .booking-description {
