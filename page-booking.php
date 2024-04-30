@@ -25,7 +25,7 @@
 </main>
 
 <style>
-.wedding-dress-btn {
+.qxCTlb {
     color: var(--white);
     background-color: var(--tertiary-color)!important;
     font-weight: 700;
