@@ -440,7 +440,7 @@
 
     .opening-hours-box {
         background-color: var(--secondary-color);
-        padding: 2rem;
+        padding: 1.5rem 2rem;
         border-radius: 10px;
     }
 
