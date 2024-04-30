@@ -16,9 +16,11 @@
                         <h3> <?php echo $bookingWeddingDress['booking_headline']; ?> </h3>
 
                         <?php $bookingPrice = get_sub_field('booking_price')
-                        if (get_sub_field('booking_price')): ?>
+                        if (get_sub_field('booking_price')) { ?>
                             <p>DKK <?php the_sub_field('booking_price'); ?> | </p>
-                        <?php endif; ?>
+                        <?php } else {
+                            echo $bookingPrice;
+                        } ?>
                             <p><?php echo $bookingWeddingDress['booking_time'] ?></p>
 
                     </div>
