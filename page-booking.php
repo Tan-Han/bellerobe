@@ -13,7 +13,7 @@
     window.addEventListener('load', function() {
         calendar.schedulingButton.load({
         url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3dfzNhX3Dbm8eYZF1PHTrTYGqW7ZPnZOdHddNivtZhD6Jk_XccNHxsNS-UHsuHj-VfqhIcBd8w?gv=true',
-        color: 'var(--tertiary-color)',
+        color: '#ff0000',
         label: "Book pr\xF8vning af brudekjole",
         target,
         });
