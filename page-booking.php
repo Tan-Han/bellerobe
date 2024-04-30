@@ -371,6 +371,7 @@
         display: flex;
         gap: 1.5rem;
         align-items: first baseline;
+        padding: 0 2rem;
     }
 
     .booking-card-headline h3 {
@@ -389,8 +390,13 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: normal;
+        padding: 0 2rem;
     }
 
+    .booking-btn {
+        padding: 0 2rem;
+    }
+    
     .qxCTlb {
         color: var(--white)!important;
         background-color: var(--quaternary-color) !important;
