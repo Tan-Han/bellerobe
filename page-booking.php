@@ -279,6 +279,7 @@
         </div>
     </section>
     <section>
+        <div class="opening-hours">
             <h2 class="booking-headline">Åbningstider</h2>
             <div class="opening-hours-box info-box">
                 <?php
@@ -315,22 +316,23 @@
                     <p class="more-times"><?php echo $openingHours['flere-tider'] ?></p>
                 <?php endif; ?>
             </div>
-            <div class="address">
-                <h2 class="booking-headline">Adresse</h2>
-                <div class="address-box info-box">
-                    <?php
-                    $address = get_field('location');
-                    if ($address): ?>
-                        <p><?php echo $address['address'] ?></p>
+        </div>
+        <div class="address">
+            <h2 class="booking-headline">Adresse</h2>
+            <div class="address-box info-box">
+                <?php
+                $address = get_field('location');
+                if ($address): ?>
+                    <p><?php echo $address['address'] ?></p>
 
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4505.774172981708!2d8.478445877117661!3d55.621380402105835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b1e67d2f3d7db%3A0x1edb8a96de66a4e9!2sBelle%20Robe%20bridal%20and%20party%20dresses!5e0!3m2!1sen!2sdk!4v1714492742855!5m2!1sen!2sdk"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4505.774172981708!2d8.478445877117661!3d55.621380402105835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b1e67d2f3d7db%3A0x1edb8a96de66a4e9!2sBelle%20Robe%20bridal%20and%20party%20dresses!5e0!3m2!1sen!2sdk!4v1714492742855!5m2!1sen!2sdk"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                    <?php endif; ?>
-                </div>
+                <?php endif; ?>
             </div>
+        </div>
     </section>
 
 </main>
