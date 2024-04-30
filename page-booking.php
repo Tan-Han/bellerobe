@@ -143,26 +143,26 @@
 
             <div class="booking-card">
                 <?php
-                $bookingGallaDressGroup = get_field('provning_af_gallakjole_gruppe');
-                if ($bookingGallaDressGroup): ?>
+                $bookingGallaGroup = get_field('provning_af_gallakjole_gruppe');
+                if ($bookingGallaGroup): ?>
 
                     <div class="img-box">
                         <img class="booking-img"
-                            src="<?php echo esc_url($bookingGallaDressGroup['dress_img']['sizes']['medium']); ?>" alt="">
+                            src="<?php echo esc_url($bookingGallaGroup['dress_img']['sizes']['medium']); ?>" alt="">
                     </div>
                     <div class="booking-info">
                         <div class="booking-card-headline">
-                            <h3><?php echo $bookingGallaDressGroup['booking_headline']; ?></h3>
+                            <h3><?php echo $bookingGallaGroup['booking_headline']; ?></h3>
 
                             <div class="price-time">
-                                <?php if (!empty($bookingGallaDressGroup['booking_price'])): ?>
-                                    <p>DKK <?php echo $bookingGallaDressGroup['booking_price']; ?> |&nbsp;</p>
+                                <?php if (!empty($bookingGallaGroup['booking_price'])): ?>
+                                    <p>DKK <?php echo $bookingGallaGroup['booking_price']; ?> |&nbsp;</p>
                                 <?php endif ?>
-                                <p><?php echo $bookingGallaDressGroup['booking_time'] ?></p>
+                                <p><?php echo $bookingGallaGroup['booking_time'] ?></p>
                             </div>
 
                         </div>
-                        <p><?php echo $bookingGallaDressGroup['booking_description']; ?></p>
+                        <p><?php echo $bookingGallaGroup['booking_description']; ?></p>
                         <div class="booking-btn">
                             <!-- Google Calendar Appointment Scheduling begin -->
                             <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
@@ -188,26 +188,26 @@
 
             <div class="booking-card">
                 <?php
-                $bookingDressPickUp = get_field('afhentning_kjole');
-                if ($bookingDressPickUp): ?>
+                $bookingPickup = get_field('afhentning_kjole');
+                if ($bookingPickup): ?>
 
                     <div class="img-box">
                         <img class="booking-img"
-                            src="<?php echo esc_url($bookingDressPickUp['dress_img']['sizes']['medium']); ?>" alt="">
+                            src="<?php echo esc_url($bookingPickup['dress_img']['sizes']['medium']); ?>" alt="">
                     </div>
                     <div class="booking-info">
                         <div class="booking-card-headline">
-                            <h3><?php echo $bookingDressPickUp['booking_headline']; ?></h3>
+                            <h3><?php echo $bookingPickup['booking_headline']; ?></h3>
 
                             <div class="price-time">
-                                <?php if (!empty($bookingDressPickUp['booking_price'])): ?>
-                                    <p>DKK <?php echo $bookingDressPickUp['booking_price']; ?> |&nbsp;</p>
+                                <?php if (!empty($bookingPickup['booking_price'])): ?>
+                                    <p>DKK <?php echo $bookingPickup['booking_price']; ?> |&nbsp;</p>
                                 <?php endif ?>
-                                <p><?php echo $bookingDressPickUp['booking_time'] ?></p>
+                                <p><?php echo $bookingPickup['booking_time'] ?></p>
                             </div>
 
                         </div>
-                        <p><?php echo $bookingDressPickUp['booking_description']; ?></p>
+                        <p><?php echo $bookingPickup['booking_description']; ?></p>
                         <div class="booking-btn">
                             <!-- Google Calendar Appointment Scheduling begin -->
                             <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
