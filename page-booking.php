@@ -425,15 +425,19 @@
 
     .opening-hours-box {
         background-color: var(--secondary-color);
-
+        padding: 2rem;
+        border-radius: 10px;
     }
 
     .hours {
         display: flex;
+        font-size: 20px;
+        padding: .5rem 0;
     }
 
     .more-times {
         font-style: italic;
+        padding: .5rem 0;
     }
 </style>
 
