@@ -66,7 +66,7 @@
         border-radius: 10px;
         overflow: hidden;
         display: flex;
-        height: 150px
+        height: 150px;
     }
 
     .booking-img {
