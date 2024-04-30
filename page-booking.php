@@ -13,7 +13,7 @@
             <img src="<?php echo esc_url( $bookingWeddingDress['dress_img']['sizes']['thumbnail'] ); ?>" alt="">
             <div class="booking-info">
                 <div class="booking-card-headline">
-                    <h3> <?php echo $hero['booking_headline']; ?> </h3>
+                    <h3> <?php echo get_sub_field("booking_headline") ?> </h3>
                     <p>DKK <?php the_sub_field("booking_price")?> | <?php the_sub_field("booking_time")?></p>
                 </div>
                 <p><?php the_sub_field("booking_description")?></p>
