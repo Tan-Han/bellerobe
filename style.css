@@ -31,6 +31,12 @@ link {
   font-style: normal;
 }
 
+b {
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* ALL PAGES */
 
 * {

@@ -285,20 +285,34 @@
                 <?php
                 $openingHours = get_field('opening_hours');
                 if ($openingHours): ?>
-                    <b>Mandag:&nbsp;</b>
-                    <p><?php echo $openingHours['mandag'] ?></p>
-                    <b>Tirsdag:&nbsp;</b>
-                    <p><?php echo $openingHours['tirsdag'] ?></p>
-                    <b>Onsdag:&nbsp;</b>
-                    <p><?php echo $openingHours['onsdag'] ?></p>
-                    <b>Torsdag:&nbsp;</b>
-                    <p><?php echo $openingHours['torsdag'] ?></p>
-                    <b>Fredag:&nbsp;</b>
-                    <p><?php echo $openingHours['fredag'] ?></p>
-                    <b>Lørdag:&nbsp;</b>
-                    <p><?php echo $openingHours['lordag'] ?></p>
-                    <b>Søndag og helligdage:&nbsp;</b>
-                    <p><?php echo $openingHours['sondag'] ?></p>
+                    <div class="hours">
+                        <b>Mandag:&nbsp;</b>
+                        <p><?php echo $openingHours['mandag'] ?></p>
+                    </div>
+                    <div class="hours">
+                        <b>Tirsdag:&nbsp;</b>
+                        <p><?php echo $openingHours['tirsdag'] ?></p>
+                    </div>
+                    <div class="hours">
+                        <b>Onsdag:&nbsp;</b>
+                        <p><?php echo $openingHours['onsdag'] ?></p>
+                    </div>
+                    <div class="hours">
+                        <b>Torsdag:&nbsp;</b>
+                        <p><?php echo $openingHours['torsdag'] ?></p>
+                    </div>
+                    <div class="hours">
+                        <b>Fredag:&nbsp;</b>
+                        <p><?php echo $openingHours['fredag'] ?></p>
+                    </div>
+                    <div class="hours">
+                        <b>Lørdag:&nbsp;</b>
+                        <p><?php echo $openingHours['lordag'] ?></p>
+                    </div>
+                    <div class="hours">
+                        <b>Søndag og helligdage:&nbsp;</b>
+                        <p><?php echo $openingHours['sondag'] ?></p>
+                    </div>
                     <p class="more-times"><?php echo $openingHours['flere-tider'] ?></p>
                 <?php endif; ?>
             </div>
@@ -398,7 +412,7 @@
     }
 
     .qxCTlb {
-        color: var(--white)!important;
+        color: var(--white) !important;
         background-color: var(--quaternary-color) !important;
         font-weight: 700;
         border-radius: 10px !important;
@@ -412,6 +426,10 @@
     .opening-hours-box {
         background-color: var(--secondary-color);
 
+    }
+
+    .hours {
+        display: flex;
     }
 
     .more-times {
