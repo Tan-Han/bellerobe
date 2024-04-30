@@ -369,7 +369,7 @@
 
     .booking-card-headline {
         display: flex;
-        gap: 1rem;
+        gap: 1.5rem;
         align-items: first baseline;
     }
 
