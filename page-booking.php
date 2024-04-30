@@ -48,10 +48,222 @@
                     </div>
                 <?php endif; ?>
             </div>
-            <div class="booking-card"></div>
-            <div class="booking-card"></div>
-            <div class="booking-card"></div>
-            <div class="booking-card"></div>
+
+            <div class="booking-card">
+                <?php
+                $bookingWeddingDressOutlet = get_field('provning_af_outlet_brudekjole');
+                if ($bookingWeddingDressOutlet): ?>
+
+                    <img class="booking-img"
+                        src="<?php echo esc_url($bookingWeddingDressOutlet['dress_img']['sizes']['medium']); ?>" alt="">
+                    <div class="booking-info">
+                        <div class="booking-card-headline">
+                            <h3><?php echo $bookingWeddingDressOutlet['booking_headline']; ?></h3>
+
+                            <div class="price-time">
+                                <?php if (!empty($bookingWeddingDressOutlet['booking_price'])): ?>
+                                    <p>DKK <?php echo $bookingWeddingDressOutlet['booking_price']; ?> |&nbsp;</p>
+                                <?php endif ?>
+                                <p><?php echo $bookingWeddingDressOutlet['booking_time'] ?></p>
+                            </div>
+
+                        </div>
+                        <p><?php echo $bookingWeddingDressOutlet['booking_description']; ?></p>
+                        <div class="booking-btn">
+                            <!-- Google Calendar Appointment Scheduling begin -->
+                            <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+                            <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+                            <script>
+                                (function () {
+                                    var target = document.currentScript;
+                                    window.addEventListener('load', function () {
+                                        calendar.schedulingButton.load({
+                                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3rgkfC1es-OaLCs0claeBuIIy4neu6WscyHa7LYYbgm8ulq4kQINGqZuL8PLHzoya-HcC_aiEM?gv=true',
+                                            color: '#039BE5',
+                                            label: "Book pr\xF8vning",
+                                            target,
+                                        });
+                                    });
+                                })();
+                            </script>
+                            <!-- end Google Calendar Appointment Scheduling -->
+                        </div>
+                    </div>
+                <?php endif; ?>
+            </div>
+
+            <div class="booking-card">
+                <?php
+                $bookingGallaDress = get_field('provning_af_gallakjole');
+                if ($bookingGallaDress): ?>
+
+                    <img class="booking-img"
+                        src="<?php echo esc_url($bookingGallaDress['dress_img']['sizes']['medium']); ?>" alt="">
+                    <div class="booking-info">
+                        <div class="booking-card-headline">
+                            <h3><?php echo $bookingGallaDress['booking_headline']; ?></h3>
+
+                            <div class="price-time">
+                                <?php if (!empty($bookingGallaDress['booking_price'])): ?>
+                                    <p>DKK <?php echo $bookingGallaDress['booking_price']; ?> |&nbsp;</p>
+                                <?php endif ?>
+                                <p><?php echo $bookingGallaDress['booking_time'] ?></p>
+                            </div>
+
+                        </div>
+                        <p><?php echo $bookingGallaDress['booking_description']; ?></p>
+                        <div class="booking-btn">
+                            <!-- Google Calendar Appointment Scheduling begin -->
+                            <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+                            <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+                            <script>
+                                (function () {
+                                    var target = document.currentScript;
+                                    window.addEventListener('load', function () {
+                                        calendar.schedulingButton.load({
+                                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3rgkfC1es-OaLCs0claeBuIIy4neu6WscyHa7LYYbgm8ulq4kQINGqZuL8PLHzoya-HcC_aiEM?gv=true',
+                                            color: '#039BE5',
+                                            label: "Book pr\xF8vning",
+                                            target,
+                                        });
+                                    });
+                                })();
+                            </script>
+                            <!-- end Google Calendar Appointment Scheduling -->
+                        </div>
+                    </div>
+                <?php endif; ?>
+            </div>
+
+            <div class="booking-card">
+                <?php
+                $bookingGallaDressGroup = get_field('provning_af_gallakjole_gruppe');
+                if ($bookingGallaDressGroup): ?>
+
+                    <img class="booking-img"
+                        src="<?php echo esc_url($bookingGallaDressGroup['dress_img']['sizes']['medium']); ?>" alt="">
+                    <div class="booking-info">
+                        <div class="booking-card-headline">
+                            <h3><?php echo $bookingGallaDressGroup['booking_headline']; ?></h3>
+
+                            <div class="price-time">
+                                <?php if (!empty($bookingGallaDressGroup['booking_price'])): ?>
+                                    <p>DKK <?php echo $bookingGallaDressGroup['booking_price']; ?> |&nbsp;</p>
+                                <?php endif ?>
+                                <p><?php echo $bookingGallaDressGroup['booking_time'] ?></p>
+                            </div>
+
+                        </div>
+                        <p><?php echo $bookingGallaDressGroup['booking_description']; ?></p>
+                        <div class="booking-btn">
+                            <!-- Google Calendar Appointment Scheduling begin -->
+                            <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+                            <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+                            <script>
+                                (function () {
+                                    var target = document.currentScript;
+                                    window.addEventListener('load', function () {
+                                        calendar.schedulingButton.load({
+                                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3rgkfC1es-OaLCs0claeBuIIy4neu6WscyHa7LYYbgm8ulq4kQINGqZuL8PLHzoya-HcC_aiEM?gv=true',
+                                            color: '#039BE5',
+                                            label: "Book pr\xF8vning",
+                                            target,
+                                        });
+                                    });
+                                })();
+                            </script>
+                            <!-- end Google Calendar Appointment Scheduling -->
+                        </div>
+                    </div>
+                <?php endif; ?>
+            </div>
+
+            <div class="booking-card">
+                <?php
+                $bookingDressPickUp = get_field('afhentning_kjole');
+                if ($bookingDressPickUp): ?>
+
+                    <img class="booking-img"
+                        src="<?php echo esc_url($bookingDressPickUp['dress_img']['sizes']['medium']); ?>" alt="">
+                    <div class="booking-info">
+                        <div class="booking-card-headline">
+                            <h3><?php echo $bookingDressPickUp['booking_headline']; ?></h3>
+
+                            <div class="price-time">
+                                <?php if (!empty($bookingDressPickUp['booking_price'])): ?>
+                                    <p>DKK <?php echo $bookingDressPickUp['booking_price']; ?> |&nbsp;</p>
+                                <?php endif ?>
+                                <p><?php echo $bookingDressPickUp['booking_time'] ?></p>
+                            </div>
+
+                        </div>
+                        <p><?php echo $bookingDressPickUp['booking_description']; ?></p>
+                        <div class="booking-btn">
+                            <!-- Google Calendar Appointment Scheduling begin -->
+                            <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+                            <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+                            <script>
+                                (function () {
+                                    var target = document.currentScript;
+                                    window.addEventListener('load', function () {
+                                        calendar.schedulingButton.load({
+                                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3rgkfC1es-OaLCs0claeBuIIy4neu6WscyHa7LYYbgm8ulq4kQINGqZuL8PLHzoya-HcC_aiEM?gv=true',
+                                            color: '#039BE5',
+                                            label: "Book pr\xF8vning",
+                                            target,
+                                        });
+                                    });
+                                })();
+                            </script>
+                            <!-- end Google Calendar Appointment Scheduling -->
+                        </div>
+                    </div>
+                <?php endif; ?>
+            </div>
+
+            <div class="booking-card">
+                <?php
+                $bookingConfirmationDress = get_field('provning_konfirmationskjole');
+                if ($bookingConfirmationDress): ?>
+
+                    <img class="booking-img"
+                        src="<?php echo esc_url($bookingConfirmationDress['dress_img']['sizes']['medium']); ?>" alt="">
+                    <div class="booking-info">
+                        <div class="booking-card-headline">
+                            <h3><?php echo $bookingConfirmationDress['booking_headline']; ?></h3>
+
+                            <div class="price-time">
+                                <?php if (!empty($bookingConfirmationDress['booking_price'])): ?>
+                                    <p>DKK <?php echo $bookingConfirmationDress['booking_price']; ?> |&nbsp;</p>
+                                <?php endif ?>
+                                <p><?php echo $bookingConfirmationDress['booking_time'] ?></p>
+                            </div>
+
+                        </div>
+                        <p><?php echo $bookingConfirmationDress['booking_description']; ?></p>
+                        <div class="booking-btn">
+                            <!-- Google Calendar Appointment Scheduling begin -->
+                            <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+                            <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+                            <script>
+                                (function () {
+                                    var target = document.currentScript;
+                                    window.addEventListener('load', function () {
+                                        calendar.schedulingButton.load({
+                                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3rgkfC1es-OaLCs0claeBuIIy4neu6WscyHa7LYYbgm8ulq4kQINGqZuL8PLHzoya-HcC_aiEM?gv=true',
+                                            color: '#039BE5',
+                                            label: "Book pr\xF8vning",
+                                            target,
+                                        });
+                                    });
+                                })();
+                            </script>
+                            <!-- end Google Calendar Appointment Scheduling -->
+                        </div>
+                    </div>
+                <?php endif; ?>
+            </div>
+
         </div>
     </section>
     <section>
