@@ -7,9 +7,7 @@
 <!-- Coding for the first section on the frontpage with the hero video/picture -->
 <section class="frontpage_hero">
   <h1><?php the_field("hero_text_on_frontpage") ?></h1>
-  <?php the_field("hero_on_frontpage") 
-    $attributes = 'frameborder="0"';
-  ?>
+  <?php the_field("hero_on_frontpage") ?>
 </section>
 
 <!-- Coding for the second section on the frontpage with the introduction text -->
