@@ -15,9 +15,9 @@
                     <div class="booking-card-headline">
                         <h3> <?php echo $bookingWeddingDress['booking_headline']; ?> </h3>
 
-                        <?php if (!empty(get_sub_field('price'))) { ?>
+                        <?php if (!empty(get_sub_field('price'))) : ?>
                             <p>DKK <?php echo $bookingWeddingDress['booking_price']; ?> | </p>
-                        <?php } ?>
+                        <?php endif ?>
                         <p><?php echo $bookingWeddingDress['booking_time'] ?></p>
 
                     </div>
