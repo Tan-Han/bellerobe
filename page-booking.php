@@ -27,7 +27,7 @@
                             </div>
 
                         </div>
-                        <p><?php echo $bookingWeddingDress['booking_description']; ?></p>
+                        <p class="booking-description"><?php echo $bookingWeddingDress['booking_description']; ?></p>
                         <div class="booking-btn">
                             <!-- Google Calendar Appointment Scheduling begin -->
                             <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
@@ -72,7 +72,7 @@
                             </div>
 
                         </div>
-                        <p><?php echo $bookingWeddingDressOutlet['booking_description']; ?></p>
+                        <p class="booking-description"><?php echo $bookingWeddingDressOutlet['booking_description']; ?></p>
                         <div class="booking-btn">
                             <!-- Google Calendar Appointment Scheduling begin -->
                             <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
@@ -117,7 +117,7 @@
                             </div>
 
                         </div>
-                        <p><?php echo $bookingGallaDress['booking_description']; ?></p>
+                        <p class="booking-description"><?php echo $bookingGallaDress['booking_description']; ?></p>
                         <div class="booking-btn">
                             <!-- Google Calendar Appointment Scheduling begin -->
                             <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
@@ -162,7 +162,7 @@
                             </div>
 
                         </div>
-                        <p><?php echo $bookingGallaGroup['booking_description']; ?></p>
+                        <p class="booking-description"><?php echo $bookingGallaGroup['booking_description']; ?></p>
                         <div class="booking-btn">
                             <!-- Google Calendar Appointment Scheduling begin -->
                             <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
@@ -207,7 +207,7 @@
                             </div>
 
                         </div>
-                        <p><?php echo $bookingPickup['booking_description']; ?></p>
+                        <p class="booking-description"><?php echo $bookingPickup['booking_description']; ?></p>
                         <div class="booking-btn">
                             <!-- Google Calendar Appointment Scheduling begin -->
                             <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
@@ -252,7 +252,7 @@
                             </div>
 
                         </div>
-                        <p><?php echo $bookingConfirmationDress['booking_description']; ?></p>
+                        <p class="booking-description"><?php echo $bookingConfirmationDress['booking_description']; ?></p>
                         <div class="booking-btn">
                             <!-- Google Calendar Appointment Scheduling begin -->
                             <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
@@ -374,6 +374,15 @@
 
     .price-time {
         display: flex;
+    }
+
+    .booking-description {
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
     }
 
     .qxCTlb {
