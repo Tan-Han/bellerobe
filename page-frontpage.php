@@ -9,7 +9,6 @@
   <h1><?php the_field("hero_text_on_frontpage") ?></h1>
   <?php the_field("hero_on_frontpage") 
     $attributes = 'frameborder="0"';
-    $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
   ?>
 </section>
 
