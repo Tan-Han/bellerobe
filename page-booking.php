@@ -392,15 +392,15 @@
     }
 
     .qxCTlb {
-        color: var(--white);
-        background-color: var(--tertiary-color) !important;
+        color: var(--white)!important;
+        background-color: var(--quaternary-color) !important;
         font-weight: 700;
         border-radius: 10px !important;
-        padding: .8rem 1rem !important;
+        padding: .5rem 1rem !important;
         font-family: proxima-nova, sans-serif !important;
         line-height: normal !important;
         letter-spacing: normal !important;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .opening-hours-box {
