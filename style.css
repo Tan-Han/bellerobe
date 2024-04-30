@@ -203,6 +203,7 @@ nav a button {
   color: var(--white);
   font-weight: 700;
   font-size: 18px;
+  box-shadow: 3px 3px 5px #5C48337D;
 }
 
 /* PRODUCT PAGES */
