@@ -92,9 +92,9 @@
 
 <style>
     .booking-list {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .booking-card {
