@@ -30,8 +30,8 @@
     background-color: var(--tertiary-color)!important;
     font-weight: 700;
     border-radius: 10px!important;
-    padding: .5rem!important 1rem!important;
-    font-family: proxima-nova!important, sans-serif!important;
+    padding: .5rem 1rem!important;
+    font-family: proxima-nova, sans-serif!important;
 }
 </style>
 
