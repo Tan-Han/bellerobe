@@ -77,7 +77,9 @@
                 $address = get_field('location');
                 if ($address): ?>
                     <p><?php echo $address['address'] ?></p>
-                    <iframe src="<?php echo $address['google_maps'] ?>" frameborder="0"></iframe>
+                    <div class="embedded-maps">
+                        <?php echo $address['google_maps'] ?>
+                    </div>
                 <?php endif; ?>
             </div>
         </div>
