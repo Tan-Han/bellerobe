@@ -31,3 +31,12 @@ function insert_product_title()
 }
 
 add_action('woocommerce_single_product_summary', 'insert_product_title', 3);
+
+
+// Google Maps API
+
+function my_acf_google_map_api( $api ){
+  $api['key'] = 'xxx';
+  return $api;
+}
+add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
