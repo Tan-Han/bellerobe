@@ -11,8 +11,10 @@
                 $bookingWeddingDress = get_field('provning_af_brudekjole');
                 if ($bookingWeddingDress): ?>
 
-                    <img class="booking-img"
-                        src="<?php echo esc_url($bookingWeddingDress['dress_img']['sizes']['medium']); ?>" alt="">
+                    <div class="img-box">
+                        <img class="booking-img"
+                            src="<?php echo esc_url($bookingWeddingDress['dress_img']['sizes']['medium']); ?>" alt="">
+                    </div>
                     <div class="booking-info">
                         <div class="booking-card-headline">
                             <h3><?php echo $bookingWeddingDress['booking_headline']; ?></h3>
@@ -54,8 +56,10 @@
                 $bookingWeddingDressOutlet = get_field('provning_af_outlet_brudekjole');
                 if ($bookingWeddingDressOutlet): ?>
 
-                    <img class="booking-img"
-                        src="<?php echo esc_url($bookingWeddingDressOutlet['dress_img']['sizes']['medium']); ?>" alt="">
+                    <div class="img-box">
+                        <img class="booking-img"
+                            src="<?php echo esc_url($bookingWeddingDressOutlet['dress_img']['sizes']['medium']); ?>" alt="">
+                    </div>
                     <div class="booking-info">
                         <div class="booking-card-headline">
                             <h3><?php echo $bookingWeddingDressOutlet['booking_headline']; ?></h3>
@@ -97,8 +101,10 @@
                 $bookingGallaDress = get_field('provning_af_gallakjole');
                 if ($bookingGallaDress): ?>
 
-                    <img class="booking-img"
-                        src="<?php echo esc_url($bookingGallaDress['dress_img']['sizes']['medium']); ?>" alt="">
+                    <div class="img-box">
+                        <img class="booking-img"
+                            src="<?php echo esc_url($bookingGallaDress['dress_img']['sizes']['medium']); ?>" alt="">
+                    </div>
                     <div class="booking-info">
                         <div class="booking-card-headline">
                             <h3><?php echo $bookingGallaDress['booking_headline']; ?></h3>
@@ -140,8 +146,10 @@
                 $bookingGallaDressGroup = get_field('provning_af_gallakjole_gruppe');
                 if ($bookingGallaDressGroup): ?>
 
-                    <img class="booking-img"
-                        src="<?php echo esc_url($bookingGallaDressGroup['dress_img']['sizes']['medium']); ?>" alt="">
+                    <div class="img-box">
+                        <img class="booking-img"
+                            src="<?php echo esc_url($bookingGallaDressGroup['dress_img']['sizes']['medium']); ?>" alt="">
+                    </div>
                     <div class="booking-info">
                         <div class="booking-card-headline">
                             <h3><?php echo $bookingGallaDressGroup['booking_headline']; ?></h3>
@@ -183,8 +191,10 @@
                 $bookingDressPickUp = get_field('afhentning_kjole');
                 if ($bookingDressPickUp): ?>
 
-                    <img class="booking-img"
-                        src="<?php echo esc_url($bookingDressPickUp['dress_img']['sizes']['medium']); ?>" alt="">
+                    <div class="img-box">
+                        <img class="booking-img"
+                            src="<?php echo esc_url($bookingDressPickUp['dress_img']['sizes']['medium']); ?>" alt="">
+                    </div>
                     <div class="booking-info">
                         <div class="booking-card-headline">
                             <h3><?php echo $bookingDressPickUp['booking_headline']; ?></h3>
@@ -226,8 +236,10 @@
                 $bookingConfirmationDress = get_field('provning_konfirmationskjole');
                 if ($bookingConfirmationDress): ?>
 
-                    <img class="booking-img"
-                        src="<?php echo esc_url($bookingConfirmationDress['dress_img']['sizes']['medium']); ?>" alt="">
+                    <div class="img-box">
+                        <img class="booking-img"
+                            src="<?php echo esc_url($bookingConfirmationDress['dress_img']['sizes']['medium']); ?>" alt="">
+                    </div>
                     <div class="booking-info">
                         <div class="booking-card-headline">
                             <h3><?php echo $bookingConfirmationDress['booking_headline']; ?></h3>
@@ -273,15 +285,22 @@
                 <?php
                 $openingHours = get_field('opening_hours');
                 if ($openingHours): ?>
-                    <b>Mandag:&nbsp;</b><p><?php echo $openingHours['mandag'] ?></p>
-                    <b>Tirsdag:&nbsp;</b><p><?php echo $openingHours['tirsdag'] ?></p>
-                    <b>Onsdag:&nbsp;</b><p><?php echo $openingHours['onsdag'] ?></p>
-                    <b>Torsdag:&nbsp;</b><p><?php echo $openingHours['torsdag'] ?></p>
-                    <b>Fredag:&nbsp;</b><p><?php echo $openingHours['fredag'] ?></p>
-                    <b>Lørdag:&nbsp;</b><p><?php echo $openingHours['lordag'] ?></p>
-                    <b>Søndag og helligdage:&nbsp;</b><p><?php echo $openingHours['sondag'] ?></p>
+                    <b>Mandag:&nbsp;</b>
+                    <p><?php echo $openingHours['mandag'] ?></p>
+                    <b>Tirsdag:&nbsp;</b>
+                    <p><?php echo $openingHours['tirsdag'] ?></p>
+                    <b>Onsdag:&nbsp;</b>
+                    <p><?php echo $openingHours['onsdag'] ?></p>
+                    <b>Torsdag:&nbsp;</b>
+                    <p><?php echo $openingHours['torsdag'] ?></p>
+                    <b>Fredag:&nbsp;</b>
+                    <p><?php echo $openingHours['fredag'] ?></p>
+                    <b>Lørdag:&nbsp;</b>
+                    <p><?php echo $openingHours['lordag'] ?></p>
+                    <b>Søndag og helligdage:&nbsp;</b>
+                    <p><?php echo $openingHours['sondag'] ?></p>
                     <p class="more-times"><?php echo $openingHours['flere-tider'] ?></p>
-                    <?php endif; ?>
+                <?php endif; ?>
             </div>
             <div class="address">
                 <h2 class="booking-headline">Adresse</h2>
@@ -328,8 +347,13 @@
         height: fit-content;
     }
 
-    .booking-img {
+    .img-box {
         width: 20%;
+        height: 100%;
+    }
+
+    .booking-img {
+        width: 100%;
         height: 100%;
         object-fit: cover;
     }
@@ -339,6 +363,7 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
+        width: 80%;
     }
 
     .booking-card-headline {
