@@ -465,6 +465,7 @@
         border-radius: 10px;
         border: 1px solid var(--quaternary-color)!important;
     }
+    
 </style>
 
 <?php get_footer() ?>
