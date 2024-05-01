@@ -382,6 +382,15 @@ nav a button {
   gap: 1rem;
 }
 
+.quantity {
+
+}
+
+.single_add_to_cart_button {
+  background-color: var(--quaternary-color);
+  color: var(--white);
+}
+
 /* More information */
 
 .woocommerce-tabs ul {
