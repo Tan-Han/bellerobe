@@ -346,15 +346,35 @@ nav a button {
 .variations_form {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
+}
+
+.variations tbody {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
 }
 
 .variations tr {
   display: flex;
   flex-direction: column;
+  gap: .2rem;
 }
 
 .variations tr .label {
   text-align: start;
+}
+
+.variations tr .value {
+  
+}
+
+.variations tr .value select {
+
+}
+
+.variations tr .value .reset_variations {
+  font-size: 1px;
 }
 
 .summary .variations_form .single_variation_wrap .variations_button {
