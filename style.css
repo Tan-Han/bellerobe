@@ -391,6 +391,11 @@ nav a button {
   color: var(--white);
 }
 
+.single_add_to_cart_button:hover {
+  background-color: var(--tertiary-color);
+  color: var(--white);
+}
+
 /* More information */
 
 .woocommerce-tabs ul {
