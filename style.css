@@ -372,7 +372,7 @@ nav a button {
   background-color: var(--primary-color);
 }
 
-.variations tr .value select option:focus {
+.variations tr .value select:focus {
   background-color: #C2DEB0!important;
 }
 
