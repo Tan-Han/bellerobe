@@ -372,10 +372,6 @@ nav a button {
   background-color: var(--primary-color);
 }
 
-.variations tr .value select option {
-  border-radius: 10px;
-}
-
 .variations tr .value .reset_variations {
   font-size: 1px;
 }
