@@ -351,13 +351,13 @@ nav a button {
 
 .variations tbody {
   display: flex;
-  flex-direction: column;
-  gap: .75rem;
+  gap: 1.5rem;
 }
 
 .variations tr {
   display: flex;
-  gap: 1.5rem;
+  flex-direction: column;
+  gap: .2rem;
 }
 
 .variations tr .label {
