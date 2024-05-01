@@ -240,7 +240,7 @@ nav a button {
   /* Starting at row 1, spanning 1 row */
 }
 
-.single-product .product .woocommerce-tabs {
+.woocommerce-tabs {
   grid-column: 2 / span 1;
   /* Starting at column 2, spanning 1 column */
   grid-row: 2 / span 1;
@@ -265,7 +265,7 @@ nav a button {
 
 .woocommerce-product-gallery {
   grid-column: 1;
-  grid-row: span 2;
+  grid-row: 1 / span 2;
 }
 
 .woocommerce-product-gallery {
@@ -357,10 +357,6 @@ nav a button {
 }
 
 /* More information */
-
-.woocommerce-tabs {
-  width: 100%;
-}
 
 .woocommerce-tabs ul {
   list-style: none;
