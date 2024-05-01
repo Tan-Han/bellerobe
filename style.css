@@ -372,8 +372,8 @@ nav a button {
   background-color: var(--primary-color);
 }
 
-.variations tr .value select option:hover {
-  background-color: #C2DEB0;
+.variations tr .value select option:focus {
+  background-color: #C2DEB0!important;
 }
 
 .variations tr .value .reset_variations {
