@@ -221,7 +221,6 @@ nav a button {
   /* Two columns */
   grid-template-rows: repeat(3, auto);
   column-gap: 8rem;
-  overflow: hidden;
 }
 
 /* .single-product .product .woocommerce-tabs, */
@@ -311,6 +310,8 @@ nav a button {
 
 .woocommerce-product-gallery__image {
   width: 600px !important;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .woocommerce-product-gallery__image img {
