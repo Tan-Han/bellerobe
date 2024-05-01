@@ -197,7 +197,15 @@ nav a button {
   opacity: 1;
 }
 
-/* On sale label */
+/* ON SALE LABELS */
+
+/* On sale label on products */
+
+html body.customize-support main div.woocommerce div.single-product div#product-114.product.type-product.post-114.status-publish.first.instock.product_cat-brudekjoler.has-post-thumbnail.sale.shipping-taxable.purchasable.product-type-variable span.onsale {
+  rotate: 45deg;
+}
+
+/* On sale label on cards */
 
 .columns-3 .products .product .onsale, 
 .single-product .product .related .onsale {
@@ -246,10 +254,6 @@ nav a button {
   /* Starting at column 2, spanning 1 column */
   grid-row: 2 / span 1;
   /* Starting at row 2, spanning 1 row */
-}
-
-html body.customize-support main div.woocommerce div.single-product div#product-114.product.type-product.post-114.status-publish.first.instock.product_cat-brudekjoler.has-post-thumbnail.sale.shipping-taxable.purchasable.product-type-variable span.onsale {
-
 }
 
 /* Product gallery */
