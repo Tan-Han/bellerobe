@@ -221,7 +221,7 @@ nav a button {
   /* Two columns */
   grid-template-rows: repeat(3, auto);
   column-gap: 8rem;
-  overflow: hidden!important;
+  overflow: hidden;
 }
 
 /* .single-product .product .woocommerce-tabs, */
@@ -259,7 +259,6 @@ nav a button {
   color: var(--white);
   font-weight: 700;
   font-size: 22px;
-}
 }
 
 /* Product gallery */
