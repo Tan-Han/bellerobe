@@ -393,7 +393,6 @@ nav a button {
 
 .single_add_to_cart_button:hover {
   background-color: var(--tertiary-color);
-  color: var(--white);
 }
 
 /* More information */
