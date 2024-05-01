@@ -199,7 +199,7 @@ nav a button {
 
 /* On sale label */
 
-.product .woocommerce-LoopProduct-link .onsale {
+.columns-3 .products .product .onsale {
   position: absolute;
   z-index: 1;
   transform: rotate(-45deg);
