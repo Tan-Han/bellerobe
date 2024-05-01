@@ -201,7 +201,7 @@ nav a button {
 
 /* On sale label on products */
 
-html body.customize-support main div.woocommerce div.single-product div#product-114.product.type-product.post-114.status-publish.first.instock.product_cat-brudekjoler.has-post-thumbnail.sale.shipping-taxable.purchasable.product-type-variable span.onsale {
+.single-product .product .onsale {
   position: absolute;
   z-index: 1;
 }
@@ -224,7 +224,7 @@ html body.customize-support main div.woocommerce div.single-product div#product-
 }
 
 .single-product .product .related .onsale {
-  
+
 }
 
 /* PRODUCT PAGES */
