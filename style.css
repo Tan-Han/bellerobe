@@ -199,7 +199,8 @@ nav a button {
 
 /* On sale label */
 
-.columns-3 .products .product .onsale {
+.columns-3 .products .product .onsale, 
+.single-product .product .related .products .columns-4 .onsale {
   position: absolute;
   z-index: 1;
   transform: rotate(-45deg);
