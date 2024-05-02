@@ -73,12 +73,15 @@ nav {
   padding: 1.2rem 8rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 3.5rem;
+  justify-content: center;
+  width: 100%;
 }
 
 nav ul li a {
@@ -91,14 +94,11 @@ nav ul li a:hover {
   text-decoration: underline solid 1px var(--white);
 }
 
-nav .cart-btn {
-
-}
-
 nav a button {
   background-color: var(--primary-color);
   color: var(--brown);
-  font-size: 14px;
+  padding: .5rem 1.5rem;
+  font-size: 20px;
 }
 
 /* PRODUCT CATEGORY PAGES */
