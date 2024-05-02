@@ -433,6 +433,11 @@ nav a button:hover {
 
 .variations tr .value .reset_variations {
   display: none;
+  padding-left: .5rem;
+}
+
+.single_variation_wrap {
+  max-width: 217px;
 }
 
 .summary .variations_form .single_variation_wrap .variations_button, .summary .cart {
@@ -443,6 +448,12 @@ nav a button:hover {
 
 .summary form:not(.variations_form) {
   align-self: flex-end;
+}
+
+/* Error message */
+
+.woocommerce-variation p {
+
 }
 
 /* Quantity selector */
@@ -557,10 +568,15 @@ input[type=number]::-webkit-outer-spin-button
   padding-bottom: .5rem;
 }
 
+.woocommerce-product-attributes tr {
+  height: 2rem;
+}
+
 .woocommerce-product-attributes th {
   text-align: left;
   width: 125px;
   padding-bottom: .25rem;
+  font-family: proxima-nova, sans-serif;
 }
 
 .woocommerce-product-attributes td {
