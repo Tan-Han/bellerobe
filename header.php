@@ -9,7 +9,7 @@
 <body>
 <div class="header">
     <div class="logo-top">
-        <img src="img\Header.svg" alt="" class="logo">
+        <img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/Belle%20Robe%20logo.svg" alt="" class="logo">
     </div>
     <nav>
         <ul>
