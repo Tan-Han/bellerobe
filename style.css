@@ -365,8 +365,6 @@ nav a button:hover {
 
 .woocommerce-product-gallery__image {
   width: 600px !important;
-  border-radius: 10px;
-  overflow: hidden;
 }
 
 .woocommerce-product-gallery__image img {
