@@ -63,6 +63,7 @@ button {
   border: none;
   border-radius: 10px;
   box-shadow: 3px 3px 5px #5C48337D;
+  cursor: pointer; /* Change cursor to pointer on hover */
 }
 
 /* NAVBAR */
@@ -88,10 +89,6 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: underline solid 1px var(--white);
-}
-
-nav a:last-child {
-  margin-left: auto; /* Push the last anchor element to the right */
 }
 
 nav a button {
