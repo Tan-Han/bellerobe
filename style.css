@@ -240,6 +240,7 @@ nav a button {
   column-gap: 8rem;
   position: relative;
   overflow: hidden;
+  padding: .5rem;
 }
 
 /* .single-product .product .woocommerce-tabs, */
@@ -472,4 +473,8 @@ nav a button {
 .related h2 {
   text-align: center;
   font-size: 50px;
+}
+
+.related .product {
+  padding: 0;
 }
