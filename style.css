@@ -204,6 +204,13 @@ nav a button {
 .single-product .product .onsale {
   position: absolute;
   z-index: 1;
+  rotate: -45deg;
+  top: 3rem;
+  left: -6.5rem;
+  background-color: var(--tertiary-color);
+  color: var(--white);
+  width: 20%;
+  text-align: center;
 }
 
 /* On sale label on cards */
@@ -235,6 +242,8 @@ nav a button {
   /* Two columns */
   grid-template-rows: repeat(3, auto);
   column-gap: 8rem;
+  position: relative;
+  overflow: hidden;
 }
 
 /* .single-product .product .woocommerce-tabs, */
