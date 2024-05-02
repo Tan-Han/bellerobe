@@ -568,15 +568,21 @@ input[type=number]::-webkit-outer-spin-button
   padding-bottom: .5rem;
 }
 
+.woocommerce-product-attributes {
+  width: 100%;
+  border-collapse: collapse;
+}
+
 .woocommerce-product-attributes tr {
-  height: 2rem;
+  height: 2.5rem;
+  border-bottom: 1px solid var(--tertiary-color);
 }
 
 .woocommerce-product-attributes th {
   text-align: left;
-  width: 125px;
   padding-bottom: .25rem;
   font-family: proxima-nova, sans-serif;
+  border-bottom: 1px solid var(--tertiary-color);
 }
 
 .woocommerce-product-attributes td {
