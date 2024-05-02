@@ -35,7 +35,7 @@ add_action('woocommerce_single_product_summary', 'insert_product_title', 3);
 ?>
 
 <!-- jQuery making styling of quantity selector possible -->
-<!-- 
+
 <script>
       jQuery('<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>').insertAfter('.quantity input');
     jQuery('.quantity').each(function() {
@@ -69,4 +69,4 @@ add_action('woocommerce_single_product_summary', 'insert_product_title', 3);
       });
 
     });
-</script> -->
+</script>
