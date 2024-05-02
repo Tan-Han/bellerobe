@@ -215,7 +215,8 @@ nav a button {
 
 /* On sale label on cards */
 
-.columns-3 .products .product .onsale, .single-product .product .related .onsale {
+.columns-3 .products .product .onsale,
+.single-product .product .related .onsale {
   position: absolute;
   z-index: 1;
   transform: rotate(-45deg);
@@ -324,8 +325,6 @@ nav a button {
   height: 100%;
   object-fit: cover;
 }
-
-.woocommerce-product-gallery__wrapper {}
 
 /* Short description */
 
