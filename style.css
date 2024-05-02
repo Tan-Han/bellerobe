@@ -154,6 +154,7 @@ nav a button {
   bottom: 2rem;
   left: 2rem;
   z-index: 1;
+  font-size: 28px;
 }
 
 .products .product:hover h2 {
@@ -250,6 +251,9 @@ nav a button {
 .single-product .product .related {
   grid-column: 1 / span 2;
   grid-row: 3;
+  display: flex;
+  flex-direction: column;
+  padding-top: 8rem;
 }
 
 .single-product .product .summary {
@@ -260,6 +264,7 @@ nav a button {
   /* Starting at column 2, spanning 1 column */
   grid-row: 1 / span 1;
   /* Starting at row 1, spanning 1 row */
+  padding: 0 .5rem;
 }
 
 .woocommerce-tabs {
@@ -460,13 +465,21 @@ nav a button {
 
 /* Related products */
 
-.related {
-  display: flex;
-  flex-direction: column;
-  padding-top: 8rem;
-}
-
 .related h2 {
   text-align: center;
   font-size: 50px;
+}
+
+.related ul {
+  padding-bottom: 10rem;
+}
+
+.related ul li {
+  width: 350px;
+  height: 515px;
+  display: flex;
+}
+
+.related ul li h2 {
+  font-size: 28px;
 }
