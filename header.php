@@ -10,11 +10,13 @@
 
 <nav>
     <ul>
-        <li><a href="/frontpage">Forside</a></li>
-        <li><a href="/shop">Shop</a></li>        
+        <li><a href="/frontpage">Forside</a></li>    
         <li><a href="/product-category/brudekjoler">Brudekjoler</a></li>
         <li><a href="/product-category/gallakjoler">Fest- & Gallakjoler</a></li>
         <li><a href="/product-category/konfirmationskjoler">Konfirmationskjoler</a></li>
+        <li><a href="/product-category/sko">Sko</a></li>
+        <li><a href="/om_os">Om os</a></li>
+        <li><a href="/booking">Book tid</a></li>
     </ul>
     <a href="/cart"><button>Kurv</button></a>
 </nav>
