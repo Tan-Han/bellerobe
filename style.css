@@ -113,7 +113,7 @@ nav ul li a:hover {
 nav a button {
   background-color: var(--primary-color);
   color: var(--brown);
-  padding: .4rem 1.3rem;
+  padding: .2rem 1.3rem;
   font-size: 20px;
   border: 4px solid var(--primary-color);
 }
@@ -395,6 +395,8 @@ nav a button:hover {
   font-size: 20px
 }
 
+/* Variations */
+
 .variations_form {
   display: flex;
   justify-content: space-between;
@@ -421,7 +423,7 @@ nav a button:hover {
   border-radius: 10px;
   padding: .5rem;
   color: var(--brown);
-  background-color: var(--primary-color);
+  background-color: var(--forms);
 }
 
 .variations tr .value .reset_variations {
@@ -447,14 +449,14 @@ nav a button:hover {
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button
 {
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   margin: 0;
 }
 
-input[type=number]
+/* input[type=number]
 {
   -moz-appearance: textfield;
-}
+} */
 
 .quantity input {
   width: 45px;
@@ -465,9 +467,10 @@ input[type=number]
   padding: 0;
   margin: 0;
   padding-left: 20px;
-  border: 1px solid black;
+  border: 1px solid var(--quaternary-color);
   border-radius: 10px;
   font-weight: 700;
+  background-color: var(--forms);
 }
 
 .quantity input:focus {
