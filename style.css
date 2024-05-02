@@ -71,7 +71,7 @@ nav {
   background-color: var(--tertiary-color);
   padding: 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 nav ul {
@@ -88,6 +88,10 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: underline solid 1px var(--white);
+}
+
+nav a:last-child {
+  margin-left: auto; /* Push the last anchor element to the right */
 }
 
 nav a button {
