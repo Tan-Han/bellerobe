@@ -212,6 +212,10 @@ nav a button {
   color: var(--white);
   width: 20%;
   text-align: center;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 18px;
+  box-shadow: 3px 3px 5px #5C48337D;
 }
 
 /* On sale label on cards */
@@ -231,7 +235,11 @@ nav a button {
   box-shadow: 3px 3px 5px #5C48337D;
 }
 
-.single-product .product .related .onsale {}
+.single-product .product .related .onsale {
+  left: -8.5rem;
+  top: 1.5rem;
+  width: 100%;
+}
 
 /* PRODUCT PAGES */
 
