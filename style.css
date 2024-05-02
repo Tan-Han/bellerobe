@@ -450,7 +450,7 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button
 {
   /* -webkit-appearance: none; */
-  margin: 1rem;
+  margin: 0;
 }
 
 /* input[type=number]
@@ -459,20 +459,22 @@ input[type=number]::-webkit-outer-spin-button
 } */
 
 .quantity input {
-  width: 45px;
+  width: 60px;
   height: 42px;
   line-height: 1.65;
   float: left;
   display: block;
   padding: 0;
   margin: 0;
-  padding-left: 20px;
+  padding-left: .8rem;
+  padding-right: .2rem;
   border: 1px solid var(--quaternary-color);
   border-radius: 10px;
   font-weight: 700;
   background-color: var(--forms);
+  color: var(--brown);
 }
-
+/* 
 .quantity input:focus {
   outline: 0;
 }
@@ -486,12 +488,12 @@ input[type=number]::-webkit-outer-spin-button
 .quantity-button {
   position: relative;
   cursor: pointer;
-  border-left: 1px solid black;
+  border-left: 1px solid var(--quaternary-color);
   width: 20px;
   text-align: center;
-  color: #333;
+  color: var(--brown);
   font-size: 13px;
-  font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+  font-family: proxima-nova, sans-serif !important;
   line-height: 1.7;
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
@@ -506,14 +508,14 @@ input[type=number]::-webkit-outer-spin-button
   position: absolute;
   height: 50%;
   top: 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--quaternary-color);
 }
 
 .quantity-button.quantity-down {
   position: absolute;
   bottom: -1px;
   height: 50%;
-}
+} */
 
 /* Add to cart button */
 
