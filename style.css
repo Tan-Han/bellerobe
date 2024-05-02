@@ -417,6 +417,9 @@ nav a button:hover {
 
 .variations tr .label {
   text-align: start;
+}
+
+.variations tr .label label {
   color: var(--brown);
   font-weight: 700!important;
 }
