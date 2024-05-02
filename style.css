@@ -284,7 +284,6 @@ nav a button {
   top: .5rem;
   left: .5rem;
   z-index: 1;
-  padding: 0.5rem;
 }
 
 .woocommerce-product-gallery ol {
@@ -388,10 +387,6 @@ nav a button {
   gap: 1rem;
 }
 
-.quantity {
-
-}
-
 .single_add_to_cart_button {
   background-color: var(--quaternary-color);
   color: var(--white);
@@ -473,8 +468,4 @@ nav a button {
 .related h2 {
   text-align: center;
   font-size: 50px;
-}
-
-.related .product {
-  padding: 0;
 }
