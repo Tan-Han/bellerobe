@@ -68,6 +68,18 @@ button {
 
 /* NAVBAR */
 
+.logo-top {
+  background-image: url("img\Belle Robe logo.svg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-top .logo {
+  height: 5rem;
+  width: auto;
+}
+
 nav {
   background-color: var(--tertiary-color);
   padding: 1.2rem 8rem;

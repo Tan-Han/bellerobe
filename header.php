@@ -9,7 +9,7 @@
 <body>
 <div class="header">
     <div class="logo-top">
-        <img src="img\Header.svg" alt="">
+        <img src="img\Header.svg" alt="" class="logo">
     </div>
     <nav>
         <ul>
