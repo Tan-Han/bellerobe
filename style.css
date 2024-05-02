@@ -25,7 +25,8 @@ h3 {
 p,
 a,
 span,
-link {
+link, 
+label {
   font-family: proxima-nova, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -416,14 +417,17 @@ nav a button:hover {
 
 .variations tr .label {
   text-align: start;
+  color: var(--brown);
+  font-weight: 700;
 }
 
 .variations tr .value select {
   border: 1px solid var(--quaternary-color);
   border-radius: 10px;
-  padding: .5rem;
+  padding: 0 .8rem;
   color: var(--brown);
   background-color: var(--forms);
+  height: 42px;
 }
 
 .variations tr .value .reset_variations {
@@ -484,39 +488,6 @@ input[type=number]::-webkit-outer-spin-button
   position: relative;
   height: 42px;
 }
-
-/*
-.quantity-button {
-  position: relative;
-  cursor: pointer;
-  border-left: 1px solid var(--quaternary-color);
-  width: 20px;
-  text-align: center;
-  color: var(--brown);
-  font-size: 13px;
-  font-family: proxima-nova, sans-serif !important;
-  line-height: 1.7;
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-}
-
-.quantity-button.quantity-up {
-  position: absolute;
-  height: 50%;
-  top: 0;
-  border-bottom: 1px solid var(--quaternary-color);
-}
-
-.quantity-button.quantity-down {
-  position: absolute;
-  bottom: -1px;
-  height: 50%;
-} */
 
 /* Add to cart button */
 
