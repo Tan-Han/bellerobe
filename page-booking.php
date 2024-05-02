@@ -364,6 +364,7 @@
         display: flex;
         height: 200px;
         align-items: center;
+        box-shadow: 3px 3px 5px #5C48337D;
     }
 
     .img-box {
@@ -442,6 +443,7 @@
         background-color: var(--secondary-color);
         padding: 1.5rem 2rem;
         border-radius: 10px;
+        box-shadow: 3px 3px 5px #5C48337D;
     }
 
     .hours {
@@ -464,6 +466,7 @@
     .maps {
         border-radius: 10px;
         border: 1px solid var(--quaternary-color)!important;
+        box-shadow: 3px 3px 5px #5C48337D;
     }
 
 </style>
