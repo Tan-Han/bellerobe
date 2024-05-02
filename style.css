@@ -383,7 +383,7 @@ nav a button {
 }
 
 .variations tr .value .reset_variations {
-  font-size: 1px;
+  display: none;
 }
 
 .summary .variations_form .single_variation_wrap .variations_button {
@@ -399,6 +399,10 @@ nav a button {
 
 .single_add_to_cart_button:hover {
   background-color: var(--tertiary-color);
+}
+
+.product_meta {
+  display: none;
 }
 
 /* More information */
