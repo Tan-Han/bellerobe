@@ -7,16 +7,20 @@
     <?php wp_head() ?>
 </head>
 <body>
-
-<nav>
-    <ul>
-        <li><a href="/frontpage">Forside</a></li>    
-        <li><a href="/product-category/brudekjoler">Brudekjoler</a></li>
-        <li><a href="/product-category/gallakjoler">Fest- & Gallakjoler</a></li>
-        <li><a href="/product-category/konfirmationskjoler">Konfirmationskjoler</a></li>
-        <li><a href="/product-category/sko">Sko</a></li>
-        <li><a href="/om_os">Om os</a></li>
-        <li><a href="/booking">Book tid</a></li>
-    </ul>
-    <a href="/cart" class="cart-btn"><button>Kurv</button></a>
-</nav>
+<div class="header">
+    <div class="logo-top">
+        <img src="img\Header.svg" alt="">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="/frontpage">Forside</a></li>    
+            <li><a href="/product-category/brudekjoler">Brudekjoler</a></li>
+            <li><a href="/product-category/gallakjoler">Fest- & Gallakjoler</a></li>
+            <li><a href="/product-category/konfirmationskjoler">Konfirmationskjoler</a></li>
+            <li><a href="/product-category/sko">Sko</a></li>
+            <li><a href="/om_os">Om os</a></li>
+            <li><a href="/booking">Book tid</a></li>
+        </ul>
+        <a href="/cart" class="cart-btn"><button>Kurv</button></a>
+    </nav>
+</div>
