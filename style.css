@@ -25,7 +25,7 @@ h3 {
 p,
 a,
 span,
-link, 
+link,
 label {
   font-family: proxima-nova, sans-serif;
   font-weight: 400;
@@ -64,7 +64,8 @@ button {
   border: none;
   border-radius: 10px;
   box-shadow: 3px 3px 5px #5C48337D;
-  cursor: pointer; /* Change cursor to pointer on hover */
+  cursor: pointer;
+  /* Change cursor to pointer on hover */
 }
 
 /* NAVBAR */
@@ -419,7 +420,7 @@ nav a button:hover {
 
 .variations tr .label label {
   color: var(--brown);
-  font-weight: 700!important;
+  font-weight: 700 !important;
 }
 
 .variations tr .value select {
@@ -440,7 +441,8 @@ nav a button:hover {
   max-width: 217px;
 }
 
-.summary .variations_form .single_variation_wrap .variations_button, .summary .cart {
+.summary .variations_form .single_variation_wrap .variations_button,
+.summary .cart {
   display: flex;
   align-items: flex-end;
   gap: 1rem;
@@ -453,7 +455,7 @@ nav a button:hover {
 /* Error message */
 
 .woocommerce-variation p {
-
+  font-size: 14px;
 }
 
 /* Quantity selector */
@@ -463,8 +465,7 @@ nav a button:hover {
 }
 
 input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button
-{
+input[type=number]::-webkit-outer-spin-button {
   /* -webkit-appearance: none; */
   margin: 0;
 }
@@ -490,7 +491,7 @@ input[type=number]::-webkit-outer-spin-button
   background-color: var(--forms);
   color: var(--brown);
 }
- 
+
 .quantity input:focus {
   outline: 0;
 }
