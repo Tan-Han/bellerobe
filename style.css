@@ -400,7 +400,7 @@ nav a button {
   gap: 1rem;
 }
 
-.summary .cart {
+form:not(.variations_form) {
   align-self: flex-end;
 }
 
