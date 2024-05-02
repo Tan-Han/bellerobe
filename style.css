@@ -206,7 +206,7 @@ nav a button {
   position: absolute;
   z-index: 1;
   rotate: -45deg;
-  top: 3rem;
+  top: 2.5rem;
   left: -6.5rem;
   background-color: var(--tertiary-color);
   color: var(--white);
@@ -214,8 +214,9 @@ nav a button {
   text-align: center;
   color: var(--white);
   font-weight: 700;
-  font-size: 18px;
+  font-size: 24px;
   box-shadow: 3px 3px 5px #5C48337D;
+  padding: .2rem 0;
 }
 
 /* On sale label on cards */
@@ -224,7 +225,7 @@ nav a button {
   position: absolute;
   z-index: 1;
   transform: rotate(-45deg);
-  left: -9.5rem;
+  left: -9.2rem;
   top: 1.5rem;
   background-color: var(--tertiary-color);
   width: 100%;
@@ -233,12 +234,14 @@ nav a button {
   font-weight: 700;
   font-size: 18px;
   box-shadow: 3px 3px 5px #5C48337D;
+  padding: .2rem 0;
 }
 
 .single-product .product .related .onsale {
   left: -8.5rem;
   top: 1.5rem;
   width: 100%;
+  padding: .2rem 0;
 }
 
 /* PRODUCT PAGES */
@@ -358,7 +361,7 @@ nav a button {
 }
 
 .single-product .product .summary .woocommerce-product-details__short-description p {
-  font-size: 22px
+  font-size: 20px
 }
 
 .variations_form {
@@ -404,9 +407,87 @@ nav a button {
   align-self: flex-end;
 }
 
+/* Quantity selector */
+
+.quantity {
+  position: relative;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+.quantity input {
+  width: 45px;
+  height: 42px;
+  line-height: 1.65;
+  float: left;
+  display: block;
+  padding: 0;
+  margin: 0;
+  padding-left: 20px;
+  border: 1px solid var(--quaternary-color);
+  border-radius: 10px;
+  font-family: proxima-nova, sans-serif;
+  font-size: 18px;
+}
+
+.quantity input:focus {
+  outline: 0;
+}
+
+.quantity-nav {
+  float: left;
+  position: relative;
+  height: 42px;
+}
+
+.quantity-button {
+  position: relative;
+  cursor: pointer;
+  border-left: 1px solid var(--quaternary-color);
+  width: 20px;
+  text-align: center;
+  color: var(--brown);
+  font-size: 13px;
+  font-family: proxima-nova, sans-serif!important;
+  line-height: 1.7;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.quantity-button.quantity-up {
+  position: absolute;
+  height: 50%;
+  top: 0;
+  border-bottom: 1px solid var(--quaternary-color);
+}
+
+.quantity-button.quantity-down {
+  position: absolute;
+  bottom: -1px;
+  height: 50%;
+}
+
+/* Add to cart button */
+
 .single_add_to_cart_button {
   background-color: var(--quaternary-color);
   color: var(--white);
+  font-size: 18px;
 }
 
 .single_add_to_cart_button:hover {
