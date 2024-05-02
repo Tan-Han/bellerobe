@@ -70,10 +70,9 @@ button {
 
 nav {
   background-color: var(--tertiary-color);
-  padding: 1rem;
+  padding: 1.2rem 8rem;
   display: flex;
-  justify-content: center;
-  position: relative;
+  justify-content: space-between;
 }
 
 nav ul {
@@ -93,8 +92,7 @@ nav ul li a:hover {
 }
 
 nav .cart-btn {
-  position: absolute;
-  right: 5rem;
+
 }
 
 nav a button {
