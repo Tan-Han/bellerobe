@@ -70,13 +70,14 @@ button {
 
 .logo-top {
   background-image: url("https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/Header.svg");
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .logo-top .logo {
-  height: 5rem;
+  height: 10rem;
   width: auto;
 }
 
