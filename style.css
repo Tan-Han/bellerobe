@@ -575,12 +575,14 @@ input[type=number]::-webkit-outer-spin-button
 
 .woocommerce-product-attributes tr {
   border-bottom: 1px solid #779a6645;
+  padding-top: .25rem;
 }
 
 .woocommerce-product-attributes th {
   text-align: left;
   font-family: proxima-nova, sans-serif;
   border-bottom: 1px solid #779a6645;
+  padding-top: .25rem;
 }
 
 .woocommerce-product-attributes td {
