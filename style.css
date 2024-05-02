@@ -101,6 +101,11 @@ nav a button {
   font-size: 20px;
 }
 
+nav a button:hover {
+  background-color: var(--primary-color);
+  color: var(--brown);
+}
+
 /* PRODUCT CATEGORY PAGES */
 
 /* Sorting */
