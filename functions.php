@@ -70,5 +70,3 @@ add_action('woocommerce_single_product_summary', 'insert_product_title', 3);
 
     });
 </script>
-
-<?php
