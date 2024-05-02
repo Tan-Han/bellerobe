@@ -574,15 +574,13 @@ input[type=number]::-webkit-outer-spin-button
 }
 
 .woocommerce-product-attributes tr {
-  height: 2.5rem;
-  border-bottom: 1px solid #779a66b9;
+  border-bottom: 1px solid #779a6645;
 }
 
 .woocommerce-product-attributes th {
   text-align: left;
-  padding-bottom: .25rem;
   font-family: proxima-nova, sans-serif;
-  border-bottom: 1px solid #779a66b9;
+  border-bottom: 1px solid #779a6645;
 }
 
 .woocommerce-product-attributes td {
