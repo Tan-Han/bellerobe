@@ -386,10 +386,14 @@ nav a button {
   display: none;
 }
 
-.summary .variations_form .single_variation_wrap .variations_button {
+.summary .variations_form .single_variation_wrap .variations_button, .summary .cart {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.summary .cart {
+  align-self: flex-end;
 }
 
 .single_add_to_cart_button {
