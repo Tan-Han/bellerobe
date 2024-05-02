@@ -400,8 +400,8 @@ nav a button {
   gap: 1rem;
 }
 
-form:not(.variations_form) {
-  align-self: flex-end;
+.summary form:not(.variations_form) {
+    align-self: flex-end;
 }
 
 .single_add_to_cart_button {
