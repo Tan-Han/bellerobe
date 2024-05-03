@@ -31,7 +31,3 @@ function insert_product_title()
 }
 
 add_action('woocommerce_single_product_summary', 'insert_product_title', 3);
-
-?>
-
-<!-- jQuery making styling of quantity selector possible -->
