@@ -20,7 +20,7 @@
 
 <!-- coding for the third section on the frontpage with four categories of products -->
 <section class="frontpage_categories">
-  <h2><?php the_field("introduction_header_on_frontpage") ?></h2>
+  <h2><?php the_field("introduction_to_cards_on_frontpage") ?></h2>
   
 </section>
 
