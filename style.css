@@ -156,8 +156,8 @@ color: var(--brown);
   border-radius: 10px;
 }
 
-.components-form-token-field_suggestions-list {
-  border-radius: 10px;
+.components-form-token-field__input-container ul {
+  border-radius: 10px!important;
 }
 
 /* Sorting */
