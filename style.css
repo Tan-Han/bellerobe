@@ -148,6 +148,18 @@ nav .cart-btn:hover {
   flex: 0 0 200px;
 }
 
+.wp-block-woocommerce-filter-wrapper .wp-block-heading {
+color: var(--brown);
+}
+
+.wc-block-attribute-filter .wc-blocks-components-form-token-field-wrapper:not(.is-loading) {
+  border-radius: 10px;
+}
+
+.components-form-token-field_suggestions-list {
+  border-radius: 10px;
+}
+
 /* Sorting */
 
 .woocommerce-ordering {
