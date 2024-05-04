@@ -113,12 +113,18 @@ nav ul li a:hover {
   text-decoration: underline solid 1px var(--white);
 }
 
-nav a i {
+nav .cart-btn {
+  display: flex;
+  align-items: baseline;
+  gap: .5rem;
+}
+
+nav .cart-btn i {
   color: var(--white);
   font-size: 32px;
 }
 
-nav a i:hover {
+nav .cart-btn i:hover {
   color: var(--secondary-color);
 }
 
