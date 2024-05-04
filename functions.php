@@ -58,10 +58,9 @@ function print_product_filter_widget()
 add_action("woocommerce_before_shop_loop", "print_product_filter_widget");
 
 // Add category name on category page
-function add_category_name_on_category_page() {
-  if (is_product_category()) {
-      $category = get_queried_object();
-      echo '<h1 class="category-title">' . $category->name . '</h1>';
-  }
+function add_category_name_on_category_page()
+{
+  echo '<h1 class="category-title">' . $category->name . '</h1>';
 }
+
 add_action('woocommerce_before_main_content', 'add_category_name_on_category_page', 20);
