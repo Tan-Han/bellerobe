@@ -55,13 +55,17 @@ function print_product_filter_widget()
   dynamic_sidebar("product_filter");
   echo '</div>';
 }
+
 add_action("woocommerce_before_shop_loop", "print_product_filter_widget");
 
 // Add category name on category page
 
-add_action('woocommerce_archive_description', 'show_category_title', 10, 2);
+add_action( 'my_woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
+add_action( 'my_woocommerce_before_main_content', 'my_woocommerce_print_category_name', 20 );
 
-function show_category_title() {
-	$cat_title = single_tag_title("", false);
-	echo '<h1>' . $cat_title . '</h1>';
+function my_woocommerce_print_category_name()
+{
+  global $post, $product;
+    $categ = $product->get_categories();
+    echo $categ;
 }
