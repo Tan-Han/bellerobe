@@ -27,3 +27,20 @@
         </ul>
         <a href="/cart/" class="cart-btn"><button>Kurv<i class='fas fa-shopping-basket'></i></button></a>
     </nav>
+
+
+    <style>
+        nav a button {
+  background-color: var(--primary-color);
+  color: var(--brown);
+  padding: .4rem 1.5rem;
+  font-size: 20px;
+  display: flex;
+  align-items: baseline;
+  gap: .5rem;
+}
+
+nav a button:hover {
+  color: var(--tertiary-color);
+}
+    </style>
