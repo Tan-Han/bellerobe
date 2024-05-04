@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4411d10f05.js" crossorigin="anonymous"></script>
     <title><?php bloginfo("name") ?></title>
     <?php wp_head() ?>
 </head>

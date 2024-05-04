@@ -6,14 +6,6 @@ function enqueue_parent_theme_style()
 }
 add_action('wp_enqueue_scripts', 'enqueue_parent_theme_style');
 
-// Adding Font Awesome icons
-
-function adding_font_awesome() {
-  wp_enqueue_script("fontawesome", "https://kit.fontawesome.com/4411d10f05.js");
-}
-
-add_action("wp_enqueue_script", "adding_font_awesome");
-
 // Remove gutenberg editor in WP
 
 function ad_remove_gutenberg()
