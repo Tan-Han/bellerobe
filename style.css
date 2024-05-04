@@ -425,7 +425,7 @@ background-color: var(--secondary-color)!important;
 
 /* Short description */
 
-.single-product .product .summary h2 {
+.single-product .product .summary h1 {
   font-size: 50px;
 }
 
