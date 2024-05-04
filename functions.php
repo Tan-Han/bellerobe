@@ -61,12 +61,17 @@ add_action("woocommerce_before_shop_loop", "print_product_filter_widget");
 // Add category name on category page
 
 
-add_action( 'my_woocommerce_before_main_content', 'insert_category_name', 20 );
+function add_category_titles(){  
+if ( x_is_product_category() ) : 
+  
+  $meta     = x_get_taxonomy_meta();
+  $title    = ( $meta['archive-title']    != '' ) ? $meta['archive-title']    : __( 'Category Archive', '__x__' );
 
-function insert_category_name($title) {
-  if (is_product_category()) {
-    $term = get_queried_object();
-      $title = get_term_meta( $term->term_id, 'ctitle', true ) ? get_term_meta( $term->term_id, 'ctitle', true ) : $title;
-   }
-   return $title;
+  ?>
+    <h1 class="cat-title"><?php single_cat_title(''); ?></h1>
+    
+
+  <?php endif;
 }
+
+add_action('woocommerce_before_main_content', 'add_category_titles');
