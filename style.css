@@ -117,6 +117,7 @@ nav .cart-btn {
   display: flex;
   align-items: baseline;
   gap: .5rem;
+  font-size: 22px;
 }
 
 nav .cart-btn i {
