@@ -134,21 +134,18 @@ nav .cart-btn:hover {
   border-color: var(--white);
 }
 
-/* nav .cart-btn button {
-  background-color: var(--primary-color);
-  color: var(--brown);
-  padding: .4rem 1.5rem;
-  font-size: 20px;
+/* PRODUCT CATEGORY PAGES */
+
+/* Filter */
+
+.product_filter {
   display: flex;
-  align-items: baseline;
-  gap: .5rem;
+  justify-content: left;
 }
 
-nav .cart-btn button:hover {
-  color: var(--tertiary-color);
-} */
-
-/* PRODUCT CATEGORY PAGES */
+.wp-block-woocommerce-filter-wrapper {
+  flex: 0 0 100px;
+}
 
 /* Sorting */
 
