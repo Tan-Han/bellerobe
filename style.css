@@ -113,6 +113,20 @@ nav ul li a:hover {
   text-decoration: underline solid 1px var(--white);
 }
 
+nav a button {
+  background-color: var(--primary-color);
+  color: var(--brown);
+  padding: .4rem 1.5rem;
+  font-size: 20px;
+  display: flex;
+  align-items: baseline;
+  gap: .5rem;
+}
+
+nav a button:hover {
+  color: var(--tertiary-color);
+}
+
 /* PRODUCT CATEGORY PAGES */
 
 /* Sorting */
