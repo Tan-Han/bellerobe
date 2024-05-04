@@ -33,24 +33,26 @@ function insert_product_title()
 add_action('woocommerce_single_product_summary', 'insert_product_title', 3);
 
 // Creating new custom widget
-function mytheme_register_custom_widget()
+function product_filter_widget()
 {
   register_sidebar(
     array(
-      "name" => "My custom sidebar",
-      "id" => "my-custom-sidebar",
+      "name" => "Produkt filter",
+      "id" => "product_filter",
       "before_widget" => "",
       "after_widget" => ""
     )
   );
 }
 
-add_action("widgets_init", "mytheme_register_custom_widget");
+add_action("widgets_init", "product_filter_widget");
 
 // Placing the custom widget
 
-function mytheme_print_sidebar()
+function print_product_filter_widget()
 {
-  dynamic_sidebar("my-custom-sidebar");
+  echo '<div class="product_filter">';
+  dynamic_sidebar("product_filter");
+  echo '</div>';
 }
-add_action("woocommerce_before_shop_loop", "mytheme_print_sidebar");
+add_action("woocommerce_before_shop_loop", "print_product_filter_widget");
