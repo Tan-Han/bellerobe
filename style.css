@@ -113,7 +113,7 @@ nav ul li a:hover {
   text-decoration: underline solid 1px var(--white);
 }
 
-nav a button {
+nav .cart-btn button {
   background-color: var(--primary-color);
   color: var(--brown);
   padding: .4rem 1.5rem;
@@ -123,7 +123,7 @@ nav a button {
   gap: .5rem;
 }
 
-nav a button:hover {
+nav .cart-btn button:hover {
   color: var(--tertiary-color);
 }
 
