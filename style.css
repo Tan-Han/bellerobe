@@ -475,14 +475,14 @@ input[type=number]::-webkit-outer-spin-button {
 } */
 
 .quantity input {
-  width: 60px;
+  width: 50px;
   height: 42px;
   line-height: 1.65;
   float: left;
   display: block;
   padding: 0;
   margin: 0;
-  padding-left: .8rem;
+  padding-left: 1rem;
   padding-right: .2rem;
   border: 1px solid var(--quaternary-color);
   border-radius: 10px;
