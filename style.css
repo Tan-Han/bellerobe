@@ -119,14 +119,14 @@ nav .cart-btn {
   gap: 1rem;
   font-size: 22px;
   font-weight: 700;
+  color: var(--white);
 }
 
 nav .cart-btn i {
-  color: var(--white);
   font-size: 32px;
 }
 
-nav .cart-btn i:hover {
+nav .cart-btn:hover {
   color: var(--secondary-color);
 }
 
