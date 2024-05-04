@@ -116,7 +116,7 @@ nav ul li a:hover {
 nav a button {
   background-color: var(--primary-color);
   color: var(--brown);
-  padding: .2rem 1.3rem;
+  padding: .4rem 1.5rem;
   font-size: 20px;
   display: flex;
   align-items: baseline;
