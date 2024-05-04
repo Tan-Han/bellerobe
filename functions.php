@@ -59,12 +59,9 @@ add_action("woocommerce_before_shop_loop", "print_product_filter_widget");
 
 // Add category name on category page
 
-add_action( 'woocommerce_archive_description', 'display_product_category_name', 20 );
+add_action('woocommerce_archive_description', 'show_category_title', 10, 2);
 
-function display_product_category_name() {
-    if (is_product_category()) {
-        $category = get_queried_object();
-        $category_name = $category->name;
-        echo '<h1 class="category-title">' . $category_name . '</h1>';
-    }
+function show_category_title() {
+	$cat_title = single_tag_title("", false);
+	echo '<h1>' . $cat_title . '</h1>';
 }
