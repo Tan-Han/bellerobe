@@ -136,6 +136,10 @@ nav .cart-btn:hover {
 
 /* PRODUCT CATEGORY PAGES */
 
+.woocommerce {
+  display: grid;
+}
+
 /* Filter */
 
 .product_filter {
@@ -154,7 +158,7 @@ nav .cart-btn:hover {
 
 .wc-block-attribute-filter .wc-blocks-components-form-token-field-wrapper:not(.is-loading) {
   border-radius: 10px;
-  border-color: var(--quaternary-color)!important;
+  border-color: var(--quaternary-color) !important;
   background-color: var(--forms);
 }
 
@@ -164,19 +168,19 @@ nav .cart-btn:hover {
 
 .components-form-token-field__input-container ul {
   border-radius: 10px !important;
-  border-color: var(--quaternary-color)!important;
+  border-color: var(--quaternary-color) !important;
   background-color: var(--forms);
-  font-family: proxima-nove, sans-serif!important;
-  color: var(--brown)!important;
+  font-family: proxima-nove, sans-serif !important;
+  color: var(--brown) !important;
 }
 
 .components-form-token-field__input-container ul li {
   border-radius: 10px !important;
-  border-color: var(--quaternary-color)!important;
+  border-color: var(--quaternary-color) !important;
 }
 
 .components-form-token-field__input-container ul li:hover {
-background-color: var(--secondary-color)!important;
+  background-color: var(--secondary-color) !important;
 }
 
 /* Sorting */
@@ -193,6 +197,7 @@ background-color: var(--secondary-color)!important;
   grid-template-columns: repeat(4, 1fr);
   row-gap: 3rem;
   column-gap: 3rem;
+  padding-bottom: 3rem;
 }
 
 .products .product {
@@ -324,6 +329,33 @@ background-color: var(--secondary-color)!important;
   width: 100%;
   padding: .2rem 0;
   font-size: 18px;
+}
+
+/* Pagination */
+
+.woocommerce-pagination {
+  width: fit-content;
+  justify-self: center;
+  border-radius: 10px;
+  padding: 1.2rem 5rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.woocommerce-pagination .page-numbers {
+  gap: 1rem;
+  align-items: center;
+}
+
+.woocommerce-pagination .page-numbers li {
+  color: var(--white);
+  font-family: proxima-nova, sans-serif;
+}
+
+.woocommerce-pagination .page-numbers li .current {
+  border: 3px solid var(--primary-color);
+  border-radius: 10px;
+  padding: .5rem 1rem;
 }
 
 /* PRODUCT PAGES */

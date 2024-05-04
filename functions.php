@@ -59,4 +59,3 @@ function print_product_filter_widget()
 add_action("woocommerce_before_shop_loop", "print_product_filter_widget");
 
 // Add category name on category page
-add_action( 'woocommerce_archive_description', 'woocommerce_taxonomy_archive_description', 10 );
