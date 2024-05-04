@@ -116,8 +116,9 @@ nav ul li a:hover {
 nav .cart-btn {
   display: flex;
   align-items: baseline;
-  gap: .5rem;
+  gap: 1rem;
   font-size: 22px;
+  font-weight: 700;
 }
 
 nav .cart-btn i {
