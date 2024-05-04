@@ -114,12 +114,12 @@ nav ul li a:hover {
 }
 
 nav a i {
-  color: var(--brown);
+  color: var(--white);
   font-size: 32px;
 }
 
 nav a i:hover {
-  color: var(--white);
+  color: var(--secondary-color);
 }
 
 /* nav .cart-btn button {
