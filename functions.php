@@ -60,12 +60,13 @@ add_action("woocommerce_before_shop_loop", "print_product_filter_widget");
 
 // Add category name on category page
 
-add_action( 'my_woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10 );
-add_action( 'my_woocommerce_before_main_content', 'my_woocommerce_print_category_name', 20 );
 
-function my_woocommerce_print_category_name()
-{
-  global $post, $product;
-    $categ = $product->get_categories();
-    echo $categ;
+add_action( 'my_woocommerce_before_main_content', 'insert_category_name', 20 );
+
+function insert_category_name($title) {
+  if (is_product_category()) {
+    $term = get_queried_object();
+      $title = get_term_meta( $term->term_id, 'ctitle', true ) ? get_term_meta( $term->term_id, 'ctitle', true ) : $title;
+   }
+   return $title;
 }
