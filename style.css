@@ -115,10 +115,10 @@ nav ul li a:hover {
 
 nav a i {
   color: var(--brown);
-  font-size: 24px;
+  font-size: 32px;
 }
 
-nav a i {
+nav a i:hover {
   color: var(--white);
 }
 
