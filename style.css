@@ -167,6 +167,7 @@ nav .cart-btn:hover {
   border-color: var(--quaternary-color)!important;
   background-color: var(--forms);
   font-family: proxima-nove, sans-serif!important;
+  color: var(--brown)!important;
 }
 
 .components-form-token-field__input-container ul li {
