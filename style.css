@@ -113,7 +113,16 @@ nav ul li a:hover {
   text-decoration: underline solid 1px var(--white);
 }
 
-nav .cart-btn button {
+nav a i {
+  color: var(--brown);
+  font-size: 24px;
+}
+
+nav a i {
+  color: var(--white);
+}
+
+/* nav .cart-btn button {
   background-color: var(--primary-color);
   color: var(--brown);
   padding: .4rem 1.5rem;
@@ -125,7 +134,7 @@ nav .cart-btn button {
 
 nav .cart-btn button:hover {
   color: var(--tertiary-color);
-}
+} */
 
 /* PRODUCT CATEGORY PAGES */
 
