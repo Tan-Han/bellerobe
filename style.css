@@ -120,6 +120,10 @@ nav .cart-btn {
   font-size: 22px;
   font-weight: 700;
   color: var(--white);
+  border: 3px solid var(--tertiary-color);
+  border-radius: 10px;
+  padding: .4rem .5rem .2rem .5rem;
+  transition: .2s ease-in;
 }
 
 nav .cart-btn i {
@@ -127,7 +131,7 @@ nav .cart-btn i {
 }
 
 nav .cart-btn:hover {
-  color: var(--secondary-color);
+  border-color: var(--white);
 }
 
 /* nav .cart-btn button {
