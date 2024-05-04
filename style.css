@@ -149,16 +149,24 @@ nav .cart-btn:hover {
 }
 
 .wp-block-woocommerce-filter-wrapper .wp-block-heading {
-color: var(--brown);
+  color: var(--brown);
 }
 
 .wc-block-attribute-filter .wc-blocks-components-form-token-field-wrapper:not(.is-loading) {
   border-radius: 10px;
+  border-color: var(--quaternary-color);
+  background-color: var(--forms);
 }
 
 .components-form-token-field__input-container ul {
-  border-radius: 10px!important;
-  padding: 1rem!important;
+  border-radius: 10px !important;
+  border-color: var(--quaternary-color);
+  background-color: var(--forms);
+}
+
+.components-form-token-field__input-container ul li {
+  border-radius: 10px !important;
+  border-color: var(--quaternary-color);
 }
 
 /* Sorting */
