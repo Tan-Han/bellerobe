@@ -23,11 +23,34 @@ add_filter("woocommerce_enqueue_styles", "__return_empty_array");
 
 function insert_product_title()
 {
-    ?>
-    <h2 class="product-title">
-        <?php the_title() ?>
-    </h2>
-    <?php
+  ?>
+  <h2 class="product-title">
+    <?php the_title() ?>
+  </h2>
+  <?php
 }
 
 add_action('woocommerce_single_product_summary', 'insert_product_title', 3);
+
+// Creating new custom widget
+function mytheme_register_custom_widget()
+{
+  register_sidebar(
+    array(
+      "name" => "My custom sidebar",
+      "id" => "my-custom-sidebar",
+      "before_widget" => "",
+      "after_widget" => ""
+    )
+  );
+}
+
+add_action("widgets_init", "mytheme_register_custom_widget");
+
+// Placing the custom widget
+
+function mytheme_print_sidebar()
+{
+  dynamic_sidebar("my-custom-sidebar");
+}
+add_action("woocommerce_before_shop_loop", "mytheme_print_sidebar");
