@@ -152,9 +152,9 @@ nav .cart-btn:hover {
   color: var(--brown);
 }
 
-.wc-block-attribute-filter .wc-blocks-components-form-token-field-wrapper {
+.wc-block-attribute-filter .wc-blocks-components-form-token-field-wrapper:not(.is-loading) {
   border-radius: 10px;
-  border-color: var(--quaternary-color);
+  border-color: var(--quaternary-color)!important;
   background-color: var(--forms);
 }
 
@@ -164,13 +164,13 @@ nav .cart-btn:hover {
 
 .components-form-token-field__input-container ul {
   border-radius: 10px !important;
-  border-color: var(--quaternary-color);
+  border-color: var(--quaternary-color)!important;
   background-color: var(--forms);
 }
 
 .components-form-token-field__input-container ul li {
   border-radius: 10px !important;
-  border-color: var(--quaternary-color);
+  border-color: var(--quaternary-color)!important;
 }
 
 /* Sorting */
