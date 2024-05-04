@@ -141,10 +141,11 @@ nav .cart-btn:hover {
 .product_filter {
   display: flex;
   justify-content: left;
+  gap: 1rem;
 }
 
 .wp-block-woocommerce-filter-wrapper {
-  flex: 0 0 100px;
+  flex: 0 0 200px;
 }
 
 /* Sorting */
