@@ -66,5 +66,8 @@ function display_product_category_name() {
         $category = get_queried_object();
         $category_name = $category->name;
         echo '<h1 class="category-title">' . $category_name . '</h1>';
+    } else {
+        echo '<p>Not a product category page!</p>';
     }
 }
+
