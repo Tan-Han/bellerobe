@@ -175,6 +175,10 @@ nav .cart-btn:hover {
   border-color: var(--quaternary-color)!important;
 }
 
+.components-form-token-field__input-container ul li:hover {
+background-color: var(--secondary-color)!important;
+}
+
 /* Sorting */
 
 .woocommerce-ordering {
