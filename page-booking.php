@@ -485,6 +485,30 @@
 
     /* CONTACT INFO */
 
+    .contact-info-box {
+        background-color: var(--tertiary-color);
+        padding: 1.5rem 2rem;
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px #5C48337D;
+        color: var(--white);
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-size: 20px;
+    }
+
+    .phone {
+        display: flex;
+    }
+
+    .phone a {
+        color: var(--white);
+    }
+
+    #contactBtn {
+        width: fit-content;
+    }
+
     /* Contact form */
 
     .contact {
