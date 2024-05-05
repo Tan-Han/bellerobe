@@ -472,11 +472,11 @@
     /* Opening hours */
 
     .opening-hours-box {
-        background-color: var(--tertiary-color);
+        background-color: var(--quinary-color);
         padding: 1.5rem 2rem;
         border-radius: 10px;
         box-shadow: 3px 3px 5px #5C48337D;
-        color: var(--white);
+        color: var(--brown);
     }
 
     .hours {
@@ -493,7 +493,7 @@
     /* CONTACT INFO */
 
     .contact-info-box {
-        background-color: var(--secondary-color);
+        background-color: var(--quinary-color);
         padding: 1.5rem 2rem;
         border-radius: 10px;
         box-shadow: 3px 3px 5px #5C48337D;
