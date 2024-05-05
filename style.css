@@ -120,11 +120,12 @@ nav .cart-btn {
   gap: .6rem;
   font-size: 22px;
   font-weight: 700;
-  color: var(--white);
-  border: 3px solid var(--tertiary-color);
+  color: var(--brown);
+  /* border: 3px solid var(--tertiary-color); */
   border-radius: 10px;
-  padding: .4rem .5rem .2rem .5rem;
+  padding: .5rem .6rem .3rem .6rem;
   transition: .2s ease-in;
+  background-color: var(--primary-color);
 }
 
 nav .cart-btn i {
@@ -132,7 +133,8 @@ nav .cart-btn i {
 }
 
 nav .cart-btn:hover {
-  border-color: var(--white);
+  /* border-color: var(--white); */
+  background-color: var(--quinary-color);
 }
 
 /* PRODUCT CATEGORY PAGES */
