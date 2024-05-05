@@ -25,9 +25,11 @@
             <li><a href="/om_os/">Om os</a></li>
             <li><a href="/booking/">Book tid</a></li>
         </ul>
-        <div class="cart-btn-box">
-            <span><?php echo count_item_in_cart() ?></span>
-            <a href="/cart/" class="cart-btn">Kurv<i class='fas fa-shopping-basket'></i></a>
+        <div class="cart-btn-outer-box">
+            <div class="cart-btn-box">
+                <span id="cartCount"><?php echo count_item_in_cart() ?></span>
+                <a href="/cart/" class="cart-btn">Kurv<i class='fas fa-shopping-basket'></i></a>
+            </div>
         </div>
 
     </nav>
