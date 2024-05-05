@@ -706,7 +706,7 @@
         border-radius: 10px;
         border: 1px solid var(--quaternary-color) !important;
         box-shadow: 3px 3px 5px #5C48337D;
-        height: 400px;
+        height: 350px;
     }
 </style>
 
