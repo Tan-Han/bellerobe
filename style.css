@@ -182,7 +182,12 @@ footer {
   justify-content: center;
   background-color: var(--tertiary-color);
   color: var(--white);
-  font-size: 25px;
+  font-size: 35px;
+  box-shadow: 3px 3px 5px #5C48337D;
+}
+
+.facebook:hover, .instagram:hover, .tiktok:hover {
+  background-color: var(--quaternary-color);
 }
 
 
