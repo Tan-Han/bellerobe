@@ -542,7 +542,7 @@
 
     /* Contact form */
 
-    .wpcf7-form input {
+    .wpcf7-form input, textarea {
         width: 100%;
     }
 
@@ -551,10 +551,24 @@
         gap: 1rem;
     }
 
-    .client_name_box, .client_contact_box {
+    .client_name_box,
+    .client_contact_box {
         width: 50%;
     }
-    
+
+    .wpcf7-submit {
+        font-family: proxima-nova, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        width: fit-content !important;
+        padding: .5rem 1rem;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px #5C48337D;
+        cursor: pointer;
+        /* Change cursor to pointer on hover */
+    }
+
     /* ADDRESS AND MAPS */
 
     .store-address {
