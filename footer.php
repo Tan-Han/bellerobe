@@ -35,17 +35,17 @@
         <div class="footer_follow">
             <p>Følg os</p>
             <div class="social_icons">
-                <a href="" class="facebook-link">
+                <a href="<?php the_field("facebook") ?>" class="facebook-link">
                     <div class="facebook">
                         <i class="fa-brands fa-facebook-f"></i>
                     </div>
                 </a>
-                <a href="" class="instagram-link">
+                <a href="<?php the_field("instagram") ?>" class="instagram-link">
                     <div class="instagram">
                         <i class="fa-brands fa-instagram"></i>
                     </div>
                 </a>
-                <a href="" class="tiktok-link">
+                <a href="<?php the_field("tiktok") ?>" class="tiktok-link">
                     <div class="tiktok">
                         <i class="fa-brands fa-tiktok"></i>
                     </div>
