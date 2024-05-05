@@ -484,6 +484,8 @@
 
     /* CONTACT INFO */
 
+
+
     /* Contact form modal */
 
     /* The Modal (background) */
@@ -510,20 +512,24 @@
 
     /* Modal Content/Box */
     .contact_form {
+        position: relative;
         background-color: var(--primary-color);
         margin: 15% auto;
         /* 15% from the top and centered */
         padding: 20px;
         border-radius: 10px;
-        width: 80%;
+        width: 50%;
         /* Could be more or less, depending on screen size */
     }
 
     /* The Close Button */
     .close {
+        position: absolute;
+        top: 0;
+        right: 1rem;
         color: var(--quaternary-color);
         float: right;
-        font-size: 28px;
+        font-size: 55px;
         font-weight: bold;
     }
 
@@ -534,6 +540,21 @@
         cursor: pointer;
     }
 
+    /* Contact form */
+
+    .wpcf7-form input {
+        width: 100%;
+    }
+
+    .client_box {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .client_name_box, .client_contact_box {
+        width: 50%;
+    }
+    
     /* ADDRESS AND MAPS */
 
     .store-address {
