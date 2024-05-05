@@ -1,7 +1,7 @@
 <footer>
     <div class="footer_columns">
         <div class="footer_contact">
-            <img src="" alt="">
+            <img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/Belle%20Robe%20logo.svg" alt="">
             <div class="adress">
                 <p>Belle Robe Brude- & Festkjoler</p>
                 <?php $address = get_field('location');
@@ -36,7 +36,7 @@
             <div class="social_icons">
                 <a href="" class="facebook-link">
                     <div class="facebook">
-                        <i class="fa-brands fa-square-facebook"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
                     </div>
                 </a>
                 <a href="" class="instagram-link">

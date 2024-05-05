@@ -168,9 +168,18 @@ footer {
   justify-content: space-between;
 }
 
+.social_icons {
+  display: flex;
+  gap: 1rem;
+}
+
 .facebook, .instagram, .tiktok {
   height: 100px;
   width: 100px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--tertiary-color);
   color: var(--white);
   font-size: 25px;
