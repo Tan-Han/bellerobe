@@ -118,7 +118,7 @@ nav .cart-btn {
   display: flex;
   align-items: baseline;
   gap: .6rem;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   color: var(--brown);
   /* border: 3px solid var(--tertiary-color); */
@@ -126,10 +126,11 @@ nav .cart-btn {
   padding: .6rem 1rem .4rem 1rem;
   transition: .2s ease-in;
   background-color: var(--primary-color);
+  box-shadow: 3px 3px 5px #5C48337D;
 }
 
 nav .cart-btn i {
-  font-size: 32px;
+  font-size: 28px;
 }
 
 nav .cart-btn:hover {
