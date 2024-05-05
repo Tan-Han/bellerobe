@@ -33,13 +33,3 @@
             <a href="/cart/" class="cart-btn">Kurv<i class='fas fa-shopping-basket'></i></a>
         </div>
     </nav>
-
-    <script>
-        function count_item_in_cart() {
-            $count = 0;
-            foreach(WC() -> cart -> get_cart() as $cart_item_key => $cart_item) {
-                $count++;
-            }
-            return $count;
-        }
-    </script>
