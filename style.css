@@ -161,6 +161,7 @@ nav .cart-btn-outer-box .cart-btn-box .cart-btn:hover {
 /* FOOTER */
 footer {
   background-color: var(--secondary-color);
+  padding: 1.2rem 8rem;
 }
 
 .footer_columns {
