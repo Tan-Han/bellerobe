@@ -457,8 +457,8 @@
     }
 
     .qxCTlb:hover {
-        color: var(--brown);
-        background-color: var(--primary-color);
+        color: var(--brown)!important;
+        background-color: var(--primary-color)!important;
     }
 
     /* OPENING HOURS AND ADDRESS */
@@ -472,10 +472,11 @@
     /* Opening hours */
 
     .opening-hours-box {
-        background-color: var(--secondary-color);
+        background-color: var(--tertiary-color);
         padding: 1.5rem 2rem;
         border-radius: 10px;
         box-shadow: 3px 3px 5px #5C48337D;
+        color: var(--white);
     }
 
     .hours {
@@ -492,11 +493,11 @@
     /* CONTACT INFO */
 
     .contact-info-box {
-        background-color: var(--tertiary-color);
+        background-color: var(--secondary-color);
         padding: 1.5rem 2rem;
         border-radius: 10px;
         box-shadow: 3px 3px 5px #5C48337D;
-        color: var(--white);
+        color: var(--brown);
         display: flex;
         flex-direction: column;
         gap: 1rem;
@@ -518,18 +519,19 @@
     }
 
     .phone a {
-        color: var(--white);
+        color: var(--brown);
     }
 
     #contactBtn {
         width: fit-content;
         font-size: 16px;
-        color: var(--brown);
+        color: var(--white);
+        background-color: var(--quaternary-color);
     }
 
     #contactBtn:hover {
-        background-color: var(--quaternary-color);
-        color: var(--white);
+        background-color: var(--primary-color);
+        color: var(--brown);
     }
 
     /* Contact form */
