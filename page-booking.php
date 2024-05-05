@@ -519,13 +519,13 @@
     }
 
     .phone a {
-        color: var(--brown);
+        color: var(--white);
     }
 
     #contactBtn {
         width: fit-content;
         font-size: 16px;
-        color: var(--white);
+        color: var(--brown);
         background-color: var(--primary-color);
     }
 
