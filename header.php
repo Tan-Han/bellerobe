@@ -25,5 +25,21 @@
             <li><a href="/om_os/">Om os</a></li>
             <li><a href="/booking/">Book tid</a></li>
         </ul>
-        <a href="/cart/" class="cart-btn">Kurv<i class='fas fa-shopping-basket'></i></a>
+        <div class="cart-btn-box">
+            <div class="cart-count">
+                <?php echo count_item_in_cart(); ?>
+
+            </div>
+            <a href="/cart/" class="cart-btn">Kurv<i class='fas fa-shopping-basket'></i></a>
+        </div>
     </nav>
+
+    <script>
+        function count_item_in_cart() {
+            $count = 0;
+            foreach(WC() -> cart -> get_cart() as $cart_item_key => $cart_item) {
+                $count++;
+            }
+            return $count;
+        }
+    </script>

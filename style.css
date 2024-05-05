@@ -424,6 +424,7 @@ nav .cart-btn:hover {
 
 .woocommerce-notices-wrapper .woocommerce-message a:hover {
   background-color: var(--secondary-color);
+  color: var(--brown);
 }
 
 /* Product gallery */
