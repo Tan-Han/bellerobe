@@ -158,6 +158,27 @@ nav .cart-btn-outer-box .cart-btn-box .cart-btn:hover {
   background-color: var(--quinary-color);
 }
 
+/* FOOTER */
+footer {
+  background-color: var(--secondary-color);
+}
+
+.footer_columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.facebook, .instagram, .tiktok {
+  height: 100px;
+  width: 100px;
+  background-color: var(--tertiary-color);
+  color: var(--white);
+  font-size: 25px;
+}
+
+
+
+
 /* PRODUCT CATEGORY PAGES */
 
 .woocommerce {
