@@ -25,7 +25,9 @@
             <li><a href="/om_os/">Om os</a></li>
             <li><a href="/booking/">Book tid</a></li>
         </ul>
+        <div class="cart-btn-box">
 
-        <a href="/cart/" class="cart-btn">Kurv<i class='fas fa-shopping-basket'></i></a>
+            <a href="/cart/" class="cart-btn">Kurv<i class='fas fa-shopping-basket'></i></a>
+        </div>
 
     </nav>
