@@ -401,7 +401,7 @@ nav .cart-btn:hover {
   padding: 0 .5rem;
 }
 
-.woocommerce-notice-wrapper .woocommerce-message {
+.woocommerce-notices-wrapper .woocommerce-message {
   display: flex;
   flex-direction: row-reverse;
   align-items: baseline;
@@ -410,7 +410,7 @@ nav .cart-btn:hover {
   font-family: proxima-nova, sans-serif;
 }
 
-.woocommerce-notice-wrapper .woocommerce-message a {
+.woocommerce-notices-wrapper .woocommerce-message a {
   font-size: 13px;
   font-weight: 700;
   color: var(--white);
@@ -422,7 +422,7 @@ nav .cart-btn:hover {
   width: fit-content;
 }
 
-.woocommerce-notice-wrapper .woocommerce-message a:hover {
+.woocommerce-notices-wrapper .woocommerce-message a:hover {
   background-color: var(--secondary-color);
 }
 
