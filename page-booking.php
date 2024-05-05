@@ -526,7 +526,7 @@
     .close {
         position: absolute;
         top: 0;
-        right: 1rem;
+        right: 1.5rem;
         color: var(--quaternary-color);
         float: right;
         font-size: 55px;
@@ -542,6 +542,10 @@
 
     /* Contact form */
 
+    .contact {
+        padding: 2rem;
+    }
+
     .wpcf7-form {
         display: flex;
         flex-direction: column;
@@ -550,6 +554,14 @@
 
     .wpcf7-form input, .client_message {
         width: 100%;
+        max-width: -moz-available;
+        max-width: -webkit-fill-available;
+        border-radius: 10px;
+        border: 1px solid var(--quaternary-color);
+        padding: .5rem;
+        font-size: 22px;
+        color: var(--brown);
+        background-color: var(--forms);
     }
 
     .client_box {
