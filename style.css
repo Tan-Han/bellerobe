@@ -401,6 +401,31 @@ nav .cart-btn:hover {
   padding: 0 .5rem;
 }
 
+.woocommerce-notice-wrapper .woocommerce-message {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: baseline;
+  gap: .5rem;
+  font-style: italic;
+  font-family: proxima-nova, sans-serif;
+}
+
+.woocommerce-notice-wrapper .woocommerce-message a {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--white);
+  border-radius: 10px;
+  padding: .6rem 1rem .4rem 1rem;
+  transition: .2s ease-in;
+  background-color: var(--quaternary-color);
+  box-shadow: 3px 3px 5px #5C48337D;
+  width: fit-content;
+}
+
+.woocommerce-notice-wrapper .woocommerce-message a:hover {
+  background-color: var(--secondary-color);
+}
+
 /* Product gallery */
 
 .woocommerce-product-gallery {
