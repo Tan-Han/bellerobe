@@ -324,14 +324,20 @@
             <h2 class="booking-headline">Kontakt os</h2>
 
             <div class="contact-info-box">
+
+            <div class="call">
+                <p>Ring til os</p>
                 <div class="phone">
                     <b>Telefon:&nbsp;</b>
                     <a href="tel:<?php the_field("phone_number") ?>">
                         <p><?php the_field("phone_number") ?></p>
                     </a>
                 </div>
+            </div>
 
-                <button id="contactBtn">Send en besked</button>
+                <div class="message">
+                    <p>Send os en mail</p>
+                    <button id="contactBtn">Skriv til os</button>
                 <div id="contactForm" class="contact_form_box">
                     <div class="contact_form">
                         <span class="close">&times;</span>
@@ -341,6 +347,8 @@
                         </div>
                     </div>
                 </div>
+                </div>
+                
             </div>
         </div>
         <div class="address">
@@ -492,8 +500,8 @@
         box-shadow: 3px 3px 5px #5C48337D;
         color: var(--white);
         display: flex;
-        flex-direction: column;
-        gap: 1rem;
+        flex-direction: row;
+        /* gap: 1rem; */
         font-size: 20px;
     }
 
