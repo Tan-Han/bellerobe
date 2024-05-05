@@ -60,10 +60,16 @@ add_action("woocommerce_before_shop_loop", "print_product_filter_widget");
 
 // Add category name on category page
 
-function count_item_in_cart() {
+function count_item_in_cart()
+{
   $count = 0;
-  foreach(WC() -> cart -> get_cart() as $cart_item_key => $cart_item) {
-      $count++;
+  foreach (WC()->cart->get_cart() as $cart_item_key => $cart_item) {
+    $count++;
   }
+
+  if ($count === 0) {
+    echo '<style>#cartCount { display: none; }</style>';
+  }
+
   return $count;
 }

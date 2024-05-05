@@ -114,10 +114,6 @@ nav ul li a:hover {
   text-decoration: underline solid 3px var(--white);
 }
 
-/* nav .cart-btn-outer-box {
-  height: fit-content;
-} */
-
 nav .cart-btn-outer-box .cart-btn-box {
   position: relative;
 }
