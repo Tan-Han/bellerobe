@@ -1,7 +1,8 @@
 <footer>
     <div class="footer_columns">
         <div class="footer_contact">
-            <img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/Belle%20Robe%20logo.svg" alt="">
+            <img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/Belle%20Robe%20logo.svg"
+                alt="">
             <div class="adress">
                 <p>Belle Robe Brude- & Festkjoler</p>
                 <?php $address = get_field('location');
@@ -36,7 +37,7 @@
             <div class="social_icons">
                 <a href="" class="facebook-link">
                     <div class="facebook">
-                    <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
                     </div>
                 </a>
                 <a href="" class="instagram-link">
@@ -53,15 +54,16 @@
             <a href="">Handelsbetingelser</a>
             <a href="">Privatlivspolitik</a>
         </div>
+    </div>
 
-        <div class="footer_copy_rights">
-                    <p>© Belle Robe</p>
-                    <p>CVR: 33827857</p>
-        </div>
+    <div class="footer_copy_rights">
+        <p>© Belle Robe</p>
+        <p>CVR: 33827857</p>
+    </div>
 
-        <div class="footer_payment">
-                    <p>Icons - Payment</p>
-        </div>
+    <div class="footer_payment">
+        <p>Icons - Payment</p>
+    </div>
 </footer>
 
 
