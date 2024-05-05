@@ -321,7 +321,7 @@
         </div>
 
         <div class="contact-info">
-            <h2>Kontakt os</h2>
+            <h2 class="booking-headline">Kontakt os</h2>
 
             <div class="contact-info-box">
                 <div class="phone">
@@ -485,66 +485,16 @@
 
     /* CONTACT INFO */
 
-
-
-    /* Contact form modal */
-
-    /* The Modal (background) */
-    .contact_form_box {
-        display: none;
-        /* Hidden by default */
-        position: fixed;
-        /* Stay in place */
-        z-index: 1;
-        /* Sit on top */
-        left: 0;
-        top: 0;
-        width: 100%;
-        /* Full width */
-        height: 100%;
-        /* Full height */
-        overflow: auto;
-        /* Enable scroll if needed */
-        background-color: rgb(0, 0, 0);
-        /* Fallback color */
-        background-color: rgba(0, 0, 0, 0.4);
-        /* Black w/ opacity */
-    }
-
-    /* Modal Content/Box */
-    .contact_form {
-        position: relative;
-        background-color: var(--primary-color);
-        margin: 8% auto;
-        /* 8% from the top and centered */
-        padding: 20px;
-        border-radius: 10px;
-        width: 50%;
-        /* Could be more or less, depending on screen size */
-    }
-
-    /* The Close Button */
-    .close {
-        position: absolute;
-        top: 0;
-        right: 1.5rem;
-        color: var(--quaternary-color);
-        float: right;
-        font-size: 55px;
-        font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-        color: var(--tertiary-color);
-        text-decoration: none;
-        cursor: pointer;
-    }
-
     /* Contact form */
 
     .contact {
         padding: 2rem;
+    }
+
+    .contact h3 {
+        text-align: center;
+        padding-bottom: 1.5rem;
+        font-size: 35px;
     }
 
     .wpcf7-form {
@@ -614,19 +564,19 @@
         font-weight: 700;
         font-style: normal;
         width: fit-content !important;
-        padding: .5rem 1rem!important;
-        border: none!important;
+        padding: .5rem 1rem !important;
+        border: none !important;
         border-radius: 10px;
         box-shadow: 3px 3px 5px #5C48337D;
         cursor: pointer;
         font-size: 16px;
-        background-color: var(--secondary-color)!important;
+        background-color: var(--secondary-color) !important;
         /* Change cursor to pointer on hover */
     }
 
     .submit_btn:hover {
         color: var(--white);
-        background-color: var(--quaternary-color)!important;
+        background-color: var(--quaternary-color) !important;
         /* Change cursor to pointer on hover */
     }
 
@@ -645,11 +595,65 @@
     }
 
     .wpcf7-response-output {
-        margin: 0!important;
-        border: none!important;
+        margin: 0 !important;
+        border: none !important;
         color: #dc3232;
         text-align: center;
-        font-family: proxima-nova,sans-serif;
+        font-family: proxima-nova, sans-serif;
+    }
+
+    /* Contact form modal (Pop-up contact form)*/
+
+    /* The Modal (background) */
+    .contact_form_box {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+    }
+
+    /* Modal Content/Box */
+    .contact_form {
+        position: relative;
+        background-color: var(--primary-color);
+        margin: 6% auto;
+        /* 6% from the top and centered */
+        padding: 20px;
+        border-radius: 10px;
+        width: 50%;
+        /* Could be more or less, depending on screen size */
+    }
+
+    /* The Close Button */
+    .close {
+        position: absolute;
+        top: 0;
+        right: 1.5rem;
+        color: var(--quaternary-color);
+        float: right;
+        font-size: 55px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: var(--tertiary-color);
+        text-decoration: none;
+        cursor: pointer;
     }
 
     /* ADDRESS AND MAPS */
