@@ -521,6 +521,10 @@
         font-size: 16px;
     }
 
+    #contactBtn:hover {
+        background-color: var(--tertiary-color);
+    }
+
     /* Contact form */
 
     .contact {
