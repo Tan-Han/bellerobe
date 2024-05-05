@@ -552,16 +552,36 @@
         gap: 1rem;
     }
 
-    .wpcf7-form input, .client_message {
+    .wpcf7-form input,
+    .client_message {
         width: 100%;
-        max-width: -moz-available;
-        max-width: -webkit-fill-available;
         border-radius: 10px;
         border: 1px solid var(--quaternary-color);
         padding: .5rem;
         font-size: 22px;
         color: var(--brown);
         background-color: var(--forms);
+    }
+
+    /* For Firefox */
+    @-moz-document url-prefix() {
+
+        .wpcf7-form input,
+        .client_message {
+            max-width: -moz-available;
+        }
+    }
+
+    /* For Chrome and other WebKit-based browsers */
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+        /* Safari and Chrome */
+        @supports (-webkit-appearance:none) {
+
+            .wpcf7-form input,
+            .client_message {
+                max-width: -webkit-fill-available;
+            }
+        }
     }
 
     .client_box {
