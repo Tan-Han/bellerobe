@@ -324,23 +324,23 @@
             <h2 class="booking-headline">Kontakt os</h2>
 
             <div class="contact-info-box">
-                    <p>Ring til os eller send os en mail</p>
-                    <div class="phone">
-                        <b>Telefon:&nbsp;</b>
-                        <a href="tel:<?php the_field("phone_number") ?>">
-                            <p><?php the_field("phone_number") ?></p>
-                        </a>
-                    </div>
-                    <button id="contactBtn">Skriv til os</button>
-                    <div id="contactForm" class="contact_form_box">
-                        <div class="contact_form">
-                            <span class="close">&times;</span>
-                            <div class="contact">
-                                <h3>Send os en besked</h3>
-                                <?php echo do_shortcode('[contact-form-7 id="8a0404d" title="Belle Robe Contact Form"]') ?>
-                            </div>
+                <p>Ring til os eller send os en mail</p>
+                <div class="phone">
+                    <b>Telefon:&nbsp;</b>
+                    <a href="tel:<?php the_field("phone_number") ?>">
+                        <p><?php the_field("phone_number") ?></p>
+                    </a>
+                </div>
+                <button id="contactBtn">Skriv til os</button>
+                <div id="contactForm" class="contact_form_box">
+                    <div class="contact_form">
+                        <span class="close">&times;</span>
+                        <div class="contact">
+                            <h3>Send os en besked</h3>
+                            <?php echo do_shortcode('[contact-form-7 id="8a0404d" title="Belle Robe Contact Form"]') ?>
                         </div>
                     </div>
+                </div>
 
             </div>
         </div>
@@ -499,7 +499,7 @@
 
     .contact-info-box p {
         font-style: italic;
-  font-size: 22px;
+        font-size: 22px;
     }
 
     .phone {
