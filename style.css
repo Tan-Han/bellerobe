@@ -80,6 +80,9 @@ button {
   align-content: center;
   justify-content: center;
   padding: .5rem 0;
+  box-shadow: 0 3px 5px #5C48337D, 0 -3px 5px #5C48337D;
+  position: relative;
+  z-index: 1;
 }
 
 .logo-top .logo {
@@ -208,6 +211,16 @@ nav .cart-btn-outer-box .cart-btn-box .cart-btn:hover {
 
 .woocommerce-ordering {
   padding: .5rem 0 2rem 0;
+}
+
+.woocommerce-ordering .orderby {
+  background-color: var(--forms);
+  border-radius: 10px;
+  border: 1px solid var(--quaternary-color);
+  padding: .5rem .8rem;
+  color: var(--brown);
+  font-family: proxima-nova, sans-serif;
+  width: 200px;
 }
 
 /* Cards */
