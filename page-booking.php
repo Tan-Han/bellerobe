@@ -526,7 +526,7 @@
         width: fit-content;
         font-size: 16px;
         color: var(--white);
-        background-color: var(--quaternary-color);
+        background-color: var(--primary-color);
     }
 
     #contactBtn:hover {
