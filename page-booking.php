@@ -493,7 +493,7 @@
         box-shadow: 3px 3px 5px #5C48337D;
         color: var(--white);
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 1rem;
     }
 
@@ -504,7 +504,12 @@
 
     .phone {
         display: flex;
+        align-items: baseline;
+    }
+
+    .phone b, .phone p {
         font-size: 18px;
+        font-style: normal;
     }
 
     .phone a {
