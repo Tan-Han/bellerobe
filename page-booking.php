@@ -638,6 +638,17 @@
         top: 25%;
     }
 
+    .wpcf7-not-valid-tip {
+        text-align: start;
+    }
+
+    .wpcf7-response-output {
+        margin: 0;
+        border: none;
+        color: #dc3232;
+        text-align: center;
+    }
+
     /* ADDRESS AND MAPS */
 
     .store-address {
