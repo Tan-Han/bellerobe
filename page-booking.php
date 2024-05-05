@@ -325,30 +325,30 @@
 
             <div class="contact-info-box">
 
-            <div class="call">
-                <p>Ring til os</p>
-                <div class="phone">
-                    <b>Telefon:&nbsp;</b>
-                    <a href="tel:<?php the_field("phone_number") ?>">
-                        <p><?php the_field("phone_number") ?></p>
-                    </a>
+                <div class="call">
+                    <p>Ring til os</p>
+                    <div class="phone">
+                        <b>Telefon:&nbsp;</b>
+                        <a href="tel:<?php the_field("phone_number") ?>">
+                            <p><?php the_field("phone_number") ?></p>
+                        </a>
+                    </div>
                 </div>
-            </div>
 
                 <div class="message">
                     <p>Send os en mail</p>
                     <button id="contactBtn">Skriv til os</button>
-                <div id="contactForm" class="contact_form_box">
-                    <div class="contact_form">
-                        <span class="close">&times;</span>
-                        <div class="contact">
-                            <h3>Send os en besked</h3>
-                            <?php echo do_shortcode('[contact-form-7 id="8a0404d" title="Belle Robe Contact Form"]') ?>
+                    <div id="contactForm" class="contact_form_box">
+                        <div class="contact_form">
+                            <span class="close">&times;</span>
+                            <div class="contact">
+                                <h3>Send os en besked</h3>
+                                <?php echo do_shortcode('[contact-form-7 id="8a0404d" title="Belle Robe Contact Form"]') ?>
+                            </div>
                         </div>
                     </div>
                 </div>
-                </div>
-                
+
             </div>
         </div>
         <div class="address">
