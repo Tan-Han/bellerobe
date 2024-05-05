@@ -322,6 +322,7 @@
             <button id="contactForm">Send en besked</button>
             <div class="contact_form_box">
                 <div class="contact_form">
+                    <span class="close">&times;</span>
                     <?php echo do_shortcode('[contact-form-7 id="8a0404d" title="Belle Robe Contact Form"]') ?>
                 </div>
             </div>
@@ -471,7 +472,7 @@
     /* Contact form modal */
 
     /* The Modal (background) */
-    .modal {
+    .contact_form_box {
         display: none;
         /* Hidden by default */
         position: fixed;
@@ -493,7 +494,7 @@
     }
 
     /* Modal Content/Box */
-    .modal-content {
+    .contact_form {
         background-color: #fefefe;
         margin: 15% auto;
         /* 15% from the top and centered */
