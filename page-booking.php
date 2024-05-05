@@ -565,6 +565,7 @@
         font-size: 18px;
         color: var(--brown);
         background-color: var(--forms);
+        font-family: proxima-nova, sans-serif;
     }
 
     /* For Firefox */
@@ -643,10 +644,11 @@
     }
 
     .wpcf7-response-output {
-        margin: 0;
-        border: none;
+        margin: 0!important;
+        border: none!important;
         color: #dc3232;
         text-align: center;
+        font-family: proxima-nova,sans-serif;
     }
 
     /* ADDRESS AND MAPS */
