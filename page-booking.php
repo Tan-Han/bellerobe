@@ -456,6 +456,11 @@
         font-size: 16px;
     }
 
+    .qxCTlb:hover {
+        color: var(--brown);
+        background-color: var(--primary-color);
+    }
+
     /* OPENING HOURS AND ADDRESS */
 
     .store-info {
