@@ -162,11 +162,19 @@ nav .cart-btn-outer-box .cart-btn-box .cart-btn:hover {
 footer {
   background-color: var(--secondary-color);
   padding: 1.2rem 8rem;
+  color: var(--brown);
 }
 
 .footer_columns {
   display: flex;
   justify-content: space-between;
+  align-self: flex-start;
+}
+
+.footer_cat_links, .footer_info_links, .footer_follow {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .social_icons {
