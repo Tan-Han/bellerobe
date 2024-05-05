@@ -336,6 +336,7 @@
                     <div class="contact_form">
                         <span class="close">&times;</span>
                         <div class="contact">
+                            <h3>Send os en besked</h3>
                             <?php echo do_shortcode('[contact-form-7 id="8a0404d" title="Belle Robe Contact Form"]') ?>
                         </div>
                     </div>
