@@ -199,7 +199,10 @@ footer {
   background-color: var(--quaternary-color);
 }
 
-
+.footer_copy_rights, .footer_payment {
+  display: flex;
+  justify-content: center;
+}
 
 
 /* PRODUCT CATEGORY PAGES */
