@@ -80,9 +80,6 @@ button {
   align-content: center;
   justify-content: center;
   padding: .5rem 0;
-  box-shadow: 0 3px 5px #5C48337D, 0 -3px 5px #5C48337D;
-  position: relative;
-  z-index: 1;
 }
 
 .logo-top .logo {
@@ -97,6 +94,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   border: none;
+  box-shadow: 0 3px 5px #5C48337D, 0 -3px 5px #5C48337D;
+  position: relative;
+  z-index: 1;
 }
 
 nav ul {
