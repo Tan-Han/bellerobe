@@ -542,7 +542,13 @@
 
     /* Contact form */
 
-    .wpcf7-form input, textarea {
+    .wpcf7-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .wpcf7-form input, .client_message {
         width: 100%;
     }
 
@@ -556,7 +562,7 @@
         width: 50%;
     }
 
-    .wpcf7-submit {
+    .submit_btn {
         font-family: proxima-nova, sans-serif;
         font-weight: 700;
         font-style: normal;
