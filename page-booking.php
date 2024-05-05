@@ -628,7 +628,15 @@
         /* Change cursor to pointer on hover */
     }
 
-    
+    .wpcf7-form p {
+        position: relative;
+        text-align: center;
+    }
+
+    .wpcf7-spinner {
+        position: absolute;
+        top: 25%;
+    }
 
     /* ADDRESS AND MAPS */
 
