@@ -601,6 +601,12 @@
         gap: 1rem;
     }
 
+    .client_message_box {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
     .submit_btn {
         font-family: proxima-nova, sans-serif;
         font-weight: 700;
