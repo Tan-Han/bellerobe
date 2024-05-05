@@ -349,7 +349,7 @@
 
 <script>
     // Get the modal
-    var modal = document.getElementById("contactFrom");
+    var modal = document.getElementById("contactForm");
 
     // Get the button that opens the modal
     var btn = document.getElementById("contactBtn");
