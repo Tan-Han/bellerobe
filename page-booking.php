@@ -519,10 +519,12 @@
     #contactBtn {
         width: fit-content;
         font-size: 16px;
+        color: var(--brown);
     }
 
     #contactBtn:hover {
-        background-color: var(--tertiary-color);
+        background-color: var(--quaternary-color);
+        color: var(--white);
     }
 
     /* Contact form */
