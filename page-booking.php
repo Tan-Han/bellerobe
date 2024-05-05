@@ -317,6 +317,15 @@
                 <?php endif; ?>
             </div>
         </div>
+        <div class="contact-info">
+            <a href="tel:<?php the_field("phone_number") ?>"><?php the_field("phone_number") ?></a>
+            <button id="contactForm">Send en besked</button>
+            <div class="contact_form_box">
+                <div class="contact_form">
+                    <?php echo do_shortcode('[contact-form-7 id="8a0404d" title="Belle Robe Contact Form"]') ?>
+                </div>
+            </div>
+        </div>
         <div class="address">
             <h2 class="booking-headline">Adresse</h2>
             <div class="address-box info-box">
@@ -457,7 +466,59 @@
         padding: .5rem 0;
     }
 
-    /* Address and Maps */
+    /* CONTACT INFO */
+
+    /* Contact form modal */
+
+    /* The Modal (background) */
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+    }
+
+    /* Modal Content/Box */
+    .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        /* 15% from the top and centered */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        /* Could be more or less, depending on screen size */
+    }
+
+    /* The Close Button */
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* ADDRESS AND MAPS */
 
     .store-address {
         padding-bottom: 1.5rem;
@@ -465,10 +526,9 @@
 
     .maps {
         border-radius: 10px;
-        border: 1px solid var(--quaternary-color)!important;
+        border: 1px solid var(--quaternary-color) !important;
         box-shadow: 3px 3px 5px #5C48337D;
     }
-
 </style>
 
 <?php get_footer() ?>
