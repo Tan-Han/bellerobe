@@ -514,8 +514,8 @@
     .contact_form {
         position: relative;
         background-color: var(--primary-color);
-        margin: 15% auto;
-        /* 15% from the top and centered */
+        margin: 8% auto;
+        /* 8% from the top and centered */
         padding: 20px;
         border-radius: 10px;
         width: 50%;
@@ -552,13 +552,17 @@
         gap: 1rem;
     }
 
+    .wpcf7-form br {
+        display: none;
+    }
+
     .wpcf7-form input,
     .client_message {
         width: 100%;
         border-radius: 10px;
         border: 1px solid var(--quaternary-color);
         padding: .5rem;
-        font-size: 22px;
+        font-size: 18px;
         color: var(--brown);
         background-color: var(--forms);
     }
@@ -599,13 +603,23 @@
         font-weight: 700;
         font-style: normal;
         width: fit-content !important;
-        padding: .5rem 1rem;
-        border: none;
+        padding: .5rem 1rem!important;
+        border: none!important;
         border-radius: 10px;
         box-shadow: 3px 3px 5px #5C48337D;
         cursor: pointer;
+        font-size: 16px;
+        background-color: var(--secondary-color)!important;
         /* Change cursor to pointer on hover */
     }
+
+    .submit_btn:hover {
+        color: var(--white);
+        background-color: var(--quaternary-color)!important;
+        /* Change cursor to pointer on hover */
+    }
+
+    
 
     /* ADDRESS AND MAPS */
 
