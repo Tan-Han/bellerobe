@@ -28,7 +28,6 @@
         <div class="cart-btn-box">
             <div class="cart-count">
                 <?php echo count_item_in_cart(); ?>
-
             </div>
             <a href="/cart/" class="cart-btn">Kurv<i class='fas fa-shopping-basket'></i></a>
         </div>
