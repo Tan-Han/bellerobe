@@ -114,15 +114,15 @@ nav ul li a:hover {
   text-decoration: underline solid 3px var(--white);
 }
 
-nav .cart-btn--outer-box {
+nav .cart-btn-outer-box {
   height: fit-content;
 }
 
-nav .cart-btn--outer-box .cart-btn-box {
+nav .cart-btn-outer-box .cart-btn-box {
   position: relative;
 }
 
-nav .cart-btn--outer-box .cart-btn-box #cartCount {
+nav .cart-btn-outer-box .cart-btn-box #cartCount {
   position: absolute;
   right: -0.8rem;
   top: -0.8rem;
@@ -134,7 +134,7 @@ nav .cart-btn--outer-box .cart-btn-box #cartCount {
   font-size: 14px;
 }
 
-nav .cart-btn--outer-box .cart-btn-box .cart-btn {
+nav .cart-btn-outer-box .cart-btn-box .cart-btn {
   display: flex;
   flex-direction: row-reverse;
   align-items: baseline;
@@ -150,11 +150,11 @@ nav .cart-btn--outer-box .cart-btn-box .cart-btn {
   box-shadow: 3px 3px 5px #5C48337D;
 }
 
-nav .cart-btn--outer-box .cart-btn-box .cart-btn i {
+nav .cart-btn-outer-box .cart-btn-box .cart-btn i {
   font-size: 28px;
 }
 
-nav .cart-btn--outer-box .cart-btn-box .cart-btn:hover {
+nav .cart-btn-outer-box .cart-btn-box .cart-btn:hover {
   /* border-color: var(--white); */
   background-color: var(--quinary-color);
 }
