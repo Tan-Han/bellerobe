@@ -596,6 +596,9 @@
     .client_name_box,
     .client_contact_box {
         width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
     }
 
     .submit_btn {
