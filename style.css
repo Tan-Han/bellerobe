@@ -842,8 +842,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* CHECK OUT PAGE */
 
-.wp-block-woocommerce-checkout,
-.wp-block-woocommerce-checkout span {
+.wp-block-woocommerce-checkout {
   color: var(--brown) !important;
 }
 
@@ -907,6 +906,10 @@ input[type=number]::-webkit-outer-spin-button {
   color: var(--white) !important;
 }
 
+.wp-block-woocommerce-checkout-order-summary-block span {
+  color: var(--brown) !important;
+}
+
 .wc-block-components-panel__button {
   box-shadow: none !important;
 }
@@ -917,5 +920,18 @@ input[type=number]::-webkit-outer-spin-button {
 
 .wp-block-woocommerce-checkout em {
   font-family: proxima-nova, sans-serif !important;
+  color: var(--brown);
+}
+
+.wc-block-components-order-summary-item img {
+  border-radius: 10px;
+}
+
+.wc-block-components-order-summary-item .wc-block-components-order-summary-item__quantity {
+  background: var(--primary-color);
+  box-shadow: 0 0 0 2px var(--primary-color);
+  border-radius: 10px;
+  border: 2px solid var(--secondary-color);
+  padding: 0 .1rem;
   color: var(--brown);
 }
