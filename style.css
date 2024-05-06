@@ -188,8 +188,8 @@ footer {
   gap: 1rem;
 }
 
-.footer_cat_links:hover,
-.footer_info_links:hover {
+.footer_cat_links a:hover,
+.footer_info_links a:hover {
   text-decoration: 1px solid underline var(--brown);
 }
 
