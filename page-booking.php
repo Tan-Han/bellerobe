@@ -304,7 +304,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="opening-hours">
             <h2 class="booking-headline">Åbningstider</h2>
             <div class="opening-hours-box info-box">
@@ -508,7 +508,7 @@
 
     .contact-info-box p {
         font-style: italic;
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .phone {
