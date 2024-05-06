@@ -902,6 +902,9 @@ input[type=number]::-webkit-outer-spin-button {
   font-family: proxima-nova, sans-serif;
   color: var(--brown);
   background-color: var(--forms);
+}
+
+.wc-block-checkout__add-note textarea:focus {
   box-shadow: none!important;
 }
 
