@@ -897,7 +897,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .wc-block-components-radio-control .wc-block-components-radio-control__input:checked::before {
-  background: var(--quaternary-color);
+  background: var(--quaternary-color) !important;
 }
 
 .wc-block-components-checkout-step__container {
