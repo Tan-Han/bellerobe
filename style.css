@@ -167,6 +167,7 @@ footer {
   background-size: cover;
   padding: 3rem 8rem;
   color: var(--brown);
+  box-shadow: 0 -3px 5px #5C48337D;
 }
 
 .footer_columns {
