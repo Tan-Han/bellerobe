@@ -11,7 +11,7 @@
       src="<?php the_field("hero_on_frontpage") ?>?autoplay=1&controls=0&mute=1&disablekb=1&loop=1" title="YouTube video player" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <!-- Har slettet div, da den var unødvendig og lavet den om til URL i ACF. Jeg har tilføjet lidt kode efter linket for at autoplay, loop og fjerne YT controls-->
+    <!-- Har slettet div, da den var unødvendig og lavet den om til URL i ACF. Jeg har tilføjet lidt kode efter linket for at autoplay, loop og fjerne YT controls -->
 
   </section>
   <!-- coding for the second section on the frontpage with the introduction text -->
@@ -46,6 +46,7 @@
   <!-- coding for the fourth section on the frontpage with the informations of opening hours and map -->
   <div class="frontpage_information">
 
+    <!-- DISSE BØR IKKE VÆRE SECTIONS - MEN DIV I STEDET :) -->
     <section class="section frontpage_opening_hours_and_booking">
     </section>
 
@@ -95,8 +96,12 @@
     /* 100% vidde på videoen, så den fylder fra kant til kant */
   }
 
+  .frontpage_introduction, .frontpage_categories {
+    padding: 0 8rem;
+  }
+
   .section {
-    padding: 20px 0px;
+    padding: 20px 0px; /* Brug gerne rem i stedet for pixels, da det er bedre i forhold til responsive, når det kommer til padding og margins */
   }
 
   .frontpage_cards {}
