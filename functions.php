@@ -73,30 +73,3 @@ function count_item_in_cart()
 
   return $count;
 }
-
-// Making it possible to use ACF in footer on all pages
-
-if (!defined('ABSPATH'))
-  exit;
-
-class My_ACF_Location_Footer extends ACF_Location
-{
-
-  public function initialize()
-  {
-    $this->name = 'footer';
-    $this->label = __("Footer", 'acf');
-    $this->category = 'page';
-  }
-}
-
-add_action('acf/init', 'my_acf_init_location_types');
-function my_acf_init_location_types()
-{
-
-  // Check function exists, then include and register the custom location type class.
-  if (function_exists('acf_register_location_type')) {
-    include ('/footer.php');
-    acf_register_location_type('My_ACF_Location_Footer');
-  }
-}

@@ -5,17 +5,14 @@
                 alt="">
             <div class="adress">
                 <p>Belle Robe Brude- & Festkjoler</p>
-                <?php $address = get_field('location');
-                if ($address): ?>
-                    <p class="store-address"><?php echo $address['address'] ?></p>
-                <?php endif ?>
+                <p>Smedegade 13, 6800 Varde</p>
             </div>
             <div class="contact">
-                <a href="tel:<?php the_field("phone_number") ?>">
-                    <p><?php the_field("phone_number") ?></p>
-                </a>
-                <a href="mailto:<?php the_field("mail") ?>">
-                    <p><?php the_field("mail") ?></p>
+                <p><a href="tel:21365346">
+                    +45 21 36 56 46
+                </a></p>
+                <a href="mailto:info@bellerobe.dk">
+                    <p>info@bellerobe.dk</p>
                 </a>
             </div>
         </div>
@@ -65,8 +62,6 @@
         <p>Icons - Payment</p>
     </div>
 </footer>
-
-
 
 <?php wp_footer() ?>
 
