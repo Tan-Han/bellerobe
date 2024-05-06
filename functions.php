@@ -87,7 +87,6 @@ class My_ACF_Location_Footer extends ACF_Location
     $this->name = 'footer';
     $this->label = __("Footer", 'acf');
     $this->category = 'page';
-    $this->object_type = 'footer';
   }
 }
 
