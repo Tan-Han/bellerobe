@@ -97,7 +97,7 @@ function my_acf_init_location_types()
 
   // Check function exists, then include and register the custom location type class.
   if (function_exists('acf_register_location_type')) {
-    include_once ('/footer.php');
+    include ('/footer.php');
     acf_register_location_type('My_ACF_Location_Footer');
   }
 }
