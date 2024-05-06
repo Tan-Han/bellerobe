@@ -899,3 +899,9 @@ input[type=number]::-webkit-outer-spin-button {
   color: var(--white);
   width: fit-content;
 }
+
+.wc-block-components-checkout-place-order-button span {
+  font-weight: 700;
+  font-family: proxima-nova, sans-serif;
+  font-size: 16px;
+}
