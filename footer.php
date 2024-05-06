@@ -27,6 +27,8 @@
         <div class="footer_info_links">
             <a href="/booking/">Book tid</a>
             <a href="/om_os/">Om os</a>
+            <a href="">Handelsbetingelser</a>
+            <a href="">Privatlivspolitik</a>
         </div>
 
         <div class="footer_follow">
@@ -48,8 +50,7 @@
                     </div>
                 </a>
             </div>
-            <a href="">Handelsbetingelser</a>
-            <a href="">Privatlivspolitik</a>
+
         </div>
     </div>
 
