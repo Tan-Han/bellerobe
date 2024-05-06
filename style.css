@@ -161,14 +161,19 @@ nav .cart-btn-outer-box .cart-btn-box .cart-btn:hover {
 /* FOOTER */
 footer {
   background-color: var(--secondary-color);
-  padding: 1.2rem 8rem;
+  padding: 3rem 8rem;
   color: var(--brown);
 }
 
 .footer_columns {
   display: flex;
   justify-content: space-between;
-  align-self: flex-start;
+}
+
+.footer_contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .footer_cat_links, .footer_info_links, .footer_follow {
@@ -183,15 +188,15 @@ footer {
 }
 
 .facebook, .instagram, .tiktok {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--tertiary-color);
   color: var(--white);
-  font-size: 35px;
+  font-size: 40px;
   box-shadow: 3px 3px 5px #5C48337D;
 }
 
