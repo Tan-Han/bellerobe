@@ -896,6 +896,14 @@ input[type=number]::-webkit-outer-spin-button {
   fill: var(--quaternary-color);
 }
 
+.wc-block-components-radio-control .wc-block-components-radio-control__input:checked::before {
+  background: var(--quaternary-color);
+}
+
+.wc-block-components-checkout-step__container {
+  font-family: proxima-nova, sans-serif !important;
+}
+
 .wc-block-checkout__add-note textarea {
   border-radius: 10px;
   border: 1px solid var(--quaternary-color);
@@ -905,7 +913,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .wc-block-checkout__add-note textarea:focus {
-  box-shadow: none!important;
+  box-shadow: none !important;
 }
 
 .wc-block-components-checkout-place-order-button {
@@ -1000,15 +1008,15 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .wc-block-components-totals-coupon__form input {
-  border-radius: 10px!important;
-  border: 1px solid var(--quaternary-color)!important;
-  background-color: var(--forms)!important;
-  box-shadow: none!important;
+  border-radius: 10px !important;
+  border: 1px solid var(--quaternary-color) !important;
+  background-color: var(--forms) !important;
+  box-shadow: none !important;
 }
 
 .wc-block-components-totals-coupon__form label {
-  font-family: proxima-nova, sans-serif!important;
-  color: var(--brown)!important;
+  font-family: proxima-nova, sans-serif !important;
+  color: var(--brown) !important;
 }
 
 .wc-block-components-totals-coupon__form {
@@ -1030,5 +1038,5 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .wc-block-components-totals-coupon__form button:hover span {
-  color: var(--white)!important;
+  color: var(--white) !important;
 }
