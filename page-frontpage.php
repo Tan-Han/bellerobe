@@ -7,7 +7,12 @@
   <!-- coding for the first section on the frontpage with the hero video/picture -->
   <section class="frontpage_hero">
     <h1><?php the_field("hero_text_on_frontpage") ?></h1>
-    <iframe src="<?php the_field("hero_on_frontpage") ?>?autoplay=1&controls=0&loop=1&playlist=<?php the_field("hero_video_id") ?>&showinfo=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> <!-- Har slettet div, da den var unødvendig og lavet den om til URL i ACF. Jeg har tilføjet lidt kode efter linket for at autoplay, loop og fjerne YT controls-->
+    <iframe
+      src="<?php the_field("hero_on_frontpage") ?>?autoplay=1&controls=0&loop=1&playlist=<?php the_field("hero_video_id") ?>&showinfo=0"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- Har slettet div, da den var unødvendig og lavet den om til URL i ACF. Jeg har tilføjet lidt kode efter linket for at autoplay, loop og fjerne YT controls-->
 
   </section>
   <!-- coding for the second section on the frontpage with the introduction text -->
@@ -56,7 +61,7 @@
 <!-- this is the styling for the frontpage -->
 <style>
   main {
-    padding: 0 0!important;
+    padding: 0 !important;
     /* Har sat padding til 0 for at kunne sætte videoen helt ud til kanten (!important for at den overwriter den anden padding)*/
   }
 
@@ -78,8 +83,8 @@
     transform: translate(-50%, -50%);
     /* For at placere tekst midt i */
     text-shadow: 3px 3px 5px var(--brown);
-  color: var(--white);
-  font-size: 55px;
+    color: var(--white);
+    font-size: 55px;
   }
 
   .frontpage_hero iframe {
