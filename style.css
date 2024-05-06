@@ -198,6 +198,10 @@ footer {
   text-decoration: 1px solid underline var(--brown);
 }
 
+.footeR_follow p {
+  font-weight: 700;
+}
+
 .social_icons {
   display: flex;
   gap: 1rem;
