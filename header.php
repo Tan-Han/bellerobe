@@ -11,11 +11,8 @@
 
 <body>
     <div class="logo-top">
-        <svg class="logo" xmlns="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/Bellerobe_logo.svg"></svg>
-        
-
-        <!-- <img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/Bellerobe_logo.svg" alt=""
-            class="logo"> -->
+        <img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/Bellerobe_logo.svg" alt=""
+            class="logo">
     </div>
     <nav>
         <ul>
