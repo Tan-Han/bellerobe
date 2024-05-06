@@ -8,9 +8,7 @@
   <section class="frontpage_hero">
     <h1><?php the_field("hero_text_on_frontpage") ?></h1>
     <iframe
-      src="<?php the_field("hero_on_frontpage") ?>?autoplay=1&controls=0&disablekb=1&loop=1" title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      src="<?php the_field("hero_on_frontpage") ?>?autoplay=1&controls=0&disablekb=1&loop=1" title="YouTube video player" frameborder="0">
     <!-- Har slettet div, da den var unødvendig og lavet den om til URL i ACF. Jeg har tilføjet lidt kode efter linket for at autoplay, loop og fjerne YT controls-->
 
   </section>
