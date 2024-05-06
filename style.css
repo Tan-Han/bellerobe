@@ -906,6 +906,14 @@ input[type=number]::-webkit-outer-spin-button {
   color: var(--white) !important;
 }
 
+.wc-block-components-checkout-place-order-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.wc-block-components-checkout-place-order-button:hover span {
+  color: var(--brown) !important;
+}
+
 .wp-block-woocommerce-checkout-order-summary-block span {
   color: var(--brown) !important;
 }
@@ -915,14 +923,14 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .wc-block-components-panel__button-icon {
-  fill: var(--brown)!important;
-  top: 40%!important;
-  transform: translateY(-60%)!important;
+  fill: var(--brown) !important;
+  top: 40% !important;
+  transform: translateY(-60%) !important;
 }
 
 .wc-block-components-panel__button span {
-  font-size: 18px!important;
-  font-weight: 700!important;
+  font-size: 18px !important;
+  font-weight: 700 !important;
 }
 
 .wp-block-woocommerce-checkout em {
@@ -931,23 +939,67 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .wc-block-components-order-summary-item__image {
-  width: 70px!important;
+  width: 70px !important;
 }
 
 .wc-block-components-order-summary-item img {
   border-radius: 10px;
-  max-width: 70px!important;
-  width: 70px!important;
+  max-width: 70px !important;
+  width: 70px !important;
 }
 
 .wc-block-components-order-summary-item .wc-block-components-order-summary-item__quantity {
-  background: var(--primary-color)!important;
-  box-shadow: 0 0 0 2px var(--primary-color)!important;
-  border-radius: 10px!important;
-  border: 2px solid var(--secondary-color)!important;
-  padding: 0 .1rem!important;
+  background: var(--primary-color) !important;
+  box-shadow: 0 0 0 2px var(--primary-color) !important;
+  border-radius: 10px !important;
+  border: 2px solid var(--secondary-color) !important;
+  padding: 0 .1rem !important;
 }
 
-.wc-block-components-order-summary-item__description, .wc-block-components-order-summary-item__total-price {
-  font-size: 16px!important;
+.wc-block-components-order-summary-item .wc-block-components-order-summary-item__quantity span {
+  font-weight: 700 !important;
+}
+
+.wc-block-components-order-summary-item__description,
+.wc-block-components-order-summary-item__total-price {
+  font-size: 16px !important;
+}
+
+.wc-block-components-totals-coupon-link {
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  padding: .5rem 1rem;
+  box-shadow: 3px 3px 5px #5C48337D;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.wc-block-components-totals-coupon-link:hover {
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
+
+.wc-block-components-totals-coupon__form input {
+  border-radius: 10px;
+  border: 1px solid var(--quaternary-color);
+  background-color: var(--forms);
+}
+
+.wc-block-components-totals-coupon__form label {
+  font-family: proxima-nova, sans-serif;
+  color: var(--brown);
+}
+
+.wc-block-components-totals-coupon__form {
+  gap: .5rem;
+}
+
+.wc-block-components-totals-coupon__form button {
+  background-color: var(--secondary-color);
+  margin: 0 !important;
+  padding: .5rem 1rem !important;
+}
+
+.wc-block-components-totals-coupon__form button span {
+  font-weight: 700 !important;
 }
