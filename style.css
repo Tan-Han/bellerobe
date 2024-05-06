@@ -846,6 +846,8 @@ input[type=number]::-webkit-outer-spin-button {
   color: var(--brown) !important;
 }
 
+/* Checkout form */
+
 .wp-block-woocommerce-checkout h2 {
   font-size: 26px !important;
 }
@@ -894,6 +896,14 @@ input[type=number]::-webkit-outer-spin-button {
   fill: var(--quaternary-color);
 }
 
+.wc-block-checkout__add-note textarea {
+  border-radius: 10px;
+  border: 1px solid var(--quaternary-color);
+  font-family: proxima-nova, sans-serif;
+  color: var(--brown);
+  background-color: var(--forms);
+}
+
 .wc-block-components-checkout-place-order-button {
   background-color: var(--quaternary-color);
   width: fit-content !important;
@@ -913,6 +923,8 @@ input[type=number]::-webkit-outer-spin-button {
 .wc-block-components-checkout-place-order-button:hover span {
   color: var(--brown) !important;
 }
+
+/* Checkout summary */
 
 .wp-block-woocommerce-checkout-order-summary-block span {
   color: var(--brown) !important;
@@ -1003,4 +1015,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 .wc-block-components-totals-coupon__form button span {
   font-weight: 700 !important;
+}
+
+.wc-block-components-totals-coupon__form button:hover {
+  background-color: var(--quaternary-color);
+}
+
+.wc-block-components-totals-coupon__form button:hover span {
+  color: var(--white)!important;
 }
