@@ -3,11 +3,11 @@
         <div class="footer_contact">
             <img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/Belle%20Robe%20logo.svg"
                 alt="">
-            <div class="adress">
+            <div class="address_footer">
                 <p>Belle Robe Brude- & Festkjoler</p>
                 <p>Smedegade 13, 6800 Varde</p>
             </div>
-            <div class="contact">
+            <div class="contact_footer">
                 <p><a href="tel:21365346">
                     +45 21 36 56 46
                 </a></p>
