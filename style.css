@@ -168,6 +168,8 @@ footer {
   padding: 3rem 8rem;
   color: var(--brown);
   box-shadow: 0 -3px 5px #5C48337D;
+  position: relative;
+  z-index: 1;
 }
 
 .footer_columns {
