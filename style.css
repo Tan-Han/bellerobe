@@ -842,7 +842,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* CHECK OUT PAGE */
 
-.wp-block-woocommerce-checkout {
+.wp-block-woocommerce-checkout, .wp-block-woocommerce-checkout span {
   color: var(--brown) !important;
 }
 
