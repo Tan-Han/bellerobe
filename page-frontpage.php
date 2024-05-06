@@ -7,7 +7,7 @@
   <!-- coding for the first section on the frontpage with the hero video/picture -->
   <section class="frontpage_hero">
     <h1><?php the_field("hero_text_on_frontpage") ?></h1>
-    <iframe src="<?php the_field("hero_on_frontpage") ?>?&autoplay=1&mute=1&controls=0&loop=1" frameborder="0"></iframe> <!-- Har slettet div, da den var unødvendig og lavet den om til URL i ACF. Jeg har tilføjet lidt kode efter linket for at autoplay, loop og fjerne YT controls-->
+    <iframe src="<?php the_field("hero_on_frontpage") ?>?autoplay=1&controls=0&loop=1&playlist=<?php the_field("hero_video_id") ?>&amp;showinfo=0" frameborder="0"></iframe> <!-- Har slettet div, da den var unødvendig og lavet den om til URL i ACF. Jeg har tilføjet lidt kode efter linket for at autoplay, loop og fjerne YT controls-->
   </section>
 
   <!-- coding for the second section on the frontpage with the introduction text -->
