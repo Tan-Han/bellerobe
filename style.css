@@ -195,7 +195,7 @@ footer {
   gap: 1rem;
 }
 
-.footer_contact a:hover, 
+.footer_contact a:hover,
 .footer_cat_links a:hover,
 .footer_info_links a:hover {
   text-decoration: 1px solid underline var(--brown);
@@ -842,13 +842,13 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* CHECK OUT PAGE */
 
-.wc-block-checkout__form input {
-  background-color: var(--forms);
-  border: 1px solid var(--brown);
-  border-radius: 10px;
-  font-family: proxima-nova, sans-serif;
+.wc-block-checkout__form fieldset input {
+  background-color: var(--forms) !important;
+  border: 1px solid var(--brown) !important;
+  border-radius: 10px !important;
+  font-family: proxima-nova, sans-serif !important;
 }
 
 .wc-block-checkout__form label {
-  font-family: proxima-nova, sans-serif;
+  font-family: proxima-nova, sans-serif !important;
 }
