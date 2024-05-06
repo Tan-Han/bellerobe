@@ -954,6 +954,10 @@ input[type=number]::-webkit-outer-spin-button {
   color: var(--brown);
 }
 
+.wc-block-components-totals-item__description {
+  font-family: proxima-nova, sans-serif !important;
+}
+
 .wc-block-components-order-summary-item__image {
   width: 70px !important;
 }
