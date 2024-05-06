@@ -928,10 +928,9 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .wc-block-components-order-summary-item .wc-block-components-order-summary-item__quantity {
-  background: var(--primary-color);
-  box-shadow: 0 0 0 2px var(--primary-color);
-  border-radius: 10px;
-  border: 2px solid var(--secondary-color);
-  padding: 0 .1rem;
-  color: var(--brown);
+  background: var(--primary-color)!important;
+  box-shadow: 0 0 0 2px var(--primary-color)!important;
+  border-radius: 10px!important;
+  border: 2px solid var(--secondary-color)!important;
+  padding: 0 .1rem!important;
 }
