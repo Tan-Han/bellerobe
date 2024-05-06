@@ -1,16 +1,16 @@
 <footer>
     <div class="footer_columns">
         <div class="footer_contact">
-            <img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/bellerobe_u_cirkel.svg"
-                alt="" class="footer_logo">
+            <img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/bellerobe_u_cirkel.svg" alt=""
+                class="footer_logo">
             <div class="address_footer">
                 <p>Belle Robe Brude- & Festkjoler</p>
                 <p>Smedegade 13, 6800 Varde</p>
             </div>
             <div class="contact_footer">
                 <p><a href="tel:21365346">
-                    +45 21 36 56 46
-                </a></p>
+                        +45 21 36 56 46
+                    </a></p>
                 <a href="mailto:info@bellerobe.dk">
                     <p>info@bellerobe.dk</p>
                 </a>
@@ -60,7 +60,11 @@
     </div>
 
     <div class="footer_payment">
-        <p>Icons - Payment</p>
+        <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-cc-mastercard"></i>
+        <i class="fa-brands fa-cc-discover"></i>
+        <i class="fa-brands fa-cc-diners-club"></i>
+        <i class="fa-brands fa-cc-jcb"></i>
     </div>
 </footer>
 

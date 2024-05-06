@@ -218,9 +218,6 @@ footer {
 .footer_payment {
   text-align: center;
   padding-top: 1rem;
-}
-
-.footer_copy_rights {
   display: flex;
   gap: 1rem;
   justify-content: center;
