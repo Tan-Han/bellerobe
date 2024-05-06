@@ -2,7 +2,7 @@
     <div class="footer_columns">
         <div class="footer_contact">
             <img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/Belle%20Robe%20logo.svg"
-                alt="">
+                alt="" class="footer_logo">
             <div class="address_footer">
                 <p>Belle Robe Brude- & Festkjoler</p>
                 <p>Smedegade 13, 6800 Varde</p>
