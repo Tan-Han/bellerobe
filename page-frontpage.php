@@ -55,7 +55,7 @@
 
 <!-- this is the styling for the frontpage -->
 <style>
-  .main {
+  main {
     padding: 0 0!important;
     /* Har sat padding til 0 for at kunne sætte videoen helt ud til kanten (!important for at den overwriter den anden padding)*/
   }
