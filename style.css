@@ -839,3 +839,16 @@ input[type=number]::-webkit-outer-spin-button {
 .related ul li h2 {
   font-size: 28px;
 }
+
+/* CHECK OUT PAGE */
+
+.wc-block-checkout__form input {
+  background-color: var(--forms);
+  border: 1px solid var(--brown);
+  border-radius: 10px;
+  font-family: proxima-nova, sans-serif;
+}
+
+.wc-block-checkout__form label {
+  font-family: proxima-nova, sans-serif;
+}
