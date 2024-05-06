@@ -23,20 +23,21 @@
   <h2><?php the_field("introduction_to_cards_on_frontpage") ?></h2>
   
   <div>
-    
-    <a href="/product-category/brudekjoler/">Brudekjoler</a>
-  </div>
+    <div class="frontpage_cards">
+      <a href="/product-category/brudekjoler/">Brudekjoler</a>
+    </div>
 
-  <div>
-    <a href="/product-category/konfirmationskjoler/">Konfirmationskjoler</a>
-  </div>
+    <div class="frontpage_cards">
+      <a href="/product-category/gallakjoler/">Galla & festkjoler</a>
+    </div>
 
-  <div>
-    <a href="/product-category/gallakjoler/">Galla & festkjoler</a>
-  </div>
+    <div class="frontpage_cards">
+      <a href="/product-category/konfirmationskjoler/">Konfirmationskjoler</a>
+    </div>
 
-  <div>
-    <a href="/product-category/sko/">Sko & tilbehør</a>
+    <div class="frontpage_cards">
+      <a href="/product-category/sko/">Sko & tilbehør</a>
+    </div>
   </div>
 </section>
 
@@ -64,6 +65,10 @@
 
   .section {
     padding: 20px 0px;
+  }
+
+  .frontpage_cards {
+    
   }
 
 </style>
