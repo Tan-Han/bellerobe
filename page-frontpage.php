@@ -5,11 +5,11 @@
 <main>
 
 <!-- coding for the first section on the frontpage with the hero video/picture -->
-<section class="section frontpage_hero">
+<section class="frontpage_hero">
   <h1><?php the_field("hero_text_on_frontpage") ?></h1>
-  <?php the_field("hero_on_frontpage") 
-  
-  ?>
+  <div class="hero">
+    <?php the_field("hero_on_frontpage") ?>
+  </div>
 </section>
 
 <!-- coding for the second section on the frontpage with the introduction text -->
@@ -40,6 +40,12 @@
 
 <!-- this is the styling for the frontpage -->
 <style>
+  .hero {
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+  }
+
   .section {
     padding: 20px 0px;
   }
