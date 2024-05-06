@@ -58,14 +58,14 @@ a {
 }
 
 button {
-  font-family: proxima-nova, sans-serif!important;
-  font-weight: 700!important;
-  font-style: normal!important;
-  padding: .5rem 1rem!important;
-  border: none!important;
-  border-radius: 10px!important;
-  box-shadow: 3px 3px 5px #5C48337D!important;
-  cursor: pointer!important;
+  font-family: proxima-nova, sans-serif !important;
+  font-weight: 700 !important;
+  font-style: normal !important;
+  padding: .5rem 1rem !important;
+  border: none !important;
+  border-radius: 10px !important;
+  box-shadow: 3px 3px 5px #5C48337D !important;
+  cursor: pointer !important;
   /* Change cursor to pointer on hover */
 }
 
@@ -869,7 +869,9 @@ input[type=number]::-webkit-outer-spin-button {
   box-shadow: 3px 5px #5C48337D !important;
 }
 
-.components-form-token-field__suggestion:hover, .components-form-token-field__suggestion:active, .components-form-token-field__suggestion:focus {
+.components-form-token-field__suggestion:hover,
+.components-form-token-field__suggestion:active,
+.components-form-token-field__suggestion:focus {
   background-color: var(--secondary-color) !important;
   color: var(--brown) !important;
 }
