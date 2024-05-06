@@ -59,13 +59,13 @@ a {
 
 button {
   font-family: proxima-nova, sans-serif !important;
-  font-weight: 700 !important;
-  font-style: normal !important;
-  padding: .5rem 1rem !important;
-  border: none !important;
-  border-radius: 10px !important;
-  box-shadow: 3px 3px 5px #5C48337D !important;
-  cursor: pointer !important;
+  font-weight: 700;
+  font-style: normal;
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #5C48337D;
+  cursor: pointer;
   /* Change cursor to pointer on hover */
 }
 
@@ -897,11 +897,19 @@ input[type=number]::-webkit-outer-spin-button {
 .wc-block-components-checkout-place-order-button {
   background-color: var(--quaternary-color);
   color: var(--white);
-  width: fit-content;
+  width: fit-content!important;
 }
 
 .wc-block-components-checkout-place-order-button span {
   font-weight: 700;
   font-family: proxima-nova, sans-serif;
   font-size: 16px;
+}
+
+.wc-block-components-panel__button {
+  box-shadow: none!important;
+}
+
+.wc-block-components-panel__button-icon {
+  fill: var(--brown);
 }

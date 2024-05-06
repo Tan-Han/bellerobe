@@ -10,10 +10,12 @@
 </head>
 
 <body>
-
     <div class="logo-top">
-        <img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/Bellerobe_logo.svg" alt=""
-            class="logo">
+        <svg class="logo" xmlns="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/Bellerobe_logo.svg"></svg>
+        
+
+        <!-- <img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/Bellerobe_logo.svg" alt=""
+            class="logo"> -->
     </div>
     <nav>
         <ul>
