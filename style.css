@@ -854,7 +854,7 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 16px !important;
 }
 
-.wc-block-checkout__form fieldset input {
+.wc-block-checkout__form fieldset input, .components-form-token-field__suggestions-list {
   background-color: var(--forms) !important;
   background: var(--forms) !important;
   border: 1px solid var(--brown) !important;
