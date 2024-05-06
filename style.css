@@ -842,6 +842,18 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* CHECK OUT PAGE */
 
+.wp-block-woocommerce-checkout {
+  color: var(--brown)!important;
+}
+
+.wp-block-woocommerce-checkout h2 {
+  font-size: 26px!important;
+}
+
+.wp-block-woocommerce-checkout .wc-block-components-checkout-step__description {
+  font-size: 16px!important;
+}
+
 .wc-block-checkout__form fieldset input {
   background-color: var(--forms) !important;
   border: 1px solid var(--brown) !important;
@@ -851,4 +863,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 .wc-block-checkout__form label {
   font-family: proxima-nova, sans-serif !important;
+}
+
+.wc-block-components-checkbox__input {
+  background: var(--forms)!important;
+}
+
+.wc-block-components-checkbox__mark {
+  fill: var(--quaternary-color);
 }
