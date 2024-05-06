@@ -975,19 +975,19 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .wc-block-components-totals-coupon-link:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--quaternary-color);
   color: var(--white);
 }
 
 .wc-block-components-totals-coupon__form input {
-  border-radius: 10px;
-  border: 1px solid var(--quaternary-color);
-  background-color: var(--forms);
+  border-radius: 10px!important;
+  border: 1px solid var(--quaternary-color)!important;
+  background-color: var(--forms)!important;
 }
 
 .wc-block-components-totals-coupon__form label {
-  font-family: proxima-nova, sans-serif;
-  color: var(--brown);
+  font-family: proxima-nova, sans-serif!important;
+  color: var(--brown)!important;
 }
 
 .wc-block-components-totals-coupon__form {
