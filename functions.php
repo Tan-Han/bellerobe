@@ -73,3 +73,11 @@ function count_item_in_cart()
 
   return $count;
 }
+
+// Adding title to category pages
+
+function add_category_title() {
+  echo '<h1>' single_term_title() '</h1>';
+}
+
+add_action("woocommerce_before_shop_loop", "add_category_title");
