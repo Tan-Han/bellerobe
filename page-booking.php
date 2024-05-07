@@ -150,6 +150,51 @@
 
             <!-- Galla dress group booking -->
 
+            <div class="booking-card">
+                <?php
+                $bookingGallaGroup = get_field('provning_af_gallakjole_gruppe');
+                if ($bookingGallaGroup): ?>
+
+                    <div class="img-box">
+                        <img class="booking-img"
+                            src="<?php echo esc_url($bookingGallaGroup['dress_img']['sizes']['medium']); ?>" alt="">
+                    </div>
+                    <div class="booking-info">
+                        <div class="booking-card-headline">
+                            <h3><?php echo $bookingGallaGroup['booking_headline']; ?></h3>
+
+                            <div class="price-time">
+                                <?php if (!empty($bookingGallaGroup['booking_price'])): ?>
+                                    <p>DKK <?php echo $bookingGallaGroup['booking_price']; ?> |&nbsp;</p>
+                                <?php endif ?>
+                                <p><?php echo $bookingGallaGroup['booking_time'] ?></p>
+                            </div>
+
+                        </div>
+                        <p class="booking-description"><?php echo $bookingGallaGroup['booking_description']; ?></p>
+                        <div class="booking-btn">
+                            <!-- Google Calendar Appointment Scheduling begin -->
+                            <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+                            <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+                            <script>
+                                (function () {
+                                    var target = document.currentScript;
+                                    window.addEventListener('load', function () {
+                                        calendar.schedulingButton.load({
+                                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3rgkfC1es-OaLCs0claeBuIIy4neu6WscyHa7LYYbgm8ulq4kQINGqZuL8PLHzoya-HcC_aiEM?gv=true',
+                                            color: '#039BE5',
+                                            label: "Book pr\xF8vning",
+                                            target,
+                                        });
+                                    });
+                                })();
+                            </script>
+                            <!-- end Google Calendar Appointment Scheduling -->
+                        </div>
+                    </div>
+                <?php endif; ?>
+            </div>
+
             <!-- Pickup dress booking -->
 
             <!-- Confirmation dress booking -->
