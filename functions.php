@@ -61,12 +61,12 @@ add_action("woocommerce_before_shop_loop", "print_product_filter_widget");
 // Add category name on category page
 
 function add_category_title() {
-  
+
    echo single_term_title();
   
 }
 
-add_action("woocommerce_before_shop_loop", "add_category_title")
+add_action("woocommerce_before_shop_loop", "add_category_title");
 
 // Adding item count to add-to-basket button
 
