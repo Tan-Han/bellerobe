@@ -58,16 +58,6 @@ function print_product_filter_widget()
 
 add_action("woocommerce_before_shop_loop", "print_product_filter_widget");
 
-// Add category name on category page
-
-function add_category_title() {
-  ?>
-  <h1> <?php echo single_term_title(); ?> </h1>
-  <?php 
-}
-
-add_action("woocommerce_before_shop_loop", "add_category_title")
-
 // Adding item count to add-to-basket button
 
 function count_item_in_cart()
