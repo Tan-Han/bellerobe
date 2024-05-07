@@ -16,8 +16,11 @@
 
                 <div class="address_footer">
                     <p>Belle Robe Brude- & Festkjoler</p>
-                    <p><?php the_field('street_number') ?>,</p>
-                    <p><?php the_field('postal_code') ?></p>
+                    <div class="address">
+                     <p><?php the_field('street_number') ?>,&nbsp;</p>
+                    <p><?php the_field('postal_code') ?></p>   
+                    </div>
+                    
                 </div>
 
                 <div class="contact_footer">

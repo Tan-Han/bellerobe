@@ -190,6 +190,11 @@ footer {
   height: 65px;
 }
 
+.footer_contact .address_footer .address {
+  display: flex;
+  gap: 1rem;
+}
+
 .footer_cat_links,
 .footer_info_links,
 .footer_follow {
