@@ -776,6 +776,7 @@ footer {
   z-index: 1;
   border-radius: 0 10px 10px 10px;
   box-shadow: 3px 3px 2px #5C48337D;
+  min-height: 300px;
 }
 
 .woocommerce-tabs h2 {
