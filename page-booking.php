@@ -308,39 +308,28 @@
         <div class="opening-hours">
             <h2 class="booking-headline">Åbningstider</h2>
             <div class="opening-hours-box info-box">
-                <?php
-                $openingHours = get_field('opening_hours');
-                if ($openingHours): ?>
-                    <div class="hours">
-                        <b>Mandag:&nbsp;</b>
-                        <p><?php echo $openingHours['mandag'] ?></p>
-                    </div>
-                    <div class="hours">
-                        <b>Tirsdag:&nbsp;</b>
-                        <p><?php echo $openingHours['tirsdag'] ?></p>
-                    </div>
-                    <div class="hours">
-                        <b>Onsdag:&nbsp;</b>
-                        <p><?php echo $openingHours['onsdag'] ?></p>
-                    </div>
-                    <div class="hours">
-                        <b>Torsdag:&nbsp;</b>
-                        <p><?php echo $openingHours['torsdag'] ?></p>
-                    </div>
-                    <div class="hours">
-                        <b>Fredag:&nbsp;</b>
-                        <p><?php echo $openingHours['fredag'] ?></p>
-                    </div>
-                    <div class="hours">
-                        <b>Lørdag:&nbsp;</b>
-                        <p><?php echo $openingHours['lordag'] ?></p>
-                    </div>
-                    <div class="hours">
-                        <b>Søndag og helligdage:&nbsp;</b>
-                        <p><?php echo $openingHours['sondag'] ?></p>
-                    </div>
-                    <p class="more-times"><?php echo $openingHours['flere-tider'] ?></p>
-                <?php endif; ?>
+            <?php $productLoop = new WP_Query(array("post_type" => "open_hours", "posts_per_page" => -1)) ?>
+        <?php while ($productLoop->have_posts()):
+            $productLoop->the_post() ?>
+
+            <div class="card">
+                <?php $image = get_field("produkt_billede") ?>
+                <img src="<?php echo $image["sizes"]["medium"] ?>" class="card-img-top" alt="<?php echo $image["alt"] ?>">
+                <div class="hours">
+                    <b><?php the_title() ?>:&nbsp;</b>
+                    <p><?php the_field("open") ?>&nbsp;</p>
+                    <p>- <?php the_field("close") ?></p>
+                    <?php $openingHours = get_field('open_later');
+                    if ($openingHours): ?>
+                    <p>&nbsp;& <?php echo $openingHours['open_later'] ?></p>
+                    <p>- <?php echo $openingHours['close_later'] ?></p>
+                    <?php endif; ?>
+                    <p><?php the_field("closed") ?></p>
+                    <p><?php the_field("book") ?></p>
+                </div>
+            </div>
+
+        <?php endwhile ?>
             </div>
         </div>
 
