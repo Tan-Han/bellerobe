@@ -32,6 +32,14 @@ function insert_product_title()
 
 add_action('woocommerce_single_product_summary', 'insert_product_title', 3);
 
+// Adding title to category pages
+
+function add_category_title() {
+  echo single_term_title();
+}
+
+add_action("woocommerce_before_shop_loop", "add_category_title");
+
 // Creating new custom widget
 function product_filter_widget()
 {
@@ -73,11 +81,3 @@ function count_item_in_cart()
 
   return $count;
 }
-
-// Adding title to category pages
-
-function add_category_title() {
-  echo single_term_title();
-}
-
-add_action("woocommerce_archive_description", "add_category_title");
