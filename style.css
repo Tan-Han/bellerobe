@@ -715,46 +715,9 @@ footer {
 /* Quantity selector */
 
 .quantity {
-  position: relative;
+  display: none;
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  /* -webkit-appearance: none; */
-  margin: 0;
-}
-
-/* input[type=number]
-{
-  -moz-appearance: textfield;
-} */
-
-.quantity input {
-  width: 50px;
-  height: 42px;
-  line-height: 1.65;
-  float: left;
-  display: block;
-  padding: 0;
-  margin: 0;
-  padding-left: 1rem;
-  padding-right: .2rem;
-  border: 1px solid var(--quaternary-color);
-  border-radius: 10px;
-  font-weight: 700;
-  background-color: var(--forms);
-  color: var(--brown);
-}
-
-.quantity input:focus {
-  outline: 0;
-}
-
-.quantity-nav {
-  float: left;
-  position: relative;
-  height: 42px;
-}
 
 /* Add to cart button */
 
