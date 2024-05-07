@@ -143,7 +143,7 @@
 
             <div class="booking-card">
                 <?php
-                $bookingGallaDress = get_field('provning_af_gallakjole');
+                $bookingGallaDress = get_field('provning_galla_gruppe');
                 if ($bookingGallaDress): ?>
 
                     <div class="img-box">
@@ -188,7 +188,7 @@
 
             <div class="booking-card">
                 <?php
-                $bookingGallaDress = get_field('provning_af_gallakjole');
+                $bookingGallaDress = get_field('provning_galla_gruppe');
                 if ($bookingGallaDress): ?>
 
                     <div class="img-box">
