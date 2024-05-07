@@ -273,6 +273,11 @@ footer {
   display: grid;
 }
 
+.category-title {
+  text-align: center;
+  font-size: 50px;
+}
+
 /* Filter */
 
 .product_filter {
