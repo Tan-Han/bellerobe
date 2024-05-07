@@ -111,6 +111,7 @@ nav ul li a {
   color: var(--brown);
   font-size: 22px;
   font-weight: 700;
+  padding-top: .5rem;
   padding-bottom: .3rem;
   border-bottom: 2px solid transparent;
 }
