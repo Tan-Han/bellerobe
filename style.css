@@ -80,7 +80,7 @@ button {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  padding: .5rem 0;
+  padding: 1rem 0;
   position: relative;
   z-index: 1;
   box-shadow: 0 3px 5px #5C48337D;
