@@ -309,13 +309,18 @@
             <h2 class="booking-headline">Åbningstider</h2>
             <div class="opening-hours-box info-box">
 
-                <?php $productLoop = new WP_Query(array("post_type" => "open_hours", "posts_per_page" => -1)) ?>
+                <?php $productLoop = new WP_Query(array(
+                        "post_type" => "open_hours",
+                        "posts_per_page" => -1,
+                        "orderby" => "date",  // Order by date
+                        "order" => "DESC"     // Reverse order (latest posts first)
+                )) ?>
                 <?php while ($productLoop->have_posts()):
                     $productLoop->the_post() ?>
 
                     <div class="hours">
                         <b><?php the_title() ?>:&nbsp;</b>
-                        
+
                         <?php if (get_field("open") && get_field("close")): ?>
                             <p><?php the_field("open"); ?>&nbsp;-&nbsp;</p>
                             <p><?php the_field("close"); ?></p>
