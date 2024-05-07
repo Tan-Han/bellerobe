@@ -313,7 +313,7 @@
                         "post_type" => "open_hours",
                         "posts_per_page" => -1,
                         "orderby" => "date",  // Order by date
-                        "order" => "DESC"     // Reverse order (latest posts first)
+                        "order" => "ASC"     // Reverse order (latest posts first)
                 )) ?>
                 
                 <?php while ($productLoop->have_posts()):
