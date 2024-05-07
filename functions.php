@@ -66,7 +66,7 @@ function add_category_title() {
   <?php
 }
 
-add_action("woocommerce_before_shop_loop", "add_category_title")
+add_action("woocommerce_before_shop_loop", "add_category_title");
 
 // Adding item count to add-to-basket button
 
