@@ -80,4 +80,4 @@ function add_category_title() {
   echo single_term_title();
 }
 
-add_action("woocommerce_before_shop_loop", "add_category_title");
+add_action("woocommerce_archive_description", "add_category_title");
