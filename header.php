@@ -11,7 +11,7 @@
 
 <body>
     <div class="logo-top">
-        <img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/logo-white.svg" alt=""
+        <img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/logo-dark.svg" alt=""
             class="logo">
     </div>
     <nav>
