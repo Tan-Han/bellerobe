@@ -15,7 +15,7 @@
                 $productLoop->the_post() ?>
 
                 <div class="address_footer">
-                    <p>Belle Robe Brude- & Festkjoler</p>
+                    <b>Belle Robe Brude- & Festkjoler</b>
                     <div class="address">
                      <p><?php the_field('street_number') ?>,</p>
                     <p><?php the_field('postal_code') ?></p>   

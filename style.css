@@ -180,6 +180,8 @@ footer {
   justify-content: space-between;
 }
 
+
+
 .footer_contact {
   display: flex;
   flex-direction: column;
@@ -193,6 +195,12 @@ footer {
 .footer_contact .address_footer .address {
   display: flex;
 }
+
+.address_footer, .footer_cat_links,
+.footer_info_links {
+  font-size: 16px;
+}
+
 
 .footer_cat_links,
 .footer_info_links,
