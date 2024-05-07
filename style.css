@@ -81,6 +81,9 @@ button {
   align-content: center;
   justify-content: center;
   padding: .5rem 0;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 3px 5px #5C48337D;
 }
 
 .logo-top .logo {
@@ -110,7 +113,7 @@ nav ul li a {
   font-weight: 700;
   padding-top: .5rem;
   padding-bottom: .3rem;
-  border-bottom: 2px solid var(--secondary-color);
+  border-bottom: 2px solid transparent;
 }
 
 nav ul li a:hover {
