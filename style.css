@@ -196,7 +196,8 @@ footer {
   display: flex;
 }
 
-.address_footer, .footer_cat_links,
+.address_footer,
+.footer_cat_links,
 .footer_info_links {
   font-size: 16px;
 }
@@ -713,7 +714,7 @@ footer {
 /* Quantity selector */
 
 .quantity {
-  display: none;
+  display: none !important;
 }
 
 
