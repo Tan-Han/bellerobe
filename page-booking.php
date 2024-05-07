@@ -318,11 +318,13 @@
                             alt="<?php echo $image["alt"] ?>">
                         <div class="hours">
                             <b><?php the_title() ?>:&nbsp;</b>
-                            <p><?php the_field("open") ?></p>
+                            <p><?php the_field("open") ?>&nbsp;-&nbsp;</p>
                             <p><?php the_field("close") ?></p>
                             <?php $openingHours = get_field('open_later');
                             if ($openingHours): ?>
+                                <p><?php echo '&nbsp;&&nbsp;'?></p>
                                 <p><?php echo $openingHours['open_later'] ?></p>
+                                <p><?php echo '&nbsp;-&nbsp;'?></p>
                                 <p><?php echo $openingHours['close_later'] ?></p>
                             <?php endif; ?>
 
