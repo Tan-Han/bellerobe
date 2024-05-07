@@ -581,6 +581,7 @@ footer {
 .woocommerce-product-gallery {
   display: flex;
   position: relative;
+  flex-direction: column;
   gap: 1rem;
 }
 
@@ -593,6 +594,8 @@ footer {
 
 .woocommerce-product-gallery ol {
   list-style: none;
+  display: flex;
+  gap: 1rem;
 }
 
 .woocommerce-product-gallery ol img,
@@ -610,16 +613,11 @@ footer {
 
 .flex-viewport {
   box-shadow: 3px 3px 5px #5C48337D;
-  width: 600px !important;
 }
 
 .woocommerce-product-gallery__image,
 .woocommerce-product-gallery__wrapper {
   height: 100%;
-}
-
-.woocommerce-product-gallery__image {
-  width: 600px !important;
 }
 
 .woocommerce-product-gallery__image img {
