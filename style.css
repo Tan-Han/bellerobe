@@ -255,6 +255,10 @@ footer {
   font-size: 35px;
 }
 
+.footer_payment i {
+  text-shadow: 2px 2px 3px #5C48337D;
+}
+
 /* PRODUCT CATEGORY PAGES */
 
 .woocommerce {
