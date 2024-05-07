@@ -308,44 +308,47 @@
         <div class="opening-hours">
             <h2 class="booking-headline">Åbningstider</h2>
             <div class="opening-hours-box info-box">
-                <?php $productLoop = new WP_Query(array("post_type" => "open_hours", "posts_per_page" => -1)) ?>
+
+                <?php $productLoop = new WP_Query(array(
+                        "post_type" => "open_hours",
+                        "posts_per_page" => -1,
+                        "orderby" => "date",  // Order by date
+                        "order" => "DESC"     // Reverse order (latest posts first)
+                )) ?>
                 <?php while ($productLoop->have_posts()):
                     $productLoop->the_post() ?>
 
-                    <div class="card">
-                        <?php $image = get_field("produkt_billede") ?>
-                        <img src="<?php echo $image["sizes"]["medium"] ?>" class="card-img-top"
-                            alt="<?php echo $image["alt"] ?>">
-                        <div class="hours">
-                            <b><?php the_title() ?>:&nbsp;</b>
-                            <p><?php the_field("open") ?></p>
-                            <p><?php the_field("close") ?></p>
+                    <div class="hours">
+                        <b><?php the_title() ?>:&nbsp;</b>
 
-                            <?php $openingHours = get_field('open_later');
-                            if ($openingHours): ?>
+                        <?php if (get_field("open") && get_field("close")): ?>
+                            <p><?php the_field("open"); ?>&nbsp;-&nbsp;</p>
+                            <p><?php the_field("close"); ?></p>
+                        <?php endif; ?>
 
-                                <p><?php echo $openingHours['open_later'] ?></p>
-                                <p><?php echo $openingHours['close_later'] ?></p>
+                        <?php
+                        $openingHours = get_field('open_later');
+                        if (!empty($openingHours['open_later']) && !empty($openingHours['close_later'])): ?>
+                            <p><?php echo '&nbsp;&&nbsp;'; ?></p>
+                            <p><?php echo $openingHours['open_later']; ?></p>
+                            <p><?php echo '&nbsp;-&nbsp;'; ?></p>
+                            <p><?php echo $openingHours['close_later']; ?></p>
+                        <?php endif; ?>
 
-                            <?php endif; ?>
+                        <?php if (get_field('closed')) {
+                            echo '<p>Lukket</p>';
+                        }
 
-                            <?php
-                            if (get_field('closed')) {
-                                echo '<p>Lukket</p>';
-                            }
-                            ?>
-
-                            <?php
-                            if (get_field('book')) {
-                                echo '<p>Se tider ved booking</p>';
-                            }
-                            ?>
-
-                        </div>
+                        if (get_field('book')) {
+                            echo '<p>Se tider ved booking</p>';
+                        }
+                        ?>
                     </div>
 
                 <?php endwhile ?>
+
             </div>
+        </div>
         </div>
 
         <div class="address">
