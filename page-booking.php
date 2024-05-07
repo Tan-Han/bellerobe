@@ -315,8 +315,11 @@
 
                     <div class="hours">
                         <b><?php the_title() ?>:&nbsp;</b>
-                        <p><?php the_field("open") ?>&nbsp;-&nbsp;</p>
-                        <p><?php the_field("close") ?></p>
+                        
+                        <?php if (get_field("open") && get_field("close")): ?>
+                            <p><?php the_field("open"); ?>&nbsp;-&nbsp;</p>
+                            <p><?php the_field("close"); ?></p>
+                        <?php endif; ?>
 
                         <?php
                         $openingHours = get_field('open_later');
