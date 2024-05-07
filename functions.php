@@ -36,7 +36,7 @@ add_action('woocommerce_single_product_summary', 'insert_product_title', 3);
 
 function add_category_title() {
   ?>
-  <h1 class="product-title">
+  <h1 class="category-title">
     <?php single_term_title() ?>
   </h1>
   <?php
