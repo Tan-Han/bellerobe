@@ -315,6 +315,7 @@
                         "orderby" => "date",  // Order by date
                         "order" => "DESC"     // Reverse order (latest posts first)
                 )) ?>
+                
                 <?php while ($productLoop->have_posts()):
                     $productLoop->the_post() ?>
 
