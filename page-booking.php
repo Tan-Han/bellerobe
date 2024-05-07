@@ -321,8 +321,8 @@
                     <p><?php the_field("close") ?></p>
                     <?php $openingHours = get_field('open_later');
                     if ($openingHours): ?>
-                    <p><?php echo '&nbsp;& ' $openingHours['open_later'] ?></p>
-                    <p><?php echo '&nbsp;-' $openingHours['close_later'] ?></p>
+                    <p><?php echo $openingHours['open_later'] ?></p>
+                    <p><?php echo $openingHours['close_later'] ?></p>
                     <?php endif; ?>
                     <p><?php the_field("closed") ?></p>
                     <p><?php the_field("book") ?></p>
