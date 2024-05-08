@@ -597,7 +597,6 @@
 
     .contact h3 {
         text-align: center;
-        padding-bottom: 1.5rem;
         font-size: 35px;
         color: var(--brown);
     }
