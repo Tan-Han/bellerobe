@@ -586,8 +586,12 @@
     }
 
     /* Contact form */
+    
+    .contact_form {
+        box-shadow: 3px 3px 5px #5C48337D;
+    }
 
-    .contact {
+    .contact_form .contact {
         padding: 2rem;
     }
 
@@ -608,7 +612,7 @@
     }
 
     .wpcf7-form input,
-    .client_message {
+    .client-message {
         width: 100%;
         border-radius: 10px;
         border: 1px solid var(--quaternary-color);
@@ -623,7 +627,7 @@
     @-moz-document url-prefix() {
 
         .wpcf7-form input,
-        .client_message {
+        .client-message {
             max-width: -moz-available;
         }
     }
@@ -645,8 +649,8 @@
         gap: 1rem;
     }
 
-    .client_name_box,
-    .client_contact_box {
+    .client_name,
+    .client_contact {
         width: 50%;
         display: flex;
         flex-direction: column;
