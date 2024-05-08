@@ -544,7 +544,7 @@ footer {
 }
 
 .woocommerce-pagination .page-numbers li {
-  color: var(--white);
+  color: var(--brown);
   font-family: proxima-nova, sans-serif;
 }
 
