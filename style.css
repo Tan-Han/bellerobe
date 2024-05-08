@@ -326,8 +326,10 @@ footer {
 
 .product_filter {
   display: flex;
-  justify-content: left;
+  justify-content: space-evenly;
   gap: 1rem;
+  padding: 1rem 0;
+  flex-wrap: wrap;
 }
 
 .wp-block-woocommerce-filter-wrapper {
@@ -336,6 +338,11 @@ footer {
 
 .wp-block-woocommerce-filter-wrapper .wp-block-heading {
   color: var(--brown);
+  font-size: 18px;
+}
+
+.wc-block-attribute-filter {
+  margin-bottom: none;
 }
 
 .wc-block-attribute-filter .wc-blocks-components-form-token-field-wrapper:not(.is-loading) {
@@ -363,6 +370,18 @@ footer {
 
 .components-form-token-field__input-container ul li:hover {
   background-color: var(--secondary-color) !important;
+}
+
+.components-form-token-field__token-text {
+  border: 1px solid var(--quaternary-color);
+  border-radius: 10px;
+}
+
+.product_filter .components-button {
+  border: none;
+  border-radius: 10px;
+  background-color: var(--quaternary-color);
+  color: var(--white);
 }
 
 /* Sorting */
