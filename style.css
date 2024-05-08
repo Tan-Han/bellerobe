@@ -157,8 +157,8 @@ nav .cart-btn-outer-box .cart-btn-box .cart-btn i {
 }
 
 nav .cart-btn-outer-box .cart-btn-box .cart-btn:hover {
-  /* border-color: var(--white); */
-  background-color: var(--quinary-color);
+  background-color: var(--tertiary-color);
+  color: var(--white);
 }
 
 /* FOOTER */
