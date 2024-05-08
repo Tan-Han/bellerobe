@@ -17,7 +17,7 @@
         <nav>
             <ul>
                 <li><a href="/">Forside</a></li>
-                <li class="dropdown"><a href="/vare-kategori/brudekjoler/" class="dropbtn">Brudekjoler</a>
+                <li class="dropdown"><a href="/vare-kategori/brudekjoler/" class="dropbtn">Brudekjoler <i class="fa-solid fa-caret-down"></i></a>
                     <div class="dropdown-content">
                         <a href="/vare-kategori/brudekjoler/brudekjoler-til-leje/">Bæredygtige brudekjoler</a>
                     </div>
