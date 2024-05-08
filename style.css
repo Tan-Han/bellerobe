@@ -1040,8 +1040,13 @@ footer {
   background-position: center;
   background-size: cover;
   border-radius: 10px;
+<<<<<<< HEAD
   padding: 3rem 0;
   width: 850px;
+=======
+  padding: 3rem;
+  /* width: 850px; */
+>>>>>>> parent of 50e9cb4 (Checkout confirmation page)
   justify-self: center;
 }
 
