@@ -612,7 +612,7 @@
     }
 
     .wpcf7-form input,
-    .client-message textarea {
+    .client-message {
         width: 100%;
         border-radius: 10px;
         border: 1px solid var(--quaternary-color);
@@ -627,7 +627,7 @@
     @-moz-document url-prefix() {
 
         .wpcf7-form input,
-        .client-message textarea {
+        .client-message {
             max-width: -moz-available;
         }
     }
@@ -638,7 +638,7 @@
         @supports (-webkit-appearance:none) {
 
             .wpcf7-form input,
-            .client_message textarea {
+            .client_message {
                 max-width: -webkit-fill-available;
             }
         }
