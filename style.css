@@ -118,7 +118,8 @@ nav ul li a {
   border-bottom: 2px solid transparent;
 }
 
-nav ul li a:hover, .dropdown:hover .dropbtn {
+nav ul li a:hover,
+.dropdown:hover .dropbtn {
   border-color: var(--quaternary-color);
 }
 
@@ -373,17 +374,16 @@ footer {
 }
 
 .components-form-token-field__token-text {
-  border: 1px solid var(--quaternary-color);
-  border-radius: 10px;
+  border: 1px solid var(--quaternary-color) !important;
+  border-radius: 10px !important;
 }
 
 .product_filter .components-button {
-  border: none;
-  border-radius: 10px;
-  background-color: var(--quaternary-color);
-  color: var(--white);
+  border: none !important;
+  border-radius: 10px !important;
+  background-color: var(--quaternary-color) !important;
+  color: var(--white) !important;
 }
-
 
 /* Sorting */
 
