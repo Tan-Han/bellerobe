@@ -1,5 +1,7 @@
 <footer>
+
     <div class="footer_columns">
+
         <div class="footer_contact">
             <img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/bellerobe_u_cirkel.svg" alt=""
                 class="footer_logo">
@@ -87,18 +89,23 @@
         </div>
     </div>
 
-    <div class="footer_copy_rights">
-        <p>© Belle Robe</p>
-        <p>CVR: 33827857</p>
+    <div class="footer-bottom">
+
+        <div class="footer_copy_rights">
+            <p>© Belle Robe</p>
+            <p>CVR: 33827857</p>
+        </div>
+    
+        <div class="footer_payment">
+            <i class="fa-brands fa-cc-visa"></i>
+            <i class="fa-brands fa-cc-mastercard"></i>
+            <i class="fa-brands fa-cc-discover"></i>
+            <i class="fa-brands fa-cc-diners-club"></i>
+            <i class="fa-brands fa-cc-jcb"></i>
+        </div>
+        
     </div>
 
-    <div class="footer_payment">
-        <i class="fa-brands fa-cc-visa"></i>
-        <i class="fa-brands fa-cc-mastercard"></i>
-        <i class="fa-brands fa-cc-discover"></i>
-        <i class="fa-brands fa-cc-diners-club"></i>
-        <i class="fa-brands fa-cc-jcb"></i>
-    </div>
 </footer>
 
 <?php wp_footer() ?>
