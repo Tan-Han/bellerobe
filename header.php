@@ -16,13 +16,12 @@
         <nav>
             <ul>
                 <li><a href="/">Forside</a></li>
-                <li><a href="/?product_cat=brudekjoler/">Brudekjoler</a></li>
-                <li><a href="/?product_cat=gallakjoler/">Fest- & Gallakjoler</a></li>
-                <li><a href="/?product_cat=konfirmationskjoler/">Konfirmationskjoler</a></li>
-                <li><a href="/?product_cat=sko/">Sko</a></li>
+                <li><a href="/vare-kategori/brudekjoler//">Brudekjoler</a></li>
+                <li><a href="/vare-kategori/gallakjoler/">Fest- & Gallakjoler</a></li>
+                <li><a href="/vare-kategori/konfirmationskjoler/">Konfirmationskjoler</a></li>
+                <li><a href="/vare-kategori/sko/">Sko</a></li>
                 <li><a href="/om_os/">Om os</a></li>
                 <li><a href="/booking/">Book tid</a></li>
-
             </ul>
             <div class="cart-btn-outer-box">
                 <div class="cart-btn-box">
