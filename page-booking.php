@@ -300,10 +300,21 @@
             <div class="contact-info-box">
                 <p>Ring til os eller send os en mail</p>
                 <div class="phone">
-                    <b>Telefon:&nbsp;</b>
-                    <a href="tel:<?php the_field("phone_number") ?>">
-                        <p><?php the_field("phone_number") ?></p>
-                    </a>
+                    <?php $productLoop = new WP_Query(
+                        array(
+                            "post_type" => "address",
+                            "posts_per_page" => -1,
+                        )
+                    ) ?>
+
+                    <?php while ($productLoop->have_posts()):
+                        $productLoop->the_post() ?>
+
+                        <p><a href="tel:<?php the_field('phone_number') ?>">
+                                +45 <?php the_field('phone_number') ?>
+                            </a></p>
+
+                    <?php endwhile ?>
                 </div>
                 <button id="contactBtn">Skriv til os</button>
                 <div id="contactForm" class="contact_form_box">
