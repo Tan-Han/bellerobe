@@ -384,6 +384,7 @@ footer {
 .product_filter .components-button {
   border: none !important;
   background-color: transparent!important;
+  background: transparent!important;
   box-shadow: none!important;
   padding: 0!important;
 }
