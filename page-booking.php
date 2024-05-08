@@ -638,7 +638,7 @@
         @supports (-webkit-appearance:none) {
 
             .wpcf7-form input,
-            .client_message {
+            .client-message {
                 max-width: -webkit-fill-available;
             }
         }
