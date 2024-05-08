@@ -57,7 +57,7 @@
 
 </main>
 
-<?php get_footer() ?>
+
 
 <!-- this is the styling for the frontpage -->
 <style>
@@ -107,3 +107,5 @@
 
   .frontpage_cards {}
 </style>
+
+<?php get_footer() ?>
