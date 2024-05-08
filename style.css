@@ -399,6 +399,10 @@ footer {
   z-index: 1;
 }
 
+.products .product h2:hover {
+  color: var(--tertiary-color);
+}
+
 .products .product .price {
   position: absolute;
   bottom: 2.5rem;
