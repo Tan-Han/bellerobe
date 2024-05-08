@@ -156,10 +156,10 @@ nav .cart-btn-outer-box .cart-btn-box .cart-btn i {
   font-size: 28px;
 }
 
-nav .cart-btn-outer-box .cart-btn-box .cart-btn:hover {
+/* nav .cart-btn-outer-box .cart-btn-box .cart-btn:hover {
   background-color: var(--tertiary-color);
   color: var(--white);
-}
+} */
 
 /* FOOTER */
 footer {
@@ -399,9 +399,9 @@ footer {
   z-index: 1;
 }
 
-.products .product:hover h2:hover {
+/* .products .product:hover h2:hover {
   color: var(--tertiary-color);
-}
+} */
 
 .products .product .price {
   position: absolute;
