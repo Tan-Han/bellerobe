@@ -399,7 +399,7 @@ footer {
   z-index: 1;
 }
 
-.products .product h2:hover {
+.products .product:hover h2:hover {
   color: var(--tertiary-color);
 }
 
