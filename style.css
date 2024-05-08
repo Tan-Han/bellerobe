@@ -377,19 +377,20 @@ footer {
   border: 1px solid var(--quaternary-color) !important;
   border-radius: 10px !important;
   padding: .25em .5em .25em .75em !important;
-  width: fit-content;
+  width: fit-content!important;
+  background-color: var(--forms)!important;
 }
 
 .product_filter .components-button {
   border: none !important;
-  border-radius: 10px !important;
-  background-color: var(--quaternary-color) !important;
-  color: var(--white) !important;
+  background-color: transparent!important;
+  box-sizing: none!important;
+  padding: 0!important;
 }
 
 .product_filter .components-button svg {
   background-color: transparent !important;
-  color: var(--white) !important;
+  border-radius: 0!important;
 }
 
 /* Sorting */
