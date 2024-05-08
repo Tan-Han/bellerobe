@@ -349,9 +349,9 @@
                             $openingHours = get_field('open_later');
                             if (!empty($openingHours['open_later']) && !empty($openingHours['close_later'])): ?>
                                 <p><?php echo '&nbsp;&&nbsp;'; ?></p>
-                                <p><?php echo $openingHours['open_later']; ?></p>
+                                <p><?php echo $openingHours['open_late']; ?></p>
                                 <p><?php echo '&nbsp;-&nbsp;'; ?></p>
-                                <p><?php echo $openingHours['close_later']; ?></p>
+                                <p><?php echo $openingHours['close_late']; ?></p>
                             <?php endif;
                         } ?>
 
