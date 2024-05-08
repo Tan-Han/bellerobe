@@ -22,6 +22,7 @@
                 <li><a href="/product-category/?product_cat=sko/">Sko</a></li>
                 <li><a href="/om_os/">Om os</a></li>
                 <li><a href="/booking/">Book tid</a></li>
+                
             </ul>
             <div class="cart-btn-outer-box">
                 <div class="cart-btn-box">
