@@ -1032,3 +1032,15 @@ footer {
 .wc-block-components-totals-coupon__form button:hover span {
   color: var(--white) !important;
 }
+
+/* CHECKOUT CONFIRMATION PAGE */
+
+.woocommerce-order {
+  background-image: url(https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/open.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.woocommerce-order ul {
+  list-style: none;
+}
