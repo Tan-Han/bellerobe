@@ -343,7 +343,7 @@ footer {
 }
 
 .wc-block-attribute-filter {
-  margin-bottom: none;
+  margin-bottom: 0;
 }
 
 .wc-block-attribute-filter .wc-blocks-components-form-token-field-wrapper:not(.is-loading) {
