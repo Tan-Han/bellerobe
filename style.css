@@ -326,7 +326,7 @@ footer {
 
 .product_filter {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: left;
   gap: 1rem;
   padding: 1rem 0;
   flex-wrap: wrap;
