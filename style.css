@@ -128,7 +128,7 @@ nav ul li a:hover, .dropdown:hover .dropbtn {
 }
 
 .dropdown .dropbtn .fa-caret-down {
-  padding-left: .2rem;
+  padding-left: .5rem;
 }
 
 .dropdown-content {
@@ -144,14 +144,17 @@ nav ul li a:hover, .dropdown:hover .dropbtn {
 .dropdown-content a {
   float: none;
   color: var(--brown);
-  padding: 12px 16px;
+  padding: .5rem 1rem;
   text-decoration: none;
   display: block;
   text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 10px;
 }
 
 .dropdown-content a:hover {
-  background-color: var(--quinary-color);
+  color: var(--tertiary-color);
 }
 
 .dropdown:hover .dropdown-content {
