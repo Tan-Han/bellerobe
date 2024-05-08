@@ -1040,9 +1040,13 @@ footer {
   background-position: center;
   background-size: cover;
   border-radius: 10px;
-  padding: 3rem 0;
-  width: 850px;
+  padding: 3rem;
+  /* width: 850px; */
   justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
 .woocommerce-order .woocommerce-thankyou-order-received, .woocommerce-order ul, .woocommerce-order .woocommerce-order-details, .woocommerce-order .woocommerce-customer-details {
