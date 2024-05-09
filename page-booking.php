@@ -521,6 +521,7 @@
         line-height: normal !important;
         letter-spacing: normal !important;
         font-size: 16px;
+        float: right;
     }
 
     .qxCTlb:hover {
