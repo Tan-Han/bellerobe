@@ -29,6 +29,7 @@
                     <div class="dropdown-content">
                         <a href="/vare-kategori/gallakjoler/korte-kjoler/">Korte kjoler</a>
                         <a href="/vare-kategori/gallakjoler/lange-kjoler/">Lange kjoler</a>
+                        <a href="/vare-kategori/gallakjoler/">Alle fest- & gallakjoler</a>
                     </div>
                 </li>
                 <li><a href="/vare-kategori/konfirmationskjoler/">Konfirmationskjoler</a></li>
