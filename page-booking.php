@@ -548,11 +548,7 @@
     /* CONTACT INFO */
 
     .contact-info-box {
-        /* background-color: var(--tertiary-color); */
-        background-image: url('https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/contact.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+        background-color: var(--tertiary-color);
         padding: 1.5rem 2rem;
         border-radius: 10px;
         box-shadow: 3px 3px 5px #5C48337D;
@@ -608,6 +604,7 @@
         text-align: center;
         font-size: 35px;
         color: var(--brown);
+        padding-bottom: 1rem;
     }
 
     .wpcf7-form {
