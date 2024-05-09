@@ -579,7 +579,8 @@
 
     .contact-info-inner {
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
     }
 
     .call,
@@ -591,6 +592,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 50%;
     }
 
     .phone {
