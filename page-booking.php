@@ -416,6 +416,11 @@
         display: grid;
         justify-items: center;
         grid-template-columns: repeat(2, 1fr);
+        gap: 8rem;
+    }
+
+    section {
+        width: 100%;
     }
 
     .booking-headline {
