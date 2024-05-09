@@ -587,19 +587,17 @@
 
     .call,
     .write {
-        border: 2px solid var(--white);
-        border-radius: 10px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         width: 50%;
-        gap: .5rem;
+        gap: 1.5rem;
         min-height: 80px;
     }
 
     .call i, .write i {
-        font-size: 40px;
+        font-size: 55px;
     }
 
     .phone {
