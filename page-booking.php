@@ -16,7 +16,7 @@
 
                     <div class="img-box">
                         <img class="booking-img"
-                            src="<?php echo esc_url($bookingWedding['dress_img']['sizes']['medium']); ?>" alt="">
+                            src="<?php echo esc_url($bookingWedding['dress_img']); ?>" alt="">
                     </div>
                     <div class="booking-info">
                         <div class="booking-card-headline">
@@ -776,6 +776,7 @@
         border: 1px solid var(--quaternary-color) !important;
         box-shadow: 3px 3px 5px #5C48337D;
         height: 350px;
+        width: 100%;
     }
 </style>
 
