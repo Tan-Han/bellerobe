@@ -1129,6 +1129,7 @@ footer {
   flex-direction: column;
   gap: 1rem;
   text-align: left;
+  justify-self: center;
 }
 
 .woocommerce-order .woocommerce-thankyou-order-received {
@@ -1150,7 +1151,7 @@ footer {
   list-style: none;
 }
 
-.woocommerce-order ul .woocommerce-Price-amount, .woocommerce-Price-currencySymbol {
+.woocommerce-order ul .woocommerce-Price-amount, .woocommerce-order ul .woocommerce-Price-amount .woocommerce-Price-currencySymbol {
   font-weight: 700;
 }
 
