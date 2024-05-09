@@ -9,9 +9,7 @@
 
             <!-- Wedding dress booking -->
 
-
             <!-- Outlet Wedding dress booking -->
-
 
             <!-- Galla dress booking -->
 
