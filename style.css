@@ -711,6 +711,11 @@ footer {
   height: 100%;
 }
 
+.woocommerce-product-gallery__image {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 .woocommerce-product-gallery__image img {
   width: 100%;
   height: 100%;
