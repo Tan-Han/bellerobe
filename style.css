@@ -677,6 +677,11 @@ footer {
   z-index: 1;
 }
 
+.woocommerce-product-gallery__trigger .emoji {
+  height: 2rem!important;
+  width: auto!important;
+}
+
 .woocommerce-product-gallery ol {
   list-style: none;
   display: flex;
