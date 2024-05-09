@@ -715,6 +715,7 @@ footer {
 .woocommerce-product-gallery__image {
   border-radius: 10px;
   overflow: hidden;
+  box-shadow: 3px 3px 5px #5C48337D;
 }
 
 .woocommerce-product-gallery__image img {
