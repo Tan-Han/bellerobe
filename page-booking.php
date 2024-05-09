@@ -15,8 +15,8 @@
                 if ($bookingDress): ?>
 
                     <div class="img-box">
-                        <img class="booking-img"
-                            src="<?php echo esc_url($bookingDress['dress_img']['sizes']['medium']); ?>" alt="">
+                        <img class="booking-img" src="<?php echo esc_url($bookingDress['dress_img']['sizes']['medium']); ?>"
+                            alt="">
                     </div>
                     <div class="booking-info">
                         <div class="booking-card-headline">
@@ -298,34 +298,49 @@
             <h2 class="booking-headline">Kontakt os</h2>
 
             <div class="contact-info-box">
+
                 <p>Ring til os eller send os en mail</p>
-                <div class="phone">
-                    <?php $productLoop = new WP_Query(
-                        array(
-                            "post_type" => "address",
-                            "posts_per_page" => -1,
-                        )
-                    ) ?>
 
-                    <?php while ($productLoop->have_posts()):
-                        $productLoop->the_post() ?>
+                <div class="contact-info-inner">
+                    <div class="call">
 
-                        <p><a href="tel:<?php the_field('phone_number') ?>">
-                                +45 <?php the_field('phone_number') ?>
-                            </a></p>
+                        <div class="phone">
 
-                    <?php endwhile ?>
-                </div>
-                <button id="contactBtn">Skriv til os</button>
-                <div id="contactForm" class="contact_form_box">
-                    <div class="contact_form">
-                        <span class="close">&times;</span>
-                        <div class="contact">
-                            <h3>Send os en besked</h3>
-                            <?php echo do_shortcode('[contact-form-7 id="4d7ddd4" title="Kontaktformular"]') ?>
+                            <i class="fa-solid fa-phone"></i>
+                            <?php $productLoop = new WP_Query(
+                                array(
+                                    "post_type" => "address",
+                                    "posts_per_page" => -1,
+                                )
+                            ) ?>
+
+                            <?php while ($productLoop->have_posts()):
+                                $productLoop->the_post() ?>
+
+                                <p><a href="tel:<?php the_field('phone_number') ?>">
+                                        +45 <?php the_field('phone_number') ?>
+                                    </a></p>
+
+                            <?php endwhile ?>
                         </div>
                     </div>
+
+                    <div class="write">
+                        <i class="fa-solid fa-envelope"></i>
+                        <button id="contactBtn">Skriv til os</button>
+                        <div id="contactForm" class="contact_form_box">
+                            <div class="contact_form">
+                                <span class="close">&times;</span>
+                                <div class="contact">
+                                    <h3>Send os en besked</h3>
+                                    <?php echo do_shortcode('[contact-form-7 id="4d7ddd4" title="Kontaktformular"]') ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
         </div>
 
@@ -561,6 +576,21 @@
     .contact-info-box p {
         font-style: italic;
         font-size: 20px;
+    }
+
+    .contact-info-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .call, .write {
+        border: 2px solid var(--white);
+        border-radius: 10px;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .phone {
