@@ -304,9 +304,8 @@
                 <div class="contact-info-inner">
                     <div class="call">
 
+                        <i class="fa-solid fa-phone"></i>
                         <div class="phone">
-
-                            <i class="fa-solid fa-phone"></i>
                             <?php $productLoop = new WP_Query(
                                 array(
                                     "post_type" => "address",
@@ -583,7 +582,8 @@
         justify-content: space-between;
     }
 
-    .call, .write {
+    .call,
+    .write {
         border: 2px solid var(--white);
         border-radius: 10px;
         padding: 1rem;
