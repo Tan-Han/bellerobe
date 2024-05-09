@@ -378,21 +378,21 @@ footer {
   border: 1px solid var(--quaternary-color) !important;
   border-radius: 10px !important;
   padding: .25em .5em .25em .75em !important;
-  width: fit-content!important;
-  background-color: var(--forms)!important;
+  width: fit-content !important;
+  background-color: var(--forms) !important;
 }
 
 .product_filter .components-button {
   border: none !important;
-  background-color: transparent!important;
-  background: transparent!important;
-  box-shadow: none!important;
-  padding: 0!important;
+  background-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
 }
 
 .product_filter .components-button svg {
   background-color: transparent !important;
-  border-radius: 0!important;
+  border-radius: 0 !important;
 }
 
 /* Sorting */
@@ -1111,4 +1111,76 @@ footer {
 
 .wc-block-components-totals-coupon__form button:hover span {
   color: var(--white) !important;
+}
+
+/* ORDER CONFIRMATION PAGE */
+
+.woocommerce-order {
+  background-image: url('https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/open.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #5C48337D;
+  color: var(--brown);
+  font-family: proxima-nova, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+}
+
+.woocommerce-order .woocommerce-thankyou-order-received {
+  font-family: "garamond-premier-pro", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+}
+
+.woocommerce-order h3 {
+  font-size: 25px;
+}
+
+.woocommerce-order .woocommerce-order-details, .woocommerce-order .woocommerce-customer-details {
+  width: 100%;
+}
+
+.woocommerce-order ul {
+  list-style: none;
+}
+
+.woocommerce-order ul .woocommerce-Price-amount, .woocommerce-Price-currencySymbol {
+  font-weight: 700;
+}
+
+.woocommerce-order-details {
+  width: 100%;
+}
+
+.woocommerce-order-details table {
+  width: 100%;
+}
+
+.woocommerce-order-details table th, .woocommerce-order-details table td {
+  width: 50%;
+}
+
+.woocommerce-order-details table ul {
+  list-style: none;
+}
+
+.woocommerce-order-details table ul li {
+  display: flex;
+  align-items: baseline;
+  gap: .5rem;
+}
+
+.woocommerce-order .woocommerce-columns--addresses {
+  width: 100%;
+  display: flex;
+}
+
+.woocommerce-column--billing-address, .woocommerce-column--shipping-address {
+  width: 50%;
 }
