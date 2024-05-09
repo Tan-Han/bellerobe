@@ -73,9 +73,9 @@ button {
 /* NAVBAR */
 
 .logo-top {
-  background-image: url("https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/Header.svg");
+  background-image: url("https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/header.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -104,7 +104,7 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 3.5rem;
+  gap: 3rem;
   justify-content: center;
   width: 100%;
 }
