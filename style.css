@@ -658,7 +658,7 @@ footer {
 
 /* Product gallery */
 
-.woocommerce-product-gallery {
+/* .woocommerce-product-gallery {
   grid-column: 1;
   grid-row: 1 / span 2;
 }
@@ -715,7 +715,7 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 
 /* Short description */
 
@@ -727,7 +727,8 @@ footer {
   font-size: 25px;
   font-weight: 700;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 .single-product .sale .summary .price del bdi {
