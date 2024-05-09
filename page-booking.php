@@ -11,26 +11,26 @@
 
             <div class="booking-card">
                 <?php
-                $bookingWeddingDress = get_field('provning_af_brudekjole');
-                if ($bookingWeddingDress): ?>
+                $bookingOutlet = get_field('provning_af_outlet_brudekjole');
+                if ($bookingOutlet): ?>
 
                     <div class="img-box">
                         <img class="booking-img"
-                            src="<?php echo esc_url($bookingWeddingDress['dress_img']['sizes']['medium']); ?>" alt="">
+                            src="<?php echo esc_url($bookingOutlet['dress_img']['sizes']['medium']); ?>" alt="">
                     </div>
                     <div class="booking-info">
                         <div class="booking-card-headline">
-                            <h3><?php echo $bookingWeddingDress['booking_headline']; ?></h3>
+                            <h3><?php echo $bookingOutlet['booking_headline']; ?></h3>
 
                             <div class="price-time">
-                                <?php if (!empty($bookingWeddingDress['booking_price'])): ?>
-                                    <p>DKK <?php echo $bookingWeddingDress['booking_price']; ?> |&nbsp;</p>
+                                <?php if (!empty($bookingOutlet['booking_price'])): ?>
+                                    <p>DKK <?php echo $bookingOutlet['booking_price']; ?> |&nbsp;</p>
                                 <?php endif ?>
-                                <p><?php echo $bookingWeddingDress['booking_time'] ?></p>
+                                <p><?php echo $bookingOutlet['booking_time'] ?></p>
                             </div>
 
                         </div>
-                        <p class="booking-description"><?php echo $bookingWeddingDress['booking_description']; ?></p>
+                        <p class="booking-description"><?php echo $bookingOutlet['booking_description']; ?></p>
                         <div class="booking-btn">
                             <!-- Google Calendar Appointment Scheduling begin -->
                             <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
@@ -591,7 +591,7 @@
     }
 
     /* Contact form */
-    
+
     .contact_form {
         box-shadow: 3px 3px 5px #5C48337D;
     }
