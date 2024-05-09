@@ -304,17 +304,18 @@
                 <div class="contact-info-inner">
                     <div class="call">
 
-                        <i class="fa-solid fa-phone"></i>
-                        <div class="phone">
-                            <?php $productLoop = new WP_Query(
-                                array(
-                                    "post_type" => "address",
-                                    "posts_per_page" => -1,
-                                )
-                            ) ?>
+                        <?php $productLoop = new WP_Query(
+                            array(
+                                "post_type" => "address",
+                                "posts_per_page" => -1,
+                            )
+                        ) ?>
 
-                            <?php while ($productLoop->have_posts()):
-                                $productLoop->the_post() ?>
+                        <?php while ($productLoop->have_posts()):
+                            $productLoop->the_post() ?>
+                            <a href="tel:<?php the_field('phone_number') ?>"></a><i class="fa-solid fa-phone"></i></a>
+                            
+                            <div class="phone">
 
                                 <p><a href="tel:<?php the_field('phone_number') ?>">
                                         +45 <?php the_field('phone_number') ?>
@@ -580,19 +581,25 @@
     .contact-info-inner {
         display: flex;
         align-items: center;
-        gap: 1rem;
+        gap: 2rem;
+        height: 100px;
     }
 
     .call,
     .write {
         border: 2px solid var(--white);
         border-radius: 10px;
-        padding: 1rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 50%;
+        gap: .5rem;
+        min-height: 80px;
+    }
+
+    .call i, .write i {
+        font-size: 40px;
     }
 
     .phone {
