@@ -17,16 +17,20 @@
         <nav>
             <ul>
                 <li><a href="/">Forside</a></li>
-                <li class="dropdown"><a href="/vare-kategori/brudekjoler/" class="dropbtn">Brudekjoler<i class="fa-solid fa-caret-down"></i></a>
+                <li class="dropdown"><a href="/vare-kategori/brudekjoler/" class="dropbtn">Brudekjoler<i
+                            class="fa-solid fa-caret-down"></i></a>
                     <div class="dropdown-content">
+                        <a href="/vare-kategori/brudekjoler/">Brudekjoler</a>
                         <a href="/vare-kategori/brudekjoler/brudekjoler-til-leje/">Bæredygtige brudekjoler</a>
                     </div>
                 </li>
-                <li class="dropdown"><a href="/vare-kategori/gallakjoler/" class="dropbtn">Fest- & Gallakjoler<i class="fa-solid fa-caret-down"></i></a>
-                <div class="dropdown-content">
+                <li class="dropdown"><a href="/vare-kategori/gallakjoler/" class="dropbtn">Fest- & Gallakjoler<i
+                            class="fa-solid fa-caret-down"></i></a>
+                    <div class="dropdown-content">
                         <a href="/vare-kategori/gallakjoler/korte-kjoler/">Korte kjoler</a>
                         <a href="/vare-kategori/gallakjoler/lange-kjoler/">Lange kjoler</a>
-                    </div></li>
+                    </div>
+                </li>
                 <li><a href="/vare-kategori/konfirmationskjoler/">Konfirmationskjoler</a></li>
                 <li><a href="/vare-kategori/sko/">Sko</a></li>
                 <li><a href="/om_os/">Om os</a></li>
