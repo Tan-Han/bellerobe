@@ -13,7 +13,6 @@
       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <!-- Har slettet div, da den var unødvendig og lavet den om til URL i ACF. Jeg har tilføjet lidt kode efter linket for at autoplay, loop og fjerne YT controls -->
 
-<<<<<<< HEAD
 <div class="frontpage_pading">
 <!-- coding for the second section on the frontpage with the introduction text -->
 <section class="section frontpage_introduction">
@@ -48,13 +47,6 @@
 <div class="frontpage_information">
   
   <section class="section frontpage_opening_hours_and_booking">
-=======
-  </section>
-  <!-- coding for the second section on the frontpage with the introduction text -->
-  <section class="section frontpage_introduction">
-    <h2><?php the_field("introduction_header_on_frontpage") ?></h2>
-    <p><?php the_field("introduction_text_on_frontpage") ?></p>
->>>>>>> ec00eb26ae4c3b119b407ba19598bcaf674db3ba
   </section>
 
   <!-- coding for the third section on the frontpage with four categories of products -->
@@ -80,25 +72,10 @@
     </div>
   </section>
 
-<<<<<<< HEAD
 </div>
 
 </div>
   
-=======
-  <!-- coding for the fourth section on the frontpage with the informations of opening hours and map -->
-  <div class="frontpage_information">
-
-    <!-- DISSE BØR IKKE VÆRE SECTIONS - MEN DIV I STEDET :) -->
-    <section class="section frontpage_opening_hours_and_booking">
-    </section>
-
-    <section class="frontpage_map">
-    </section>
-
-  </div>
-
->>>>>>> ec00eb26ae4c3b119b407ba19598bcaf674db3ba
 </main>
 
 
@@ -145,7 +122,6 @@
   }
 
   .section {
-<<<<<<< HEAD
     padding: 20px 0px;
   }
 
@@ -155,9 +131,6 @@
 
   .frontpage_cards {
 
-=======
-    padding: 20px 0px; /* Brug gerne rem i stedet for pixels, da det er bedre i forhold til responsive, når det kommer til padding og margins */
->>>>>>> ec00eb26ae4c3b119b407ba19598bcaf674db3ba
   }
 
   .frontpage_cards {}
