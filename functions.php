@@ -6,6 +6,14 @@ function enqueue_parent_theme_style()
 }
 add_action('wp_enqueue_scripts', 'enqueue_parent_theme_style');
 
+// Linking to script
+
+function enqueue_custom_scripts() {
+  // Enqueue your custom script
+  wp_enqueue_script('custom-script', get_template_directory_uri() . '/js/script.js', array('jquery'), '1.0', true);
+}
+add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
+
 // Remove gutenberg editor in WP
 
 function ad_remove_gutenberg()
