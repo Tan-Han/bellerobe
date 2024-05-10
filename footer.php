@@ -29,9 +29,9 @@
                     <p><a href="tel:<?php the_field('phone_number') ?>">
                             +45 <?php the_field('phone_number') ?>
                         </a></p>
-                    <a href="mailto:<?php the_field('mail') ?>">
+                    <a href="mailto:<?php the_field('email') ?>">
                         <p>
-                            <?php the_field('mail') ?>
+                            <?php the_field('email') ?>
                         </p>
                     </a>
                 </div>
