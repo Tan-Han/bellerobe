@@ -23,15 +23,15 @@
 
                 <ul>
                     <li><a href="/">Forside</a></li>
-                    <li class="dropdown"><a href="/vare-kategori/brudekjoler/" class="dropbtn">Brudekjoler<i
-                                class="fa-solid fa-caret-down"></i></a>
+                    <li class="dropdown"><p class="dropbtn">Brudekjoler<i
+                                class="fa-solid fa-caret-down"></i></p>
                         <div class="dropdown-content">
                             <a href="/vare-kategori/brudekjoler/">Brudekjoler</a>
                             <a href="/vare-kategori/brudekjoler/brudekjoler-til-leje/">Bæredygtige brudekjoler</a>
                         </div>
                     </li>
-                    <li class="dropdown"><a href="/vare-kategori/gallakjoler/" class="dropbtn">Fest- & Gallakjoler<i
-                                class="fa-solid fa-caret-down"></i></a>
+                    <li class="dropdown"><p class="dropbtn">Fest- & Gallakjoler<i
+                                class="fa-solid fa-caret-down"></i></p>
                         <div class="dropdown-content">
                             <a href="/vare-kategori/gallakjoler/korte-kjoler/">Korte kjoler</a>
                             <a href="/vare-kategori/gallakjoler/lange-kjoler/">Lange kjoler</a>
@@ -74,7 +74,7 @@
         });
 
         // Add event listeners to dropdown buttons to toggle dropdown content
-        var dropdownButtons = document.querySelectorAll(".dropdown > a.dropbtn");
+        var dropdownButtons = document.querySelectorAll(".dropdown > p.dropbtn");
         dropdownButtons.forEach(function (button) {
             button.addEventListener("click", function (event) {
                 event.preventDefault(); // Prevent the default link behavior
