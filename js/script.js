@@ -38,9 +38,40 @@ window.onclick = function (e) {
     }
 }
 
-jQuery(document).ready(function($) {
-    // Toggle filter visibility when filter button is clicked
-    $('.filter-button').click(function() {
-        $('.product_filter').slideToggle();
-    });
+// Product filter script
+
+// Function to toggle product filter visibility
+function toggleProductFilter() {
+    var productFilter = document.getElementById("productFilter");
+    productFilter.classList.toggle("show");
+}
+
+// Function to hide product filter on screens less than 1100px wide
+function hideProductFilterOnSmallScreen() {
+    var screenWidth = window.innerWidth;
+    var productFilter = document.getElementById("productFilter");
+    if (screenWidth < 1100) {
+        productFilter.classList.remove("show");
+    }
+}
+
+// Close the product filter if the user clicks outside of it
+window.onclick = function (e) {
+    if (!e.target.matches('.filter-button')) {
+        var productFilter = document.getElementById("productFilter");
+        if (productFilter.classList.contains('show')) {
+            productFilter.classList.remove('show');
+        }
+    }
+}
+
+// Event listener for window resize
+window.addEventListener('resize', function(event){
+    hideProductFilterOnSmallScreen();
 });
+
+// Initially hide product filter on page load if screen width is less than 1100px
+document.addEventListener('DOMContentLoaded', function() {
+    hideProductFilterOnSmallScreen();
+});
+
