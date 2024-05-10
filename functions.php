@@ -73,9 +73,9 @@ add_action("widgets_init", "product_filter_widget");
 function print_product_filter_widget()
 {
   echo '<button class="filter-button" onclick="toggleProductFilter()">Filter</button>';
-  echo '<div class="product_filter" id="productFilter">';
+  echo '<div class="product_filter" id="productFilter"> <div class="filter-inner"';
   dynamic_sidebar("product_filter");
-  echo '</div>';
+  echo '</div></div>';
 }
 
 add_action("woocommerce_before_shop_loop", "print_product_filter_widget");

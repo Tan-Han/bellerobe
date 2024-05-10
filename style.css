@@ -343,7 +343,7 @@ footer {
 
 /* Filter */
 
-.product_filter {
+.filter-inner {
   display: flex;
   justify-content: left;
   gap: 1rem;
