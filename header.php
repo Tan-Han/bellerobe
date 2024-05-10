@@ -51,3 +51,13 @@
 
         </nav>
     </div>
+
+    <script>
+        function mobileMenu() {
+            var menu = document.getElementById("menuLinks");
+            menu.classList.toggle("show");
+        }
+
+        document.getElementById("menuIcon").addEventListener("click", mobileMenu);
+
+    </script>
