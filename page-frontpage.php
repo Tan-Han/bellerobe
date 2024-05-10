@@ -29,20 +29,23 @@
   <h2 class="big_h2 centered_text_frontpage"><?php the_field("introduction_to_cards_on_frontpage") ?></h2>
   
   <div class="frontpage_cards_container">
-    <div class="frontpage_cards">
-      <a class="a_card_text" href="/product-category/brudekjoler/">Brudekjoler</a>
+
+    <div>
+      <a class="frontpage_cards" href="/product-category/brudekjoler/">Brudekjoler
+        <img src="" />
+      </a>
     </div>
 
-    <div class="frontpage_cards">
-      <a class="a_card_text" href="/product-category/gallakjoler/">Galla & festkjoler</a>
+    <div>
+      <a class="frontpage_cards" href="/product-category/gallakjoler/">Galla & festkjoler</a>
     </div>
 
-    <div class="frontpage_cards">
-      <a class="a_card_text" href="/product-category/konfirmationskjoler/">Konfirmationskjoler</a>
+    <div>
+      <a class="frontpage_cards" href="/product-category/konfirmationskjoler/">Konfirmationskjoler</a>
     </div>
 
-    <div class="frontpage_cards">
-      <a class="a_card_text" href="/product-category/sko/">Sko & tilbehør</a>
+    <div>
+      <a class="frontpage_cards" href="/product-category/sko/">Sko & tilbehør</a>
     </div>
   </div>
 </section>
@@ -66,6 +69,7 @@
   /* General styling for frontpage */
   main {
     padding: 0 !important;
+    margin: 0 !important;
     /* Har sat padding til 0 for at kunne sætte videoen helt ud til kanten (!important for at den overwriter den anden padding)*/
   }
 
@@ -134,14 +138,13 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 23%;
-  }
 
-  .a_card_text{
     color: var(--brown);
     font-size: 25px;
     text-align: left;
     text-decoration: none;
   }
+
   /* Fourth section styling */
 
   
