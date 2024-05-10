@@ -1202,3 +1202,51 @@ footer {
 .woocommerce-column--shipping-address {
   width: 50%;
 }
+
+/* MEDIA QUARIES */
+
+@media screen and (max-width: 1550px) {
+  nav ul li a {
+    font-size: 18px;
+  }
+
+  nav .cart-btn-outer-box .cart-btn-box .cart-btn {
+    font-size: 18px;
+  }
+
+  nav .cart-btn-outer-box .cart-btn-box .cart-btn i {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  nav ul li a {
+    font-size: 18px;
+  }
+
+  nav .cart-btn-outer-box .cart-btn-box .cart-btn {
+    font-size: 18px;
+  }
+
+  nav .cart-btn-outer-box .cart-btn-box .cart-btn i {
+    font-size: 24px;
+  }
+}
+
+/* Hide the menu links initially */
+#menuLinks {
+  display: none;
+}
+
+/* Media query for screens under 1000px */
+@media (max-width: 1000px) {
+  #menuLinks {
+    display: none;
+    /* Hide menu by default */
+  }
+
+  /* Show menu when the hamburger icon is clicked */
+  #menuLinks.show {
+    display: block;
+  }
+}

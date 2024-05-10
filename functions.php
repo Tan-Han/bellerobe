@@ -34,7 +34,8 @@ add_action('woocommerce_single_product_summary', 'insert_product_title', 3);
 
 // Adding title to category pages
 
-function add_category_title() {
+function add_category_title()
+{
   ?>
   <h1 class="category-title">
     <?php single_term_title() ?>
@@ -85,3 +86,11 @@ function count_item_in_cart()
 
   return $count;
 }
+
+// Mobile menu
+function enqueue_custom_scripts()
+{
+  // Enqueue your custom script
+  wp_enqueue_script('custom-script', get_template_directory_uri() . '/js/custom-script.js', array('jquery'), '1.0', true);
+}
+add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');

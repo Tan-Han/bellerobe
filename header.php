@@ -15,7 +15,7 @@
             class="logo">
 
         <nav>
-            <ul>
+            <ul id="menuLinks">
                 <li><a href="/">Forside</a></li>
                 <li class="dropdown"><a href="/vare-kategori/brudekjoler/" class="dropbtn">Brudekjoler<i
                             class="fa-solid fa-caret-down"></i></a>
@@ -44,6 +44,10 @@
                     <a href="/cart/" class="cart-btn">Kurv<i class='fas fa-shopping-basket'></i></a>
                 </div>
             </div>
+
+            <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
 
         </nav>
     </div>
