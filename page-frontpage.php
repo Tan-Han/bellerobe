@@ -26,7 +26,7 @@
 
 <!-- third section on the frontpage with four categories of products -->
 <section class="section frontpage_categories">
-  <h2 class="centered_text_frontpage"><?php the_field("introduction_to_cards_on_frontpage") ?></h2>
+  <h2 class="big_h2 centered_text_frontpage"><?php the_field("introduction_to_cards_on_frontpage") ?></h2>
   
   <div>
     <div class="frontpage_cards">
@@ -77,8 +77,8 @@
     padding: 0 8rem;
   }
 
-  h2 {
-    font-size: 25px;
+  .big_h2 {
+    font-size: 45px;
   }
 
   /* First section styling */
