@@ -117,6 +117,10 @@ nav ul {
   width: 100%;
 }
 
+nav ul li p {
+  padding: 0;
+}
+
 nav ul li a, nav ul li .dropbtn {
   color: var(--brown);
   font-size: 22px;
