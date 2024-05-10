@@ -164,6 +164,10 @@ nav ul li a:hover,
   display: block;
 }
 
+nav .cart-btn-outer-box {
+  width: fit-content;
+}
+
 nav .cart-btn-outer-box .cart-btn-box {
   position: relative;
 }
@@ -1243,4 +1247,11 @@ footer {
   #menuLinks.show {
     display: block;
   }
+
+  nav ul {
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+
 }
