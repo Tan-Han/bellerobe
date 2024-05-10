@@ -24,7 +24,7 @@
                 <ul>
                     <li><a href="/">Forside</a></li>
                     <li class="dropdown">
-                        <p class="dropbtn" onclick="dropdownMenu()">Brudekjoler<i class="fa-solid fa-caret-down"></i>
+                        <p class="dropbtn" onclick="dropdownMenuBrudekjoler()">Brudekjoler<i class="fa-solid fa-caret-down"></i>
                         </p>
                         <div class="dropdown-content" id="dropContentBrudekjoler">
                             <a href="/vare-kategori/brudekjoler/">Brudekjoler</a>
@@ -32,7 +32,7 @@
                         </div>
                     </li>
                     <li class="dropdown">
-                        <p class="dropbtn" onclick="dropdownMenu()">Fest- & Gallakjoler<i
+                        <p class="dropbtn" onclick="dropdownMenuFestGallakjoler()">Fest- & Gallakjoler<i
                                 class="fa-solid fa-caret-down"></i></p>
                         <div class="dropdown-content" id="dropContentGallakjoler">
                             <a href="/vare-kategori/gallakjoler/korte-kjoler/">Korte kjoler</a>
