@@ -73,38 +73,14 @@
             });
         });
 
-        // Function to toggle dropdown menu
-        function toggleDropdown() {
-            this.classList.toggle("active");
-            var dropdownContent = this.nextElementSibling;
-            if (dropdownContent.style.display === "block") {
-                dropdownContent.style.display = "none";
-            } else {
-                dropdownContent.style.display = "block";
-            }
-        }
-
-        // Function to check screen width and apply appropriate behavior
-        function applyDropdownBehavior() {
-            var screenWidth = window.innerWidth;
-            var dropdowns = document.querySelectorAll('.dropbtn');
-
-            for (var i = 0; i < dropdowns.length; i++) {
-                var dropdown = dropdowns[i];
-                if (screenWidth < 1000) {
-                    dropdown.addEventListener('click', toggleDropdown);
-                } else {
-                    dropdown.removeEventListener('click', toggleDropdown);
-                    dropdown.removeEventListener('mouseenter', toggleDropdown);
-                    dropdown.removeEventListener('mouseleave', toggleDropdown);
-                }
-            }
-        }
-
-        // Initial execution
-        applyDropdownBehavior();
-
-        // Event listener for window resize
-        window.addEventListener('resize', applyDropdownBehavior);
+        // Add event listeners to dropdown buttons to toggle dropdown content
+        var dropdownButtons = document.querySelectorAll(".dropdown > a.dropbtn");
+        dropdownButtons.forEach(function (button) {
+            button.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent the default link behavior
+                var dropdownContent = button.nextElementSibling;
+                dropdownContent.classList.toggle("show");
+            });
+        });
 
     </script>

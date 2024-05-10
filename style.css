@@ -168,9 +168,9 @@ nav ul li a:hover,
   border: none;
 }
 
-.dropdown:hover .dropdown-content {
+/* .dropdown:hover .dropdown-content {
   display: block;
-}
+} */
 
 nav .cart-btn-outer-box {
   width: fit-content;
