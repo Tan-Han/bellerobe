@@ -23,14 +23,14 @@
 
                 <ul>
                     <li><a href="/">Forside</a></li>
-                    <li class="dropdown"><p class="dropbtn">Brudekjoler<i
+                    <li class="dropdown"><p class="dropbtn" onclick="dropdownMenu()">Brudekjoler<i
                                 class="fa-solid fa-caret-down"></i></p>
                         <div class="dropdown-content" id="dropContent">
                             <a href="/vare-kategori/brudekjoler/">Brudekjoler</a>
                             <a href="/vare-kategori/brudekjoler/brudekjoler-til-leje/">Bæredygtige brudekjoler</a>
                         </div>
                     </li>
-                    <li class="dropdown"><p class="dropbtn">Fest- & Gallakjoler<i
+                    <li class="dropdown"><p class="dropbtn" onclick="dropdownMenu()">Fest- & Gallakjoler<i
                                 class="fa-solid fa-caret-down"></i></p>
                         <div class="dropdown-content" id="dropContent">
                             <a href="/vare-kategori/gallakjoler/korte-kjoler/">Korte kjoler</a>
@@ -75,7 +75,7 @@
 
         /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
-        function myFunction() {
+        function dropdownMenu() {
             document.getElementById("dropContent").classList.toggle("show");
         }
 
