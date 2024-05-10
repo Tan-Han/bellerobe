@@ -63,6 +63,7 @@
 <!-- this is the styling for the frontpage -->
 <style>
 
+  /* General styling for frontpage */
   main {
     padding: 0 !important;
     /* Har sat padding til 0 for at kunne sætte videoen helt ud til kanten (!important for at den overwriter den anden padding)*/
@@ -74,6 +75,10 @@
 
   .frontpage_pading {
     padding: 0 8rem;
+  }
+
+  h2 {
+    font-size: 30px;
   }
 
   /* First section styling */
