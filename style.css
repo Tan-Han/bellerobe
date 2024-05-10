@@ -122,7 +122,8 @@ nav ul {
   padding: 0;
 } */
 
-nav ul li a, nav ul li .dropbtn {
+nav ul li a,
+nav ul li .dropbtn {
   color: var(--brown);
   font-size: 22px;
   font-weight: 700;
@@ -132,7 +133,8 @@ nav ul li a, nav ul li .dropbtn {
 }
 
 nav ul li a:hover,
-.dropdown:hover .dropbtn, .dropbtn:focus {
+.dropdown:hover .dropbtn,
+.dropbtn:focus {
   border-color: var(--quaternary-color);
 }
 
@@ -175,7 +177,7 @@ nav ul li a:hover,
 
 .show {
   display: block;
-} 
+}
 
 nav .cart-btn-outer-box {
   width: fit-content;
@@ -343,7 +345,12 @@ footer {
 
 /* Filter */
 
-.filter-inner {
+.filter-button {
+  width: fit-content;
+  display: none;
+}
+
+.product_filter {
   display: flex;
   justify-content: left;
   gap: 1rem;
@@ -1225,7 +1232,9 @@ footer {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1550px) {
-  nav ul li a, nav ul li .dropbtn {
+
+  nav ul li a,
+  nav ul li .dropbtn {
     font-size: 18px;
   }
 
@@ -1247,7 +1256,7 @@ footer {
   nav ul {
     gap: 2rem;
   }
-  
+
   nav .cart-btn-outer-box .cart-btn-box .cart-btn {
     font-size: 18px;
   }
@@ -1263,7 +1272,8 @@ footer {
     gap: 2rem;
   }
 
-  nav ul li a, nav ul li .dropbtn {
+  nav ul li a,
+  nav ul li .dropbtn {
     font-size: 16px;
   }
 
@@ -1305,7 +1315,8 @@ footer {
     padding: 1rem 0;
   }
 
-  nav ul li a, nav ul li .dropbtn  {
+  nav ul li a,
+  nav ul li .dropbtn {
     font-size: 20px;
   }
 
@@ -1319,5 +1330,17 @@ footer {
 
   nav .cart-btn-outer-box .cart-btn-box .cart-btn i {
     font-size: 24px;
+  }
+
+  .filter-button {
+    display: block;
+  }
+
+  .product_filter {
+    display: none;
+  }
+
+  .product_filter.show {
+    display: flex;
   }
 }
