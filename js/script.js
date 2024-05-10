@@ -37,3 +37,15 @@ window.onclick = function (e) {
         }
     }
 }
+
+jQuery(document).ready(function($) {
+    // Hide filter on screens under 1100px wide
+    if ($(window).width() < 1100) {
+        $('.product_filter').hide();
+    }
+
+    // Toggle filter visibility when filter button is clicked
+    $('.filter-button').click(function() {
+        $('.product_filter').slideToggle();
+    });
+});

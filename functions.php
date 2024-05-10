@@ -72,6 +72,7 @@ add_action("widgets_init", "product_filter_widget");
 
 function print_product_filter_widget()
 {
+  echo '<button class="filter-button">Filter</button>';
   echo '<div class="product_filter">';
   dynamic_sidebar("product_filter");
   echo '</div>';
