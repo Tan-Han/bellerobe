@@ -14,43 +14,45 @@
         <img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/belle-robe.svg" alt=""
             class="logo">
 
-        <nav id="menuLinks">
-            <ul>
-                <li><a href="/">Forside</a></li>
-                <li class="dropdown"><a href="/vare-kategori/brudekjoler/" class="dropbtn">Brudekjoler<i
-                            class="fa-solid fa-caret-down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="/vare-kategori/brudekjoler/">Brudekjoler</a>
-                        <a href="/vare-kategori/brudekjoler/brudekjoler-til-leje/">Bæredygtige brudekjoler</a>
-                    </div>
-                </li>
-                <li class="dropdown"><a href="/vare-kategori/gallakjoler/" class="dropbtn">Fest- & Gallakjoler<i
-                            class="fa-solid fa-caret-down"></i></a>
-                    <div class="dropdown-content">
-                        <a href="/vare-kategori/gallakjoler/korte-kjoler/">Korte kjoler</a>
-                        <a href="/vare-kategori/gallakjoler/lange-kjoler/">Lange kjoler</a>
-                        <a href="/vare-kategori/gallakjoler/">Alle fest- & gallakjoler</a>
-                    </div>
-                </li>
-                <li><a href="/vare-kategori/konfirmationskjoler/">Konfirmationskjoler</a></li>
-                <li><a href="/vare-kategori/sko/">Sko</a></li>
-                <li><a href="/om_os/">Om os</a></li>
-                <li><a href="/booking/">Book tid</a></li>
-            </ul>
 
-            <div class="cart-btn-outer-box">
-                <div class="cart-btn-box">
-                    <span id="cartCount"><?php echo count_item_in_cart() ?></span>
-                    <a href="/cart/" class="cart-btn">Kurv<i class='fas fa-shopping-basket'></i></a>
+        <nav>
+            <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <div class="menu" id="menuLinks">
+
+                <ul>
+                    <li><a href="/">Forside</a></li>
+                    <li class="dropdown"><a href="/vare-kategori/brudekjoler/" class="dropbtn">Brudekjoler<i
+                                class="fa-solid fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="/vare-kategori/brudekjoler/">Brudekjoler</a>
+                            <a href="/vare-kategori/brudekjoler/brudekjoler-til-leje/">Bæredygtige brudekjoler</a>
+                        </div>
+                    </li>
+                    <li class="dropdown"><a href="/vare-kategori/gallakjoler/" class="dropbtn">Fest- & Gallakjoler<i
+                                class="fa-solid fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="/vare-kategori/gallakjoler/korte-kjoler/">Korte kjoler</a>
+                            <a href="/vare-kategori/gallakjoler/lange-kjoler/">Lange kjoler</a>
+                            <a href="/vare-kategori/gallakjoler/">Alle fest- & gallakjoler</a>
+                        </div>
+                    </li>
+                    <li><a href="/vare-kategori/konfirmationskjoler/">Konfirmationskjoler</a></li>
+                    <li><a href="/vare-kategori/sko/">Sko</a></li>
+                    <li><a href="/om_os/">Om os</a></li>
+                    <li><a href="/booking/">Book tid</a></li>
+                </ul>
+
+                <div class="cart-btn-outer-box">
+                    <div class="cart-btn-box">
+                        <span id="cartCount"><?php echo count_item_in_cart() ?></span>
+                        <a href="/cart/" class="cart-btn">Kurv<i class='fas fa-shopping-basket'></i></a>
+                    </div>
                 </div>
+
             </div>
-
-
-
         </nav>
-        <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
-            <i class="fa fa-bars"></i>
-        </a>
     </div>
 
     <script>
