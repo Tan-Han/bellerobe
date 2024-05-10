@@ -58,7 +58,6 @@
 </main>
 
 
-
 <!-- this is the styling for the frontpage -->
 <style>
   main {
