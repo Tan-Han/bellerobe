@@ -125,6 +125,7 @@
   .frontpage_cards_container {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
   }
 
   .frontpage_cards {
