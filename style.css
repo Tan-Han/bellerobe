@@ -94,6 +94,7 @@ button {
 
 nav {
   padding: 1.2rem 8rem;
+  overflow: hidden;
 }
 
 .menu-icon {
@@ -106,7 +107,6 @@ nav .menu {
   justify-content: space-between;
   align-items: center;
   border: none;
-  overflow: hidden;
 }
 
 nav ul {
