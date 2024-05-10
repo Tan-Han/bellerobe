@@ -25,24 +25,24 @@
     </section>
 
 <!-- third section on the frontpage with four categories of products -->
-<section class="section frontpage_categories">
+<section class="section">
   <h2 class="big_h2 centered_text_frontpage"><?php the_field("introduction_to_cards_on_frontpage") ?></h2>
   
-  <div>
+  <div class="frontpage_cards_container">
     <div class="frontpage_cards">
-      <a href="/product-category/brudekjoler/">Brudekjoler</a>
+      <a class="a_card_text" href="/product-category/brudekjoler/">Brudekjoler</a>
     </div>
 
     <div class="frontpage_cards">
-      <a href="/product-category/gallakjoler/">Galla & festkjoler</a>
+      <a class="a_card_text" href="/product-category/gallakjoler/">Galla & festkjoler</a>
     </div>
 
     <div class="frontpage_cards">
-      <a href="/product-category/konfirmationskjoler/">Konfirmationskjoler</a>
+      <a class="a_card_text" href="/product-category/konfirmationskjoler/">Konfirmationskjoler</a>
     </div>
 
     <div class="frontpage_cards">
-      <a href="/product-category/sko/">Sko & tilbehør</a>
+      <a class="a_card_text" href="/product-category/sko/">Sko & tilbehør</a>
     </div>
   </div>
 </section>
@@ -70,7 +70,7 @@
   }
 
   .section {
-    padding: 20px 0px;
+    padding-top: 40px;
   }
 
   .frontpage_pading {
@@ -122,10 +122,25 @@
     text-align: center;
   }
 
-  .frontpage_cards {
-
+  .frontpage_cards_container {
+    display: flex;
+    justify-content: space-between;
   }
 
+  .frontpage_cards {
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 23%;
+  }
+
+  .a_card_text{
+    color: var(--brown);
+    font-size: 25px;
+    text-align: left;
+    text-decoration: none;
+  }
   /* Fourth section styling */
 
   
