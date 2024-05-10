@@ -92,8 +92,16 @@ button {
   width: auto;
 }
 
-nav .menu {
+nav {
   padding: 1.2rem 8rem;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 25px;
+}
+
+nav .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1248,10 +1256,17 @@ footer {
     display: block;
   }
 
+  .menu-icon {
+    display: block;
+  }
+
+  nav {
+    padding: 1.2rem 3rem;
+  }
+
   nav ul {
     flex-direction: column;
     gap: .5rem;
   }
-
 
 }
