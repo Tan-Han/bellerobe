@@ -117,15 +117,14 @@ nav ul {
   width: 100%;
 }
 
-nav ul li p {
+/* nav ul li p {
   padding: 0;
-}
+} */
 
 nav ul li a, nav ul li .dropbtn {
   color: var(--brown);
   font-size: 22px;
   font-weight: 700;
-  padding-top: .5rem;
   padding-bottom: .3rem;
   border-bottom: 2px solid transparent;
   width: fit-content;
