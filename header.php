@@ -23,16 +23,18 @@
 
                 <ul>
                     <li><a href="/">Forside</a></li>
-                    <li class="dropdown"><p class="dropbtn" onclick="dropdownMenu()">Brudekjoler<i
-                                class="fa-solid fa-caret-down"></i></p>
-                        <div class="dropdown-content" id="dropContent">
+                    <li class="dropdown">
+                        <p class="dropbtn" onclick="dropdownMenu()">Brudekjoler<i class="fa-solid fa-caret-down"></i>
+                        </p>
+                        <div class="dropdown-content" id="dropContentBrudekjoler">
                             <a href="/vare-kategori/brudekjoler/">Brudekjoler</a>
                             <a href="/vare-kategori/brudekjoler/brudekjoler-til-leje/">Bæredygtige brudekjoler</a>
                         </div>
                     </li>
-                    <li class="dropdown"><p class="dropbtn" onclick="dropdownMenu()">Fest- & Gallakjoler<i
+                    <li class="dropdown">
+                        <p class="dropbtn" onclick="dropdownMenu()">Fest- & Gallakjoler<i
                                 class="fa-solid fa-caret-down"></i></p>
-                        <div class="dropdown-content" id="dropContent">
+                        <div class="dropdown-content" id="dropContentGallakjoler">
                             <a href="/vare-kategori/gallakjoler/korte-kjoler/">Korte kjoler</a>
                             <a href="/vare-kategori/gallakjoler/lange-kjoler/">Lange kjoler</a>
                             <a href="/vare-kategori/gallakjoler/">Alle fest- & gallakjoler</a>
@@ -73,18 +75,31 @@
             });
         });
 
-        /* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-        function dropdownMenu() {
-            document.getElementById("dropContent").classList.toggle("show");
+
+        // Function to toggle dropdown content for Brudekjoler
+        function dropdownMenuBrudekjoler() {
+            var dropdownContent = document.getElementById("dropContentBrudekjoler");
+            dropdownContent.classList.toggle("show");
         }
 
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function (e) {
-            if (!e.target.matches('.dropbtn')) {
-                var myDropdown = document.getElementById("dropContent");
-                if (myDropdown.classList.contains('show')) {
-                    myDropdown.classList.remove('show');
+        // Function to toggle dropdown content for Fest- & Gallakjoler
+        function dropdownMenuFestGallakjoler() {
+            var dropdownContent = document.getElementById("dropContentGallakjoler");
+            dropdownContent.classList.toggle("show");
+        }
+
+        // Add event listener to the menu icon
+        document.querySelector(".menu-icon").addEventListener("click", mobileMenu);
+
+        // Add event listener to close dropdown menus when clicking outside
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
                 }
             }
         }
