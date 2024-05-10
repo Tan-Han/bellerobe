@@ -12,6 +12,7 @@
   </div>
 </section>
 
+<div class="frontpage_pading">
 <!-- coding for the second section on the frontpage with the introduction text -->
 <section class="section frontpage_introduction">
   <h2><?php the_field("introduction_header_on_frontpage") ?></h2>
@@ -51,6 +52,8 @@
   </section>
 
 </div>
+
+</div>
   
 </main>
 
@@ -67,8 +70,12 @@
     padding: 20px 0px;
   }
 
+  .frontpage_pading {
+    padding: 0 8rem;
+  }
+
   .frontpage_cards {
-    
+
   }
 
 </style>
