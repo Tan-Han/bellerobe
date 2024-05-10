@@ -14,8 +14,8 @@
         <img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/belle-robe.svg" alt=""
             class="logo">
 
-        <nav>
-            <ul id="menuLinks">
+        <nav id="menuLinks">
+            <ul>
                 <li><a href="/">Forside</a></li>
                 <li class="dropdown"><a href="/vare-kategori/brudekjoler/" class="dropbtn">Brudekjoler<i
                             class="fa-solid fa-caret-down"></i></a>
@@ -45,11 +45,12 @@
                 </div>
             </div>
 
-            <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
-                <i class="fa fa-bars"></i>
-            </a>
+
 
         </nav>
+        <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
 
     <script>
