@@ -23,16 +23,16 @@
 
                 <ul>
                     <li><a href="/">Forside</a></li>
-                    <li class="dropdown"><a href="/vare-kategori/brudekjoler/" class="dropbtn">Brudekjoler<i
-                                class="fa-solid fa-caret-down"></i></a>
-                        <div class="dropdown-content">
+                    <li class="dropdown"><p class="dropbtn">Brudekjoler<i
+                                class="fa-solid fa-caret-down"></i></p>
+                        <div class="dropdown-content" id="dropContent">
                             <a href="/vare-kategori/brudekjoler/">Brudekjoler</a>
                             <a href="/vare-kategori/brudekjoler/brudekjoler-til-leje/">Bæredygtige brudekjoler</a>
                         </div>
                     </li>
-                    <li class="dropdown"><a href="/vare-kategori/gallakjoler/" class="dropbtn">Fest- & Gallakjoler<i
-                                class="fa-solid fa-caret-down"></i></a>
-                        <div class="dropdown-content">
+                    <li class="dropdown"><p class="dropbtn">Fest- & Gallakjoler<i
+                                class="fa-solid fa-caret-down"></i></p>
+                        <div class="dropdown-content" id="dropContent">
                             <a href="/vare-kategori/gallakjoler/korte-kjoler/">Korte kjoler</a>
                             <a href="/vare-kategori/gallakjoler/lange-kjoler/">Lange kjoler</a>
                             <a href="/vare-kategori/gallakjoler/">Alle fest- & gallakjoler</a>
@@ -73,36 +73,19 @@
             });
         });
 
-        // Function to detect touch devices
-        function isTouchDevice() {
-            return 'ontouchstart' in window || navigator.maxTouchPoints;
+        /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("dropContent").classList.toggle("show");
         }
 
-        // Function to toggle dropdown content
-        function toggleDropdown(button) {
-            var dropdownContent = button.nextElementSibling;
-            dropdownContent.classList.toggle("show");
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("dropContent");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
         }
-
-        // Add event listeners to dropdown buttons
-        var dropdownButtons = document.querySelectorAll(".dropdown > a.dropbtn");
-        dropdownButtons.forEach(function (button) {
-            // On touch devices, toggle dropdown on click
-            if (isTouchDevice()) {
-                button.addEventListener("click", function (event) {
-                    event.preventDefault(); // Prevent the default link behavior
-                    toggleDropdown(button);
-                });
-            }
-            // On non-touch devices, show dropdown on hover
-            else {
-                button.addEventListener("mouseover", function () {
-                    toggleDropdown(button);
-                });
-                button.addEventListener("mouseout", function () {
-                    toggleDropdown(button);
-                });
-            }
-        });
-
     </script>

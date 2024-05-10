@@ -117,7 +117,7 @@ nav ul {
   width: 100%;
 }
 
-nav ul li a {
+nav ul li a, nav ul li .dropbtn {
   color: var(--brown);
   font-size: 22px;
   font-weight: 700;
@@ -127,7 +127,7 @@ nav ul li a {
 }
 
 nav ul li a:hover,
-.dropdown:hover .dropbtn {
+.dropdown:hover .dropbtn, .dropbtn:focus {
   border-color: var(--quaternary-color);
 }
 
@@ -168,9 +168,9 @@ nav ul li a:hover,
   border: none;
 }
 
-/* .dropdown:hover .dropdown-content {
+.show {
   display: block;
-} */
+} 
 
 nav .cart-btn-outer-box {
   width: fit-content;
