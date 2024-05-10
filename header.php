@@ -16,7 +16,7 @@
 
 
         <nav>
-            <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">
+            <a href="javascript:void(0);" class="menu-icon" onclick="mobileMenu()">
                 <i class="fa fa-bars"></i>
             </a>
             <div class="menu" id="menuLinks">
