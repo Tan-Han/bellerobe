@@ -92,7 +92,7 @@ button {
   width: auto;
 }
 
-nav {
+nav .menu {
   padding: 1.2rem 8rem;
   display: flex;
   justify-content: space-between;
