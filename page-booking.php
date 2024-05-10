@@ -6,28 +6,31 @@
     <section>
         <h1 class="booking-headline">Book tid</h1>
         <div class="booking-list">
+
+            <!-- Wedding dress booking -->
+
             <div class="booking-card">
                 <?php
-                $bookingWeddingDress = get_field('provning_af_brudekjole');
-                if ($bookingWeddingDress): ?>
+                $bookingDress = get_field('provning_brudekjole');
+                if ($bookingDress): ?>
 
                     <div class="img-box">
-                        <img class="booking-img"
-                            src="<?php echo esc_url($bookingWeddingDress['dress_img']['sizes']['medium']); ?>" alt="">
+                        <img class="booking-img" src="<?php echo esc_url($bookingDress['dress_img']['sizes']['medium']); ?>"
+                            alt="">
                     </div>
                     <div class="booking-info">
                         <div class="booking-card-headline">
-                            <h3><?php echo $bookingWeddingDress['booking_headline']; ?></h3>
+                            <h3><?php echo $bookingDress['booking_headline']; ?></h3>
 
                             <div class="price-time">
-                                <?php if (!empty($bookingWeddingDress['booking_price'])): ?>
-                                    <p>DKK <?php echo $bookingWeddingDress['booking_price']; ?> |&nbsp;</p>
+                                <?php if (!empty($bookingDress['booking_price'])): ?>
+                                    <p>DKK <?php echo $bookingDress['booking_price']; ?> |&nbsp;</p>
                                 <?php endif ?>
-                                <p><?php echo $bookingWeddingDress['booking_time'] ?></p>
+                                <p><?php echo $bookingDress['booking_time'] ?></p>
                             </div>
 
                         </div>
-                        <p class="booking-description"><?php echo $bookingWeddingDress['booking_description']; ?></p>
+                        <p class="booking-description"><?php echo $bookingDress['booking_description']; ?></p>
                         <div class="booking-btn">
                             <!-- Google Calendar Appointment Scheduling begin -->
                             <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
@@ -51,28 +54,30 @@
                 <?php endif; ?>
             </div>
 
+            <!-- Outlet Wedding dress booking -->
+
             <div class="booking-card">
                 <?php
-                $bookingWeddingDressOutlet = get_field('provning_af_outlet_brudekjole');
-                if ($bookingWeddingDressOutlet): ?>
+                $bookingOutlet = get_field('provning_outlet');
+                if ($bookingOutlet): ?>
 
                     <div class="img-box">
                         <img class="booking-img"
-                            src="<?php echo esc_url($bookingWeddingDressOutlet['dress_img']['sizes']['medium']); ?>" alt="">
+                            src="<?php echo esc_url($bookingOutlet['dress_img']['sizes']['medium']); ?>" alt="">
                     </div>
                     <div class="booking-info">
                         <div class="booking-card-headline">
-                            <h3><?php echo $bookingWeddingDressOutlet['booking_headline']; ?></h3>
+                            <h3><?php echo $bookingOutlet['booking_headline']; ?></h3>
 
                             <div class="price-time">
-                                <?php if (!empty($bookingWeddingDressOutlet['booking_price'])): ?>
-                                    <p>DKK <?php echo $bookingWeddingDressOutlet['booking_price']; ?> |&nbsp;</p>
+                                <?php if (!empty($bookingOutlet['booking_price'])): ?>
+                                    <p>DKK <?php echo $bookingOutlet['booking_price']; ?> |&nbsp;</p>
                                 <?php endif ?>
-                                <p><?php echo $bookingWeddingDressOutlet['booking_time'] ?></p>
+                                <p><?php echo $bookingOutlet['booking_time'] ?></p>
                             </div>
 
                         </div>
-                        <p class="booking-description"><?php echo $bookingWeddingDressOutlet['booking_description']; ?></p>
+                        <p class="booking-description"><?php echo $bookingOutlet['booking_description']; ?></p>
                         <div class="booking-btn">
                             <!-- Google Calendar Appointment Scheduling begin -->
                             <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
@@ -95,6 +100,8 @@
                     </div>
                 <?php endif; ?>
             </div>
+
+            <!-- Galla dress booking -->
 
             <div class="booking-card">
                 <?php
@@ -141,6 +148,8 @@
                 <?php endif; ?>
             </div>
 
+            <!-- Galla dress group booking -->
+
             <div class="booking-card">
                 <?php
                 $bookingGallaGroup = get_field('provning_af_gallakjole_gruppe');
@@ -186,28 +195,30 @@
                 <?php endif; ?>
             </div>
 
+            <!-- Pickup dress booking -->
+
             <div class="booking-card">
                 <?php
-                $bookingPickup = get_field('afhentning_kjole');
-                if ($bookingPickup): ?>
+                $bookingDressPickup = get_field('afhentning_kjole');
+                if ($bookingDressPickup): ?>
 
                     <div class="img-box">
                         <img class="booking-img"
-                            src="<?php echo esc_url($bookingPickup['dress_img']['sizes']['medium']); ?>" alt="">
+                            src="<?php echo esc_url($bookingDressPickup['dress_img']['sizes']['medium']); ?>" alt="">
                     </div>
                     <div class="booking-info">
                         <div class="booking-card-headline">
-                            <h3><?php echo $bookingPickup['booking_headline']; ?></h3>
+                            <h3><?php echo $bookingDressPickup['booking_headline']; ?></h3>
 
                             <div class="price-time">
-                                <?php if (!empty($bookingPickup['booking_price'])): ?>
-                                    <p>DKK <?php echo $bookingPickup['booking_price']; ?> |&nbsp;</p>
+                                <?php if (!empty($bookingDressPickup['booking_price'])): ?>
+                                    <p>DKK <?php echo $bookingDressPickup['booking_price']; ?> |&nbsp;</p>
                                 <?php endif ?>
-                                <p><?php echo $bookingPickup['booking_time'] ?></p>
+                                <p><?php echo $bookingDressPickup['booking_time'] ?></p>
                             </div>
 
                         </div>
-                        <p class="booking-description"><?php echo $bookingPickup['booking_description']; ?></p>
+                        <p class="booking-description"><?php echo $bookingDressPickup['booking_description']; ?></p>
                         <div class="booking-btn">
                             <!-- Google Calendar Appointment Scheduling begin -->
                             <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
@@ -230,6 +241,8 @@
                     </div>
                 <?php endif; ?>
             </div>
+
+            <!-- Confirmation dress booking -->
 
             <div class="booking-card">
                 <?php
@@ -285,79 +298,128 @@
             <h2 class="booking-headline">Kontakt os</h2>
 
             <div class="contact-info-box">
+
                 <p>Ring til os eller send os en mail</p>
-                <div class="phone">
-                    <b>Telefon:&nbsp;</b>
-                    <a href="tel:<?php the_field("phone_number") ?>">
-                        <p><?php the_field("phone_number") ?></p>
-                    </a>
-                </div>
-                <button id="contactBtn">Skriv til os</button>
-                <div id="contactForm" class="contact_form_box">
-                    <div class="contact_form">
-                        <span class="close">&times;</span>
-                        <div class="contact">
-                            <h3>Send os en besked</h3>
-                            <?php echo do_shortcode('[contact-form-7 id="8a0404d" title="Belle Robe Contact Form"]') ?>
+
+                <div class="contact-info-inner">
+                    <div class="call">
+
+                        <?php $productLoop = new WP_Query(
+                            array(
+                                "post_type" => "address",
+                                "posts_per_page" => -1,
+                            )
+                        ) ?>
+
+                        <?php while ($productLoop->have_posts()):
+                            $productLoop->the_post() ?>
+                            <a href="tel:<?php the_field('phone_number') ?>"></a><i class="fa-solid fa-phone"></i></a>
+                            
+                            <div class="phone">
+
+                                <p><a href="tel:<?php the_field('phone_number') ?>">
+                                        +45 <?php the_field('phone_number') ?>
+                                    </a></p>
+
+                            <?php endwhile ?>
                         </div>
                     </div>
+
+                    <div class="write">
+                        <i class="fa-solid fa-envelope"></i>
+                        <button id="contactBtn">Skriv til os</button>
+                        <div id="contactForm" class="contact_form_box">
+                            <div class="contact_form">
+                                <span class="close">&times;</span>
+                                <div class="contact">
+                                    <h3>Send os en besked</h3>
+                                    <?php echo do_shortcode('[contact-form-7 id="4d7ddd4" title="Kontaktformular"]') ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
         </div>
 
         <div class="opening-hours">
             <h2 class="booking-headline">Åbningstider</h2>
             <div class="opening-hours-box info-box">
-                <?php
-                $openingHours = get_field('opening_hours');
-                if ($openingHours): ?>
+
+                <?php $productLoop = new WP_Query(
+                    array(
+                        "post_type" => "open_hours",
+                        "posts_per_page" => -1,
+                        "orderby" => "date",  // Order by date
+                        "order" => "ASC"     // Reverse order (latest posts first)
+                    )
+                ) ?>
+
+                <?php while ($productLoop->have_posts()):
+                    $productLoop->the_post() ?>
+
                     <div class="hours">
-                        <b>Mandag:&nbsp;</b>
-                        <p><?php echo $openingHours['mandag'] ?></p>
+                        <b><?php the_title() ?>:&nbsp;</b>
+
+                        <?php if (!get_field('closed')) {
+                            if (get_field("open") && get_field("close")): ?>
+                                <p><?php the_field("open"); ?>&nbsp;-&nbsp;</p>
+                                <p><?php the_field("close"); ?></p>
+                            <?php endif;
+                        } ?>
+
+                        <?php
+                        if (!get_field('closed')) {
+                            $openingHours = get_field('open_later');
+                            if (!empty($openingHours['open_later']) && !empty($openingHours['close_later'])): ?>
+                                <p><?php echo '&nbsp;&&nbsp;'; ?></p>
+                                <p><?php echo $openingHours['open_late']; ?></p>
+                                <p><?php echo '&nbsp;-&nbsp;'; ?></p>
+                                <p><?php echo $openingHours['close_late']; ?></p>
+                            <?php endif;
+                        } ?>
+
+                        <?php if (get_field('closed')) {
+                            echo '<p>Lukket</p>';
+                        }
+
+                        if (get_field('book')) {
+                            echo '<p>Se tider ved booking</p>';
+                        }
+                        ?>
                     </div>
-                    <div class="hours">
-                        <b>Tirsdag:&nbsp;</b>
-                        <p><?php echo $openingHours['tirsdag'] ?></p>
-                    </div>
-                    <div class="hours">
-                        <b>Onsdag:&nbsp;</b>
-                        <p><?php echo $openingHours['onsdag'] ?></p>
-                    </div>
-                    <div class="hours">
-                        <b>Torsdag:&nbsp;</b>
-                        <p><?php echo $openingHours['torsdag'] ?></p>
-                    </div>
-                    <div class="hours">
-                        <b>Fredag:&nbsp;</b>
-                        <p><?php echo $openingHours['fredag'] ?></p>
-                    </div>
-                    <div class="hours">
-                        <b>Lørdag:&nbsp;</b>
-                        <p><?php echo $openingHours['lordag'] ?></p>
-                    </div>
-                    <div class="hours">
-                        <b>Søndag og helligdage:&nbsp;</b>
-                        <p><?php echo $openingHours['sondag'] ?></p>
-                    </div>
-                    <p class="more-times"><?php echo $openingHours['flere-tider'] ?></p>
-                <?php endif; ?>
+
+                <?php endwhile ?>
+
             </div>
+        </div>
         </div>
 
         <div class="address">
             <h2 class="booking-headline">Adresse</h2>
             <div class="address-box info-box">
-                <?php
-                $address = get_field('location');
-                if ($address): ?>
-                    <p class="store-address"><?php echo $address['address'] ?></p>
+
+                <?php $productLoop = new WP_Query(
+                    array(
+                        "post_type" => "address",
+                        "posts_per_page" => -1,
+                    )
+                ) ?>
+
+                <?php while ($productLoop->have_posts()):
+                    $productLoop->the_post() ?>
+
+                    <p class="store-address"><?php the_field('street_number') ?>, <?php the_field('postal_code') ?></p>
 
                     <iframe class="maps"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4505.774172981708!2d8.478445877117661!3d55.621380402105835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b1e67d2f3d7db%3A0x1edb8a96de66a4e9!2sBelle%20Robe%20bridal%20and%20party%20dresses!5e0!3m2!1sen!2sdk!4v1714492742855!5m2!1sen!2sdk"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4505.774172981708!2d8.478445877117661!3d55.621380402105835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b1e67d2f3d7db%3A0x1edb8a96de66a4e9!2sBelle%20Robe%20bridal%20and%20party%20dresses!5e0!3m2!1sen!2sdk!4v1715084743677!5m2!1sen!2sdk"
                         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-                <?php endif; ?>
+                <?php endwhile ?>
+
             </div>
         </div>
     </section>
@@ -369,6 +431,11 @@
         display: grid;
         justify-items: center;
         grid-template-columns: repeat(2, 1fr);
+        gap: 8rem;
+    }
+
+    section {
+        width: 100%;
     }
 
     .booking-headline {
@@ -454,6 +521,7 @@
         line-height: normal !important;
         letter-spacing: normal !important;
         font-size: 16px;
+        float: right;
     }
 
     .qxCTlb:hover {
@@ -511,6 +579,28 @@
         font-size: 20px;
     }
 
+    .contact-info-inner {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        height: 100px;
+    }
+
+    .call,
+    .write {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        gap: 1.5rem;
+        min-height: 80px;
+    }
+
+    .call i, .write i {
+        font-size: 55px;
+    }
+
     .phone {
         display: flex;
         align-items: baseline;
@@ -540,14 +630,19 @@
 
     /* Contact form */
 
-    .contact {
+    .contact_form {
+        box-shadow: 3px 3px 5px #5C48337D;
+    }
+
+    .contact_form .contact {
         padding: 2rem;
     }
 
     .contact h3 {
         text-align: center;
-        padding-bottom: 1.5rem;
         font-size: 35px;
+        color: var(--brown);
+        padding-bottom: 1rem;
     }
 
     .wpcf7-form {
@@ -561,7 +656,7 @@
     }
 
     .wpcf7-form input,
-    .client_message {
+    .client-message {
         width: 100%;
         border-radius: 10px;
         border: 1px solid var(--quaternary-color);
@@ -576,7 +671,7 @@
     @-moz-document url-prefix() {
 
         .wpcf7-form input,
-        .client_message {
+        .client-message {
             max-width: -moz-available;
         }
     }
@@ -587,7 +682,7 @@
         @supports (-webkit-appearance:none) {
 
             .wpcf7-form input,
-            .client_message {
+            .client-message {
                 max-width: -webkit-fill-available;
             }
         }
@@ -598,8 +693,8 @@
         gap: 1rem;
     }
 
-    .client_name_box,
-    .client_contact_box {
+    .client_name,
+    .client_contact {
         width: 50%;
         display: flex;
         flex-direction: column;
@@ -717,9 +812,10 @@
 
     .maps {
         border-radius: 10px;
-        border: 1px solid var(--quaternary-color) !important;
+        border: none !important;
         box-shadow: 3px 3px 5px #5C48337D;
         height: 350px;
+        width: 100%;
     }
 </style>
 

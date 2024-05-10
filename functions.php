@@ -1,10 +1,18 @@
 <?php
 function enqueue_parent_theme_style()
 {
-  wp_enqueue_style("style", get_template_directory_uri() . "/style.css"); // Linking stylesheet
+  wp_enqueue_style("style", get_template_directory_uri() . "/style.css"); // Linking stylesheets
   wp_enqueue_style("adobe", "https://use.typekit.net/slb7mne.css"); // Linking Adobe fonts
 }
 add_action('wp_enqueue_scripts', 'enqueue_parent_theme_style');
+
+// Linking to script
+
+function enqueue_custom_scripts() {
+  // Enqueue your custom script
+  wp_enqueue_script('custom-script', get_template_directory_uri() . '/js/script.js', array('jquery'), '1.0', true);
+}
+add_action('wp_enqueue_scripts', 'enqueue_custom_scripts');
 
 // Remove gutenberg editor in WP
 
@@ -19,7 +27,7 @@ add_action("init", "ad_remove_gutenberg");
 
 add_filter("woocommerce_enqueue_styles", "__return_empty_array");
 
-// Action hooks
+// AAdding product title on product pages
 
 function insert_product_title()
 {
@@ -31,6 +39,19 @@ function insert_product_title()
 }
 
 add_action('woocommerce_single_product_summary', 'insert_product_title', 3);
+
+// Adding title to category pages
+
+function add_category_title()
+{
+  ?>
+  <h1 class="category-title">
+    <?php single_term_title() ?>
+  </h1>
+  <?php
+}
+
+add_action("woocommerce_before_shop_loop", "add_category_title");
 
 // Creating new custom widget
 function product_filter_widget()
@@ -58,7 +79,7 @@ function print_product_filter_widget()
 
 add_action("woocommerce_before_shop_loop", "print_product_filter_widget");
 
-// Add category name on category page
+// Adding item count to add-to-basket button
 
 function count_item_in_cart()
 {
@@ -73,3 +94,4 @@ function count_item_in_cart()
 
   return $count;
 }
+

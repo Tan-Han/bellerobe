@@ -1,20 +1,42 @@
 <footer>
+
     <div class="footer_columns">
+
         <div class="footer_contact">
             <img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/bellerobe_u_cirkel.svg" alt=""
                 class="footer_logo">
-            <div class="address_footer">
-                <p>Belle Robe Brude- & Festkjoler</p>
-                <p>Smedegade 13, 6800 Varde</p>
-            </div>
-            <div class="contact_footer">
-                <p><a href="tel:21365346">
-                        +45 21 36 56 46
-                    </a></p>
-                <a href="mailto:info@bellerobe.dk">
-                    <p>info@bellerobe.dk</p>
-                </a>
-            </div>
+
+            <?php $productLoop = new WP_Query(
+                array(
+                    "post_type" => "address",
+                    "posts_per_page" => -1,
+                )
+            ) ?>
+
+            <?php while ($productLoop->have_posts()):
+                $productLoop->the_post() ?>
+
+                <div class="address_footer">
+                    <b>Belle Robe Brude- & Festkjoler</b>
+                    <div class="address">
+                        <p><?php the_field('street_number') ?>,</p>
+                        <p><?php the_field('postal_code') ?></p>
+                    </div>
+
+                </div>
+
+                <div class="contact_footer">
+                    <p><a href="tel:<?php the_field('phone_number') ?>">
+                            +45 <?php the_field('phone_number') ?>
+                        </a></p>
+                    <a href="mailto:<?php the_field('email') ?>">
+                        <p>
+                            <?php the_field('email') ?>
+                        </p>
+                    </a>
+                </div>
+
+            <?php endwhile ?>
         </div>
 
         <div class="footer_cat_links">
@@ -34,25 +56,40 @@
         <div class="footer_follow">
             <p>Følg os</p>
             <div class="social_icons">
-                <a href="<?php the_field("facebook") ?>" target=”_blank” class="facebook-link">
-                    <div class="facebook">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </div>
-                </a>
-                <a href="<?php the_field("instagram") ?>" target=”_blank” class="instagram-link">
-                    <div class="instagram">
-                        <i class="fa-brands fa-instagram"></i>
-                    </div>
-                </a>
-                <a href="<?php the_field("tiktok") ?>" target=”_blank” class="tiktok-link">
-                    <div class="tiktok">
-                        <i class="fa-brands fa-tiktok"></i>
-                    </div>
-                </a>
-            </div>
+
+                <?php $productLoop = new WP_Query(
+                    array(
+                        "post_type" => "social_media",
+                        "posts_per_page" => -1,
+                    )
+                ) ?>
+
+                <?php while ($productLoop->have_posts()):
+                    $productLoop->the_post() ?>
+
+                    <a href="<?php the_field("facebook") ?>" target=”_blank” class="facebook-link">
+                        <div class="facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                    </a>
+                    <a href="<?php the_field("instagram") ?>" target=”_blank” class="instagram-link">
+                        <div class="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </a>
+                    <a href="<?php the_field("tiktok") ?>" target=”_blank” class="tiktok-link">
+                        <div class="tiktok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </div>
+                    </a>
+                </div>
+
+            <?php endwhile ?>
 
         </div>
     </div>
+
+
 
     <div class="footer_copy_rights">
         <p>© Belle Robe</p>
@@ -66,6 +103,8 @@
         <i class="fa-brands fa-cc-diners-club"></i>
         <i class="fa-brands fa-cc-jcb"></i>
     </div>
+
+
 </footer>
 
 <?php wp_footer() ?>

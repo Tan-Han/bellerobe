@@ -2,6 +2,7 @@
 Author: T. R. S. Hansen, E. H. Møller */
 
 /* Website colors */
+
 :root {
   --primary-color: #F5FAF7;
   --secondary-color: #C2DEB0;
@@ -74,50 +75,110 @@ button {
 .logo-top {
   background-image: url("https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/Header.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   display: flex;
+  flex-direction: column;
   align-content: center;
   justify-content: center;
-  padding: .5rem 0;
+  padding-top: 1rem;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 3px 5px #5C48337D;
 }
 
 .logo-top .logo {
-  height: 10rem;
+  height: 12rem;
   width: auto;
 }
 
 nav {
-  background-color: var(--tertiary-color);
   padding: 1.2rem 8rem;
+  overflow: hidden;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 25px;
+}
+
+nav .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: none;
-  box-shadow: 0 3px 5px #5C48337D, 0 -3px 5px #5C48337D;
-  position: relative;
-  z-index: 1;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1rem;
+  gap: 3rem;
   justify-content: center;
   width: 100%;
+  padding-top: .4rem;
 }
 
-nav ul li a {
-  color: var(--white);
+/* nav ul li p {
+  padding: 0;
+} */
+
+nav ul li a, nav ul li .dropbtn {
+  color: var(--brown);
   font-size: 22px;
   font-weight: 700;
-  border: 2px solid var(--tertiary-color);
-  padding: .2rem .8rem;
+  padding-bottom: .3rem;
+  border-bottom: 2px solid transparent;
+  width: fit-content;
+}
+
+nav ul li a:hover,
+.dropdown:hover .dropbtn, .dropbtn:focus {
+  border-color: var(--quaternary-color);
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn .fa-caret-down {
+  padding-left: .5rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--primary-color);
+  min-width: 160px;
+  box-shadow: 3px 3px 5px #5C48337D;
+  z-index: 1;
   border-radius: 10px;
 }
 
-nav ul li a:hover {
-  border-color: var(--primary-color);
+.dropdown-content a {
+  float: none;
+  color: var(--brown);
+  padding: .5rem 1rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 10px;
+  border: none;
+}
+
+.dropdown-content a:hover {
+  color: var(--tertiary-color);
+  border: none;
+}
+
+.show {
+  display: block;
+} 
+
+nav .cart-btn-outer-box {
+  width: fit-content;
 }
 
 nav .cart-btn-outer-box .cart-btn-box {
@@ -157,14 +218,14 @@ nav .cart-btn-outer-box .cart-btn-box .cart-btn i {
 }
 
 nav .cart-btn-outer-box .cart-btn-box .cart-btn:hover {
-  /* border-color: var(--white); */
-  background-color: var(--quinary-color);
+  background-color: var(--tertiary-color);
+  color: var(--white);
 }
 
 /* FOOTER */
 footer {
   background-color: var(--secondary-color);
-  background-image: url('https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/open.svg');
+  background-image: url('https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/footer.svg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -180,6 +241,8 @@ footer {
   justify-content: space-between;
 }
 
+
+
 .footer_contact {
   display: flex;
   flex-direction: column;
@@ -189,6 +252,17 @@ footer {
 .footer_contact .footer_logo {
   height: 65px;
 }
+
+.footer_contact .address_footer .address {
+  display: flex;
+}
+
+.address_footer,
+.footer_cat_links,
+.footer_info_links {
+  font-size: 16px;
+}
+
 
 .footer_cat_links,
 .footer_info_links,
@@ -251,10 +325,20 @@ footer {
   font-size: 35px;
 }
 
+.footer_payment i {
+  text-shadow: 2px 2px 3px #5C48337D;
+}
+
 /* PRODUCT CATEGORY PAGES */
 
 .woocommerce {
   display: grid;
+}
+
+.category-title {
+  text-align: center;
+  font-size: 55px;
+  padding: 3rem 0;
 }
 
 /* Filter */
@@ -263,6 +347,8 @@ footer {
   display: flex;
   justify-content: left;
   gap: 1rem;
+  padding: 3rem 0 1rem 0;
+  flex-wrap: wrap;
 }
 
 .wp-block-woocommerce-filter-wrapper {
@@ -271,6 +357,11 @@ footer {
 
 .wp-block-woocommerce-filter-wrapper .wp-block-heading {
   color: var(--brown);
+  font-size: 18px;
+}
+
+.wc-block-attribute-filter {
+  margin-bottom: 0;
 }
 
 .wc-block-attribute-filter .wc-blocks-components-form-token-field-wrapper:not(.is-loading) {
@@ -298,6 +389,27 @@ footer {
 
 .components-form-token-field__input-container ul li:hover {
   background-color: var(--secondary-color) !important;
+}
+
+.components-form-token-field__token-text {
+  border: 1px solid var(--quaternary-color) !important;
+  border-radius: 10px !important;
+  padding: .25em .5em .25em .75em !important;
+  width: fit-content !important;
+  background-color: var(--forms) !important;
+}
+
+.product_filter .components-button {
+  border: none !important;
+  background-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.product_filter .components-button svg {
+  background-color: transparent !important;
+  border-radius: 0 !important;
 }
 
 /* Sorting */
@@ -368,6 +480,7 @@ footer {
   left: 2rem;
   z-index: 1;
   font-size: 28px;
+  text-shadow: 1px 1px 3px var(--quinary-color);
 }
 
 .products .product:hover h2 {
@@ -375,6 +488,10 @@ footer {
   bottom: 5rem;
   left: 2rem;
   z-index: 1;
+}
+
+.products .product:hover h2:hover {
+  color: var(--tertiary-color);
 }
 
 .products .product .price {
@@ -474,14 +591,20 @@ footer {
 }
 
 .woocommerce-pagination .page-numbers li {
-  color: var(--white);
+  color: var(--brown);
   font-family: proxima-nova, sans-serif;
 }
 
 .woocommerce-pagination .page-numbers li .current {
-  border: 3px solid var(--primary-color);
+  border: 3px solid var(--quaternary-color);
   border-radius: 10px;
   padding: .5rem 1rem;
+  color: var(--brown);
+}
+
+.woocommerce-pagination a:hover {
+  border: none;
+  color: var(--tertiary-color);
 }
 
 /* PRODUCT PAGES */
@@ -560,6 +683,7 @@ footer {
 .woocommerce-product-gallery {
   display: flex;
   position: relative;
+  flex-direction: column;
   gap: 1rem;
 }
 
@@ -570,8 +694,15 @@ footer {
   z-index: 1;
 }
 
+.woocommerce-product-gallery__trigger .emoji {
+  height: 2rem !important;
+  width: auto !important;
+}
+
 .woocommerce-product-gallery ol {
   list-style: none;
+  display: flex;
+  gap: 1rem;
 }
 
 .woocommerce-product-gallery ol img,
@@ -589,16 +720,19 @@ footer {
 
 .flex-viewport {
   box-shadow: 3px 3px 5px #5C48337D;
-  width: 600px !important;
+  height: 750px;
 }
 
 .woocommerce-product-gallery__image,
 .woocommerce-product-gallery__wrapper {
   height: 100%;
+  max-height: 750px;
 }
 
 .woocommerce-product-gallery__image {
-  width: 600px !important;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 3px 3px 5px #5C48337D;
 }
 
 .woocommerce-product-gallery__image img {
@@ -617,7 +751,8 @@ footer {
   font-size: 25px;
   font-weight: 700;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 .single-product .sale .summary .price del bdi {
@@ -694,46 +829,9 @@ footer {
 /* Quantity selector */
 
 .quantity {
-  position: relative;
+  display: none !important;
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-  /* -webkit-appearance: none; */
-  margin: 0;
-}
-
-/* input[type=number]
-{
-  -moz-appearance: textfield;
-} */
-
-.quantity input {
-  width: 50px;
-  height: 42px;
-  line-height: 1.65;
-  float: left;
-  display: block;
-  padding: 0;
-  margin: 0;
-  padding-left: 1rem;
-  padding-right: .2rem;
-  border: 1px solid var(--quaternary-color);
-  border-radius: 10px;
-  font-weight: 700;
-  background-color: var(--forms);
-  color: var(--brown);
-}
-
-.quantity input:focus {
-  outline: 0;
-}
-
-.quantity-nav {
-  float: left;
-  position: relative;
-  height: 42px;
-}
 
 /* Add to cart button */
 
@@ -792,6 +890,7 @@ input[type=number]::-webkit-outer-spin-button {
   z-index: 1;
   border-radius: 0 10px 10px 10px;
   box-shadow: 3px 3px 2px #5C48337D;
+  min-height: 300px;
 }
 
 .woocommerce-tabs h2 {
@@ -1042,4 +1141,181 @@ input[type=number]::-webkit-outer-spin-button {
 
 .wc-block-components-totals-coupon__form button:hover span {
   color: var(--white) !important;
+}
+
+/* ORDER CONFIRMATION PAGE */
+
+.woocommerce-order {
+  background-image: url('https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/open.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #5C48337D;
+  color: var(--brown);
+  font-family: proxima-nova, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: left;
+  justify-self: center;
+}
+
+.woocommerce-order .woocommerce-thankyou-order-received {
+  font-family: "garamond-premier-pro", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 32px;
+}
+
+.woocommerce-order h3 {
+  font-size: 25px;
+}
+
+.woocommerce-order .woocommerce-order-details,
+.woocommerce-order .woocommerce-customer-details {
+  width: 100%;
+}
+
+.woocommerce-order ul {
+  list-style: none;
+}
+
+.woocommerce-order ul .woocommerce-Price-amount,
+.woocommerce-order ul .woocommerce-Price-amount .woocommerce-Price-currencySymbol {
+  font-weight: 700;
+}
+
+.woocommerce-order-details {
+  width: 100%;
+}
+
+.woocommerce-order-details table {
+  width: 100%;
+}
+
+.woocommerce-order-details table th,
+.woocommerce-order-details table td {
+  width: 50%;
+}
+
+.woocommerce-order-details table ul {
+  list-style: none;
+}
+
+.woocommerce-order-details table ul li {
+  display: flex;
+  align-items: baseline;
+  gap: .5rem;
+}
+
+.woocommerce-order .woocommerce-columns--addresses {
+  width: 100%;
+  display: flex;
+}
+
+.woocommerce-column--billing-address,
+.woocommerce-column--shipping-address {
+  width: 50%;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1550px) {
+  nav ul li a, nav ul li .dropbtn {
+    font-size: 18px;
+  }
+
+  .dropdown-content a {
+    font-size: 18px;
+  }
+
+  nav .cart-btn-outer-box .cart-btn-box .cart-btn {
+    font-size: 18px;
+  }
+
+  nav .cart-btn-outer-box .cart-btn-box .cart-btn i {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+
+  nav ul {
+    gap: 2rem;
+  }
+  
+  nav .cart-btn-outer-box .cart-btn-box .cart-btn {
+    font-size: 18px;
+  }
+
+  nav .cart-btn-outer-box .cart-btn-box .cart-btn i {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+
+  nav ul {
+    gap: 2rem;
+  }
+
+  nav ul li a, nav ul li .dropbtn {
+    font-size: 16px;
+  }
+
+  .dropdown-content a {
+    font-size: 16px;
+  }
+
+  nav .cart-btn-outer-box .cart-btn-box .cart-btn {
+    font-size: 16px;
+  }
+
+  nav .cart-btn-outer-box .cart-btn-box .cart-btn i {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1150px) {
+  #menuLinks {
+    display: none;
+    /* Hide menu by default */
+  }
+
+  /* Show menu when the hamburger icon is clicked */
+  #menuLinks.show {
+    display: block;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  nav {
+    padding: 1.2rem 3rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: .5rem;
+    padding: 1rem 0;
+  }
+
+  nav ul li a, nav ul li .dropbtn  {
+    font-size: 20px;
+  }
+
+  .dropdown-content a {
+    font-size: 20px;
+  }
+
+  nav .cart-btn-outer-box .cart-btn-box .cart-btn {
+    font-size: 20px;
+  }
+
+  nav .cart-btn-outer-box .cart-btn-box .cart-btn i {
+    font-size: 24px;
+  }
 }
