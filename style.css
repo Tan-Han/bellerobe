@@ -348,6 +348,10 @@ footer {
 .filter-button {
   width: fit-content;
   display: none;
+  margin-bottom: 1rem;
+  background-color: var(--tertiary-color);
+  color: var(--white);
+  font-size: 16px;
 }
 
 .product_filter {
@@ -1342,5 +1346,6 @@ footer {
 
   .product_filter.show {
     display: flex;
+    padding-top: 1rem;
   }
 }

@@ -40,38 +40,29 @@ window.onclick = function (e) {
 
 // Product filter script
 
-// Function to toggle product filter visibility
+// Function to toggle product filter visibility and update button text
 function toggleProductFilter() {
-    var productFilter = document.getElementById("productFilter");
-    productFilter.classList.toggle("show");
-}
-
-// Function to hide product filter on screens less than 1100px wide
-function hideProductFilterOnSmallScreen() {
-    var screenWidth = window.innerWidth;
-    var productFilter = document.getElementById("productFilter");
-    if (screenWidth < 1100) {
-        productFilter.classList.remove("show");
+    var productFilter = document.querySelector('.product_filter');
+    var filterButton = document.querySelector('.filter-button');
+    productFilter.classList.toggle('show');
+    // Change button text based on filter visibility
+    if (productFilter.classList.contains('show')) {
+        filterButton.textContent = 'Luk filter';
+    } else {
+        filterButton.textContent = 'Filter';
     }
 }
 
-// Close the product filter if the user clicks outside of it
-window.onclick = function (e) {
-    if (!e.target.matches('.filter-button')) {
-        var productFilter = document.getElementById("productFilter");
+// Close the product filter when clicking outside of it
+window.onclick = function (event) {
+    if (!event.target.matches('.filter-button')) {
+        var productFilter = document.querySelector('.product_filter');
+        var filterButton = document.querySelector('.filter-button');
         if (productFilter.classList.contains('show')) {
             productFilter.classList.remove('show');
+            filterButton.textContent = 'Filter'; // Change button text back to 'Filter'
         }
     }
-}
+};
 
-// Event listener for window resize
-window.addEventListener('resize', function(event){
-    hideProductFilterOnSmallScreen();
-});
-
-// Initially hide product filter on page load if screen width is less than 1100px
-document.addEventListener('DOMContentLoaded', function() {
-    hideProductFilterOnSmallScreen();
-});
 
