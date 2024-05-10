@@ -73,14 +73,36 @@
             });
         });
 
-        // Add event listeners to dropdown buttons to toggle dropdown content
+        // Function to detect touch devices
+        function isTouchDevice() {
+            return 'ontouchstart' in window || navigator.maxTouchPoints;
+        }
+
+        // Function to toggle dropdown content
+        function toggleDropdown(button) {
+            var dropdownContent = button.nextElementSibling;
+            dropdownContent.classList.toggle("show");
+        }
+
+        // Add event listeners to dropdown buttons
         var dropdownButtons = document.querySelectorAll(".dropdown > a.dropbtn");
         dropdownButtons.forEach(function (button) {
-            button.addEventListener("click", function (event) {
-                event.preventDefault(); // Prevent the default link behavior
-                var dropdownContent = button.nextElementSibling;
-                dropdownContent.classList.toggle("show");
-            });
+            // On touch devices, toggle dropdown on click
+            if (isTouchDevice()) {
+                button.addEventListener("click", function (event) {
+                    event.preventDefault(); // Prevent the default link behavior
+                    toggleDropdown(button);
+                });
+            }
+            // On non-touch devices, show dropdown on hover
+            else {
+                button.addEventListener("mouseover", function () {
+                    toggleDropdown(button);
+                });
+                button.addEventListener("mouseout", function () {
+                    toggleDropdown(button);
+                });
+            }
         });
 
     </script>
