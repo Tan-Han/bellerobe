@@ -88,18 +88,12 @@
             dropdownContent.classList.toggle("show");
         }
 
-        // Add event listener to the menu icon
-        document.querySelector(".menu-icon").addEventListener("click", mobileMenu);
-
-        // Add event listener to close dropdown menus when clicking outside
-        window.onclick = function (event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                for (var i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementsByClassName("dropdown-content");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
                 }
             }
         }
