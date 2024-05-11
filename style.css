@@ -1376,38 +1376,40 @@ footer {
   }
 }
 
-@media (max-width: 945px) {
+@media (max-width: 960px) {
   .footer_columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     row-gap: 1rem;
+    width: 100%;
   }
 
   .footer_contact {
-    grid-column: 1;
+    grid-column: 2;
     grid-row: 1;
-  }
-
-  .footer_contact .footer_logo {
-    height: 55px;
+    width: fit-content;
+    justify-self: end;
   }
 
   .footer_cat_links {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 1;
     align-self: end;
+    justify-self: start;
   }
 
   .footer_info_links {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 2;
+    justify-self: start;
   }
 
   .footer_follow {
-    grid-column: 1;
+    grid-column: 2;
     grid-row: 2;
     align-self: end;
+    justify-self: end;
   }
 }
 
