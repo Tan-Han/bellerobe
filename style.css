@@ -1399,13 +1399,12 @@ footer {
 
   .woocommerce-product-gallery {
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 1;
   }
 
   .single-product .product .summary {
     grid-column: 1;
- 
-    grid-row: 1;
+    grid-row: 2;
   }
   
   .woocommerce-tabs {
