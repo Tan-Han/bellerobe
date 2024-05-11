@@ -1395,6 +1395,7 @@ footer {
   .single-product .product {
     grid-template-columns: 1fr;
     /* One column */
+    grid-template-rows: auto;
   }
 
   .woocommerce-product-gallery {
@@ -1402,8 +1403,6 @@ footer {
     grid-row: 1;
     width: 99%;
   }
-
-  .flex-viewport
 
   .single-product .product .summary {
     grid-column: 1;
