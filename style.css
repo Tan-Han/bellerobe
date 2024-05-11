@@ -597,12 +597,15 @@ footer {
   gap: 1rem;
   align-items: center;
   list-style: none;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
 }
 
 .woocommerce-pagination .page-numbers li a {
   color: var(--brown);
   font-family: proxima-nova, sans-serif;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 700;
 }
 
