@@ -1396,6 +1396,11 @@ footer {
     grid-template-columns: 1fr;
     /* One column */
     grid-template-rows: auto;
+    gap: 3rem;
+  }
+
+  .single-product .product .onsale {
+    width: 40%;
   }
 
   .woocommerce-product-gallery {
@@ -1418,6 +1423,7 @@ footer {
   .single-product .product .related {
     grid-column: 1;
     grid-row: 4;
+    padding-top: 3rem;
   }
 }
 
