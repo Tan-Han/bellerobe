@@ -32,8 +32,8 @@
 
     <div>
       <a class="frontpage_cards" href="/product-category/brudekjoler/">Brudekjoler
-        <?php $image get_field("brudekjole_card_image") ?>
-        <img src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"]?>">
+        <?php $image = get_field("brudekjole_card_image") ?>
+        <img src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
       </a>
     </div>
 
