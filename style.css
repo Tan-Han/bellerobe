@@ -1400,7 +1400,10 @@ footer {
   .woocommerce-product-gallery {
     grid-column: 1;
     grid-row: 1;
+    width: 99%;
   }
+
+  .flex-viewport
 
   .single-product .product .summary {
     grid-column: 1;
