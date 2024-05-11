@@ -65,7 +65,9 @@
     <section class="section frontpage_opening_hours_and_booking">
       <div class="opening_hours_container">
         <h3>Åbningstider</h3>
-        <div></div>
+        <div>
+      
+        </div>
         <div>
           <p><?php the_field("tekst_til_book_tid") ?></p>
           <button><a href="/booking/">Book tid</a></button>     
@@ -174,6 +176,7 @@
   .frontpage_opening_hours_and_booking {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
   }
 
   .opening_hours_container{
