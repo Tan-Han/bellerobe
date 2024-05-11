@@ -92,7 +92,7 @@ button {
   width: auto;
 }
 
-nav {
+.navbar {
   padding: 1.2rem 8rem;
   overflow: hidden;
 }
@@ -102,14 +102,14 @@ nav {
   font-size: 25px;
 }
 
-nav .menu {
+.navbar .menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border: none;
 }
 
-nav ul {
+.navbar ul {
   list-style: none;
   display: flex;
   gap: 3rem;
@@ -118,12 +118,8 @@ nav ul {
   padding-top: .4rem;
 }
 
-/* nav ul li p {
-  padding: 0;
-} */
-
-nav ul li a,
-nav ul li .dropbtn {
+.navbar ul li a,
+.navbar ul li .dropbtn {
   color: var(--brown);
   font-size: 22px;
   font-weight: 700;
@@ -132,7 +128,7 @@ nav ul li .dropbtn {
   width: fit-content;
 }
 
-nav ul li a:hover,
+.navbar ul li a:hover,
 .dropdown:hover .dropbtn,
 .dropbtn:focus {
   border-color: var(--quaternary-color);
@@ -179,15 +175,15 @@ nav ul li a:hover,
   display: block;
 }
 
-nav .cart-btn-outer-box {
+.navbar .cart-btn-outer-box {
   width: fit-content;
 }
 
-nav .cart-btn-outer-box .cart-btn-box {
+.navbar .cart-btn-outer-box .cart-btn-box {
   position: relative;
 }
 
-nav .cart-btn-outer-box .cart-btn-box #cartCount {
+.navbar .cart-btn-outer-box .cart-btn-box #cartCount {
   position: absolute;
   right: -0.8rem;
   top: -0.8rem;
@@ -199,7 +195,7 @@ nav .cart-btn-outer-box .cart-btn-box #cartCount {
   font-size: 14px;
 }
 
-nav .cart-btn-outer-box .cart-btn-box .cart-btn {
+.navbar .cart-btn-outer-box .cart-btn-box .cart-btn {
   display: flex;
   flex-direction: row-reverse;
   align-items: baseline;
@@ -207,7 +203,6 @@ nav .cart-btn-outer-box .cart-btn-box .cart-btn {
   font-size: 20px;
   font-weight: 700;
   color: var(--brown);
-  /* border: 3px solid var(--tertiary-color); */
   border-radius: 10px;
   padding: .6rem 1rem .4rem 1rem;
   transition: .2s ease-in;
@@ -215,11 +210,11 @@ nav .cart-btn-outer-box .cart-btn-box .cart-btn {
   box-shadow: 3px 3px 5px #5C48337D;
 }
 
-nav .cart-btn-outer-box .cart-btn-box .cart-btn i {
+.navbar .cart-btn-outer-box .cart-btn-box .cart-btn i {
   font-size: 28px;
 }
 
-nav .cart-btn-outer-box .cart-btn-box .cart-btn:hover {
+.navbar .cart-btn-outer-box .cart-btn-box .cart-btn:hover {
   background-color: var(--tertiary-color);
   color: var(--white);
 }
@@ -1237,8 +1232,8 @@ footer {
 
 @media screen and (max-width: 1550px) {
 
-  nav ul li a,
-  nav ul li .dropbtn {
+  .navbar ul li a,
+  .navbar ul li .dropbtn {
     font-size: 18px;
   }
 
@@ -1246,38 +1241,38 @@ footer {
     font-size: 18px;
   }
 
-  nav .cart-btn-outer-box .cart-btn-box .cart-btn {
+  .navbar .cart-btn-outer-box .cart-btn-box .cart-btn {
     font-size: 18px;
   }
 
-  nav .cart-btn-outer-box .cart-btn-box .cart-btn i {
+  .navbar .cart-btn-outer-box .cart-btn-box .cart-btn i {
     font-size: 24px;
   }
 }
 
 @media screen and (max-width: 1350px) {
 
-  nav ul {
+  .navbar ul {
     gap: 2rem;
   }
 
-  nav .cart-btn-outer-box .cart-btn-box .cart-btn {
+  .navbar .cart-btn-outer-box .cart-btn-box .cart-btn {
     font-size: 18px;
   }
 
-  nav .cart-btn-outer-box .cart-btn-box .cart-btn i {
+  .navbar .cart-btn-outer-box .cart-btn-box .cart-btn i {
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 1550px) {
 
-  nav ul {
+  .navbar ul {
     gap: 2rem;
   }
 
-  nav ul li a,
-  nav ul li .dropbtn {
+  .navbar ul li a,
+  .navbar ul li .dropbtn {
     font-size: 16px;
   }
 
@@ -1285,11 +1280,11 @@ footer {
     font-size: 16px;
   }
 
-  nav .cart-btn-outer-box .cart-btn-box .cart-btn {
+  .navbar .cart-btn-outer-box .cart-btn-box .cart-btn {
     font-size: 16px;
   }
 
-  nav .cart-btn-outer-box .cart-btn-box .cart-btn i {
+  .navbar .cart-btn-outer-box .cart-btn-box .cart-btn i {
     font-size: 20px;
   }
 }
@@ -1309,18 +1304,18 @@ footer {
     display: block;
   }
 
-  nav {
+  .navbar {
     padding: 1.2rem 3rem;
   }
 
-  nav ul {
+  .navbar ul {
     flex-direction: column;
     gap: .5rem;
     padding: 1rem 0;
   }
 
-  nav ul li a,
-  nav ul li .dropbtn {
+  .navbar ul li a,
+  .navbar ul li .dropbtn {
     font-size: 20px;
   }
 
@@ -1328,11 +1323,11 @@ footer {
     font-size: 20px;
   }
 
-  nav .cart-btn-outer-box .cart-btn-box .cart-btn {
+  .navbar .cart-btn-outer-box .cart-btn-box .cart-btn {
     font-size: 20px;
   }
 
-  nav .cart-btn-outer-box .cart-btn-box .cart-btn i {
+  .navbar .cart-btn-outer-box .cart-btn-box .cart-btn i {
     font-size: 24px;
   }
 
@@ -1377,6 +1372,11 @@ footer {
 @media (max-width: 745px) {
   main {
     padding: 5rem 3rem;
+  }
+
+  .products {
+    column-gap: 1rem;
+    row-gap: 1rem;
   }
 }
 

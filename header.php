@@ -15,7 +15,7 @@
             class="logo">
 
 
-        <nav>
+        <nav class="navbar">
             <a href="javascript:void(0);" class="menu-icon" onclick="mobileMenu()">
                 <i class="fa fa-bars"></i>
             </a>
