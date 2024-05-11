@@ -335,6 +335,7 @@ footer {
 
 .woocommerce {
   display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
 }
 
 .category-title {
@@ -1377,5 +1378,16 @@ footer {
 
   .category-title {
     font-size: 40px;
+  }
+}
+
+@media (max-width: 420px) {
+   .products {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  }
+
+  .products .product {
+    width: 270px;
+    height: 395px;
   }
 }
