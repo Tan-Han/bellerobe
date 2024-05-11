@@ -1455,6 +1455,10 @@ footer {
 }
 
 @media (max-width: 550px) {
+  footer {
+    padding: 3rem;
+  }
+
   .footer_columns {
     display: flex;
     flex-direction: column;
