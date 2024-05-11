@@ -1456,7 +1456,7 @@ footer {
 
 @media (max-width: 550px) {
   footer {
-    padding: 3rem;
+    padding: 3rem 3rem;
   }
 
   .footer_columns {
