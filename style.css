@@ -1463,6 +1463,10 @@ footer {
     gap: 1rem;
   }
 
+  .footer_cat_links {
+    align-self: start;
+  }
+
   .footer_follow {
     width: 100%;
     align-items: center;
