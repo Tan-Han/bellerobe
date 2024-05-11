@@ -1349,10 +1349,72 @@ footer {
     display: flex;
     padding-top: 1rem;
   }
+
+  .footer_columns {
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 10rem;
+    row-gap: 2rem;
+  }
+
+  .facebook,
+  .instagram,
+  .tiktok {
+    height: 55px;
+    width: 55px;
+    font-size: 38px;
+  }
+
+  .footer_copy_rights {
+    padding-top: 3rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .footer_columns {
+    column-gap: 6rem;
+  }
+}
+
+@media (max-width: 945px) {
+  .footer_columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 1rem;
+  }
+
+  .footer_contact {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .footer_contact .footer_logo {
+    height: 55px;
+  }
+
+  .footer_cat_links {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
+  }
+
+  .footer_info_links {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .footer_follow {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: end;
+  }
 }
 
 @media (max-width: 810px) {
-  main {
+
+  main,
+  footer {
     padding: 4rem 5rem;
   }
 
@@ -1376,7 +1438,9 @@ footer {
 }
 
 @media (max-width: 745px) {
-  main {
+
+  main,
+  footer {
     padding: 5rem 3rem;
   }
 
