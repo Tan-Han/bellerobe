@@ -1367,6 +1367,11 @@ footer {
     width: 270px;
     height: 395px;
   }
+
+  .products .product .onsale {
+    left: -6rem;
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 535px) {
