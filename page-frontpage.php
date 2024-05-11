@@ -33,28 +33,28 @@
     <div>
       <a class="frontpage_cards" href="/product-category/brudekjoler/">Brudekjoler
         <?php $image = get_field("brudekjole_card_image") ?>
-        <img src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
+        <img src="<?php echo $image["sizes"]["large"] ?>" alt="<?php echo $image["alt"] ?>">
       </a>
     </div>
 
     <div>
       <a class="frontpage_cards" href="/product-category/gallakjoler/">Galla & festkjoler
         <?php $image = get_field("galla_og_festkjoler_card_image") ?>
-        <img src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
+        <img src="<?php echo $image["sizes"]["large"] ?>" alt="<?php echo $image["alt"] ?>">
       </a>
     </div>
 
     <div>
       <a class="frontpage_cards" href="/product-category/konfirmationskjoler/">Konfirmationskjoler
         <?php $image = get_field("konfirmationskjoler_card_image") ?>
-        <img src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
+        <img src="<?php echo $image["sizes"]["large"] ?>" alt="<?php echo $image["alt"] ?>">
       </a>
     </div>
 
     <div>
       <a class="frontpage_cards" href="/product-category/sko/">Sko & tilbehør
         <?php $image = get_field("sko_og_tilbehor_card_image") ?>
-        <img src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
+        <img src="<?php echo $image["sizes"]["large"] ?>" alt="<?php echo $image["alt"] ?>">
       </a>
     </div>
   </div>
