@@ -1464,12 +1464,13 @@ footer {
   }
 
   .footer_cat_links {
-    align-self: start;
+    display: none;
   }
 
   .footer_follow {
     width: 100%;
     align-items: center;
+    padding-top: 1rem;
   }
 }
 
