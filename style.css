@@ -1390,6 +1390,7 @@ footer {
     grid-row: 1;
     width: fit-content;
     justify-self: end;
+    width: 220px;
   }
 
   .footer_cat_links {
@@ -1410,6 +1411,7 @@ footer {
     grid-row: 2;
     align-self: end;
     justify-self: end;
+    width: 220px;
   }
 }
 
