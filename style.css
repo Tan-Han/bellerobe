@@ -1425,6 +1425,10 @@ footer {
     grid-row: 4;
     padding-top: 3rem;
   }
+
+  .single-product .product .related .onsale {
+    left: -4.5rem;
+  }
 }
 
 @media (max-width: 1050px) {
