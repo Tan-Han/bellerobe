@@ -21,7 +21,9 @@
 
 
 <style>
-    
+    main {
+        background-color: red;
+    }
 </style>
 
 <?php get_footer() ?>
