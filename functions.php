@@ -87,7 +87,7 @@ function count_item_in_cart()
 {
   $count = 0;
   foreach (WC()->cart->get_cart() as $cart_item_key => $cart_item) {
-    $count++;
+    $count += $cart_item['quantity'];
   }
 
   if ($count === 0) {
@@ -96,4 +96,3 @@ function count_item_in_cart()
 
   return $count;
 }
-
