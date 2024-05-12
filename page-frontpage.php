@@ -4,54 +4,56 @@
 
 <main>
 
-<!-- first section on the frontpage with the hero video/picture -->
-    <section class="frontpage_hero">
-      <h1><?php the_field("hero_text_on_frontpage") ?></h1>
-      <iframe
-        src="<?php the_field("hero_on_frontpage") ?>?autoplay=1&controls=0&mute=1&modestbranding=1&disablekb=1&loop=1&playlist=<?php the_field("video_id")?>" title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-      </iframe>
-      <!-- Har slettet div, da den var unødvendig og lavet den om til URL i ACF. Der er tilføjet lidt kode efter linket for at autoplay, loop og fjerne Youtube controls -->
-    </section>
+  <!-- first section on the frontpage with the hero video/picture -->
+  <section class="frontpage_hero">
+    <h1><?php the_field("hero_text_on_frontpage") ?></h1>
+    <iframe
+      src="<?php the_field("hero_on_frontpage") ?>?autoplay=1&controls=0&mute=1&modestbranding=1&disablekb=1&loop=1&playlist=<?php the_field("video_id") ?>"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+    <!-- Har slettet div, da den var unødvendig og lavet den om til URL i ACF. Der er tilføjet lidt kode efter linket for at autoplay, loop og fjerne Youtube controls -->
+  </section>
 
-<!--padding for på siderne for alt andet end hero -->
+  <!--padding for på siderne for alt andet end hero -->
   <div class="frontpage_pading">
 
-<!-- second section on the frontpage with the introduction text -->
+    <!-- second section on the frontpage with the introduction text -->
     <section class="section frontpage_introduction">
       <h2><?php the_field("introduction_header_on_frontpage") ?></h2>
       <p><?php the_field("introduction_text_on_frontpage") ?></p>
     </section>
 
-<!-- third section on the frontpage with four categories of products -->
+    <!-- third section on the frontpage with four categories of products -->
     <section class="section">
       <h2 class="big_h2 centered_text_frontpage"><?php the_field("introduction_to_cards_on_frontpage") ?></h2>
-      
+
       <div class="frontpage_cards_container">
 
-        <div>
-          <a class="frontpage_cards" href="/product-category/brudekjoler/">Brudekjoler
+        <a class="frontpage_cards" href="/product-category/brudekjoler/">
+          <div class="frontpage-card">
+            <p>Brudekjoler</p>
             <?php $image = get_field("brudekjole_card_image") ?>
             <img src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
-          </a>
-        </div>
+          </div>
+        </a>
 
-        <div>
+        <div class="frontpage-card">
           <a class="frontpage_cards" href="/product-category/gallakjoler/">Galla & festkjoler
             <?php $image = get_field("galla_og_festkjoler_card_image") ?>
             <img src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
           </a>
         </div>
 
-        <div>
+        <div class="frontpage-card">
           <a class="frontpage_cards" href="/product-category/konfirmationskjoler/">Konfirmationskjoler
             <?php $image = get_field("konfirmationskjoler_card_image") ?>
             <img src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
           </a>
         </div>
 
-        <div>
+        <div class="frontpage-card">
           <a class="frontpage_cards" href="/product-category/sko/">Sko & tilbehør
             <?php $image = get_field("sko_og_tilbehor_card_image") ?>
             <img src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
@@ -60,17 +62,17 @@
       </div>
     </section>
 
-<!-- fourth section on the frontpage with the informations of opening hours and map -->
+    <!-- fourth section on the frontpage with the informations of opening hours and map -->
 
     <section class="section frontpage_opening_hours_and_booking">
       <div class="opening_hours_container">
         <h3>Åbningstider</h3>
         <div>
-      
+
         </div>
         <div>
           <p><?php the_field("tekst_til_book_tid") ?></p>
-          <button><a href="/booking/">Book tid</a></button>     
+          <button><a href="/booking/">Book tid</a></button>
         </div>
       </div>
 
@@ -80,22 +82,22 @@
           <p><?php the_field("adressen_pa_forsiden") ?></p>
         </div>
         <div>
-          <iframe src="<?php the_field("google_maps_link") ?>" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe src="<?php the_field("google_maps_link") ?>" width="600" height="450" style="border:0;"
+            allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
-      
+
     </section>
 
 
 
-</div>
-  
+  </div>
+
 </main>
 
 
 <!-- this is the styling for the frontpage -->
 <style>
-
   /* General styling for frontpage */
   main {
     padding: 0 !important;
@@ -160,12 +162,11 @@
     margin: 40px 0;
   }
 
-  .frontpage_cards {
+  .frontpage-cards {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 23%;
-
     color: var(--brown);
     font-size: 25px;
     text-align: left;
@@ -179,7 +180,7 @@
     margin-bottom: 40px;
   }
 
-  .opening_hours_container{
+  .opening_hours_container {
     width: 45%;
     padding: 20px;
     border-radius: 10px;
@@ -192,9 +193,6 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-
-
-  
 </style>
 
 <?php get_footer() ?>
