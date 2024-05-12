@@ -1,3 +1,5 @@
+// MOBILE MENU
+
 function mobileMenu() {
     var menu = document.getElementById("menuLinks");
     menu.classList.toggle("show");
@@ -15,6 +17,7 @@ menuItems.forEach(function (item) {
     });
 });
 
+// DROPDOWN MENU
 
 // Function to toggle dropdown content for Brudekjoler
 function dropdownMenuBrudekjoler() {
@@ -31,14 +34,17 @@ function dropdownMenuFestGallakjoler() {
 // Close the dropdown if the user clicks outside of it
 window.onclick = function (e) {
     if (!e.target.matches('.dropbtn')) {
-        var myDropdown = document.getElementsByClassName("dropdown-content");
-        if (myDropdown.classList.contains('show')) {
-            myDropdown.classList.remove('show');
+        var myDropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < myDropdowns.length; i++) {
+            var dropdown = myDropdowns[i];
+            if (dropdown.classList.contains('show')) {
+                dropdown.classList.remove('show');
+            }
         }
     }
 }
 
-// Product filter script
+// PRODUCT FILTER - OPEN AND CLOSE ON SMALLER SCREENS
 
 // Function to toggle product filter visibility and update button text
 function toggleProductFilter() {

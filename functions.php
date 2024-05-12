@@ -27,7 +27,7 @@ add_action("init", "ad_remove_gutenberg");
 
 add_filter("woocommerce_enqueue_styles", "__return_empty_array");
 
-// AAdding product title on product pages
+// Adding product title on product pages
 
 function insert_product_title()
 {
