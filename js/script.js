@@ -32,7 +32,7 @@ function dropdownMenuFestGallakjoler() {
 }
 
 // Close the dropdown if the user clicks outside of it
-window.addEventListener('click', function(event) {
+window.addEventListener('click', function (event) {
     if (!event.target.matches('.dropbtn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         for (var i = 0; i < dropdowns.length; i++) {
