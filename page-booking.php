@@ -304,15 +304,15 @@
                 <div class="contact-info-inner">
                     <div class="call">
 
-                        <?php $productLoop = new WP_Query(
+                        <?php $contactLoop = new WP_Query(
                             array(
                                 "post_type" => "address",
                                 "posts_per_page" => -1,
                             )
                         ) ?>
 
-                        <?php while ($productLoop->have_posts()):
-                            $productLoop->the_post() ?>
+                        <?php while ($contactLoop->have_posts()):
+                            $contactLoop->the_post() ?>
                             <a href="tel:<?php the_field('phone_number') ?>"></a><i class="fa-solid fa-phone"></i></a>
                             
                             <div class="phone">
@@ -348,7 +348,9 @@
             <h2 class="booking-headline">Åbningstider</h2>
             <div class="opening-hours-box info-box">
 
-                <?php $productLoop = new WP_Query(
+            <!-- Opening hours loop code start -->
+
+                <?php $openHoursLoop = new WP_Query(
                     array(
                         "post_type" => "open_hours",
                         "posts_per_page" => -1,
@@ -357,8 +359,8 @@
                     )
                 ) ?>
 
-                <?php while ($productLoop->have_posts()):
-                    $productLoop->the_post() ?>
+                <?php while ($openHoursLoop->have_posts()):
+                    $openHoursLoop->the_post() ?>
 
                     <div class="hours">
                         <b><?php the_title() ?>:&nbsp;</b>
@@ -393,6 +395,8 @@
 
                 <?php endwhile ?>
 
+                <!-- Opening hours loop code end -->
+
             </div>
         </div>
         </div>
@@ -401,15 +405,17 @@
             <h2 class="booking-headline">Adresse</h2>
             <div class="address-box info-box">
 
-                <?php $productLoop = new WP_Query(
+            <!-- Address loop code start -->
+
+                <?php $addressLoop = new WP_Query(
                     array(
                         "post_type" => "address",
                         "posts_per_page" => -1,
                     )
                 ) ?>
 
-                <?php while ($productLoop->have_posts()):
-                    $productLoop->the_post() ?>
+                <?php while ($addressLoop->have_posts()):
+                    $addressLoop->the_post() ?>
 
                     <p class="store-address"><?php the_field('street_number') ?>, <?php the_field('postal_code') ?></p>
 
@@ -419,6 +425,8 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                 <?php endwhile ?>
+
+                <!-- Address loop code end -->
 
             </div>
         </div>
