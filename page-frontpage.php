@@ -39,7 +39,7 @@
           </div>
         </a>
 
-        <div class="frontpage-card">
+        <!-- <div class="frontpage-card">
           <a class="frontpage_cards" href="/product-category/gallakjoler/">Galla & festkjoler
             <?php $image = get_field("galla_og_festkjoler_card_image") ?>
             <img src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
@@ -58,7 +58,7 @@
             <?php $image = get_field("sko_og_tilbehor_card_image") ?>
             <img src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
           </a>
-        </div>
+        </div> -->
       </div>
     </section>
 
