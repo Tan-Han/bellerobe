@@ -28,6 +28,7 @@
     <!-- third section on the frontpage with four categories of products -->
     <section class="section">
       <h2 class="big_h2 centered_text_frontpage"><?php the_field("introduction_to_cards_on_frontpage") ?></h2>
+      <p class="centered_text_frontpage"><?php the_field("text_under_introduction_to_cards") ?></p>
 
       <div class="frontpage_cards_container">
 
