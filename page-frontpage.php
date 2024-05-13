@@ -353,50 +353,11 @@
 
 
   @media screen and (max-width: 1500px) {
-    .frontpage_pading {
-      padding: 0 2rem;
-    }
-
-    .frontpage_hero h1 {
-      font-size: 40px;
-    }
-
-    .frontpage_hero iframe {
-      height: 400px;
-    }
-
-    .frontpage_cards_container {
-      flex-direction: column;
-    }
-
-    .frontpage_cards {
-      margin-bottom: 20px;
-    }
-
     .img_cards {
-      height: 300px;
-      width: 100%;
+    height: 22rem;
+    width: 220px;
     }
 
-    .opening_hours_container {
-      width: 100%;
-    }
-
-    .adress_section_container {
-      width: 100%;
-    }
-
-    .opening_hours_loop_frontpage {
-      padding: 10px;
-    }
-
-    .hours_frontpage {
-      font-size: 15px;
-    }
-
-    .maps {
-      height: 300px;
-    }
   }
 
 
