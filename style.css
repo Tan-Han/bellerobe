@@ -977,6 +977,7 @@ footer {
 
 .wp-block-woocommerce-cart .wp-block-heading {
   font-size: 35px;
+  padding-top: 3rem;
 }
 
 /* .wc-block-grid__product {
