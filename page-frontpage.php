@@ -178,6 +178,7 @@
   .p_cards{
     font-size: 20px;
     font-weight: bold;
+    shadow: 3px 3px 5px (--white);
     position: absolute;
     z-index: 1;
     color: var(--brown);
@@ -187,12 +188,21 @@
     Overflow:hidden;
   }
 
+  .p_cards:hover{
+    color: var(--white);
+    transition: 0.5s;
+  }
+
+  .p_cards:after{
+    transition: 0.5s;
+  }
+
   .img_cards {
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 3px 3px 5px #5C48337D;
-    height: 25rem;
-    width: 200px;
+    height: 24rem;
+    width: 270px;
   }
 
   /* Fourth section styling */
