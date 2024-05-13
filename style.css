@@ -1068,7 +1068,7 @@ footer {
 }
 
 .wp-block-woocommerce-cart .wc-block-grid__product-price span {
-  font-size: 13px;
+  font-size: 13px !important;
 }
 
 .wp-block-woocommerce-cart .wc-block-grid__product-add-to-cart .add_to_cart_button {
