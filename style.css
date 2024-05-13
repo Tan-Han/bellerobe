@@ -987,6 +987,11 @@ footer {
   font-size: 18px;
 }
 
+.wp-block-woocommerce-filled-cart-block .wc-block-cart-item__image img {
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #5C48337D;
+}
+
 .wp-block-woocommerce-filled-cart-block .wc-block-cart-item__product .wc-block-cart-item__wrap {
   font-size: 22px;
 }
