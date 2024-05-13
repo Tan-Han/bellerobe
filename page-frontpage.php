@@ -79,7 +79,8 @@
     <div class="opening_hours_container">
         <h3 class="h3_frontpage">Åbningstider</h3>
         
-        <div class="opening_hours_loop">
+        <!-- Div box for "åbningstider" with loop -->
+        <div class="opening_hours_loop_frontpage">
         <?php $openHoursLoop = new WP_Query(
                     array(
                         "post_type" => "open_hours",
@@ -126,8 +127,9 @@
                 <?php endwhile ?>
 
         </div>
-
-        <div>
+        
+        <!-- div box for "book tid"-->
+        <div class="book_div">
           <p><?php the_field("tekst_til_book_tid") ?></p>
           <button><a href="/booking/">Book tid</a></button>
         </div>
@@ -289,8 +291,21 @@
   .opening_hours_container {
     width: 45%;
     padding: 20px;
+  }
+
+  .opening_hours_loop_frontpage {
+    background-color: var(--tertiary-color);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 3px 3px 5px #5C48337D;
+    padding: 20px;
+  }
+
+  .book_div {
+    background-color: var(--tertiary-color);
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #5C48337D;
+    padding: 20px;
+    margin-top: 20px;
   }
 
   /* adress area styling */
