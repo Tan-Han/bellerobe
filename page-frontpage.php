@@ -43,7 +43,7 @@
         <!--second card-->
         <a href="/product-category/gallakjoler/">
           <div class="frontpage_cards">
-            <p class="p_cards">Galla & festkjoler</p>
+            <p class="p_cards">Fest- & gallekjoler</p>
             <?php $image = get_field("galla_og_festkjoler_card_image") ?>
             <img class="img_cards" src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
           </div>
@@ -191,6 +191,8 @@
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 3px 3px 5px #5C48337D;
+    height: 25rem;
+    width: 200px;
   }
 
   /* Fourth section styling */
