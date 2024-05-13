@@ -181,14 +181,13 @@
     font-weight: 700;
     font-style: normal;
     color: var(--white);
-    shadow: 3px 3px 5px (--white);
+    text-shadow: 1px 1px 2px (--brown);
     position: absolute;
     z-index: 1;
-    color: var(--brown);
     font-size: 25px;
     bottom: 2rem;
     Left: 2rem;
-    Overflow:hidden;
+    overflow:hidden;
     transition: 0.4s;
   }
 
