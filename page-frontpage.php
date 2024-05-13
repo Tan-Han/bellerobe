@@ -82,6 +82,7 @@
         
         <!-- Div box for "åbningstider" with loop -->
         <div class="opening_hours_loop_frontpage">
+  
         <?php $openHoursLoop = new WP_Query(
                     array(
                         "post_type" => "open_hours",
@@ -299,6 +300,7 @@
     box-shadow: 3px 3px 5px #5C48337D;
     padding: 20px;
     margin-top: 18px;
+    background-image: url(https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/open.svg);
   }
 
   .hours_frontpage {
