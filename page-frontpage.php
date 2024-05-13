@@ -89,7 +89,7 @@
 
       <!-- Code for adress area on frontpage begin -->
       <div class="adress_section_container">
-        <div>
+          
           <h3 class="h3_frontpage">Find vej</h3> 
 
           <div>
@@ -110,15 +110,10 @@
                     width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             <?php endwhile ?>
-
-
-            </div>
-
-            <!-- Code for adress area on frontpage end -->
-
-        </div>
-       
+          </div>
+            
       </div>
+      <!-- Code for adress area on frontpage end -->
 
     </section>
 
@@ -234,6 +229,7 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 80px;
+    margin-top: 50px;
   }
 
   .h3_frontpage {
