@@ -132,7 +132,7 @@
         <!-- div box for "book tid"-->
         <div class="book_div">
           <p><?php the_field("tekst_til_book_tid") ?></p>
-          <button><a href="/booking/">Book tid</a></button>
+          <button class="book_tid_button"><a href="/booking/">Book tid</a></button>
         </div>
 
     </div>
@@ -287,7 +287,7 @@
   .frontpage_opening_hours_and_booking {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
     margin-top: 50px;
   }
 
@@ -315,12 +315,25 @@
     color: var(--white);
   }
 
+
+  /* book tid styling */
   .book_div {
     background-color: var(--tertiary-color);
     border-radius: 10px;
     box-shadow: 3px 3px 5px #5C48337D;
     padding: 20px;
     margin-top: 20px;
+  }
+
+  .book_tid_button {
+    background-color: var(--white);
+    border: none;
+    border-radius: 10px;
+    color: var(--brown);
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
   }
 
   /* adress area styling */
