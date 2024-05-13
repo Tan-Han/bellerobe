@@ -311,7 +311,7 @@
   .hours_frontpage {
     display: flex;
     font-size: 17px;
-    padding: 4px 0;
+    padding: 5px 0;
     color: var(--white);
   }
 
@@ -332,9 +332,15 @@
     color: var(--brown);
     padding: 10px 20px;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700;
     margin-top: 10px;
   }
+
+  .book_tid_button:hover {
+    background-color: var(--brown);
+    color: var(--white);
+  }
+
 
   /* adress area styling */
   .adress_section_container {
