@@ -963,17 +963,21 @@ footer {
 
 /* Basket empty */
 
-.wc-block-cart__empty-cart__title.with-empty-cart-icon::before {
-
+.wp-block-woocommerce-cart .wc-block-cart__empty-cart__title {
+  font-size: 20px !important;
 }
 
-.wc-block-cart__empty-cart__title {
-  font-size: 20px;
+.wp-block-woocommerce-cart .wp-block-separator {
+  display: none;
 }
 
 /* Basket with items */
 
 /* Basket - new in shop items */
+
+.wp-block-woocommerce-cart .wp-block-heading {
+  font-size: 35px;
+}
 
 /* .wc-block-grid__product {
   width: 375px;
@@ -1389,9 +1393,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1380px) {
-
-}
+@media screen and (max-width: 1380px) {}
 
 @media screen and (max-width: 1350px) {
 
@@ -1410,14 +1412,14 @@ footer {
 
 @media (max-width: 1300px) {
   .single-product .product .onsale {
-  left: -5.5rem;
-  width: 30%;
+    left: -5.5rem;
+    width: 30%;
   }
 
   .related ul {
     grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
   }
-  
+
   .related ul li {
     width: 225px !important;
     height: 330px !important;
@@ -1522,7 +1524,7 @@ footer {
     grid-column: 1;
     grid-row: 2;
   }
-  
+
   .woocommerce-tabs {
     grid-column: 1;
     grid-row: 3;
@@ -1588,7 +1590,7 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
     column-gap: 1rem;
   }
-  
+
   .related ul li {
     width: 325px !important;
     height: 480px !important;
