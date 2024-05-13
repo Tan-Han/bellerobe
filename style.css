@@ -1048,13 +1048,13 @@ footer {
   font-size: 22px;
 }
 
-html body.customize-support main div.wp-block-woocommerce-cart.alignwide div div div.wc-block-components-sidebar-layout.wc-block-cart.wp-block-woocommerce-filled-cart-block.is-large div.wc-block-components-sidebar.wc-block-cart__sidebar.wp-block-woocommerce-cart-totals-block div.wc-block-cart__submit.wp-block-woocommerce-proceed-to-checkout-block div.wc-block-cart__submit-container {
+.wp-block-woocommerce-filled-cart-block .wc-block-components-sidebar .wp-block-woocommerce-cart-order-summary-block .wp-block-woocommerce-proceed-to-checkout-block .wc-block-cart__submit-container {
   display: flex !important;
   justify-content: center !important;
   width: 100% !important;
 }
 
-html body.customize-support main div.wp-block-woocommerce-cart.alignwide div div div.wc-block-components-sidebar-layout.wc-block-cart.wp-block-woocommerce-filled-cart-block.is-large div.wc-block-components-sidebar.wc-block-cart__sidebar.wp-block-woocommerce-cart-totals-block div.wc-block-cart__submit.wp-block-woocommerce-proceed-to-checkout-block div.wc-block-cart__submit-container a.components-button.wc-block-components-button.wp-element-button.wc-block-cart__submit-button.contained {
+.wp-block-woocommerce-filled-cart-block .wc-block-components-sidebar .wp-block-woocommerce-cart-order-summary-block .wp-block-woocommerce-proceed-to-checkout-block .wc-block-cart__submit-container .wc-block-cart__submit-button.contained {
   width: fit-content;
   background-color: var(--quaternary-color) !important;
   color: var(--white) !important;
@@ -1063,10 +1063,13 @@ html body.customize-support main div.wp-block-woocommerce-cart.alignwide div div
   border-radius: 10px !important;
 }
 
-html body.customize-support main div.wp-block-woocommerce-cart.alignwide div div div.wc-block-components-sidebar-layout.wc-block-cart.wp-block-woocommerce-filled-cart-block.is-large div.wc-block-components-sidebar.wc-block-cart__sidebar.wp-block-woocommerce-cart-totals-block div.wc-block-cart__submit.wp-block-woocommerce-proceed-to-checkout-block div.wc-block-cart__submit-container a.components-button.wc-block-components-button.wp-element-button.wc-block-cart__submit-button.contained span.wc-block-components-button__text {
+.wp-block-woocommerce-filled-cart-block .wc-block-components-sidebar .wp-block-woocommerce-cart-order-summary-block .wp-block-woocommerce-proceed-to-checkout-block .wc-block-cart__submit-container .wc-block-cart__submit-button.contained span {
   font-weight: 700;
   font-size: 16px !important;
 }
+
+
+
 
 /* Basket - new in shop items */
 
