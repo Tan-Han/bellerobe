@@ -1009,12 +1009,12 @@ footer {
   display: flex;
 }
 
-/* .wp-block-woocommerce-cart .wc-block-grid__product-image img {
+.wp-block-woocommerce-cart .wc-block-grid__product-image img {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
-} */
+}
 
 /* .wp-block-woocommerce-cart .wc-block-grid__product-title {
   position: absolute;
