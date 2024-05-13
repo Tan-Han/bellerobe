@@ -6,15 +6,15 @@
             <img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/bellerobe_u_cirkel.svg" alt=""
                 class="footer_logo">
 
-            <?php $productLoop = new WP_Query(
+            <?php $addressLoop = new WP_Query(
                 array(
                     "post_type" => "address",
                     "posts_per_page" => -1,
                 )
             ) ?>
 
-            <?php while ($productLoop->have_posts()):
-                $productLoop->the_post() ?>
+            <?php while ($addressLoop->have_posts()):
+                $addressLoop->the_post() ?>
 
                 <div class="address_footer">
                     <b>Belle Robe Brude- & Festkjoler</b>
@@ -37,6 +37,9 @@
                 </div>
 
             <?php endwhile ?>
+
+            <?php wp_reset_postdata() ?>
+
         </div>
 
         <div class="footer_cat_links">
@@ -57,15 +60,15 @@
             <p>Følg os</p>
             <div class="social_icons">
 
-                <?php $productLoop = new WP_Query(
+                <?php $socialLoop = new WP_Query(
                     array(
                         "post_type" => "social_media",
                         "posts_per_page" => -1,
                     )
                 ) ?>
 
-                <?php while ($productLoop->have_posts()):
-                    $productLoop->the_post() ?>
+                <?php while ($socialLoop->have_posts()):
+                    $socialLoop->the_post() ?>
 
                     <a href="<?php the_field("facebook") ?>" target=”_blank” class="facebook-link">
                         <div class="facebook">
@@ -85,6 +88,8 @@
                 </div>
 
             <?php endwhile ?>
+
+            <?php wp_reset_postdata() ?>
 
         </div>
     </div>
