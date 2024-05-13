@@ -994,8 +994,8 @@ footer {
   position: relative;
   overflow: hidden;
   border: none;
-  flex: auto;
-  max-width: none;
+  flex: auto !important;
+  max-width: none !important;
 }
 
 .wp-block-woocommerce-cart .wc-block-grid__product:hover:after {
@@ -1074,8 +1074,10 @@ footer {
   padding: .5rem 1rem;
   border: none;
   border-radius: 10px;
-  font-size: 15px;
+  font-size: 15px !important;
   box-shadow: 3px 3px 5px #5C48337D;
+  color: var(--brown) !important;
+  font-weight: 700;
 }
 
 .wp-block-woocommerce-cart .wc-block-grid__product:hover .wc-block-grid__product-add-to-cart .add_to_cart_button:hover {
