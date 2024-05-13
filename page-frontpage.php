@@ -133,7 +133,7 @@
         <!-- div box for "book tid"-->
         <div class="book_div_box">
           <p><?php the_field("tekst_til_book_tid") ?></p>
-          <button class="book_tid_button"><a href="/booking/">Book tid</a></button>
+          <button class="book_tid_button"><a href="/booking/">Book tid her</a></button>
         </div>
 
     </div>
@@ -323,6 +323,12 @@
     box-shadow: 3px 3px 5px #5C48337D;
     padding: 20px;
     margin-top: 20px;
+  }
+
+  .book_div_box p{
+    color: var(--white);
+    font-size: 17px;
+    font-weight: 700;
   }
 
   .book_tid_button {
