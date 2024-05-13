@@ -959,6 +959,114 @@ footer {
   font-size: 28px;
 }
 
+/* SHOPPING BASKET PAGE */
+
+/* Basket empty */
+
+.wc-block-cart__empty-cart__title.with-empty-cart-icon::before {
+
+}
+
+.wc-block-cart__empty-cart__title {
+  font-size: 20px;
+}
+
+/* Basket with items */
+
+/* Basket - new in shop items */
+
+.wc-block-grid__product {
+  width: 375px;
+  height: 550px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px #5C48337D;
+  position: relative;
+  overflow: hidden;
+}
+
+.wc-block-grid__product:hover:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: .55;
+  background-image: linear-gradient(180deg, #f5faf700 2%, #f5faf74d 40%, #f5faf780 60%, #f5faf7 100%);
+  opacity: .7;
+}
+
+.wc-block-grid__product-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.wc-block-grid__product-image img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wc-block-grid__product-title {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  z-index: 1;
+  font-size: 28px;
+  text-shadow: 1px 1px 3px var(--quinary-color);
+  font-family: "garamond-premier-pro", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.wc-block-grid__product:hover .wc-block-grid__product-title {
+  position: absolute;
+  bottom: 5rem;
+  left: 2rem;
+  z-index: 1;
+}
+
+.wc-block-grid__product:hover .wc-block-grid__product-title:hover {
+  color: var(--tertiary-color);
+}
+
+.wc-block-grid__product-price {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 2rem;
+  z-index: 1;
+  opacity: 0;
+}
+
+.wc-block-grid__product-price span {
+  font-size: 13px;
+}
+
+.wc-block-grid__product-add-to-cart {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1;
+  opacity: 0;
+  background-color: var(--secondary-color);
+  font-family: proxima-nova, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  box-shadow: 3px 3px 5px #5C48337D;
+}
+
+.wc-block-grid__product:hover .wc-block-grid__product-price,
+.wc-block-grid__product:hover .wc-block-grid__product-add-to-cart {
+  opacity: 1;
+}
+
 /* CHECK OUT PAGE */
 
 .wp-block-woocommerce-checkout {
