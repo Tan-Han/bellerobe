@@ -1004,7 +1004,7 @@ footer {
   opacity: .7;
 } */
 
-.wp-block-woocommerce-cart .wc-block-grid__product-link {
+.wp-block-woocommerce-cart .wc-block-grid__product-link, .wp-block-woocommerce-cart .wc-block-grid__product-image {
   width: 100%;
   height: 100%;
   display: flex;
