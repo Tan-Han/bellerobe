@@ -314,7 +314,7 @@
                         <?php while ($contactLoop->have_posts()):
                             $contactLoop->the_post() ?>
                             <a href="tel:<?php the_field('phone_number') ?>"></a><i class="fa-solid fa-phone"></i></a>
-                            
+
                             <div class="phone">
 
                                 <p><a href="tel:<?php the_field('phone_number') ?>">
@@ -322,7 +322,9 @@
                                     </a></p>
 
                             <?php endwhile ?>
+
                             <?php wp_reset_postdata() ?>
+
                         </div>
                     </div>
 
@@ -349,7 +351,7 @@
             <h2 class="booking-headline">Åbningstider</h2>
             <div class="opening-hours-box info-box">
 
-            <!-- Opening hours loop code start -->
+                <!-- Opening hours loop code start -->
 
                 <?php $openHoursLoop = new WP_Query(
                     array(
@@ -395,6 +397,7 @@
                     </div>
 
                 <?php endwhile ?>
+
                 <?php wp_reset_postdata() ?>
 
                 <!-- Opening hours loop code end -->
@@ -407,7 +410,7 @@
             <h2 class="booking-headline">Adresse</h2>
             <div class="address-box info-box">
 
-            <!-- Address loop code start -->
+                <!-- Address loop code start -->
 
                 <?php $addressLoop = new WP_Query(
                     array(
@@ -427,6 +430,7 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                 <?php endwhile ?>
+
                 <?php wp_reset_postdata() ?>
 
                 <!-- Address loop code end -->
@@ -608,7 +612,8 @@
         min-height: 80px;
     }
 
-    .call i, .write i {
+    .call i,
+    .write i {
         font-size: 55px;
     }
 
