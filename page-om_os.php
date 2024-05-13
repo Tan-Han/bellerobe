@@ -25,12 +25,22 @@
 
 <!-- second section on about us page with drop down menues -->
     <section class="information_drop_downs">
+        <div class="dropdowns_on_about_us_page">
+            <button id="dropdownBtn" class="dropbtn_about_us">Samarbejdspartnere</button>
+            <div id="myDropdown" class="dropdown_content_about_us">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+             </div>
+        </div>
 
 
 
     </section>
 
 </main>
+
+
 
 
 <style>
@@ -57,12 +67,52 @@
     max-width: 100vw;
     /* Max-width af video - for at den ikke går ud over kanten */
     height: 300px;
-    /* Sæt højden som ønsket - 600px er bare et eksempel */
     width: 100%;
     /* 100% vidde på videoen, så den fylder fra kant til kant */
     border-radius: 10px;
     box-shadow: 3px 3px 5px #5C48337D;
   }
+
+/* Styling for the second section on the about us page with drop down menues */
+
+    /* Style the dropdown button */
+    .dropbtn_about_us {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    }
+
+    /* Style the dropdown content (hidden by default) */
+    .dropdown_content_about_us {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+
+    /* Style the links inside the dropdown */
+    .dropdown-content_about_us a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content_about_us a:hover {
+    background-color: #f1f1f1;
+    }
+
+    /* Show the dropdown menu when the button is clicked */
+    .show {
+    display: block;
+    }   
+
 
 
 
