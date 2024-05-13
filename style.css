@@ -525,10 +525,6 @@ footer {
   right: 2rem;
   z-index: 1;
   opacity: 0;
-  display: flex;
-  height: 40px;
-  align-items: center;
-  margin: 0!important;
   background-color: var(--secondary-color);
   font-family: proxima-nova, sans-serif;
   font-weight: 700;
