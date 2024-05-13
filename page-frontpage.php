@@ -247,7 +247,6 @@
   }
 
   .p_cards{
-    font-size: 20px;
     font-family: "garamond-premier-pro", serif;
     font-weight: 700;
     font-style: normal;
@@ -357,6 +356,10 @@
     height: 22rem;
     width: 220px;
     }
+
+    .p_cards{
+    font-size: 20px;
+  }
 
   }
 
