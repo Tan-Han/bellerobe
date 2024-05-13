@@ -15,7 +15,7 @@
             <iframe
                 src="<?php the_field("about_us_video") ?>?autoplay=1&controls=0&mute=1&modestbranding=1&disablekb=1&loop=1&playlist=<?php the_field("video_id") ?>"
                 title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
             </iframe>
         </div>
@@ -48,6 +48,8 @@
 
     .introduction_video {
          width: 45%;
+         border-radius: 10px;
+         box-shadow: 3px 3px 5px #5C48337D;
     }
 
     .introduction_video iframe {
