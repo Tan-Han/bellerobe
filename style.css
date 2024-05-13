@@ -531,6 +531,11 @@ footer {
   box-shadow: 3px 3px 5px #5C48337D;
 }
 
+.products .product:hover .product_type_variable.add_to_cart_button:hover {
+  background-color: var(--quaternary-color);
+  color: var(--white);
+}
+
 .products .product:hover .price,
 .products .product:hover .product_type_variable.add_to_cart_button {
   opacity: 1;
@@ -1071,6 +1076,11 @@ footer {
   border-radius: 10px;
   font-size: 15px;
   box-shadow: 3px 3px 5px #5C48337D;
+}
+
+.wp-block-woocommerce-cart .wc-block-grid__product:hover .wc-block-grid__product-add-to-cart .add_to_cart_button:hover {
+  background-color: var(--quaternary-color);
+  color: var(--white);
 }
 
 .wp-block-woocommerce-cart .wc-block-grid__product:hover .wc-block-grid__product-price,
