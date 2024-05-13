@@ -38,6 +38,23 @@
        justify-content: space-between;
    }
 
+   .introduction_text {
+       width: 45%;
+   }
+
+    .introduction_video {
+         width: 45%;
+    }
+
+    .introduction_video iframe {
+    max-width: 100vw;
+    /* Max-width af video - for at den ikke går ud over kanten */
+    height: 300px;
+    /* Sæt højden som ønsket - 600px er bare et eksempel */
+    width: 100%;
+    /* 100% vidde på videoen, så den fylder fra kant til kant */
+  }
+
 
 
 
