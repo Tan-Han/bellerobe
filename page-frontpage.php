@@ -75,19 +75,68 @@
 
     <section class="section frontpage_opening_hours_and_booking">
       
-    <!-- Code for opening hours on frontpage -->
+    <!-- Code for opening hours on frontpage begins -->
     <div class="opening_hours_container">
         <h3 class="h3_frontpage">Åbningstider</h3>
-        <div>
+        
+        <div class="opening_hours_loop">
+        <?php $openHoursLoop = new WP_Query(
+                    array(
+                        "post_type" => "open_hours",
+                        "posts_per_page" => -1,
+                        "orderby" => "date",  // Order by date
+                        "order" => "ASC"     // Reverse order (latest posts first)
+                    )
+                ) ?>
+
+                <?php while ($openHoursLoop->have_posts()):
+                    $openHoursLoop->the_post() ?>
+
+                    <div class="hours">
+                        <b><?php the_title() ?>:&nbsp;</b>
+
+                        <?php if (!get_field('closed')) {
+                            if (get_field("open") && get_field("close")): ?>
+                                <p><?php the_field("open"); ?>&nbsp;-&nbsp;</p>
+                                <p><?php the_field("close"); ?></p>
+                            <?php endif;
+                        } ?>
+
+                        <?php
+                        if (!get_field('closed')) {
+                            $openingHours = get_field('open_later');
+                            if (!empty($openingHours['open_later']) && !empty($openingHours['close_later'])): ?>
+                                <p><?php echo '&nbsp;&&nbsp;'; ?></p>
+                                <p><?php echo $openingHours['open_late']; ?></p>
+                                <p><?php echo '&nbsp;-&nbsp;'; ?></p>
+                                <p><?php echo $openingHours['close_late']; ?></p>
+                            <?php endif;
+                        } ?>
+
+                        <?php if (get_field('closed')) {
+                            echo '<p>Lukket</p>';
+                        }
+
+                        if (get_field('book')) {
+                            echo '<p>Se tider ved booking</p>';
+                        }
+                        ?>
+                    </div>
+
+                <?php endwhile ?>
 
         </div>
+
         <div>
           <p><?php the_field("tekst_til_book_tid") ?></p>
           <button><a href="/booking/">Book tid</a></button>
         </div>
-      </div>
 
-      <!-- Code for adress area on frontpage begin -->
+    </div>
+
+      <!-- Code for opening hours on frontpage ends -->
+
+      <!-- Code for adress area on frontpage begins -->
       <div class="adress_section_container">
           
           <h3 class="h3_frontpage">Find vej</h3> 
@@ -111,9 +160,9 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             <?php endwhile ?>
           </div>
-            
+
       </div>
-      <!-- Code for adress area on frontpage end -->
+      <!-- Code for adress area on frontpage ends -->
 
     </section>
 
@@ -145,7 +194,7 @@
     font-size: 35px;
   }
 
-  /* First section styling */
+/* First section styling */
 
   .frontpage_hero {
     position: relative;
@@ -178,7 +227,7 @@
     /* 100% vidde på videoen, så den fylder fra kant til kant */
   }
 
-  /* Third section styling */
+/* Third section styling */
 
   .centered_text_frontpage {
     text-align: center;
@@ -224,7 +273,7 @@
     width: 270px;
   }
 
-  /* Fourth section styling */
+/* Fourth section styling */
   .frontpage_opening_hours_and_booking {
     display: flex;
     justify-content: space-between;
@@ -236,6 +285,7 @@
     font-size: 25px;
   }
 
+  /* opening hours area styling */
   .opening_hours_container {
     width: 45%;
     padding: 20px;
@@ -243,7 +293,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
-    /* adress area styling */
+  /* adress area styling */
   .adress_section_container {
     width: 45%;
   }
