@@ -300,7 +300,7 @@
     box-shadow: 3px 3px 5px #5C48337D;
     padding: 20px;
     margin-top: 18px;
-    background-image: url(https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/open.svg);
+    background-image: url(https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/book-dark-green.svg);
   }
 
   .hours_frontpage {
