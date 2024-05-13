@@ -188,7 +188,6 @@
     bottom: 2rem;
     Left: 2rem;
     overflow:hidden;
-    transition: 0.4s;
   }
 
   .p_cards:hover{
@@ -209,7 +208,7 @@
   .frontpage_opening_hours_and_booking {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
   }
 
   .opening_hours_container {
