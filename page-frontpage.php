@@ -273,6 +273,13 @@
     box-shadow: 3px 3px 5px #5C48337D;
     height: 25rem;
     width: 270px;
+    transition: 0.4s;
+  }
+
+  .img_cards:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.4s;
   }
 
 /* Fourth section styling */
