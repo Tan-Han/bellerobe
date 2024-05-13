@@ -1297,11 +1297,7 @@ footer {
 }
 
 .wc-block-components-checkout-place-order-button:hover {
-  background-color: var(--secondary-color);
-}
-
-.wc-block-components-checkout-place-order-button:hover span {
-  color: var(--brown) !important;
+  background-color: var(--tertiary-color);
 }
 
 /* Checkout summary */
