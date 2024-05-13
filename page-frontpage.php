@@ -337,7 +337,6 @@
     color: var(--white)!important; 
   }
 
-
   /* adress area styling */
   .adress_section_container {
     width: 45%;
