@@ -167,7 +167,7 @@
     border-radius: 10px;
     padding: 20px;
     position: relative;
-    width: 23%;
+    width: 100%;
     box-shadow: 3px 3px 5px #5C48337D;
   }
 
