@@ -42,6 +42,10 @@
        width: 45%;
    }
 
+   .introduction_text h1 {
+         font-size: 35px;
+   }
+
     .introduction_video {
          width: 45%;
     }
