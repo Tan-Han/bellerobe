@@ -167,7 +167,7 @@
   .frontpage_cards_container {
     display: flex;
     justify-content: space-between;
-    margin: 40px 0;
+    margin: 30px 0;
   }
 
   .frontpage_cards {
@@ -180,6 +180,7 @@
     font-family: "garamond-premier-pro", serif;
     font-weight: 700;
     font-style: normal;
+    color: var(--white);
     shadow: 3px 3px 5px (--white);
     position: absolute;
     z-index: 1;
@@ -188,16 +189,14 @@
     bottom: 2rem;
     Left: 2rem;
     Overflow:hidden;
-  }
-
-  .p_cards:hover{
-    color: var(--white);
     transition: 0.4s;
   }
 
-  .p_cards:hover:after{
-    transition: 0.5s;
+  .p_cards:hover{
+    color: var(--secondary-color:);
+    transition: 0.4s;
   }
+
 
   .img_cards {
     object-fit: cover;
