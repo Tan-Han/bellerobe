@@ -310,8 +310,9 @@
 
   .hours_frontpage {
     display: flex;
-    font-size: 20px;
-    padding: .5rem 0;
+    font-size: 15px;
+    padding: 10px 0;
+    color: var(--white);
   }
 
   .book_div {
