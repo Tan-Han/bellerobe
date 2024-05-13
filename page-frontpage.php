@@ -336,7 +336,7 @@
   }
 
   .book_tid_button:hover {
-    background-color: var(--primary-color);
+    background-color: var(--quinary-color);
     /* background-color: var(--brown);
     color: var(--white)!important; */
   }
