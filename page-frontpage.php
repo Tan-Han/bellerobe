@@ -334,7 +334,7 @@
 
   .book_tid_button:hover {
     background-color: var(--brown);
-    color: var(--white)!important;
+    color: var(--white)!important; 
   }
 
 
