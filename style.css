@@ -510,8 +510,8 @@ footer {
   opacity: 0;
 }
 
-.products .product .price del {
-  font-size: 13px;
+.products .product .price bdi {
+  font-size: 18px;
 }
 
 .products .product .product_type_variable.add_to_cart_button {
@@ -1068,7 +1068,7 @@ footer {
 }
 
 .wp-block-woocommerce-cart .wc-block-grid__product-price span {
-  font-size: 13px !important;
+  font-size: 18px;
 }
 
 .wp-block-woocommerce-cart .wc-block-grid__product-add-to-cart .add_to_cart_button {
