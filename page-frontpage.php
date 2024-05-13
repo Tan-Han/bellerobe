@@ -301,6 +301,9 @@
     padding: 20px;
     margin-top: 18px;
     background-image: url('https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/book_dark_green.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   .hours_frontpage {
