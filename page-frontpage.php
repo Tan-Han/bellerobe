@@ -4,7 +4,7 @@
 
 <main>
 
-  <!-- first section on the frontpage with the hero video/picture -->
+<!-- first section on the frontpage with the hero video/picture -->
   <section class="frontpage_hero">
     <h1><?php the_field("hero_text_on_frontpage") ?></h1>
     <iframe
@@ -13,19 +13,19 @@
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
     </iframe>
-    <!-- Har slettet div, da den var unødvendig og lavet den om til URL i ACF. Der er tilføjet lidt kode efter linket for at autoplay, loop og fjerne Youtube controls -->
+    <!-- kode efter linket gør, at man kan autoplay og fjerne Youtube controls -->
   </section>
 
-  <!--padding for på siderne for alt andet end hero -->
+  <!-- padding for på siderne for alt andet end hero -->
   <div class="frontpage_pading">
 
-    <!-- second section on the frontpage with the introduction text -->
+<!-- second section on the frontpage with the introduction text -->
     <section class="section frontpage_introduction">
       <h2><?php the_field("introduction_header_on_frontpage") ?></h2>
       <p><?php the_field("introduction_text_on_frontpage") ?></p>
     </section>
 
-    <!-- third section on the frontpage with four categories of products -->
+<!-- third section on the frontpage with four categories of products -->
     <section class="section">
       <h2 class="big_h2 centered_text_frontpage"><?php the_field("introduction_to_cards_on_frontpage") ?></h2>
       <p class="centered_text_frontpage"><?php the_field("text_under_introduction_to_cards") ?></p>
@@ -71,10 +71,12 @@
       </div>
     </section>
 
-    <!-- fourth section on the frontpage with the informations of opening hours and map -->
+<!-- fourth section on the frontpage with the informations of opening hours and map -->
 
     <section class="section frontpage_opening_hours_and_booking">
-      <div class="opening_hours_container">
+      
+    <!-- Code for opening hours on frontpage -->
+    <div class="opening_hours_container">
         <h3>Åbningstider</h3>
         <div>
 
@@ -85,34 +87,34 @@
         </div>
       </div>
 
+      <!-- Code for adress area on frontpage begin -->
       <div class="adress_section_container">
         <div>
-          <h3>Find vej</h3>
-          
-          <div class="address-box info-box">
-            <!-- Address loop code start -->
+          <h3>Find vej</h3> 
 
-                <?php $addressLoop = new WP_Query(
-                    array(
-                        "post_type" => "address",
-                        "posts_per_page" => -1,
-                    )
-                ) ?>
+          <div>
+            <?php $addressLoop = new WP_Query(
+                array(
+                    "post_type" => "address",
+                    "posts_per_page" => -1,
+                )
+            ) ?>
 
-                <?php while ($addressLoop->have_posts()):
-                    $addressLoop->the_post() ?>
+            <?php while ($addressLoop->have_posts()):
+                $addressLoop->the_post() ?>
 
-                    <p class="store-address"><?php the_field('street_number') ?>, <?php the_field('postal_code') ?></p>
+                <p class="store-address"><?php the_field('street_number') ?>, <?php the_field('postal_code') ?></p>
 
-                    <iframe class="maps"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4505.774172981708!2d8.478445877117661!3d55.621380402105835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b1e67d2f3d7db%3A0x1edb8a96de66a4e9!2sBelle%20Robe%20bridal%20and%20party%20dresses!5e0!3m2!1sen!2sdk!4v1715084743677!5m2!1sen!2sdk"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="maps"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4505.774172981708!2d8.478445877117661!3d55.621380402105835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b1e67d2f3d7db%3A0x1edb8a96de66a4e9!2sBelle%20Robe%20bridal%20and%20party%20dresses!5e0!3m2!1sen!2sdk!4v1715084743677!5m2!1sen!2sdk"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <?php endwhile ?>
 
-                <?php endwhile ?>
 
-                <!-- Address loop code end -->
             </div>
+
+            <!-- Code for adress area on frontpage end -->
 
         </div>
        
@@ -243,10 +245,17 @@
 
   .adress_section_container {
     width: 45%;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
+
+  .maps {
+    border-radius: 10px;
+    border: none !important;
+    box-shadow: 3px 3px 5px #5C48337D;
+    height: 350px;
+    width: 100%;
+  }
+
+
 </style>
 
 <?php get_footer() ?>
