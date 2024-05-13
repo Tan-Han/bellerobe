@@ -13,6 +13,7 @@
         <!--Code for video-->
         <div class="introduction_video">
             <iframe
+                controls; autoplay; 
                 src="<?php the_field("about_us_video") ?>?controls=1&controls=0&mute=1&modestbranding=1&disablekb=1&loop=1&playlist=<?php the_field("video_id") ?>"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; controls; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
