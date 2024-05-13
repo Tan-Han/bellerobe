@@ -991,7 +991,7 @@ footer {
   border: none;
 }
 
-/* .wp-block-woocommerce-cart .wc-block-grid__product:hover:after {
+.wp-block-woocommerce-cart .wc-block-grid__product:hover:after {
   content: '';
   display: block;
   position: absolute;
@@ -1002,18 +1002,19 @@ footer {
   opacity: .55;
   background-image: linear-gradient(180deg, #f5faf700 2%, #f5faf74d 40%, #f5faf780 60%, #f5faf7 100%);
   opacity: .7;
-} */
+}
 
-.wp-block-woocommerce-cart .wc-block-grid__product-link, .wp-block-woocommerce-cart .wc-block-grid__product-image {
+.wp-block-woocommerce-cart .wc-block-grid__product-link,
+.wp-block-woocommerce-cart .wc-block-grid__product-image {
   width: 100%;
   height: 100%;
-  display: flex;
+  display: flex !important;
 }
 
 .wp-block-woocommerce-cart .wc-block-grid__product-image img {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 100% !important;
+  height: 100% !important;
   object-fit: cover;
 }
 
@@ -1029,30 +1030,30 @@ footer {
   font-style: normal;
 }
 
-/* .wp-block-woocommerce-cart .wc-block-grid__product:hover .wc-block-grid__product-title {
+.wp-block-woocommerce-cart .wc-block-grid__product:hover .wc-block-grid__product-title {
   position: absolute;
   bottom: 5rem;
   left: 2rem;
   z-index: 1;
-} */
+}
 
-/* .wp-block-woocommerce-cart .wc-block-grid__product:hover .wc-block-grid__product-title:hover {
+.wp-block-woocommerce-cart .wc-block-grid__product:hover .wc-block-grid__product-title:hover {
   color: var(--tertiary-color);
-} */
+}
 
-/* .wp-block-woocommerce-cart .wc-block-grid__product-price {
+.wp-block-woocommerce-cart .wc-block-grid__product-price {
   position: absolute;
   bottom: 2.5rem;
   left: 2rem;
   z-index: 1;
   opacity: 0;
-} */
+}
 
-/* .wp-block-woocommerce-cart .wc-block-grid__product-price span {
+.wp-block-woocommerce-cart .wc-block-grid__product-price span {
   font-size: 13px;
-} */
+}
 
-/* .wp-block-woocommerce-cart .wc-block-grid__product-add-to-cart {
+.wp-block-woocommerce-cart .wc-block-grid__product-add-to-cart {
   position: absolute;
   bottom: 2rem;
   right: 2rem;
@@ -1067,12 +1068,12 @@ footer {
   border-radius: 10px;
   font-size: 15px;
   box-shadow: 3px 3px 5px #5C48337D;
-} */
+}
 
-/* .wp-block-woocommerce-cart .wc-block-grid__product:hover .wc-block-grid__product-price,
+.wp-block-woocommerce-cart .wc-block-grid__product:hover .wc-block-grid__product-price,
 .wp-block-woocommerce-cart .wc-block-grid__product:hover .wc-block-grid__product-add-to-cart {
   opacity: 1;
-} */
+}
 
 /* CHECK OUT PAGE */
 
