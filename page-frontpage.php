@@ -277,8 +277,8 @@
   }
 
   .img_cards:hover {
-    -webkit-transform: scale(1.03);
-    transform: scale(1.03);
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
     transition: 0.4s;
   }
 
