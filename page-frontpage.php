@@ -31,15 +31,15 @@
 
       <div class="frontpage_cards_container">
 
-        <a class="frontpage_cards" href="/product-category/brudekjoler/">
-          <div class="frontpage-card">
-            <p>Brudekjoler</p>
+        <a href="/product-category/brudekjoler/">
+          <div class="frontpage-cards">
+            <p class="p_cards">Brudekjoler</p>
             <?php $image = get_field("brudekjole_card_image") ?>
             <img src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
           </div>
         </a>
 
-        <!-- <div class="frontpage-card">
+        <!-- <div class="frontpage-card"-->
           <a class="frontpage_cards" href="/product-category/gallakjoler/">Galla & festkjoler
             <?php $image = get_field("galla_og_festkjoler_card_image") ?>
             <img src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
@@ -58,7 +58,8 @@
             <?php $image = get_field("sko_og_tilbehor_card_image") ?>
             <img src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
           </a>
-        </div> -->
+        </div>
+
       </div>
     </section>
 
@@ -164,13 +165,28 @@
 
   .frontpage-cards {
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    position: relative;
     width: 23%;
+    box-shadow: 3px 3px 5px #5C48337D;
+  }
+
+  .p_cards{
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 1;
     color: var(--brown);
     font-size: 25px;
-    text-align: left;
-    text-decoration: none;
+    bottom: 2rem;
+    Left: 2rem;
+    Overflow:hidden;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 
   /* Fourth section styling */
