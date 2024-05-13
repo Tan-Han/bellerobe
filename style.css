@@ -1177,6 +1177,7 @@ footer {
   gap: 1rem;
   text-align: left;
   justify-self: center;
+  min-width: 35%;
 }
 
 .woocommerce-order .woocommerce-thankyou-order-received {
