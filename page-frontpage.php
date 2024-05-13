@@ -328,7 +328,7 @@
   .book_div_box p{
     color: var(--white);
     font-size: 17px;
-    font-weight: 700;
+    font-weight: 500;
   }
 
   .book_tid_button {
