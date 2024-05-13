@@ -310,7 +310,7 @@
   .hours_frontpage {
     display: flex;
     font-size: 17px;
-    padding: 5px 0;
+    padding: 4px 0;
     color: var(--white);
   }
 
