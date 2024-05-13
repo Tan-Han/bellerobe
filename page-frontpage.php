@@ -80,10 +80,10 @@
         <h3 class="h3_frontpage">Åbningstider</h3>
         <p><?php the_field("opening_hours_description") ?></p>
 
-        <div class="book_div">
+        
           <p><?php the_field("tekst_til_book_tid") ?></p>
           <button class="book_tid_button"><a href="/booking/">Book tid</a></button>
-        </div>
+        
         
         <!-- Div box for "åbningstider" with loop -->
         <div class="opening_hours_loop_frontpage">
