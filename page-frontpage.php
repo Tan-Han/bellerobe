@@ -31,6 +31,7 @@
 
       <div class="frontpage_cards_container">
 
+        <!--first card-->
         <a href="/product-category/brudekjoler/">
           <div class="frontpage_cards">
             <p class="p_cards">Brudekjoler</p>
@@ -39,26 +40,32 @@
           </div>
         </a>
 
-        <!-- <div class="frontpage-card"-->
-          <a class="frontpage_cards" href="/product-category/gallakjoler/">Galla & festkjoler
+        <!--second card-->
+        <a href="/product-category/gallakjoler/">
+          <div class="frontpage_cards">
+            <p class="p_cards">Galla & festkjoler</p>
             <?php $image = get_field("galla_og_festkjoler_card_image") ?>
-            <img src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
-          </a>
-        </div>
+            <img class="img_cards" src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
+          </div>
+        </a>
 
-        <div class="frontpage-card">
-          <a class="frontpage_cards" href="/product-category/konfirmationskjoler/">Konfirmationskjoler
+        <!--third card-->
+        <a href="/product-category/konfirmationskjoler/">
+          <div class="frontpage_cards">
+            <p class="p_cards">Konfirmationskjoler</p>
             <?php $image = get_field("konfirmationskjoler_card_image") ?>
-            <img src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
-          </a>
-        </div>
+            <img class="img_cards" src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
+          </div>
+        </a>
 
-        <div class="frontpage-card">
-          <a class="frontpage_cards" href="/product-category/sko/">Sko & tilbehør
+        <!--fourth card-->
+        <a href="/product-category/sko/">
+          <div class="frontpage_cards">
+            <p class="p_cards">Sko & tilbehør</p>
             <?php $image = get_field("sko_og_tilbehor_card_image") ?>
-            <img src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
-          </a>
-        </div>
+            <img class="img_cards" src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
+          </div>
+        </a>
 
       </div>
     </section>
@@ -166,7 +173,6 @@
   .frontpage_cards {
     border-radius: 10px;
     position: relative;
-    box-shadow: 3px 3px 5px #5C48337D;
   }
 
   .p_cards{
@@ -184,6 +190,7 @@
   .img_cards {
     object-fit: cover;
     border-radius: 10px;
+    box-shadow: 3px 3px 5px #5C48337D;
   }
 
   /* Fourth section styling */
