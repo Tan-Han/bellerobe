@@ -79,11 +79,6 @@
     <div class="opening_hours_container">
         <h3 class="h3_frontpage">Åbningstider</h3>
         <p><?php the_field("opening_hours_description") ?></p>
-
-        
-          <p><?php the_field("tekst_til_book_tid") ?></p>
-          <button class="book_tid_button"><a href="/booking/">Book tid</a></button>
-        
         
         <!-- Div box for "åbningstider" with loop -->
         <div class="opening_hours_loop_frontpage">
@@ -134,7 +129,7 @@
         </div>
         
         <!-- div box for "book tid"-->
-        <div class="book_div">
+        <div class="book_div_box">
           <p><?php the_field("tekst_til_book_tid") ?></p>
           <button class="book_tid_button"><a href="/booking/">Book tid</a></button>
         </div>
@@ -321,7 +316,7 @@
 
 
   /* book tid styling */
-  .book_div {
+  .book_div_box {
     background-color: var(--tertiary-color);
     border-radius: 10px;
     box-shadow: 3px 3px 5px #5C48337D;
@@ -342,7 +337,7 @@
 
   .book_tid_button:hover {
     background-color: var(--brown);
-    color: var(--white);
+    color: var(--white)!important;
   }
 
 
