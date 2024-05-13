@@ -989,6 +989,8 @@ footer {
   position: relative;
   overflow: hidden;
   border: none;
+  flex: auto;
+  max-width: none;
 }
 
 .wp-block-woocommerce-cart .wc-block-grid__product:hover:after {
@@ -1028,6 +1030,7 @@ footer {
   font-family: "garamond-premier-pro", serif;
   font-weight: 700;
   font-style: normal;
+  text-align: left;
 }
 
 .wp-block-woocommerce-cart .wc-block-grid__product:hover .wc-block-grid__product-title {
@@ -1053,7 +1056,7 @@ footer {
   font-size: 13px;
 }
 
-.wp-block-woocommerce-cart .wc-block-grid__product-add-to-cart {
+.wp-block-woocommerce-cart .wc-block-grid__product-add-to-cart .add_to_cart_button {
   position: absolute;
   bottom: 2rem;
   right: 2rem;
