@@ -1084,7 +1084,7 @@ footer {
 }
 
 .wp-block-woocommerce-cart .wc-block-grid__product:hover .wc-block-grid__product-price,
-.wp-block-woocommerce-cart .wc-block-grid__product:hover .wc-block-grid__product-add-to-cart {
+.wp-block-woocommerce-cart .wc-block-grid__product:hover .wc-block-grid__product-add-to-cart .add_to_cart_button {
   opacity: 1;
 }
 
