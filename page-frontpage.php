@@ -177,7 +177,9 @@
 
   .p_cards{
     font-size: 20px;
-    font-weight: bold;
+    font-family: "garamond-premier-pro", serif;
+    font-weight: 700;
+    font-style: normal;
     shadow: 3px 3px 5px (--white);
     position: absolute;
     z-index: 1;
@@ -190,10 +192,10 @@
 
   .p_cards:hover{
     color: var(--white);
-    transition: 0.5s;
+    transition: 0.4s;
   }
 
-  .p_cards:after{
+  .p_cards:hover:after{
     transition: 0.5s;
   }
 
@@ -201,7 +203,7 @@
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 3px 3px 5px #5C48337D;
-    height: 24rem;
+    height: 25rem;
     width: 270px;
   }
 
