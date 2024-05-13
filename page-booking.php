@@ -548,7 +548,7 @@
     /* Opening hours */
 
     .opening-hours-box {
-        background-image: url('https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/open.svg');
+        background-image: url('https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/book_dark_green.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
