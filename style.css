@@ -1065,7 +1065,7 @@ footer {
   left: 2rem;
   z-index: 1;
   opacity: 0;
-  margin: 0!important;
+  margin: 0 !important;
   text-align: left;
   max-width: 40%;
 }
@@ -1098,7 +1098,7 @@ footer {
 
 .wp-block-woocommerce-cart .wc-block-grid__product:hover .wc-block-grid__product-add-to-cart .add_to_cart_button:hover {
   background-color: var(--quaternary-color);
-  color: var(--white);
+  color: var(--white) !important;
 }
 
 .wp-block-woocommerce-cart .wc-block-grid__product:hover .wc-block-grid__product-price,
