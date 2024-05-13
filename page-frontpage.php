@@ -77,7 +77,7 @@
       
     <!-- Code for opening hours on frontpage -->
     <div class="opening_hours_container">
-        <h3>Åbningstider</h3>
+        <h3 class="h3_frontpage">Åbningstider</h3>
         <div>
 
         </div>
@@ -90,7 +90,7 @@
       <!-- Code for adress area on frontpage begin -->
       <div class="adress_section_container">
         <div>
-          <h3>Find vej</h3> 
+          <h3 class="h3_frontpage">Find vej</h3> 
 
           <div>
             <?php $addressLoop = new WP_Query(
@@ -233,7 +233,11 @@
   .frontpage_opening_hours_and_booking {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
+  }
+
+  .h3_frontpage {
+    font-size: 25px;
   }
 
   .opening_hours_container {
@@ -243,6 +247,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
+    /* adress area styling */
   .adress_section_container {
     width: 45%;
   }
@@ -253,6 +258,7 @@
     box-shadow: 3px 3px 5px #5C48337D;
     height: 350px;
     width: 100%;
+    margin-top: 18px;
   }
 
 
