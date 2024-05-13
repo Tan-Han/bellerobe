@@ -1049,23 +1049,23 @@ footer {
 }
 
 .wp-block-woocommerce-filled-cart-block .wc-block-components-sidebar .wp-block-woocommerce-cart-order-summary-block .wp-block-woocommerce-proceed-to-checkout-block .wc-block-cart__submit-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+  display: flex !important;
+  justify-content: center !important;
+  width: 100% !important;
 }
 
 .wp-block-woocommerce-filled-cart-block .wc-block-components-sidebar .wp-block-woocommerce-cart-order-summary-block .wp-block-woocommerce-proceed-to-checkout-block .wc-block-cart__submit-container .wc-block-cart__submit-button {
   width: fit-content;
-  background-color: var(--quaternary-color);
-  color: var(--white);
-  padding: .5rem 1rem;
-  box-shadow: 3px 3px 5px #5C48337D;
-  border-radius: 10px;
+  background-color: var(--quaternary-color) !important;
+  color: var(--white) !important;
+  padding: .5rem 1rem !important;
+  box-shadow: 3px 3px 5px #5C48337D !important;
+  border-radius: 10px !important;
 }
 
 .wp-block-woocommerce-filled-cart-block .wc-block-components-sidebar .wp-block-woocommerce-cart-order-summary-block .wp-block-woocommerce-proceed-to-checkout-block .wc-block-cart__submit-container .wc-block-cart__submit-button span {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 16px !important;
 }
 
 /* Basket - new in shop items */
