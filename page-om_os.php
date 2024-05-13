@@ -48,8 +48,6 @@
 
     .introduction_video {
          width: 45%;
-         border-radius: 10px;
-         box-shadow: 3px 3px 5px #5C48337D;
     }
 
     .introduction_video iframe {
@@ -59,6 +57,8 @@
     /* Sæt højden som ønsket - 600px er bare et eksempel */
     width: 100%;
     /* 100% vidde på videoen, så den fylder fra kant til kant */
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px #5C48337D;
   }
 
 
