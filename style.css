@@ -986,6 +986,16 @@ footer {
   padding-bottom: 1rem;
 }
 
+.wp-block-woocommerce-cart .wc-block-grid__products {
+  justify-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 1rem;
+  row-gap: 3rem;
+  column-gap: 3rem;
+  padding-bottom: 3rem;
+}
+
 .wp-block-woocommerce-cart .wc-block-grid__product {
   width: 375px;
   height: 550px;
