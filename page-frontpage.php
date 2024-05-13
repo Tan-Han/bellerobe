@@ -355,7 +355,7 @@
     border-radius: 10px;
     border: none !important;
     box-shadow: 3px 3px 5px #5C48337D;
-    height: 350px;
+    height: 415px;
     width: 100%;
     margin-top: 18px;
   }
