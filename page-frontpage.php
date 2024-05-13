@@ -310,8 +310,8 @@
 
   .hours_frontpage {
     display: flex;
-    font-size: 15px;
-    padding: 10px 0;
+    font-size: 17px;
+    padding: 4px 0;
     color: var(--white);
   }
 
