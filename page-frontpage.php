@@ -337,8 +337,7 @@
   }
 
   .book_tid_button:hover {
-    background-color: var(--brown);
-    color: var(--white)!important; 
+    background-color: var(--quinary-color);
   }
 
   /* adress area styling */
