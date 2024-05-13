@@ -322,6 +322,7 @@
                                     </a></p>
 
                             <?php endwhile ?>
+                            <?php wp_reset_postdata() ?>
                         </div>
                     </div>
 
@@ -394,6 +395,7 @@
                     </div>
 
                 <?php endwhile ?>
+                <?php wp_reset_postdata() ?>
 
                 <!-- Opening hours loop code end -->
 
@@ -425,6 +427,7 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                 <?php endwhile ?>
+                <?php wp_reset_postdata() ?>
 
                 <!-- Address loop code end -->
 
