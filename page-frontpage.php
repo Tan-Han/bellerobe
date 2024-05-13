@@ -94,7 +94,7 @@
                 <?php while ($openHoursLoop->have_posts()):
                     $openHoursLoop->the_post() ?>
 
-                    <div class="hours">
+                    <div class="hours_frontpage">
                         <b><?php the_title() ?>:&nbsp;</b>
 
                         <?php if (!get_field('closed')) {
@@ -305,6 +305,13 @@
     border-radius: 10px;
     box-shadow: 3px 3px 5px #5C48337D;
     padding: 20px;
+    margin-top: 18px;
+  }
+
+  .hours_frontpage {
+    display: flex;
+    font-size: 20px;
+    padding: .5rem 0;
   }
 
   .book_div {
