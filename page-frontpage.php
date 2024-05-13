@@ -78,6 +78,7 @@
     <!-- Code for opening hours on frontpage begins -->
     <div class="opening_hours_container">
         <h3 class="h3_frontpage">Åbningstider</h3>
+        <p><?php the_field("opening_hours_description") ?></p>
         
         <!-- Div box for "åbningstider" with loop -->
         <div class="opening_hours_loop_frontpage">
