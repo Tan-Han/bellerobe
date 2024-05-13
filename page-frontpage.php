@@ -126,12 +126,12 @@
                     </div>
 
                 <?php endwhile ?>
-
         </div>
         
         <!-- div box for "book tid"-->
         <div class="book_div">
           <p><?php the_field("tekst_til_book_tid") ?></p>
+          <p><?php the_field("opening_hours_description") ?></p>
           <button class="book_tid_button"><a href="/booking/">Book tid</a></button>
         </div>
 
@@ -332,7 +332,7 @@
     color: var(--brown);
     padding: 10px 20px;
     font-size: 18px;
-    font-weight: 700;
+    font-weight: bold;
     margin-top: 10px;
   }
 
