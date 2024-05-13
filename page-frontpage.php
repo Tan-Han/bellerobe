@@ -298,7 +298,6 @@
   /* opening hours area styling */
   .opening_hours_container {
     width: 45%;
-    padding: 20px;
   }
 
   .opening_hours_loop_frontpage {
