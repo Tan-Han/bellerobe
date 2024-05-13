@@ -32,10 +32,10 @@
       <div class="frontpage_cards_container">
 
         <a href="/product-category/brudekjoler/">
-          <div class="frontpage-cards">
+          <div class="frontpage_cards">
             <p class="p_cards">Brudekjoler</p>
             <?php $image = get_field("brudekjole_card_image") ?>
-            <img src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
+            <img class="img_cards" src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
           </div>
         </a>
 
@@ -163,7 +163,7 @@
     margin: 40px 0;
   }
 
-  .frontpage-cards {
+  .frontpage_cards {
     border-radius: 10px;
     padding: 20px;
     position: relative;
@@ -183,7 +183,7 @@
     Overflow:hidden;
   }
 
-  img {
+  .img_cards {
     width: 100%;
     height: auto;
     object-fit: cover;
