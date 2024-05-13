@@ -181,7 +181,7 @@
     font-weight: 700;
     font-style: normal;
     color: var(--white);
-    text-shadow: 1px 1px 2px (--brown);
+    text-shadow: 1px 1px 2px var(--brown);
     position: absolute;
     z-index: 1;
     font-size: 25px;
@@ -191,7 +191,7 @@
   }
 
   .p_cards:hover{
-    color: var(--secondary-color:);
+    color: var(--secondary-color);
     transition: 0.4s;
   }
 
