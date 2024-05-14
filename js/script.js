@@ -73,19 +73,19 @@ window.onclick = function (event) {
 
 // Dropdown menues for about us page
     // Get the dropdown button and content
-    var dropdownBtn = document.getElementById("dropdownBtn");
-    var dropdownContent = document.getElementById("myDropdown");
+    var dropdownBtn_about_us = document.getElementById("dropdownBtn_about_us");
+    var dropdownContent_about_us = document.getElementById("myDropdown_about_us");
 
     // Toggle the dropdown content when the button is clicked
-    dropdownBtn.addEventListener("click", function() {
-    dropdownContent.classList.toggle("show");
+    dropdownBtn_about_us.addEventListener("click", function() {
+    dropdownContent_about_us.classList.toggle("show");
     });
 
     // Close the dropdown content if the user clicks outside of it
     window.addEventListener("click", function(event) {
-    if (!event.target.matches("#dropdownBtn")) {
-        if (dropdownContent.classList.contains("show")) {
-        dropdownContent.classList.remove("show");
+    if (!event.target.matches("#dropdownBtn_about_us")) {
+        if (dropdownContent_about_us.classList.contains("show")) {
+        dropdownContent_about_us.classList.remove("show");
         }
     }
     });
