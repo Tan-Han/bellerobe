@@ -196,7 +196,7 @@
   }
 
   .big_h2 {
-    font-size: 35px;
+    font-size: 37px;
   }
 
 /* First section styling */
