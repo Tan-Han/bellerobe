@@ -641,7 +641,6 @@ footer {
   overflow: hidden;
 }
 
-
 .single-product .product .related {
   grid-column: 1 / span 2;
   grid-row: 3;
