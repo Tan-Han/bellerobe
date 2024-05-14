@@ -45,6 +45,18 @@ window.addEventListener('click', function (event) {
 
 // PRODUCT FILTER - OPEN AND CLOSE ON SMALLER SCREENS
 
+function toggleProductFilter() {
+    var filter = document.getElementById("productFilter");
+    var button = document.querySelector(".filter-button");
+    if (filter.style.display === "none") {
+      filter.style.display = "block";
+      button.innerHTML = "Luk filter"; // Change button text
+    } else {
+      filter.style.display = "none";
+      button.innerHTML = "Filter"; // Change button text
+    }
+  }
+
 // DROPDOWN MENU - OM OS PAGE
 
 // Get the dropdown button and content
