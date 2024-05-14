@@ -16,3 +16,29 @@ menuItems.forEach(function (item) {
         menu.classList.remove("show");
     });
 });
+
+// DROPDOWN MENU
+
+// Function to toggle dropdown content for Brudekjoler
+function dropdownMenuBrudekjoler() {
+    var dropdownContent = document.getElementById("dropContentBrudekjoler");
+    dropdownContent.classList.toggle("show");
+}
+
+// Function to toggle dropdown content for Fest- & Gallakjoler
+function dropdownMenuFestGallakjoler() {
+    var dropdownContent = document.getElementById("dropContentGallakjoler");
+    dropdownContent.classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.addEventListener('click', function (event) {
+    // Close all dropdowns except the one clicked
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var i = 0; i < dropdowns.length; i++) {
+        var dropdown = dropdowns[i];
+        if (event.target.closest('.dropbtn') !== dropdown.previousElementSibling && dropdown.classList.contains('show')) {
+            dropdown.classList.remove('show');
+        }
+    }
+});
