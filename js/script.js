@@ -45,28 +45,22 @@ window.addEventListener('click', function (event) {
 
 // PRODUCT FILTER - OPEN AND CLOSE ON SMALLER SCREENS
 
-// Function to toggle product filter visibility and update button text
+// DROPDOWN MENU - OM OS PAGE
 
-function toggleProductFilter() {
-    var productFilter = document.querySelector('product_filter');
-    var filterButton = document.querySelector('.filter-button');
-    productFilter.classList.toggle('show');
-    // Change button text based on filter visibility
-    if (productFilter.classList.contains('show')) {
-        filterButton.textContent = 'Luk filter';
-    } else {
-        filterButton.textContent = 'Filter';
-    }
-}
+// Get the dropdown button and content
+var dropdownBtnAbout = document.getElementById("dropdownBtn_about_us");
+var dropdownContentAbout = document.getElementById("myDropdown_about_us");
 
-// Close the product filter when clicking outside of it
-window.onclick = function (event) {
-    if (!event.target.matches('.filter-button')) {
-        var productFilter = document.querySelector('.product_filter');
-        var filterButton = document.querySelector('.filter-button');
-        if (productFilter.classList.contains('show')) {
-            productFilter.classList.remove('show');
-            filterButton.textContent = 'Filter'; // Change button text back to 'Filter'
+// Toggle the dropdown content when the button is clicked
+dropdownBtnAbout.addEventListener("click", function () {
+    dropdownContentAbout.classList.toggle("show");
+});
+
+// Close the dropdown content if the user clicks outside of it
+window.addEventListener("click", function (event) {
+    if (!event.target.matches("#dropdownBtn_about_us")) {
+        if (dropdownContentAbout.classList.contains("show")) {
+            dropdownContentAbout.classList.remove("show");
         }
     }
-};
+});
