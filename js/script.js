@@ -72,22 +72,22 @@ window.onclick = function (event) {
 
 
 // Dropdown menues for about us page
-    // Get the dropdown button and content
-    var dropdownBtn_about_us = document.getElementById("dropdownBtn_about_us");
-    var dropdownContent_about_us = document.getElementById("myDropdown_about_us");
+// Get the dropdown button and content
+var dropdownBtnAbout = document.getElementById("dropdownBtn_about_us");
+var dropdownContentAbout = document.getElementById("myDropdown_about_us");
 
-    // Toggle the dropdown content when the button is clicked
-    dropdownBtn_about_us.addEventListener("click", function() {
-    dropdownContent_about_us.classList.toggle("show");
-    });
+// Toggle the dropdown content when the button is clicked
+dropdownBtnAbout.addEventListener("click", function () {
+    dropdownContentAbout.classList.toggle("show");
+});
 
-    // Close the dropdown content if the user clicks outside of it
-    window.addEventListener("click", function(event) {
+// Close the dropdown content if the user clicks outside of it
+window.addEventListener("click", function (event) {
     if (!event.target.matches("#dropdownBtn_about_us")) {
-        if (dropdownContent_about_us.classList.contains("show")) {
-        dropdownContent_about_us.classList.remove("show");
+        if (dropdownContentAbout.classList.contains("show")) {
+            dropdownContentAbout.classList.remove("show");
         }
     }
-    });
+});
 
 
