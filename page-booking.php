@@ -555,14 +555,14 @@
     /* Opening hours */
 
     .opening-hours-box {
-        background-image: url('https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/book_dark_green.svg');
+        background-image: url('https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/open-hours.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         padding: 1.5rem 2rem;
         border-radius: 10px;
         box-shadow: 3px 3px 5px #5C48337D;
-        color: var(--brown);
+        color: var(--white);
     }
 
     .hours {
