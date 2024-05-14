@@ -238,8 +238,6 @@ footer {
   justify-content: space-between;
 }
 
-
-
 .footer_contact {
   display: flex;
   flex-direction: column;
@@ -259,7 +257,6 @@ footer {
 .footer_info_links {
   font-size: 16px;
 }
-
 
 .footer_cat_links,
 .footer_info_links,
