@@ -42,3 +42,31 @@ window.addEventListener('click', function (event) {
         }
     }
 });
+
+// PRODUCT FILTER - OPEN AND CLOSE ON SMALLER SCREENS
+
+// Function to toggle product filter visibility and update button text
+
+function toggleProductFilter() {
+    var productFilter = document.querySelector('product_filter');
+    var filterButton = document.querySelector('.filter-button');
+    productFilter.classList.toggle('show');
+    // Change button text based on filter visibility
+    if (productFilter.classList.contains('show')) {
+        filterButton.textContent = 'Luk filter';
+    } else {
+        filterButton.textContent = 'Filter';
+    }
+}
+
+// Close the product filter when clicking outside of it
+window.onclick = function (event) {
+    if (!event.target.matches('.filter-button')) {
+        var productFilter = document.querySelector('.product_filter');
+        var filterButton = document.querySelector('.filter-button');
+        if (productFilter.classList.contains('show')) {
+            productFilter.classList.remove('show');
+            filterButton.textContent = 'Filter'; // Change button text back to 'Filter'
+        }
+    }
+};
