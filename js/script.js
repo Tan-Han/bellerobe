@@ -48,7 +48,7 @@ window.addEventListener('click', function (event) {
 function toggleProductFilter() {
     var filter = document.getElementById("productFilter");
     var button = document.querySelector(".filter-button");
-    if (filter.style.display === "none") {
+    if (filter.style.display === "none" || filter.style.display === "") {
       filter.style.display = "block";
       button.innerHTML = "Luk filter"; // Change button text
     } else {
