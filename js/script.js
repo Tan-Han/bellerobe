@@ -69,25 +69,3 @@ window.onclick = function (event) {
         }
     }
 };
-
-
-// Dropdown menues for about us page
-// Get the dropdown button and content
-var dropdownBtnAbout = document.getElementById("dropdownBtn_about_us");
-var dropdownContentAbout = document.getElementById("myDropdown_about_us");
-
-// Toggle the dropdown content when the button is clicked
-dropdownBtnAbout.addEventListener("click", function () {
-    dropdownContentAbout.classList.toggle("show");
-});
-
-// Close the dropdown content if the user clicks outside of it
-window.addEventListener("click", function (event) {
-    if (!event.target.matches("#dropdownBtn_about_us")) {
-        if (dropdownContentAbout.classList.contains("show")) {
-            dropdownContentAbout.classList.remove("show");
-        }
-    }
-});
-
-
