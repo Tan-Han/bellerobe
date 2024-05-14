@@ -47,21 +47,22 @@ window.addEventListener('click', function (event) {
 
 // Function to toggle product filter visibility and update button text
 
-document.addEventListener('DOMContentLoaded', function () {
-    function toggleProductFilter() {
-        var productFilter = document.querySelector('product_filter');
-        var filterButton = document.querySelector('.filter-button');
-        productFilter.classList.toggle('show');
-        // Change button text based on filter visibility
-        if (productFilter.classList.contains('show')) {
-            filterButton.textContent = 'Luk filter';
-        } else {
-            filterButton.textContent = 'Filter';
-        }
-    }
 
-    // Close the product filter when clicking outside of it
-    window.onclick = function (event) {
+function toggleProductFilter() {
+    var productFilter = document.querySelector('product_filter');
+    var filterButton = document.querySelector('.filter-button');
+    productFilter.classList.toggle('show');
+    // Change button text based on filter visibility
+    if (productFilter.classList.contains('show')) {
+        filterButton.textContent = 'Luk filter';
+    } else {
+        filterButton.textContent = 'Filter';
+    }
+}
+
+// Close the product filter when clicking outside of it
+window.addEventListener('DOMContentLoaded', function() {
+    window.onclick = function(event) {
         if (!event.target.matches('.filter-button')) {
             var productFilter = document.querySelector('.product_filter');
             var filterButton = document.querySelector('.filter-button');
@@ -72,7 +73,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     };
 });
-
 
 // Dropdown menues for about us page
 // Get the dropdown button and content
