@@ -61,18 +61,17 @@ function toggleProductFilter() {
 }
 
 // Close the product filter when clicking outside of it
-window.addEventListener('DOMContentLoaded', function() {
-    window.onclick = function(event) {
-        if (!event.target.matches('.filter-button')) {
-            var productFilter = document.querySelector('.product_filter');
-            var filterButton = document.querySelector('.filter-button');
-            if (productFilter.classList.contains('show')) {
-                productFilter.classList.remove('show');
-                filterButton.textContent = 'Filter'; // Change button text back to 'Filter'
-            }
+window.onclick = function (event) {
+    if (!event.target.matches('.filter-button')) {
+        var productFilter = document.querySelector('.product_filter');
+        var filterButton = document.querySelector('.filter-button');
+        if (productFilter.classList.contains('show')) {
+            productFilter.classList.remove('show');
+            filterButton.textContent = 'Filter'; // Change button text back to 'Filter'
         }
-    };
-});
+    }
+};
+
 
 // Dropdown menues for about us page
 // Get the dropdown button and content
