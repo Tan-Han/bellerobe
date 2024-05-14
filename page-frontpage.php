@@ -342,8 +342,16 @@
     margin-top: 10px;
   }
 
+  .book_tid_button a {
+    font-weight: 700;
+  }
+
   .book_tid_button:hover {
     background-color: var(--quinary-color);
+  }
+
+  .book_tid_button:hover a {
+    color: var(--white);
   }
 
   /* adress area styling */
