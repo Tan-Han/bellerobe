@@ -19,8 +19,9 @@
             <a href="javascript:void(0);" id="menuIcon" class="menu-icon" onclick="mobileMenu()">
                 <i class="fa fa-bars"></i>
             </a>
-            <div class="menu" id="menuLinks">
 
+            <div class="menu" id="menuLinks">
+                
                 <ul>
                     <li><a href="/">Forside</a></li>
                     <li class="dropdown">
