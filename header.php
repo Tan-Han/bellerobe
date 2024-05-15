@@ -34,7 +34,7 @@
                         </div>
                     </li>
                     <li class="dropdown">
-                        <p class="dropbtn" onclick="dropdownMenuFestGallakjoler()">Fest- & Gallakjoler<i
+                        <p class="dropbtn" onclick="dropdownMenuFestGallakjoler()">Fest- & Galla<i
                                 class="fa-solid fa-caret-down"></i></p>
                         <div class="dropdown-content" id="dropContentGallakjoler">
                             <a href="/vare-kategori/gallakjoler/korte-kjoler/">Korte kjoler</a>
@@ -42,7 +42,7 @@
                             <a href="/vare-kategori/gallakjoler/">Alle fest- & gallakjoler</a>
                         </div>
                     </li>
-                    <li><a href="/vare-kategori/konfirmationskjoler/">Konfirmationskjoler</a></li>
+                    <li><a href="/vare-kategori/konfirmationskjoler/">Konfirmation</a></li>
                     <li class="dropdown">
                         <p class="dropbtn" onclick="dropdownMenuSko()">Sko & Tilbehør<i
                                 class="fa-solid fa-caret-down"></i></p>
