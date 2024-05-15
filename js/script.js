@@ -13,8 +13,8 @@ window.onclick = function(event) {
     var menu = document.getElementById("menuLinks");
     var icon = document.getElementById("menuIcon");
 
-    // Check if the clicked element is not the menu icon
-    if (event.target !== icon) {
+    // Check if the screen width is below 1150px and if the clicked element is not the menu icon
+    if (screenWidth <= 1150 && event.target !== icon) {
         // If the clicked element is a menu link, return without closing the menu
         if (event.target.closest("#menuLinks")) {
             return;
