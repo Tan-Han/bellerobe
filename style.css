@@ -1574,11 +1574,6 @@ footer {
     /* Hide menu by default */
   }
 
-  /* Show menu when the hamburger icon is clicked */
-  #menuLinks.show {
-    display: block;
-  }
-
   .menu-icon {
     display: block;
   }
