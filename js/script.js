@@ -12,8 +12,22 @@ function mobileMenu() {
 window.onclick = function(event) {
     var menu = document.getElementById("menuLinks");
     var icon = document.getElementById("menuIcon");
+    var menuLinks = document.querySelectorAll("#menuLinks a"); // Select all menu links
+
+    // Check if the clicked element is not the menu or menu icon
     if (event.target !== menu && event.target !== icon) {
-        menu.style.display = "none";
+        // Check if the clicked element is not a menu link
+        var isMenuLink = false;
+        for (var i = 0; i < menuLinks.length; i++) {
+            if (event.target === menuLinks[i]) {
+                isMenuLink = true;
+                break;
+            }
+        }
+        // Close the menu only if the clicked element is not a menu link
+        if (!isMenuLink) {
+            menu.style.display = "none";
+        }
     }
 }
 
