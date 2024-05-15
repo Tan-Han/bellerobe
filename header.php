@@ -16,9 +16,9 @@
 
 
         <nav class="navbar">
-            <a href="javascript:void(0);" id="menuIcon" class="menu-icon" onclick="mobileMenu()">
-                <i class="fa fa-bars"></i>
-            </a>
+            
+            <i class="fa fa-bars" id="menuIcon" class="menu-icon" onclick="mobileMenu()"></i>
+            
 
             <div class="menu" id="menuLinks">
                 
