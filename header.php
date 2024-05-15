@@ -17,7 +17,7 @@
 
         <nav class="navbar">
             
-            <i class="fa fa-bars" id="menuIcon" class="menu-icon" onclick="mobileMenu()"></i>
+            <i class="fa fa-bars" id="menuIcon" onclick="mobileMenu()"></i>
             
 
             <div class="menu" id="menuLinks">

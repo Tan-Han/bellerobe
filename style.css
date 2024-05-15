@@ -97,10 +97,11 @@ button {
   overflow: hidden;
 }
 
-.menu-icon {
+#menuIcon {
   display: none;
-  font-size: 25px;
+  font-size: 30px;
   width: fit-content;
+  color: var(--brown);
 }
 
 .navbar .menu {
@@ -1574,7 +1575,7 @@ footer {
     /* Hide menu by default */
   }
 
-  .menu-icon {
+  #menuIcon {
     display: block;
   }
 
