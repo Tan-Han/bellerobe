@@ -72,6 +72,11 @@ button {
 
 /* NAVBAR */
 
+.logo-link {
+  width: fit-content;
+  align-self: center;
+}
+
 .logo-top {
   background-image: url("https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/header_bellerobe.svg");
   background-repeat: no-repeat;
