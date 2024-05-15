@@ -26,7 +26,6 @@ window.onclick = function(event) {
     }
 }
 
-
 // DROPDOWN MENU
 
 // Function to toggle dropdown content for Brudekjoler
@@ -38,6 +37,12 @@ function dropdownMenuBrudekjoler() {
 // Function to toggle dropdown content for Fest- & Gallakjoler
 function dropdownMenuFestGallakjoler() {
     var dropdownContent = document.getElementById("dropContentGallakjoler");
+    dropdownContent.classList.toggle("show");
+}
+
+// Function to toggle dropdown content for Sko & Tilbehør
+function dropdownMenuSko() {
+    var dropdownContent = document.getElementById("dropContentSko");
     dropdownContent.classList.toggle("show");
 }
 

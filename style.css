@@ -764,6 +764,10 @@ footer {
   object-fit: cover;
 }
 
+.pswp__caption__center {
+  display: none;
+}
+
 /* Short description */
 
 .single-product .product .summary h1 {

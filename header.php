@@ -11,21 +11,22 @@
 
 <body>
     <div class="logo-top">
-        <img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/belle-robe.svg" alt=""
-            class="logo">
+        <a href="/"><img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/belle-robe.svg" alt=""
+                class="logo"></a>
 
 
         <nav class="navbar">
-            
+
             <i class="fa fa-bars" id="menuIcon" onclick="mobileMenu()"></i>
-            
+
 
             <div class="menu" id="menuLinks">
-                
+
                 <ul>
                     <li><a href="/">Forside</a></li>
                     <li class="dropdown">
-                        <p class="dropbtn" onclick="dropdownMenuBrudekjoler()">Brudekjoler<i class="fa-solid fa-caret-down"></i>
+                        <p class="dropbtn" onclick="dropdownMenuBrudekjoler()">Brudekjoler<i
+                                class="fa-solid fa-caret-down"></i>
                         </p>
                         <div class="dropdown-content" id="dropContentBrudekjoler">
                             <a href="/vare-kategori/brudekjoler/">Brudekjoler</a>
@@ -42,7 +43,14 @@
                         </div>
                     </li>
                     <li><a href="/vare-kategori/konfirmationskjoler/">Konfirmationskjoler</a></li>
-                    <li><a href="/vare-kategori/sko/">Sko</a></li>
+                    <li class="dropdown">
+                        <p class="dropbtn" onclick="dropdownMenuSko()">Sko & Tilbehør<i
+                                class="fa-solid fa-caret-down"></i></p>
+                        <div class="dropdown-content" id="dropContentSko">
+                            <a href="/vare-kategori/sko-tilbehor/sko/">Sko</a>
+                            <a href="/vare-kategori/sko-tilbehor/tilbehor/">Tilbehør</a>
+                        </div>
+                    </li>
                     <li><a href="/om_os/">Om os</a></li>
                     <li><a href="/booking/">Book tid</a></li>
                 </ul>
@@ -57,4 +65,3 @@
             </div>
         </nav>
     </div>
-
