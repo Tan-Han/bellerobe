@@ -2,20 +2,20 @@
 
 function mobileMenu() {
     var menu = document.getElementById("menuLinks");
-    menu.classList.toggle("show");
+    if (menu.style.display === "block") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "block";
+    }
 }
 
-// Add event listener to the menu icon
-document.getElementById("menuIcon").addEventListener("click", mobileMenu);
-
-// Add event listeners to menu items to close menu when clicked
-var menuItems = document.querySelectorAll("#menuLinks ul li a");
-menuItems.forEach(function (item) {
-    item.addEventListener("click", function () {
-        var menu = document.getElementById("menuLinks");
-        menu.classList.remove("show");
-    });
-});
+window.onclick = function(event) {
+    var menu = document.getElementById("menuLinks");
+    var icon = document.getElementById("menuIcon");
+    if (event.target !== menu && event.target !== icon) {
+        menu.style.display = "none";
+    }
+}
 
 // DROPDOWN MENU
 
