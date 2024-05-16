@@ -996,6 +996,14 @@
 
     @media (max-width: 500px) {
 
+        .img-box {
+            height: 45%;
+        }
+
+        .booking-info {
+            height: 55%;
+        }
+
         .contact-info-box p {
             font-size: 18px;
         }
@@ -1035,7 +1043,11 @@
 
     }
 
-    @media (max-width: 400px) {}
+    @media (max-width: 400px) {
+        .hours {
+            flex-direction: column;
+        }
+    }
 </style>
 
 <?php get_footer() ?>
