@@ -26,7 +26,9 @@
 <!-- second section on about us page with drop down menues -->
     <section class="information_drop_downs">
         <div class="dropdowns_on_about_us_page">
-            <button id="dropdownBtn_about_us" class="dropbtn_about_us">Samarbejdspartnere</button>
+            <button id="dropdownBtn_about_us" class="dropbtn_about_us">Samarbejdspartnere
+                <i class="fa-solid fa-caret-down"></i>
+            </button>
             <div id="myDropdown_about_us" class="dropdown_content_about_us">
                 <a href="#">Link 1</a>
                 <a href="#">Link 2</a>
@@ -103,7 +105,8 @@
 /* Styling for the second section on the about us page with drop down menues */
 
     .information_drop_downs {
-        margin-top: 60px;
+        margin-top: 80px;
+        margin-bottom: 5px;
     }
 
     /* Style the dropdown button */
