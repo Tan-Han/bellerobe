@@ -102,6 +102,10 @@
 
 /* Styling for the second section on the about us page with drop down menues */
 
+    .information_drop_downs {
+        margin-top: 60px;
+    }
+
     /* Style the dropdown button */
     .dropbtn_about_us {
     background-color: var(--forms);
@@ -111,7 +115,7 @@
     font-size: 22px;
     border: 0.4px solid var(--brown);
     cursor: pointer;
-    margin-top: 60px;
+    margin-top: 15px;
     font-family: "garamond-premier-pro", serif !important;
     font-weight: 700;
     display: flex;
