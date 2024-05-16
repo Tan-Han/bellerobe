@@ -77,12 +77,12 @@
 
     /* Style the dropdown button */
     .dropbtn_about_us {
-    background-color: #4caf50;
-    color: white;
-    padding: 12px;
-    width: 200px;
-    font-size: 16px;
-    border: none;
+    background-color: var(--forms);
+    color: var(--brown);
+    padding: 20px;
+    width: 100%;
+    font-size: 20px;
+    border: 1px solid var(--brown);
     cursor: pointer;
     }
 
@@ -90,9 +90,9 @@
     .dropdown_content_about_us {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: var(--forms);
+    width: 100%;
+    box-shadow: 3px 3px 5px #5C48337D;
     z-index: 1;
     }
 
@@ -113,10 +113,6 @@
     .show {
     display: block;
     }   
-
-
-
-
 
 </style>
 
