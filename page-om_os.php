@@ -135,6 +135,7 @@
         margin: 0;
         padding: 0;
         padding: 17px 24px;
+        font-size: 26px;
     }
 
     /* Style the dropdown content (hidden by default) */
