@@ -25,6 +25,8 @@
 
 <!-- second section on about us page with drop down menues -->
     <section class="information_drop_downs">
+        
+    <!-- First dropdowm -->
         <div id="dropdownBtn_about_us" class="dropbtn_about_us">
             <h2>Samarbejdspartnere</h2>
             <i class="fa-solid fa-caret-down"></i>
@@ -35,36 +37,43 @@
             <a href="#">Link 2</a>
             <a href="#">Link 3</a>
         </div>
+
+    <!-- Second dropdowm -->
+        <div id="dropdownBtn_about_us" class="dropbtn_about_us">
+            <h2>Fortrolighedspolitik</h2>
+            <i class="fa-solid fa-caret-down"></i>
+        </div>
+            
+        <div id="myDropdown_about_us" class="dropdown_content_about_us">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
         
 
-        <div class="dropdowns_on_about_us_page">
-            <button id="dropdownBtn_about_us" class="dropbtn_about_us">Fortrolighedspolitik</button>
-            <div id="myDropdown_about_us" class="dropdown_content_about_us">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-             </div>
+    <!-- Third dropdowm -->
+        <div id="dropdownBtn_about_us" class="dropbtn_about_us">
+            <h2>Handelsbetingelser</h2>
+            <i class="fa-solid fa-caret-down"></i>
+        </div>
+            
+        <div id="myDropdown_about_us" class="dropdown_content_about_us">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
         </div>
 
-        <div class="dropdowns_on_about_us_page">
-            <button id="dropdownBtn_about_us" class="dropbtn_about_us">Handelsbetingelser</button>
-            <div id="myDropdown_about_us" class="dropdown_content_about_us">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-             </div>
+     <!-- Fourth dropdowm -->
+        <div id="dropdownBtn_about_us" class="dropbtn_about_us">
+            <h2>Kundeoplevelser</h2>
+            <i class="fa-solid fa-caret-down"></i>
         </div>
-
-        <div class="dropdowns_on_about_us_page">
-            <button id="dropdownBtn_about_us" class="dropbtn_about_us">Kundeoplevelser</button>
-            <div id="myDropdown_about_us" class="dropdown_content_about_us">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-             </div>
+            
+        <div id="myDropdown_about_us" class="dropdown_content_about_us">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
         </div>
-
-
 
     </section>
 
