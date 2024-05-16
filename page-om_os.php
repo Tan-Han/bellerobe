@@ -119,6 +119,7 @@
         cursor: pointer;
         margin-top: 15px;
         display: flex;
+        justify-content: space-between;
     }
 
     .dropbtn_about_us h2 {
@@ -129,7 +130,7 @@
     }
 
     .dropbtn_about_us .fa-caret-down {
-        padding-left: 90rem;
+        
     }
 
     /* Style the dropdown content (hidden by default) */
