@@ -1907,7 +1907,8 @@ footer {
     font-size: 18px;
   }
 
-  .summary .variations_form .single_variation_wrap .variations_button, .summary .cart {
+  .summary .variations_form .single_variation_wrap .variations_button,
+  .summary .cart {
     align-items: start;
     flex-direction: column;
   }
@@ -1926,8 +1927,8 @@ footer {
   }
 
   .woocommerce-product-gallery ol li img {
-    height: 75px;
-    width: 75px;
+    height: 75px !important;
+    width: 75px !important;
   }
 
   .related ul {
