@@ -1602,7 +1602,7 @@ footer {
   .products {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
-  
+
   .products .product {
     width: 375px;
     height: 550px;
@@ -1792,6 +1792,19 @@ footer {
 }
 
 @media (max-width: 940px) {
+  .logo-top .logo {
+    height: 8rem;
+  }
+
+  main,
+  footer {
+    padding: 4rem 4rem;
+  }
+
+  .category-title {
+    padding-top: 0rem;
+  }
+
   .products {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
@@ -1806,14 +1819,6 @@ footer {
     font-size: 16px;
   }
 
-  main,
-  footer {
-    padding: 4rem 4rem;
-  }
-
-  .category-title {
-    padding-top: 0rem;
-  }
 }
 
 @media (max-width: 745px) {
