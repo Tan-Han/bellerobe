@@ -1805,14 +1805,10 @@ footer {
     left: -6rem;
     font-size: 16px;
   }
-}
-
-
-@media (max-width: 810px) {
 
   main,
   footer {
-    padding: 4rem 5rem;
+    padding: 4rem 4rem;
   }
 
   .category-title {
