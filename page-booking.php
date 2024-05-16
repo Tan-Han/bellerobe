@@ -941,12 +941,35 @@
 
         .img-box {
             width: 100%;
-            height: 50%;
+            height: 55%;
         }
 
         .booking-img {
             object-position: 0 5%;
         }
+
+        .booking-info {
+            width: 100%;
+            height: 45%
+        }
+
+  .booking-card-headline h3 {
+    font-size: 22px;
+  }
+
+  .price-time {
+    font-size: 16px;
+  }
+
+  .booking-description {
+    font-size: 16px;
+    -webkit-line-clamp: 3;
+  }
+
+  .qxCTlb {
+    font-size: 16px;
+  }
+
     }
 </style>
 
