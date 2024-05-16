@@ -350,10 +350,6 @@
     background-color: var(--quinary-color);
   }
 
-  .book_tid_button:hover a {
-    color: var(--white);
-  }
-
   /* adress area styling */
   .adress_section_container {
     width: 45%;
