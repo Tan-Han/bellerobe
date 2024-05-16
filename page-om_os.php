@@ -76,14 +76,23 @@
 /* Styling for the second section on the about us page with drop down menues */
 
     /* Style the dropdown button */
+
+    .dropdowns_on_about_us_page {
+    display: flex;
+    align-items: left;
+    }
+
     .dropbtn_about_us {
     background-color: var(--forms);
     color: var(--brown);
-    padding: 20px;
+    padding: 16px;
     width: 100%;
     font-size: 20px;
-    border: 1px solid var(--brown);
+    border: 0.4px solid var(--brown);
     cursor: pointer;
+    margin-top: 60px;
+    font-family: "garamond-premier-pro", serif;
+    font-weight: 700;
     }
 
     /* Style the dropdown content (hidden by default) */
