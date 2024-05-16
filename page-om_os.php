@@ -128,14 +128,13 @@
         font-size: 22px;
         font-family: "garamond-premier-pro", serif !important;
         font-weight: 700;
-        padding: 17px 24px;
+        margin: 17px 24px;
     }
 
     .dropbtn_about_us .fa-caret-down {
-        margin: 0;
         padding: 0;
-        padding: 17px 24px;
-        font-size: 26px;
+        margin: 17px 24px;
+        font-size: 21px;
     }
 
     /* Style the dropdown content (hidden by default) */
