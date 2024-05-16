@@ -113,13 +113,14 @@
     /* Style the dropdown button */
     .dropbtn_about_us {
         background-color: var(--forms);
-        padding: 17px 24px;
         width: 100%;
         border: 0.4px solid var(--brown);
         cursor: pointer;
         margin-top: 15px;
         display: flex;
         justify-content: space-between;
+        box-shadow: 3px 3px 5px #5C48337D;
+        border-radius: 10px;
     }
 
     .dropbtn_about_us h2 {
@@ -127,11 +128,13 @@
         font-size: 22px;
         font-family: "garamond-premier-pro", serif !important;
         font-weight: 700;
+        padding: 17px 24px;
     }
 
     .dropbtn_about_us .fa-caret-down {
         margin: 0;
         padding: 0;
+        padding: 17px 24px;
     }
 
     /* Style the dropdown content (hidden by default) */
