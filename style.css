@@ -1875,4 +1875,8 @@ footer {
   main, footer {
     padding: 5rem 2rem;
   }
+
+  .navbar {
+    padding: 1.2rem 2rem;
+  }
 }
