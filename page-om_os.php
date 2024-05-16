@@ -79,7 +79,7 @@
    .introduction_text_and_video {
        display: flex;
        justify-content: space-between;
-   }
+    }
 
    .introduction_text {
        width: 45%;
@@ -94,14 +94,14 @@
     }
 
     .introduction_video iframe {
-    max-width: 100vw;
-    /* Max-width af video - for at den ikke går ud over kanten */
-    height: 300px;
-    width: 100%;
-    /* 100% vidde på videoen, så den fylder fra kant til kant */
-    border-radius: 10px;
-    box-shadow: 3px 3px 5px #5C48337D;
-  }
+        max-width: 100vw;
+        /* Max-width af video - for at den ikke går ud over kanten */
+        height: 300px;
+        width: 100%;
+        /* 100% vidde på videoen, så den fylder fra kant til kant */
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px #5C48337D;
+    }
 
 /* Styling for the second section on the about us page with drop down menues */
 
@@ -112,51 +112,53 @@
 
     /* Style the dropdown button */
     .dropbtn_about_us {
-    background-color: var(--forms);
-    color: var(--brown);
-    padding: 17px 24px;
-    width: 100%;
-    font-size: 22px;
-    border: 0.4px solid var(--brown);
-    cursor: pointer;
-    margin-top: 15px;
-    font-family: "garamond-premier-pro", serif !important;
-    font-weight: 700;
-    display: flex;
+        background-color: var(--forms);
+        padding: 17px 24px;
+        width: 100%;
+        border: 0.4px solid var(--brown);
+        cursor: pointer;
+        margin-top: 15px;
+        display: flex;
+    }
+
+    .dropbtn_about_us h2 {
+        color: var(--brown);
+        font-size: 22px;
+        font-family: "garamond-premier-pro", serif !important;
+        font-weight: 700;
     }
 
     .dropbtn_about_us .fa-caret-down {
-    padding-left: 90rem;
+        padding-left: 90rem;
     }
 
     /* Style the dropdown content (hidden by default) */
     .dropdown_content_about_us {
-    display: none;
-    position: absolute;
-    background-color: var(--forms);
-    width: 100%;
-    box-shadow: 3px 3px 5px #5C48337D;
-    z-index: 1;
+        display: none;
+        position: absolute;
+        background-color: var(--forms);
+        width: 100%;
+        box-shadow: 3px 3px 5px #5C48337D;
+        z-index: 1;
     }
 
     /* Style the links inside the dropdown */
     .dropdown-content_about_us a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
     }
 
     /* Change color of dropdown links on hover */
     .dropdown-content_about_us a:hover {
-    background-color: #f1f1f1;
+        background-color: #f1f1f1;
     }
 
     /* Show the dropdown menu when the button is clicked */
     .show {
-    display: block;
+        display: block;
     }   
-
 
 </style>
 
