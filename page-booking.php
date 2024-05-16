@@ -616,7 +616,10 @@
         min-height: 80px;
     }
 
-    .call i,
+    .call i {
+        font-size: 50px;
+    }
+
     .write i {
         font-size: 55px;
     }
@@ -935,6 +938,15 @@
 
     @media (max-width: 700px) {
 
+        .contact-info-inner {
+            height: 150px;
+        }
+
+        .call,
+        .write {
+            flex-direction: column;
+            justify-content: space-between;
+        }
     }
 
     @media (max-width: 600px) {
@@ -968,6 +980,46 @@
         .booking-description {
             font-size: 16px;
             -webkit-line-clamp: 3;
+        }
+    }
+
+    @media (max-width: 500px) {
+
+        .contact-info-inner {
+            gap: 1rem;
+            height: 175px;
+            flex-direction: column;
+        }
+
+        .call,
+        .write {
+            flex-direction: row;
+            justify-content: start;
+            width: 100%;
+        }
+
+    }
+
+    @media (max-width: 400px) {
+
+        .contact-info-box p {
+            font-size: 18px;
+        }
+
+        .call i {
+            font-size: 40px;
+        }
+
+        .phone p {
+            font-size: 16px;
+        }
+
+        .write i {
+            font-size: 45px;
+        }
+
+        #contactBtn {
+            font-size: 14px;
         }
     }
 </style>
