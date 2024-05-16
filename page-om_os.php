@@ -79,9 +79,9 @@
     .dropbtn_about_us {
     background-color: var(--forms);
     color: var(--brown);
-    padding: 16px;
+    padding: 17px 24px;
     width: 100%;
-    font-size: 20px;
+    font-size: 22px;
     border: 0.4px solid var(--brown);
     cursor: pointer;
     margin-top: 60px;
