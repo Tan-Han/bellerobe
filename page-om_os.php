@@ -158,9 +158,8 @@
     }
 
     .dropdown_text_style_about_us {
-        padding: 10px 20px;
+        margin: 17px 24px;
         display: flex;
-        align-content: flex-start;
     }
 
     /* Style the links inside the dropdown */
