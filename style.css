@@ -1869,6 +1869,8 @@ footer {
     font-size: 13px;
     bottom: 1rem;
     left: 1rem;
+    text-align: center;
+    width: 100%;
   }
 
   .products .product .onsale {
