@@ -1794,6 +1794,7 @@ footer {
 @media (max-width: 940px) {
   .logo-top .logo {
     height: 8rem;
+    width: auto;
   }
 
   main,
