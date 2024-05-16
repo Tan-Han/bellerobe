@@ -125,7 +125,7 @@
     }
 
     .dropbtn_about_us .fa-caret-down {
-    padding-left: 7rem;
+    padding-left: 90rem;
     }
 
     /* Style the dropdown content (hidden by default) */
