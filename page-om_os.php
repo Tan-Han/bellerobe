@@ -33,9 +33,11 @@
         </div>
             
         <div id="myDropdown_about_us" class="dropdown_content_about_us">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <div class="dropdown_text_style_about_us">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
         </div>
 
     <!-- Second dropdowm -->
@@ -149,11 +151,16 @@
     /* Style the dropdown content (hidden by default) */
     .dropdown_content_about_us {
         display: none;
-        position: absolute;
         background-color: var(--forms);
         width: 100%;
         box-shadow: 3px 3px 5px #5C48337D;
         z-index: 1;
+    }
+
+    .dropdown_text_style_about_us {
+        padding: 10px 20px;
+        display: flex;
+        align-content: flex-start;
     }
 
     /* Style the links inside the dropdown */
