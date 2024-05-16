@@ -313,7 +313,7 @@
 
                         <?php while ($contactLoop->have_posts()):
                             $contactLoop->the_post() ?>
-                            <a href="tel:<?php the_field('phone_number') ?>"></a><i class="fa-solid fa-phone"></i></a>
+                            <i class="fa-solid fa-phone"></i></a>
 
                             <div class="phone">
 
@@ -368,32 +368,34 @@
                     <div class="hours">
                         <b><?php the_title() ?>:&nbsp;</b>
 
-                        <?php if (!get_field('closed')) {
-                            if (get_field("open") && get_field("close")): ?>
-                                <p><?php the_field("open"); ?>&nbsp;-&nbsp;</p>
-                                <p><?php the_field("close"); ?></p>
-                            <?php endif;
-                        } ?>
+                        <div class="hours-box">
+                            <?php if (!get_field('closed')) {
+                                if (get_field("open") && get_field("close")): ?>
+                                    <p><?php the_field("open"); ?>&nbsp;-&nbsp;</p>
+                                    <p><?php the_field("close"); ?></p>
+                                <?php endif;
+                            } ?>
 
-                        <?php
-                        if (!get_field('closed')) {
-                            $openingHours = get_field('open_later');
-                            if (!empty($openingHours['open_later']) && !empty($openingHours['close_later'])): ?>
-                                <p><?php echo '&nbsp;&&nbsp;'; ?></p>
-                                <p><?php echo $openingHours['open_late']; ?></p>
-                                <p><?php echo '&nbsp;-&nbsp;'; ?></p>
-                                <p><?php echo $openingHours['close_late']; ?></p>
-                            <?php endif;
-                        } ?>
+                            <?php
+                            if (!get_field('closed')) {
+                                $openingHours = get_field('open_later');
+                                if (!empty($openingHours['open_later']) && !empty($openingHours['close_later'])): ?>
+                                    <p><?php echo '&nbsp;&&nbsp;'; ?></p>
+                                    <p><?php echo $openingHours['open_late']; ?></p>
+                                    <p><?php echo '&nbsp;-&nbsp;'; ?></p>
+                                    <p><?php echo $openingHours['close_late']; ?></p>
+                                <?php endif;
+                            } ?>
 
-                        <?php if (get_field('closed')) {
-                            echo '<p>Lukket</p>';
-                        }
+                            <?php if (get_field('closed')) {
+                                echo '<p>Lukket</p>';
+                            }
 
-                        if (get_field('book')) {
-                            echo '<p>Se tider ved booking</p>';
-                        }
-                        ?>
+                            if (get_field('book')) {
+                                echo '<p>Se tider ved booking</p>';
+                            }
+                            ?>
+                        </div>
                     </div>
 
                 <?php endwhile ?>
@@ -489,18 +491,19 @@
     }
 
     .booking-info {
-        padding: 1.5rem;
         display: flex;
         flex-direction: column;
         gap: 1rem;
         width: 75%;
+        height: 100%;
+        position: relative;
     }
 
     .booking-card-headline {
+        padding: 1.5rem 1.5rem 0 1.5rem;
         display: flex;
         gap: 1.5rem;
         align-items: first baseline;
-        padding: 0 1rem;
     }
 
     .booking-card-headline h3 {
@@ -513,17 +516,20 @@
     }
 
     .booking-description {
+        padding: 0 1.5rem;
         -webkit-box-orient: vertical;
         display: -webkit-box;
         -webkit-line-clamp: 2;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: normal;
-        padding: 0 1rem;
+        font-size: 16px;
     }
 
     .booking-btn {
-        padding: 0 1rem;
+        position: absolute;
+        right: 1.5rem;
+        bottom: 1.5rem;
     }
 
     .qxCTlb {
@@ -555,20 +561,24 @@
     /* Opening hours */
 
     .opening-hours-box {
-        background-image: url('https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/book_dark_green.svg');
+        background-image: url('https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/open-hours.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         padding: 1.5rem 2rem;
         border-radius: 10px;
         box-shadow: 3px 3px 5px #5C48337D;
-        color: var(--brown);
+        color: var(--white);
     }
 
     .hours {
         display: flex;
         font-size: 20px;
         padding: .5rem 0;
+    }
+
+    .hours-box {
+        display: flex;
     }
 
     .more-times {
@@ -612,7 +622,10 @@
         min-height: 80px;
     }
 
-    .call i,
+    .call i {
+        font-size: 50px;
+    }
+
     .write i {
         font-size: 55px;
     }
@@ -833,34 +846,208 @@
         height: 350px;
         width: 100%;
     }
-</style>
 
-<script>
-    // Get the modal
-    var modal = document.getElementById("contactForm");
+    /* Media queries */
 
-    // Get the button that opens the modal
-    var btn = document.getElementById("contactBtn");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on the button, open the modal
-    btn.onclick = function () {
-        modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
+    @media (max-width: 1600px) {
+        main {
+            gap: 5rem;
         }
-    } 
-</script>
+    }
+
+    @media (max-width: 1550px) {
+
+        .booking-info {
+            gap: .5rem;
+        }
+
+        .booking-card-headline {
+            gap: 0;
+            flex-direction: column;
+        }
+
+        .price-time {
+            font-size: 14px;
+        }
+
+        .qxCTlb {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 1350px) {
+        main {
+            gap: 3rem;
+        }
+
+        .booking-card-headline h3 {
+            font-size: 18px;
+        }
+
+        .booking-description {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        main {
+            grid-template-columns: 1fr;
+        }
+
+        .booking-info {
+            gap: 1rem;
+        }
+
+        .booking-card-headline {
+            gap: 1.5rem;
+            flex-direction: row;
+        }
+
+        .booking-description {
+            font-size: 16px;
+        }
+
+        .store-info {
+            gap: 3rem;
+        }
+    }
+
+    @media (max-width: 750px) {
+
+        .booking-card-headline {
+            gap: 0;
+            flex-direction: column;
+        }
+
+        .booking-card-headline h3 {
+            font-size: 20px;
+        }
+
+        .booking-description {
+            font-size: 14px;
+            -webkit-line-clamp: 3;
+        }
+
+        .booking-card {
+            height: 230px;
+        }
+
+        .img-box {
+            width: 35%;
+        }
+
+        .booking-info {
+            width: 65%;
+            gap: .75rem;
+        }
+    }
+
+    @media (max-width: 700px) {
+
+        .contact-info-inner {
+            height: 150px;
+        }
+
+        .call,
+        .write {
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .booking-card {
+            flex-direction: column;
+            height: 500px;
+        }
+
+        .img-box {
+            width: 100%;
+            height: 55%;
+        }
+
+        .booking-img {
+            object-position: 0 5%;
+        }
+
+        .booking-info {
+            width: 100%;
+            height: 45%
+        }
+
+        .booking-card-headline h3 {
+            font-size: 22px;
+        }
+
+        .price-time {
+            font-size: 16px;
+        }
+
+        .booking-description {
+            font-size: 16px;
+            -webkit-line-clamp: 3;
+        }
+
+        .opening-hours-box {
+            background-image: none;
+            background-color: var(--tertiary-color);
+        }
+    }
+
+    @media (max-width: 500px) {
+
+        .img-box {
+            height: 45%;
+        }
+
+        .booking-info {
+            height: 55%;
+        }
+
+        .contact-info-box p {
+            font-size: 18px;
+        }
+
+        .contact-info-inner {
+            gap: 1rem;
+            height: 175px;
+            flex-direction: column;
+        }
+
+        .call i {
+            font-size: 40px;
+        }
+
+        .phone p {
+            font-size: 16px;
+        }
+
+        .write i {
+            font-size: 45px;
+        }
+
+        #contactBtn {
+            font-size: 14px;
+        }
+
+        .call,
+        .write {
+            flex-direction: row;
+            justify-content: start;
+            width: 100%;
+        }
+
+        .hours {
+            font-size: 16px;
+        }
+
+    }
+
+    @media (max-width: 400px) {
+        .hours {
+            flex-direction: column;
+        }
+    }
+</style>
 
 <?php get_footer() ?>
