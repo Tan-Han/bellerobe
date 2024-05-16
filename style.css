@@ -2010,6 +2010,23 @@ footer {
     height: 450px;
   }
 
+  .single-product .product .summary h1 {
+    font-size: 28px;
+  }
+
+  .single-product .product .summary .price {
+    font-size: 20px;
+
+  }
+
+  .single-product .product .summary .woocommerce-product-details__short-description p {
+    font-size: 16px;
+  }
+
+  .related h2 {
+    font-size: 28px;
+  }
+
 }
 
 @media (max-width: 350px) {
