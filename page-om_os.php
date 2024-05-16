@@ -158,12 +158,12 @@
     }
 
     .dropdown_text_style_about_us {
-        margin: 17px 24px;
+        padding: 17px 24px;
         display: flex;
     }
 
     /* Style the links inside the dropdown */
-    .dropdown-content_about_us a {
+    .dropdown_text_style_about_us a {
         color: black;
         padding: 12px 16px;
         text-decoration: none;
