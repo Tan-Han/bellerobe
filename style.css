@@ -1870,7 +1870,7 @@ footer {
     bottom: 1rem;
     left: 1rem;
     text-align: center;
-    width: 100%;
+    width: fit-content;
   }
 
   .products .product .onsale {
