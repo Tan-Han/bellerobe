@@ -1889,6 +1889,10 @@ footer {
   .woocommerce-product-gallery {
     width: 98%;
   }
+
+  .woocommerce-product-gallery__trigger .emoji {
+    height: 2.5rem !important;
+  }
 }
 
 @media (max-width: 745px) {
@@ -2008,6 +2012,10 @@ footer {
 
   .flex-viewport {
     height: 450px;
+  }
+
+  .woocommerce-product-gallery__trigger .emoji {
+    height: 3rem !important;
   }
 
   .single-product .product .summary h1 {
