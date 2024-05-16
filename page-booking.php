@@ -489,16 +489,18 @@
     }
 
     .booking-info {
-        padding: 1.5rem;
+        padding: 1.5rem 0;
         display: flex;
         flex-direction: column;
         gap: 1rem;
         width: 75%;
-        height: 200px;
+        height: 100%;
         position: relative;
     }
 
     .booking-card-headline {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
         display: flex;
         gap: 1.5rem;
         align-items: first baseline;
@@ -514,6 +516,7 @@
     }
 
     .booking-description {
+        padding: 0 1.5rem;
         -webkit-box-orient: vertical;
         display: -webkit-box;
         -webkit-line-clamp: 2;
@@ -846,9 +849,22 @@
     }
 
     @media (max-width: 1550px) {
+
+        .booking-info {
+            gap: .5rem;
+        }
+
         .booking-card-headline {
             gap: 0;
             flex-direction: column;
+        }
+
+        .price-time {
+            font-size: 14px;
+        }
+
+        .qxCTlb {
+            font-size: 14px;
         }
     }
 
@@ -869,6 +885,10 @@
     @media (max-width: 1100px) {
         main {
             grid-template-columns: 1fr;
+        }
+
+        .booking-info {
+            gap: 1rem;
         }
 
         .booking-card-headline {
@@ -913,7 +933,22 @@
             width: 65%;
             gap: .75rem;
         }
+    }
 
+    @media (max-width: 600px) {
+        .booking-card {
+            flex-direction: column;
+            height: 500px;
+        }
+
+        .img-box {
+            width: 100%;
+            height: 50%;
+        }
+
+        .booking-img {
+            object-position: 0 5%;
+        }
     }
 </style>
 
