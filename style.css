@@ -925,7 +925,7 @@ footer {
 }
 
 .woocommerce-tabs h2 {
-  padding-bottom: .5rem;
+  display: none;
 }
 
 #tab-description p {
