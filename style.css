@@ -508,7 +508,7 @@ footer {
 
 .products .product .price {
   position: absolute;
-  bottom: 2.5rem;
+  bottom: 2rem;
   left: 2rem;
   z-index: 1;
   opacity: 0;
@@ -1539,8 +1539,6 @@ footer {
   }
 }
 
-@media screen and (max-width: 1380px) {}
-
 @media screen and (max-width: 1350px) {
 
   .navbar ul {
@@ -1571,6 +1569,18 @@ footer {
   .products .product {
     width: 300px;
     height: 440px;
+  }
+
+  .products .product .price {
+    bottom: 1.8rem;
+  }
+
+  .products .product .price bdi {
+    font-size: 16px;
+  }
+
+  .products .product .product_type_variable.add_to_cart_button {
+    font-size: 13px;
   }
 
   .products .product .onsale {
@@ -1606,6 +1616,18 @@ footer {
   .products .product {
     width: 375px;
     height: 550px;
+  }
+
+  .products .product .price {
+    bottom: 2rem;
+  }
+
+  .products .product .price bdi {
+    font-size: 18px;
+  }
+
+  .products .product .product_type_variable.add_to_cart_button {
+    font-size: 15px;
   }
 
   .products .product .onsale {
@@ -1695,7 +1717,7 @@ footer {
 
   .product_filter {
     display: none;
-    
+
   }
 
   .footer_columns {
@@ -1727,6 +1749,18 @@ footer {
   .products .product {
     width: 325px;
     height: 475px;
+  }
+
+  .products .product .price {
+    bottom: 1.8rem;
+  }
+
+  .products .product .price bdi {
+    font-size: 16px;
+  }
+
+  .products .product .product_type_variable.add_to_cart_button {
+    font-size: 13px;
   }
 
   .products .product .onsale {
@@ -1812,6 +1846,31 @@ footer {
     height: 365px;
   }
 
+  .products .product h2 {
+    font-size: 22px;
+    left: 1rem;
+  }
+
+  .products .product:hover h2 {
+    left: 1rem;
+    bottom: 5.5rem;
+  }
+
+  .products .product .price {
+    bottom: 3.2rem;
+    left: 1rem;
+  }
+
+  .products .product .price bdi {
+    font-size: 18px;
+  }
+
+  .products .product .product_type_variable.add_to_cart_button {
+    font-size: 13px;
+    bottom: 1rem;
+    left: 1rem;
+  }
+
   .products .product .onsale {
     left: -6rem;
     font-size: 16px;
@@ -1869,7 +1928,9 @@ footer {
 }
 
 @media (max-width: 350px) {
-  main, footer {
+
+  main,
+  footer {
     padding: 5rem 2rem;
   }
 
