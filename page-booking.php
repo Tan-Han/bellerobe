@@ -494,13 +494,14 @@
         flex-direction: column;
         gap: 1rem;
         width: 75%;
+        height: 200px;
+        position: relative;
     }
 
     .booking-card-headline {
         display: flex;
         gap: 1.5rem;
         align-items: first baseline;
-        padding: 0 1rem;
     }
 
     .booking-card-headline h3 {
@@ -519,11 +520,13 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: normal;
-        padding: 0 1rem;
+        font-size: 16px;
     }
 
     .booking-btn {
-        padding: 0 1rem;
+        position: absolute;
+        right: 1.5rem;
+        bottom: 1.5rem;
     }
 
     .qxCTlb {
@@ -833,34 +836,85 @@
         height: 350px;
         width: 100%;
     }
-</style>
 
-<script>
-    // Get the modal
-    var modal = document.getElementById("contactForm");
+    /* Media queries */
 
-    // Get the button that opens the modal
-    var btn = document.getElementById("contactBtn");
-
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-
-    // When the user clicks on the button, open the modal
-    btn.onclick = function () {
-        modal.style.display = "block";
-    }
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-        modal.style.display = "none";
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
+    @media (max-width: 1600px) {
+        main {
+            gap: 5rem;
         }
-    } 
-</script>
+    }
+
+    @media (max-width: 1550px) {
+        .booking-card-headline {
+            gap: 0;
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: 1350px) {
+        main {
+            gap: 3rem;
+        }
+
+        .booking-card-headline h3 {
+            font-size: 18px;
+        }
+
+        .booking-description {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        main {
+            grid-template-columns: 1fr;
+        }
+
+        .booking-card-headline {
+            gap: 1.5rem;
+            flex-direction: row;
+        }
+
+        .booking-description {
+            font-size: 16px;
+        }
+
+        .store-info {
+            gap: 3rem;
+        }
+    }
+
+    @media (max-width: 750px) {
+
+        .booking-card-headline {
+            gap: 0;
+            flex-direction: column;
+        }
+
+        .booking-card-headline h3 {
+            font-size: 20px;
+        }
+
+        .booking-description {
+            font-size: 14px;
+            -webkit-line-clamp: 3;
+        }
+
+        .booking-card {
+            height: 230px;
+        }
+
+        .img-box {
+            width: 35%;
+        }
+
+        .booking-info {
+            width: 65%;
+            gap: .75rem;
+        }
+
+    }
+</style>
 
 <?php get_footer() ?>
