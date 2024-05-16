@@ -64,7 +64,7 @@ function toggleProductFilter() {
     var filter = document.getElementById("productFilter");
     var button = document.querySelector(".filter-button");
     if (filter.style.display === "none" || filter.style.display === "") {
-        filter.style.display = "block";
+        filter.style.display = "flex";
         button.innerHTML = "Luk filter"; // Change button text
     } else {
         filter.style.display = "none";

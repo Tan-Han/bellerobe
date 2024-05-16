@@ -1695,11 +1695,7 @@ footer {
 
   .product_filter {
     display: none;
-  }
-
-  .product_filter.show {
-    display: flex;
-    padding-top: 1rem;
+    
   }
 
   .footer_columns {
@@ -1808,6 +1804,7 @@ footer {
 
   .products {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    row-gap: 2rem;
   }
 
   .products .product {
