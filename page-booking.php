@@ -368,32 +368,34 @@
                     <div class="hours">
                         <b><?php the_title() ?>:&nbsp;</b>
 
-                        <?php if (!get_field('closed')) {
-                            if (get_field("open") && get_field("close")): ?>
-                                <p><?php the_field("open"); ?>&nbsp;-&nbsp;</p>
-                                <p><?php the_field("close"); ?></p>
-                            <?php endif;
-                        } ?>
+                        <div class="hours-box">
+                            <?php if (!get_field('closed')) {
+                                if (get_field("open") && get_field("close")): ?>
+                                    <p><?php the_field("open"); ?>&nbsp;-&nbsp;</p>
+                                    <p><?php the_field("close"); ?></p>
+                                <?php endif;
+                            } ?>
 
-                        <?php
-                        if (!get_field('closed')) {
-                            $openingHours = get_field('open_later');
-                            if (!empty($openingHours['open_later']) && !empty($openingHours['close_later'])): ?>
-                                <p><?php echo '&nbsp;&&nbsp;'; ?></p>
-                                <p><?php echo $openingHours['open_late']; ?></p>
-                                <p><?php echo '&nbsp;-&nbsp;'; ?></p>
-                                <p><?php echo $openingHours['close_late']; ?></p>
-                            <?php endif;
-                        } ?>
+                            <?php
+                            if (!get_field('closed')) {
+                                $openingHours = get_field('open_later');
+                                if (!empty($openingHours['open_later']) && !empty($openingHours['close_later'])): ?>
+                                    <p><?php echo '&nbsp;&&nbsp;'; ?></p>
+                                    <p><?php echo $openingHours['open_late']; ?></p>
+                                    <p><?php echo '&nbsp;-&nbsp;'; ?></p>
+                                    <p><?php echo $openingHours['close_late']; ?></p>
+                                <?php endif;
+                            } ?>
 
-                        <?php if (get_field('closed')) {
-                            echo '<p>Lukket</p>';
-                        }
+                            <?php if (get_field('closed')) {
+                                echo '<p>Lukket</p>';
+                            }
 
-                        if (get_field('book')) {
-                            echo '<p>Se tider ved booking</p>';
-                        }
-                        ?>
+                            if (get_field('book')) {
+                                echo '<p>Se tider ved booking</p>';
+                            }
+                            ?>
+                        </div>
                     </div>
 
                 <?php endwhile ?>
@@ -573,6 +575,10 @@
         display: flex;
         font-size: 20px;
         padding: .5rem 0;
+    }
+
+    .hours-box {
+        display: flex;
     }
 
     .more-times {
@@ -981,29 +987,23 @@
             font-size: 16px;
             -webkit-line-clamp: 3;
         }
+
+        .opening-hours-box {
+            background-image: none;
+            background-color: var(--tertiary-color);
+        }
     }
 
     @media (max-width: 500px) {
+
+        .contact-info-box p {
+            font-size: 18px;
+        }
 
         .contact-info-inner {
             gap: 1rem;
             height: 175px;
             flex-direction: column;
-        }
-
-        .call,
-        .write {
-            flex-direction: row;
-            justify-content: start;
-            width: 100%;
-        }
-
-    }
-
-    @media (max-width: 400px) {
-
-        .contact-info-box p {
-            font-size: 18px;
         }
 
         .call i {
@@ -1021,7 +1021,21 @@
         #contactBtn {
             font-size: 14px;
         }
+
+        .call,
+        .write {
+            flex-direction: row;
+            justify-content: start;
+            width: 100%;
+        }
+
+        .hours {
+            font-size: 16px;
+        }
+
     }
+
+    @media (max-width: 400px) {}
 </style>
 
 <?php get_footer() ?>
