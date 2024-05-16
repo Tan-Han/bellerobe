@@ -781,7 +781,6 @@ footer {
 
 .single-product .product .summary .price {
   font-size: 25px;
-  font-weight: 700;
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -1881,6 +1880,9 @@ footer {
     font-size: 16px;
   }
 
+  .woocommerce-product-gallery {
+    width: 98%;
+  }
 }
 
 @media (max-width: 745px) {
@@ -1913,9 +1915,17 @@ footer {
     flex-direction: column;
   }
 
+  .related h2 {
+    font-size: 42px;
+  }
+
 }
 
 @media (max-width: 550px) {
+
+  .woocommerce-product-gallery {
+    width: 97%;
+  }
 
   .flex-viewport {
     height: 500px;
@@ -1939,7 +1949,7 @@ footer {
 
   .related ul li {
     width: 250px !important;
-    height: 3650px !important;
+    height: 350px !important;
   }
 
   footer {
@@ -1969,6 +1979,16 @@ footer {
   .category-title {
     font-size: 45px;
   }
+
+  .single-product .product .summary h1 {
+    font-size: 35px;
+  }
+  .single-product .product .summary .price {
+    font-size: 22px;
+  }
+  .related h2 {
+    font-size: 35px;
+  }
 }
 
 @media (max-width: 460px) {
@@ -1976,6 +1996,9 @@ footer {
     font-size: 40px;
   }
 
+  .flex-viewport {
+    height: 450px;
+  }
 
 }
 
