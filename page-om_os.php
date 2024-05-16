@@ -80,6 +80,7 @@
     background-color: #4caf50;
     color: white;
     padding: 12px;
+    width: 200px;
     font-size: 16px;
     border: none;
     cursor: pointer;
