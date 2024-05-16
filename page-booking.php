@@ -313,7 +313,7 @@
 
                         <?php while ($contactLoop->have_posts()):
                             $contactLoop->the_post() ?>
-                            <a href="tel:<?php the_field('phone_number') ?>"></a><i class="fa-solid fa-phone"></i></a>
+                            <i class="fa-solid fa-phone"></i></a>
 
                             <div class="phone">
 
@@ -933,6 +933,10 @@
         }
     }
 
+    @media (max-width: 700px) {
+
+    }
+
     @media (max-width: 600px) {
         .booking-card {
             flex-direction: column;
@@ -953,23 +957,18 @@
             height: 45%
         }
 
-  .booking-card-headline h3 {
-    font-size: 22px;
-  }
+        .booking-card-headline h3 {
+            font-size: 22px;
+        }
 
-  .price-time {
-    font-size: 16px;
-  }
+        .price-time {
+            font-size: 16px;
+        }
 
-  .booking-description {
-    font-size: 16px;
-    -webkit-line-clamp: 3;
-  }
-
-  .qxCTlb {
-    font-size: 16px;
-  }
-
+        .booking-description {
+            font-size: 16px;
+            -webkit-line-clamp: 3;
+        }
     }
 </style>
 
