@@ -25,16 +25,17 @@
 
 <!-- second section on about us page with drop down menues -->
     <section class="information_drop_downs">
-        <div class="dropdowns_on_about_us_page">
-            <button id="dropdownBtn_about_us" class="dropbtn_about_us">Samarbejdspartnere
-                <i class="fa-solid fa-caret-down"></i>
-            </button>
-            <div id="myDropdown_about_us" class="dropdown_content_about_us">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-             </div>
+        <div id="dropdownBtn_about_us" class="dropbtn_about_us">
+            <h2>Samarbejdspartnere</h2>
+            <i class="fa-solid fa-caret-down"></i>
         </div>
+            
+        <div id="myDropdown_about_us" class="dropdown_content_about_us">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+        
 
         <div class="dropdowns_on_about_us_page">
             <button id="dropdownBtn_about_us" class="dropbtn_about_us">Fortrolighedspolitik</button>
