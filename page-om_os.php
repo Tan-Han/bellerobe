@@ -34,6 +34,33 @@
              </div>
         </div>
 
+        <div class="dropdowns_on_about_us_page">
+            <button id="dropdownBtn_about_us" class="dropbtn_about_us">Fortrolighedspolitik</button>
+            <div id="myDropdown_about_us" class="dropdown_content_about_us">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+             </div>
+        </div>
+
+        <div class="dropdowns_on_about_us_page">
+            <button id="dropdownBtn_about_us" class="dropbtn_about_us">Handelsbetingelser</button>
+            <div id="myDropdown_about_us" class="dropdown_content_about_us">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+             </div>
+        </div>
+
+        <div class="dropdowns_on_about_us_page">
+            <button id="dropdownBtn_about_us" class="dropbtn_about_us">Kundeoplevelser</button>
+            <div id="myDropdown_about_us" class="dropdown_content_about_us">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+             </div>
+        </div>
+
 
 
     </section>
