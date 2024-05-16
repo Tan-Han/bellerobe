@@ -29,6 +29,7 @@
             <button id="dropdownBtn_about_us" class="dropbtn_about_us">Samarbejdspartnere
                 <i class="fa-solid fa-caret-down"></i>
             </button>
+            <p>\f0d7</p>
             <div id="myDropdown_about_us" class="dropdown_content_about_us">
                 <a href="#">Link 1</a>
                 <a href="#">Link 2</a>
