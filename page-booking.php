@@ -489,7 +489,6 @@
     }
 
     .booking-info {
-        padding: 1.5rem 0;
         display: flex;
         flex-direction: column;
         gap: 1rem;
@@ -499,8 +498,7 @@
     }
 
     .booking-card-headline {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        padding: 1.5rem 1.5rem 0 1.5rem;
         display: flex;
         gap: 1.5rem;
         align-items: first baseline;
