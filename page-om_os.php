@@ -124,6 +124,10 @@
     display: flex;
     }
 
+    .dropbtn_about_us .fa-caret-down {
+    padding-left: 3rem;
+    }
+
     /* Style the dropdown content (hidden by default) */
     .dropdown_content_about_us {
     display: none;
@@ -151,6 +155,7 @@
     .show {
     display: block;
     }   
+
 
 </style>
 
