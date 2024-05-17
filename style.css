@@ -2236,6 +2236,17 @@ footer {
     font-size: 24px !important;
   }
 
+  .woocommerce-order-details table .product-total {
+    display: none;
+  }
+
+  .woocommerce-order-details table tbody .order_item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: .5rem;
+  }
+
   .woocommerce-order-details table ul li {
     display: flex !important;
     align-items: baseline !important;
@@ -2245,6 +2256,13 @@ footer {
 
   .woocommerce-order-details table ul li .wc-item-meta-label {
     padding-right: .2rem !important;
+  }
+
+  .woocommerce-order-details table tfoot tr {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: .5rem;
   }
 
   .woocommerce-order .woocommerce-columns--addresses {
@@ -2365,9 +2383,9 @@ footer {
     padding-bottom: 16px !important;
   }
 
-  .woocommerce-order {
+  /* .woocommerce-order {
     padding: 1.5rem !important;
-  }
+  } */
 }
 
 
