@@ -160,6 +160,10 @@
         border-radius: 0 0 10px 10px;
     }
 
+    .dropdown_text_style_about_us p{
+        padding: 17px 24px;
+    }
+
     .dropdown_text_style_about_us {
         padding: 17px 24px;
         display: flex;
