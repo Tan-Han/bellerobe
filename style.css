@@ -2084,6 +2084,12 @@ footer {
 }
 
 @media (max-width: 650px) {
+
+  .single-product .product .onsale {
+    left: -6rem;
+    font-size: 18px;
+  }
+
   .wc-block-components-product-name {
     font-size: 20px;
   }
