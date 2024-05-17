@@ -2085,6 +2085,26 @@ footer {
   .wc-block-components-quantity-selector input.wc-block-components-quantity-selector__input {
     font-size: 18px;
   }
+
+  .woocommerce-order {
+    min-width: fit-content;
+  }
+
+  .woocommerce-order .woocommerce-thankyou-order-received {
+    font-size: 28px;
+  }
+
+  .woocommerce-order-details__title, .woocommerce-column__title {
+    font-size: 22px;
+  }
+
+  .woocommerce-order-overview, .woocommerce-order-details table, .woocommerce-column--billing-address .address, .woocommerce-column--shipping-address .address {
+    font-size: 14px;
+  }
+
+  .woocommerce-order-details table td {
+    padding-right: 1.5rem;
+  }
 }
 
 @media (max-width: 650px) {
@@ -2207,6 +2227,26 @@ footer {
     align-items: center;
     padding-top: 1rem;
   }
+
+  .woocommerce-order-details table ul li {
+    display: flex;
+    align-items: baseline;
+    gap: 0;
+    flex-wrap: wrap;
+  }
+
+  .woocommerce-order-details table ul li .wc-item-meta-label {
+    padding-right: .2rem;
+  }
+
+  .woocommerce-order .woocommerce-columns--addresses {
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .woocommerce-column--billing-address, .woocommerce-column--shipping-address {
+    width: 100%;
+  }
 }
 
 @media (max-width: 535px) {
@@ -2315,6 +2355,8 @@ footer {
   .wc-block-components-order-summary .wc-block-components-order-summary-item:last-child>div {
     padding-bottom: 16px !important;
   }
+
+
 }
 
 
