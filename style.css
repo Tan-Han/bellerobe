@@ -2255,6 +2255,10 @@ footer {
     flex-wrap: wrap !important;
   }
 
+  .woocommerce-order-details table td {
+    width: 100% !important;
+  }
+
   .woocommerce-order-details table ul li .wc-item-meta-label {
     padding-right: .2rem !important;
   }
