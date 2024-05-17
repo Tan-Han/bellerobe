@@ -884,10 +884,10 @@ footer {
 
 .woocommerce-tabs ul {
   list-style: none;
+  display: flex;
 }
 
 .woocommerce-tabs ul li {
-  display: inline;
   margin: 0 5px 0 0;
   padding: .5rem !important;
   background-color: var(--tertiary-color);
@@ -2287,11 +2287,6 @@ footer {
 
   .single-product .product .summary .woocommerce-product-details__short-description p {
     font-size: 16px;
-  }
-
-  .woocommerce-tabs ul li a {
-    padding: 0 5px;
-    font-size: 14px;
   }
 
   .related h2 {
