@@ -2095,15 +2095,15 @@ footer {
   }
 
   .wc-block-cart-item__image a {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+    display: flex !important;
+    width: 100% !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
 
   .wc-block-cart-item__image img {
-    width: 40%;
-    margin-bottom: 1rem;
+    width: 40% !important;
+    margin-bottom: 1rem !important;
   }
 
   .wc-block-cart-item__product {
