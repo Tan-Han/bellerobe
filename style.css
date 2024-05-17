@@ -2108,10 +2108,12 @@ footer {
 
   .wc-block-cart-item__product {
     grid-row-start: 2 !important;
+    grid-column-start: 1;
   }
 
   .wc-block-cart-item__total {
     grid-row-start: 2 !important;
+    grid-column-start: 2;
   }
 
   footer {
