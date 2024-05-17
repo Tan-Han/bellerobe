@@ -2289,6 +2289,11 @@ footer {
     font-size: 16px;
   }
 
+  .woocommerce-tabs ul li a {
+    padding: 0 5px;
+    font-size: 14px;
+  }
+
   .related h2 {
     font-size: 28px;
   }
