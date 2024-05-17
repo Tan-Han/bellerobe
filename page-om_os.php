@@ -50,7 +50,7 @@
                     $collaborationLoop->the_post() ?>
 
                     <div class="collaboration_partner">
-                        <a href="<?php get_field($url_to_collaboration_partner); ?>">
+                        <a href="<?php the_field($url_to_collaboration_partner); ?>">
                             <?php the_field("collaboration_partner_job"); // Display the post title ?>       
                         </a>
                     </div>
