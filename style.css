@@ -2170,6 +2170,7 @@ footer {
 
   .wc-block-cart-item__total {
     grid-row-start: 3 !important;
+    grid-column: 1 !important;
   }
 
   .wc-block-components-totals-item {
