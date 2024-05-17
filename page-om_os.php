@@ -161,11 +161,11 @@
     }
 
     .dropdown_content_about_us p {
-        padding: 17px 24px;
+        padding: 17px 24px 5px 24px;
     }
 
     .dropdown_text_style_about_us {
-        padding: 17px 24px;
+        padding: 0px 24px 17px 24px;
         display: flex;
     }
 
@@ -179,7 +179,8 @@
 
     /* Change color of dropdown links on hover */
     .dropdown-content_about_us a:hover {
-        background-color: #f1f1f1;
+        color: var(--brown);
+        text-decoration: underline;
     }
 
     /* Show the dropdown menu when the button is clicked */
