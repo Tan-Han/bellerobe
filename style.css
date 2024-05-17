@@ -2106,7 +2106,8 @@ footer {
     font-size: 14px !important;
   }
 
-  .woocommerce-order-details table .woocommerce-table__product-name, .woocommerce-order-details table th {
+  .woocommerce-order-details table .woocommerce-table__product-name,
+  .woocommerce-order-details table th {
     padding-right: 1.5rem !important;
   }
 }
@@ -2237,14 +2238,14 @@ footer {
   }
 
   .woocommerce-order-details table .product-total {
-    display: none;
+    display: none !important;
   }
 
   .woocommerce-order-details table tbody .order_item {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-bottom: .5rem;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    padding-bottom: .5rem !important;
   }
 
   .woocommerce-order-details table ul li {
@@ -2259,10 +2260,10 @@ footer {
   }
 
   .woocommerce-order-details table tfoot tr {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-bottom: .5rem;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    padding-bottom: .5rem !important;
   }
 
   .woocommerce-order .woocommerce-columns--addresses {
