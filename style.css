@@ -1728,13 +1728,13 @@ footer {
   }
 
   .wc-block-components-sidebar-layout .wc-block-components-main {
-    padding-right: 0;
-    width: 100%;
+    padding-right: 0 !important;
+    width: 100% !important;
   }
 
   .wc-block-components-sidebar {
-    padding-left: 0;
-    width: 100%;
+    padding-left: 0 !important;
+    width: 100% !important;
   }
 
   .wp-block-woocommerce-filled-cart-block table thead span,
