@@ -17,7 +17,6 @@
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; controls; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-
             </iframe>
         </div>
 
@@ -35,7 +34,32 @@
         <div id="myDropdown_about_us" class="dropdown_content_about_us">
             <p><?php the_field("samarbejdspartnere_introduction") ?></p>
             <div class="dropdown_text_style_about_us">
-                <a href="#">Link 1</a>
+
+                <!-- Collaboration partners loop code start -->
+
+                <?php $collaborationLoop = new WP_Query(
+                    array(
+                        "post_type" => "collaboration",
+                        "posts_per_page" => -1,
+                        "orderby" => "date",  // Order by date
+                        "order" => "ASC"     // Reverse order (latest posts first)
+                    )
+                ) ?>
+
+                <?php while ($collaborationLoop->have_posts()):
+                    $collaborationLoop->the_post() ?>
+
+                    <div class="collaboration_partner">
+                        <a href="<?php the_field($url_to_collaboration_partner); ?>">
+                            <?php the_field("collaboration_partner_job"); // Display the post title ?>       
+                        </a>
+                    </div>
+
+                <?php endwhile ?>
+                <?php wp_reset_postdata() ?>
+                
+            
+                
                 <a href="#">Link 2</a>
                 <a href="#">Link 3</a>
             </div>
@@ -102,13 +126,13 @@
    }
 
     .introduction_video {
-         width: 45%;
+         width: 42%;
     }
 
     .introduction_video iframe {
         max-width: 100vw;
         /* Max-width af video - for at den ikke går ud over kanten */
-        height: 300px;
+        height: 330px;
         width: 100%;
         /* 100% vidde på videoen, så den fylder fra kant til kant */
         border-radius: 10px;
@@ -171,16 +195,17 @@
 
     /* Style the links inside the dropdown */
     .dropdown_text_style_about_us a {
-        color: black;
+        color: var(--brown);
         padding: 12px 16px;
         text-decoration: none;
         display: block;
+        transition: 0.3s;
     }
 
     /* Change color of dropdown links on hover */
     .dropdown-content_about_us a:hover {
-        color: var(--brown);
         text-decoration: underline;
+        transition: 0.3s;
     }
 
     /* Show the dropdown menu when the button is clicked */
