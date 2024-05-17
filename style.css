@@ -1686,7 +1686,7 @@ footer {
   }
 
   .wp-block-woocommerce-cart .wc-block-grid__product {
-      width: 375px;
+    width: 375px;
     height: 550px;
   }
 }
@@ -2033,11 +2033,19 @@ footer {
   .single-product .product .summary h1 {
     font-size: 35px;
   }
+
   .single-product .product .summary .price {
     font-size: 22px;
   }
+
   .related h2 {
     font-size: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wp-block-woocommerce-cart .wc-block-grid__products {
+    display: grid !important;
   }
 }
 
