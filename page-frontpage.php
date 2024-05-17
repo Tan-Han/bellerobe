@@ -364,6 +364,16 @@
     margin-top: 18px;
   }
 
+  @media screen and (max-width: 2000px) {
+    .img_cards {
+    height: 33rem;
+    width: 270px;
+    }
+
+    .p_cards{
+    font-size: 30px;
+    }
+  }
 
   @media screen and (max-width: 1700px) {
     .img_cards {
