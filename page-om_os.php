@@ -33,6 +33,7 @@
         </div>
             
         <div id="myDropdown_about_us" class="dropdown_content_about_us">
+            <p><?php the_field("samarbejdspartnere_introduction") ?></p>
             <div class="dropdown_text_style_about_us">
                 <a href="#">Link 1</a>
                 <a href="#">Link 2</a>
