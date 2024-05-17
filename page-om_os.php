@@ -37,7 +37,7 @@
 
                 <!-- Collaboration partners loop code start -->
 
-                <?php $openHoursLoop = new WP_Query(
+                <?php $collaborationLoop = new WP_Query(
                     array(
                         "post_type" => "collaboration",
                         "posts_per_page" => -1,
@@ -49,14 +49,11 @@
                 <?php while ($collaborationLoop->have_posts()):
                     $collaborationLoop->the_post() ?>
 
-                    
                     <div class="collaboration_partner">
-                        <a href="<?php echo esc_url($url_to_collaboration_partner); ?>">
-                            <?php the_field("collaboration_partner_job"); // Display the post title ?> 
-                            
+                        <a href="<?php get_field($url_to_collaboration_partner); ?>">
+                            <?php the_field("collaboration_partner_job"); // Display the post title ?>       
                         </a>
                     </div>
-                 
 
                 <?php endwhile ?>
                 <?php wp_reset_postdata() ?>
