@@ -558,8 +558,8 @@ footer {
   position: absolute;
   z-index: 1;
   rotate: -45deg;
-  top: 2.5rem;
-  left: -6.5rem;
+  top: 3rem;
+  left: -5.5rem;
   background-color: var(--tertiary-color);
   color: var(--white);
   width: 20%;
@@ -1500,6 +1500,19 @@ footer {
 
 /* MEDIA QUERIES */
 
+@media (max-width: 1750px) {
+  .single-product .product .onsale {
+    left: -5rem;
+  }
+}
+
+@media (max-width: 1600px) {
+  .single-product .product .onsale {
+    left: -12.5rem;
+    width: 40%;
+  }
+}
+
 @media screen and (max-width: 1550px) {
 
   .navbar ul li a,
@@ -1538,6 +1551,10 @@ footer {
 
   .navbar .cart-btn-outer-box .cart-btn-box .cart-btn i {
     font-size: 20px;
+  }
+
+  .single-product .product .onsale {
+    left: -11.5rem;
   }
 }
 
