@@ -268,8 +268,8 @@
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 3px 3px 5px #5C48337D;
-    height: 25rem;
-    width: 270px;
+    height: 39rem;
+    width: 18vw;
     transition: 0.4s;
   }
 
@@ -364,6 +364,18 @@
     margin-top: 18px;
   }
 
+
+  @media screen and (max-width: 1700px) {
+    .img_cards {
+    height: 25rem;
+    width: 270px;
+    }
+
+    .p_cards{
+    font-size: 20px;
+  }
+
+  }
 
   @media screen and (max-width: 1500px) {
     .img_cards {
