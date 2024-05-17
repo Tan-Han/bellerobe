@@ -62,10 +62,6 @@
                     <?php wp_reset_postdata() ?>
                 <?php endif; ?>
                 
-            
-                
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
             </div>
         </div>
 
