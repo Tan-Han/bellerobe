@@ -1954,7 +1954,7 @@ footer {
   .products .product .price {
     bottom: 3.2rem;
     left: 1rem;
-    width: 100%;
+    max-width: 100%;
     flex-direction: row;
     gap: .5rem;
   }
@@ -2063,7 +2063,7 @@ footer {
   .wc-block-cart-item__image a {
     display: flex !important;
     width: 100% !important;
-    justify-content: center !important;
+    justify-content: left !important;
     align-items: center !important;
   }
 
