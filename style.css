@@ -2266,10 +2266,10 @@ footer {
   }
 
   .single-product .product .onsale {
-    left: -6.5rem;
+    left: -6rem;
     font-size: 16px;
     width: 100%;
-    top: 2.5rem;
+    top: 3rem;
   }
 
   .flex-viewport {
@@ -2291,6 +2291,12 @@ footer {
 
   .related h2 {
     font-size: 28px;
+  }
+}
+
+@media (max-width: 390px) {
+  .single-product .product .onsale {
+    left: -5rem;
   }
 }
 
