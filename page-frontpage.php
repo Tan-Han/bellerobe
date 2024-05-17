@@ -257,9 +257,9 @@
     text-shadow: 1px 1px 2px var(--brown);
     position: absolute;
     z-index: 1;
-    font-size: 25px;
     bottom: 2rem;
     Left: 2rem;
+    font-size: 36px;
     overflow:hidden;
   }
 
@@ -268,7 +268,7 @@
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 3px 3px 5px #5C48337D;
-    height: 39rem;
+    height: 38rem;
     width: 18vw;
     transition: 0.4s;
   }
@@ -372,7 +372,7 @@
     }
 
     .p_cards{
-    font-size: 20px;
+    font-size: 25px;
   }
 
   }
