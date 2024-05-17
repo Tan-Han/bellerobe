@@ -1019,7 +1019,7 @@ footer {
 }
 
 .wc-block-formatted-money-amount .wc-block-components-formatted-money-amount .wc-block-components-product-price__value {
-font-weight: 700;
+  font-weight: 700 !important;
 }
 
 .wp-block-woocommerce-filled-cart-block .wc-block-components-sidebar .wp-block-woocommerce-cart-order-summary-block .wc-block-cart__totals-title {
@@ -1542,7 +1542,9 @@ font-weight: 700;
 }
 
 @media screen and (max-width: 1400px) {
-  .wp-block-woocommerce-filled-cart-block table thead span, .wp-block-woocommerce-filled-cart-block .wc-block-components-sidebar .wp-block-woocommerce-cart-order-summary-block .wc-block-cart__totals-title {
+
+  .wp-block-woocommerce-filled-cart-block table thead span,
+  .wp-block-woocommerce-filled-cart-block .wc-block-components-sidebar .wp-block-woocommerce-cart-order-summary-block .wc-block-cart__totals-title {
     font-size: 16px;
   }
 
@@ -1577,7 +1579,8 @@ font-weight: 700;
     font-size: 20px;
   }
 
-  .wp-block-woocommerce-filled-cart-block table thead span, .wp-block-woocommerce-filled-cart-block .wc-block-components-sidebar .wp-block-woocommerce-cart-order-summary-block .wc-block-cart__totals-title {
+  .wp-block-woocommerce-filled-cart-block table thead span,
+  .wp-block-woocommerce-filled-cart-block .wc-block-components-sidebar .wp-block-woocommerce-cart-order-summary-block .wc-block-cart__totals-title {
     font-size: 14px;
   }
 }
@@ -1719,6 +1722,7 @@ font-weight: 700;
     width: 375px;
     height: 550px;
   }
+
   .wc-block-components-sidebar-layout {
     flex-direction: column;
   }
@@ -1733,7 +1737,8 @@ font-weight: 700;
     width: 100%;
   }
 
-  .wp-block-woocommerce-filled-cart-block table thead span, .wp-block-woocommerce-filled-cart-block .wc-block-components-sidebar .wp-block-woocommerce-cart-order-summary-block .wc-block-cart__totals-title {
+  .wp-block-woocommerce-filled-cart-block table thead span,
+  .wp-block-woocommerce-filled-cart-block .wc-block-components-sidebar .wp-block-woocommerce-cart-order-summary-block .wc-block-cart__totals-title {
     font-size: 18px;
   }
 
@@ -2038,7 +2043,8 @@ font-weight: 700;
     font-size: 16px;
   }
 
-  .wp-block-woocommerce-filled-cart-block .wc-block-components-sidebar .wp-block-woocommerce-cart-order-summary-block .wc-block-components-totals-item__label, .wp-block-woocommerce-filled-cart-block .wc-block-components-sidebar .wp-block-woocommerce-cart-order-summary-block .wc-block-formatted-money-amount {
+  .wp-block-woocommerce-filled-cart-block .wc-block-components-sidebar .wp-block-woocommerce-cart-order-summary-block .wc-block-components-totals-item__label,
+  .wp-block-woocommerce-filled-cart-block .wc-block-components-sidebar .wp-block-woocommerce-cart-order-summary-block .wc-block-formatted-money-amount {
     font-size: 16px;
   }
 }
