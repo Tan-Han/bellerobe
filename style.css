@@ -2106,7 +2106,7 @@ footer {
     font-size: 14px !important;
   }
 
-  .woocommerce-order-details table td {
+  .woocommerce-order-details table .woocommerce-table__product-name, .woocommerce-order-details table th {
     padding-right: 1.5rem !important;
   }
 }
