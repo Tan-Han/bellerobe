@@ -654,6 +654,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding-top: 8rem;
+  padding-bottom: 0 !important;
 }
 
 .single-product .product .summary {
@@ -1083,6 +1084,10 @@ footer {
 
 .wc-block-cart__submit-button.contained:hover {
   background-color: var(--tertiary-color) !important;
+}
+
+.wc-block-components-product-badge {
+  font-family: proxima-nova, sans-serif;
 }
 
 /* Basket - new in shop items */
@@ -2290,6 +2295,25 @@ footer {
 
   .related h2 {
     font-size: 28px;
+  }
+
+  .wc-block-components-order-summary .wc-block-components-order-summary-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .wc-block-components-order-summary .wc-block-components-order-summary-item__description {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .wc-block-components-order-summary .wc-block-components-order-summary-item__total-price {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .wc-block-components-order-summary .wc-block-components-order-summary-item:last-child > div {
+    padding-bottom: 16px;
   }
 }
 
