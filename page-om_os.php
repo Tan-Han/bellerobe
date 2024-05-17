@@ -46,17 +46,21 @@
                     )
                 ) ?>
 
-                <?php while ($collaborationLoop->have_posts()):
-                    $collaborationLoop->the_post() ?>
+                
+                <?php if ($collaborationLoop->have_posts()): ?>
+                    <?php while ($collaborationLoop->have_posts()): $collaborationLoop->the_post(); 
+                        $url_to_collaboration_partner = get_field('partner_url'); // Retrieve the URL from ACF field
+                    ?>
 
-                    <div class="collaboration_partner">
-                        <a href="<?php the_field($url_to_collaboration_partner); ?>">
-                            <?php the_field("collaboration_partner_job"); // Display the post title ?>       
-                        </a>
-                    </div>
+                        <div class="collaboration_partner">
+                            <a href="<?php echo esc_url($url_to_collaboration_partner); ?>">
+                                <?php the_field("collaboration_partner_job"); // Display the collaboration partners job ?>       
+                            </a>
+                        </div>
 
-                <?php endwhile ?>
-                <?php wp_reset_postdata() ?>
+                    <?php endwhile ?>
+                    <?php wp_reset_postdata() ?>
+                <?php endif; ?>
                 
             
                 
