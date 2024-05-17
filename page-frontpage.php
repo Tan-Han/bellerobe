@@ -269,7 +269,7 @@
     border-radius: 10px;
     box-shadow: 3px 3px 5px #5C48337D;
     height: 38rem;
-    width: 18vw;
+    width: 19vw;
     transition: 0.4s;
   }
 
@@ -367,7 +367,6 @@
   @media screen and (max-width: 2000px) {
     .img_cards {
     height: 33rem;
-    width: 270px;
     }
 
     .p_cards{
@@ -378,7 +377,6 @@
   @media screen and (max-width: 1700px) {
     .img_cards {
     height: 25rem;
-    width: 270px;
     }
 
     .p_cards{
