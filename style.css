@@ -2085,13 +2085,13 @@ footer {
   }
 
   .wc-block-cart-items__row {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 
   .wc-block-cart-item__image {
-    grid-row-start: 1;
-    padding-right: 0;
-    grid-column: 1 /span 2;
+    grid-row-start: 1 !important;
+    padding-right: 0 !important;
+    grid-column: 1 /span 2 !important;
   }
 
   .wc-block-cart-item__image a {
@@ -2107,11 +2107,11 @@ footer {
   }
 
   .wc-block-cart-item__product {
-    grid-row-start: 2;
+    grid-row-start: 2 !important;
   }
 
   .wc-block-cart-item__total {
-    grid-row-start: 2;
+    grid-row-start: 2 !important;
   }
 
   footer {
