@@ -2187,7 +2187,7 @@ footer {
   }
 
   .wc-block-components-quantity-selector input.wc-block-components-quantity-selector__input {
-    font-size: 16px;
+    font-size: 16px !important;
   }
 }
 
