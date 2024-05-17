@@ -53,7 +53,7 @@
                     <div class="collaboration_partner">
                         <a href="<?php echo esc_url($url_to_collaboration_partner); ?>">
                             <?php the_field("collaboration_partner_job"); // Display the post title ?> 
-                            <?php the_field("collaboration_partner_name"); // Display the post title ?> 
+                            
                         </a>
                     </div>
                  
