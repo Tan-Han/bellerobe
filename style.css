@@ -906,7 +906,6 @@ footer {
 .woocommerce-tabs ul li a {
   text-decoration: none;
   color: var(--white);
-  padding: 0 10px;
   font-weight: 700;
 }
 
