@@ -74,7 +74,7 @@ if ( woocommerce_product_loop() ) {
 } else {
     ?>
     <h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
-    <p><?php esc_html_e( 'Det ser ud til at der endnu ikke er tilføjet produkter til denne side.', 'your-text-domain' ); ?></p>
+    <p><?php esc_html_e( 'Det ser ud til at der endnu ikke er tilføjet produkter til denne side.', 'bellerobe' ); ?></p>
     <?php
     /**
      * Hook: woocommerce_no_products_found.
