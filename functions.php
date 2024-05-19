@@ -98,7 +98,7 @@ function count_item_in_cart()
 }
 
 function custom_no_products_found_message() {
-  if (!woocommerce_product_loop()) {
+  if (!have_posts()) {
     ?>
     <h1 class="category-title">
       <?php single_term_title() ?>
@@ -108,4 +108,4 @@ function custom_no_products_found_message() {
 }
 
 // Ensure the custom no products found message is displayed
-add_action('woocommerce_before_main_content', 'custom_no_products_found_message', 5);
+add_action('woocommerce_before_shop_loop', 'custom_no_products_found_message', 5);
