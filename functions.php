@@ -108,4 +108,4 @@ function custom_no_products_found_message() {
 }
 
 // Ensure the custom no products found message is displayed
-add_action('woocommerce_after_main_content', 'custom_no_products_found_message');
+add_action('woocommerce_before_shop_loop', 'custom_no_products_found_message');
