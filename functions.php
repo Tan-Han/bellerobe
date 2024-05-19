@@ -102,34 +102,27 @@ function custom_no_products_found_message() {
     // Get the current category
     $category = get_queried_object();
 
-    // Query products in the current category
-    $products_in_category = new WP_Query(array(
-        'post_type'      => 'product',
-        'posts_per_page' => 1,
-        'tax_query'      => array(
-            array(
-                'taxonomy' => 'product_cat',
-                'field'    => 'id',
-                'terms'    => $category->term_id,
-            ),
-        ),
-    ));
+    // Get the product count for the current category
+    $product_count = wp_count_posts('product')->publish;
 
-    // Display custom message if no products found in the current category
-    if (!$products_in_category->have_posts()) {
+    // Get the product count for the current category
+    $product_count_in_category = get_term($category->term_id, 'product_cat')->count;
+
+    // Compare product counts to determine if the category is empty
+    if ($product_count === 0 || $product_count_in_category === 0) {
         // Display category title
         echo '<header class="woocommerce-products-header">';
-        echo '<h1 class="woocommerce-products-header__title page-title">' . woocommerce_page_title(false) . '</h1>';
+        ?>
+        <h1 class="category-title">
+          <?php single_term_title() ?>
+        </h1>
+        <?php
         echo '</header>';
         
         // Display custom message
-        echo '<p>Oops... No products here...</p>';
+        echo '<p>Oops...</p>';
     }
-
-    // Restore original post data
-    wp_reset_postdata();
 }
 
 // Hook our custom function before the main content
 add_action('woocommerce_before_shop_loop', 'custom_no_products_found_message', 5);
-;
