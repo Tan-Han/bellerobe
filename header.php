@@ -46,7 +46,7 @@
                     </li>
 
                     <li class="dropdown">
-                        <p class="dropbtn" onclick="dropdownMenuKonfirmation()">Fest- & Galla<i
+                        <p class="dropbtn" onclick="dropdownMenuKonfirmation()">Konfirmationskjoler<i
                                 class="fa-solid fa-caret-down"></i></p>
                         <div class="dropdown-content" id="dropContentKonfirmation">
                         <a href="/vare-kategori/konfirmation/konfirmationskjoler/">Konfirmation</a>
@@ -54,8 +54,6 @@
                         </div>
                     </li>
 
-
-                    <li><a href="/vare-kategori/konfirmationskjoler/">Konfirmation</a></li>
                     <li class="dropdown">
                         <p class="dropbtn" onclick="dropdownMenuSko()">Sko & Tilbehør<i
                                 class="fa-solid fa-caret-down"></i></p>
