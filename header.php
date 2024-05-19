@@ -31,6 +31,7 @@
                         <div class="dropdown-content" id="dropContentBrudekjoler">
                             <a href="/vare-kategori/brudekjoler/">Brudekjoler</a>
                             <a href="/vare-kategori/brudekjoler/brudekjoler-til-leje/">Bæredygtige brudekjoler</a>
+                            <a href="/vare-kategori/brudekjoler/kun-fysisk-brudekjoler/">Kun i butikken</a>
                         </div>
                     </li>
                     <li class="dropdown">
@@ -39,9 +40,21 @@
                         <div class="dropdown-content" id="dropContentGallakjoler">
                             <a href="/vare-kategori/gallakjoler/korte-kjoler/">Korte kjoler</a>
                             <a href="/vare-kategori/gallakjoler/lange-kjoler/">Lange kjoler</a>
+                            <a href="/vare-kategori/gallakjoler/kun-fysisk-gallakjoler/">Kun i butikken</a>
                             <a href="/vare-kategori/gallakjoler/">Alle fest- & gallakjoler</a>
                         </div>
                     </li>
+
+                    <li class="dropdown">
+                        <p class="dropbtn" onclick="dropdownMenuKonfirmation()">Fest- & Galla<i
+                                class="fa-solid fa-caret-down"></i></p>
+                        <div class="dropdown-content" id="dropContentKonfirmation">
+                        <a href="/vare-kategori/konfirmation/konfirmationskjoler/">Konfirmation</a>
+                        <a href="/vare-kategori/konfirmation/kun-fysisk-konfirmationskjoler/">Kun i butikken</a>
+                        </div>
+                    </li>
+
+
                     <li><a href="/vare-kategori/konfirmationskjoler/">Konfirmation</a></li>
                     <li class="dropdown">
                         <p class="dropbtn" onclick="dropdownMenuSko()">Sko & Tilbehør<i
@@ -49,6 +62,7 @@
                         <div class="dropdown-content" id="dropContentSko">
                             <a href="/vare-kategori/sko-tilbehor/sko/">Sko</a>
                             <a href="/vare-kategori/sko-tilbehor/tilbehor/">Tilbehør</a>
+                            <a href="/vare-kategori/sko-tilbehor/kun-fysisk-sko-tilbehor/">Tilbehør og sko - Kun i butikken</a>
                         </div>
                     </li>
                     <li><a href="/om_os/">Om os</a></li>

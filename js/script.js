@@ -40,6 +40,12 @@ function dropdownMenuFestGallakjoler() {
     dropdownContent.classList.toggle("show");
 }
 
+// Function to toggle dropdown content for Konfirmationskjoler
+function dropdownMenuKonfirmation() {
+    var dropdownContent = document.getElementById("dropContentKonfirmation");
+    dropdownContent.classList.toggle("show");
+}
+
 // Function to toggle dropdown content for Sko & Tilbehør
 function dropdownMenuSko() {
     var dropdownContent = document.getElementById("dropContentSko");

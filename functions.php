@@ -96,33 +96,3 @@ function count_item_in_cart()
 
   return $count;
 }
-
-// Custom function to display a message when no products are found
-function custom_no_products_found_message() {
-    // Get the current category
-    $category = get_queried_object();
-
-    // Get the product count for the current category
-    $product_count = wp_count_posts('product')->publish;
-
-    // Get the product count for the current category
-    $product_count_in_category = get_term($category->term_id, 'product_cat')->count;
-
-    // Compare product counts to determine if the category is empty
-    if ($product_count === 0 || $product_count_in_category === 0) {
-        // Display category title
-        echo '<header class="woocommerce-products-header">';
-        ?>
-        <h1 class="category-title">
-          <?php single_term_title() ?>
-        </h1>
-        <?php
-        echo '</header>';
-        
-        // Display custom message
-        echo '<p>Oops...</p>';
-    }
-}
-
-// Hook our custom function before the main content
-add_action('woocommerce_before_shop_loop', 'custom_no_products_found_message', 5);
