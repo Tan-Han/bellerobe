@@ -100,20 +100,20 @@ function count_item_in_cart()
 
 // REMOVE ADD TO CART BUTTON FROM PRODUCTS IN CERTAIN CATEGORIES
 
-function remove_add_to_cart_button()
-{
+function remove_add_to_cart_button() {
   // Check if we're on a single product page
-  if (is_product()) {
-    // Get the current product ID
-    $product_id = get_the_ID();
-
-    // Check if the product is in the "Only in physical store" category
-    if (has_term('kun-fysisk-brudekjoler', 'product_cat', $product_id)) {
-      // Remove the add to cart button
-      remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
-      // Optionally, you can add custom CSS to hide the button completely
-      echo '<style>.single_add_to_cart_button { display: none; }</style>';
-    }
+  if ( is_product() ) {
+      // Get the current product ID
+      $product_id = get_the_ID();
+      
+      // Check if the product is in the "Only in physical store" or "Dresses only in physical store" category
+      if ( has_term( array('kun-fysisk-brudekjoler', 'kun-fysisk-gallakjoler', 'kun-fysisk-konfirmationskjoler', 'kun-fysisk-sko-tilbehor'), 'product_cat', $product_id ) ) {
+          // Remove the add to cart button
+          remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
+          // Optionally, you can add custom CSS to hide the button completely
+          echo '<style>.single_add_to_cart_button { display: none; }</style>';
+      }
   }
 }
-add_action('woocommerce_single_product_summary', 'remove_add_to_cart_button', 1);
+add_action( 'woocommerce_single_product_summary', 'remove_add_to_cart_button', 1 );
+
