@@ -9,22 +9,16 @@ function mobileMenu() {
     }
 }
 
-window.onclick = function(event) {
-    var screenWidth = window.innerWidth;
-    var menu = document.getElementById("menuLinks");
-    var icon = document.getElementById("menuIcon");
+window.onclick = (event) => {
+    const screenWidth = window.innerWidth;
+    const menu = document.getElementById("menuLinks");
+    const icon = document.getElementById("menuIcon");
 
-    // Check if the screen width is below 1150px
-    if (screenWidth <= 1150) {
-        // If the clicked element is not the menu icon
-        if (event.target !== icon) {
-            // If the menu is open and the clicked element is outside the menu, close the menu
-            if (menu.style.display === "block" && !event.target.closest("#menuLinks")) {
-                menu.style.display = "none";
-            }
-        }
+    if (screenWidth <= 1150 && event.target !== icon && menu.style.display === "block" && !event.target.closest("#menuLinks")) {
+        menu.style.display = "none";
     }
 }
+
 
 // DROPDOWN MENU
 

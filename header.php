@@ -14,11 +14,9 @@
         <a href="/" class="logo-link"><img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/belle-robe.svg" alt=""
                 class="logo"></a>
 
-
         <nav class="navbar">
 
             <i class="fa fa-bars" id="menuIcon" onclick="mobileMenu()"></i>
-
 
             <div class="menu" id="menuLinks">
 
