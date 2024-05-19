@@ -106,6 +106,6 @@ add_action( 'woocommerce_no_products_found', 'custom_wc_no_products_found' );
 function custom_wc_no_products_found() {
     ?>
     <h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
-    <p><?php esc_html_e( 'Looks like this category is empty', 'your-text-domain' ); ?></p>
+    <p><?php esc_html_e( 'Det ser ud til at der endnu ikke er tilføjet produkter til denne side.', 'your-text-domain' ); ?></p>
     <?php
 }
