@@ -96,12 +96,3 @@ function count_item_in_cart()
 
   return $count;
 }
-
-function woocommerce_no_products_found() {
-  ?>
-  <h1 class="category-title">
-    <?php single_term_title() ?>
-  </h1>
-  <p>Det ser ud til at der endnu ikke er tilføjet produkter til denne kategori.</p>
-  <?php
-}
