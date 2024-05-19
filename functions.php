@@ -99,13 +99,11 @@ function count_item_in_cart()
 
 function custom_no_products_found_message() {
   if (!woocommerce_product_loop()) {
-      // Display category title
-      echo '<header class="woocommerce-products-header">';
-      echo '<h1 class="woocommerce-products-header__title page-title">' . woocommerce_page_title(false) . '</h1>';
-      echo '</header>';
-      
-      // Display custom message
-      echo '<p>' . esc_html__('Looks like this category is empty', 'bellerobe') . '</p>';
+    ?>
+    <h1 class="category-title">
+      <?php single_term_title() ?>
+    </h1>
+    <?php
   }
 }
 
