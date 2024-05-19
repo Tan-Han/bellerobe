@@ -97,7 +97,6 @@ function count_item_in_cart()
   return $count;
 }
 
-<?php
 // Custom function to display a message when no products are found
 function custom_no_products_found_message() {
     // Get the current category
