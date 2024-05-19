@@ -8,7 +8,8 @@ add_action('wp_enqueue_scripts', 'enqueue_parent_theme_style');
 
 // Linking to script
 
-function enqueue_custom_scripts() {
+function enqueue_custom_scripts()
+{
   // Enqueue your custom script
   wp_enqueue_script('custom-script', get_template_directory_uri() . '/js/script.js', array('jquery'), '1.0', true);
 }
@@ -96,3 +97,23 @@ function count_item_in_cart()
 
   return $count;
 }
+
+// REMOVE ADD TO CART BUTTON FROM PRODUCTS IN CERTAIN CATEGORIES
+
+function remove_add_to_cart_button()
+{
+  // Check if we're on a single product page
+  if (is_product()) {
+    // Get the current product ID
+    $product_id = get_the_ID();
+
+    // Check if the product is in the "Only in physical store" category
+    if (has_term('kun-fysisk-brudekjoler', 'product_cat', $product_id)) {
+      // Remove the add to cart button
+      remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
+      // Optionally, you can add custom CSS to hide the button completely
+      echo '<style>.single_add_to_cart_button { display: none; }</style>';
+    }
+  }
+}
+add_action('woocommerce_single_product_summary', 'remove_add_to_cart_button', 1);
