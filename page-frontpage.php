@@ -31,7 +31,8 @@
       <p class="centered_text_frontpage"><?php the_field("text_under_introduction_to_cards") ?></p>
 
       <div class="frontpage_cards_container">
-
+      
+      <div class="grid_on_phone">
         <!--first card-->
         <a href="/product-category/brudekjoler/">
           <div class="frontpage_cards">
@@ -49,7 +50,9 @@
             <img class="img_cards" src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
           </div>
         </a>
+      </div>
 
+      <div class="grid_on_phone">
         <!--third card-->
         <a href="/product-category/konfirmationskjoler/">
           <div class="frontpage_cards">
@@ -67,6 +70,7 @@
             <img class="img_cards" src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
           </div>
         </a>
+      </div>
 
       </div>
     </section>
@@ -242,6 +246,11 @@
     display: flex;
     justify-content: space-between;
     margin: 30px 0;
+  }
+
+  .grid_on_phone {
+    display: flex;
+    justify-content: space-between;
   }
 
   .frontpage_cards {
@@ -424,8 +433,26 @@
       width: 100%;
     }
 
+    .book_div_box {
+    display: flex;
+    flex-direction: column;
+    }
+
     .adress_section_container {
       width: 100%;
+      margin-top: 70px;
+    }
+  }
+
+  @media screen and (max-width: 960px) {
+    .main {
+      padding: 0 3rem;
+    }
+
+    .grid_on_phone {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 
