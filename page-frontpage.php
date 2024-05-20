@@ -464,6 +464,8 @@
 
     .p_cards{
     font-size: 18px;
+    bottom: 1rem;
+    Left: 0;
   }
     
   }
@@ -478,7 +480,10 @@
         height: 18rem;
         width: 200px;
     }
-    
+
+    .p_cards{
+    bottom: 1rem;
+    Left: 0;
   }
 
 
