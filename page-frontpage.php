@@ -32,7 +32,7 @@
 
       <div class="frontpage_cards_container">
       
-      <div class="grid_on_phone">
+      
         <!--first card-->
         <a href="/product-category/brudekjoler/">
           <div class="frontpage_cards">
@@ -50,9 +50,9 @@
             <img class="img_cards" src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
           </div>
         </a>
-      </div>
+   
 
-      <div class="grid_on_phone">
+   
         <!--third card-->
         <a href="/product-category/konfirmationskjoler/">
           <div class="frontpage_cards">
@@ -70,7 +70,6 @@
             <img class="img_cards" src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
           </div>
         </a>
-      </div>
 
       </div>
     </section>
@@ -248,10 +247,6 @@
     margin: 30px 0;
   }
 
-  .grid_on_phone {
-    display: flex;
-    justify-content: space-between;
-  }
 
   .frontpage_cards {
     border-radius: 10px;
@@ -449,11 +444,7 @@
       padding: 0 3rem;
     }
 
-    .grid_on_phone {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+    
   }
 
 
