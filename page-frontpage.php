@@ -376,7 +376,7 @@
 
   @media screen and (max-width: 1700px) {
     .img_cards {
-    height: 25rem;
+    height: 29rem;
     }
 
     .p_cards{
@@ -398,6 +398,16 @@
 
   @media screen and (max-width: 1300px) {
     .img_cards {
+    width: 200px;
+    }
+
+    .p_cards{
+    font-size: 18px;
+  }
+  }
+
+  @media screen and (max-width: 1160px) {
+    .img_cards {
     height: 15rem;
     width: 160px;
     }
@@ -405,6 +415,18 @@
     .p_cards{
     font-size: 20px;
   }
+
+    .frontpage_opening_hours_and_booking {
+      flex-direction: column;
+    }
+
+    .opening_hours_container {
+      width: 100%;
+    }
+
+    .adress_section_container {
+      width: 100%;
+    }
   }
 
 
