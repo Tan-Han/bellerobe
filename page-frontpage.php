@@ -366,7 +366,7 @@
 
   @media screen and (max-width: 2000px) {
     .img_cards {
-    height: 33rem;
+    height: 34rem;
     }
 
     .p_cards{
@@ -388,13 +388,23 @@
   @media screen and (max-width: 1500px) {
     .img_cards {
     height: 22rem;
-    width: 220px;
+    width: 240px;
+    }
+
+    .p_cards{
+    font-size: 21px;
+  }
+  }
+
+  @media screen and (max-width: 1300px) {
+    .img_cards {
+    height: 15rem;
+    width: 160px;
     }
 
     .p_cards{
     font-size: 20px;
   }
-
   }
 
 
