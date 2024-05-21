@@ -498,13 +498,17 @@ gap: 40px 0;
   width: 170px;
 }
 
+.section {
+   padding-top: 40px;
+}
+
 }
 
 @media screen and (max-width: 496px) {
 
 .frontpage_cards_container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
   gap: 30px 0px;
 }
 
@@ -515,7 +519,28 @@ gap: 40px 0;
 
 .big_h2 {
     font-size: 30px;
+}
 
+}
+
+@media screen and (max-width: 496px) {
+
+.frontpage_cards_container {
+  gap: 20px 0px;
+}
+
+.img_cards {
+  height: 12rem;
+  width: 130px;
+}
+
+.p_cards {
+  font-size: 15px;
+}
+
+.big_h2 {
+    font-size: 28px;
+}
 }
 
 </style>
