@@ -406,7 +406,9 @@
     }
 
     .p_cards{
-    font-size: 18px;
+    font-size: 20px;
+    bottom: 1rem;
+    Left: auto;
   }
   }
 
@@ -417,9 +419,7 @@
     }
 
     .p_cards{
-    font-size: 20px;
-    bottom: 1rem;
-    Left: 0;
+    font-size: 19px;
   }
 
     .frontpage_opening_hours_and_booking {
@@ -448,7 +448,7 @@
 
     .frontpage_cards_container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 40px 0;
     }
 
@@ -464,27 +464,10 @@
 
     .p_cards{
     font-size: 18px;
-    bottom: 1rem;
-    Left: 0;
   }
     
   }
 
-  @media screen and (max-width: 960px) {
-    .frontpage_cards_container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px 0;
-    }
-    
-    .img_cards {
-        height: 18rem;
-        width: 200px;
-    }
-
-    .p_cards{
-    bottom: 1rem;
-    Left: 0;
-  }
 
 
 </style>
