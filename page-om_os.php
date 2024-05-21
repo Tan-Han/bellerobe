@@ -180,7 +180,9 @@
         width: 100%;
         box-shadow: 3px 3px 5px #5C48337D;
         z-index: 1;
-        border: 0.4px solid var(--brown);
+        border-left: 0.4px solid var(--brown);
+        border-right: 0.4px solid var(--brown);
+        border-bottom: 0.4px solid var(--brown);
         border-radius: 0 0 10px 10px;
     }
 
