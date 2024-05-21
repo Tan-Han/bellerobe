@@ -405,11 +405,18 @@
     width: 200px;
     }
 
+    .frontpage_cards {
+    display: flex;
+    justify-content: center;
+    }
+
     .p_cards{
     font-size: 20px;
     bottom: 1rem;
     Left: auto;
   }
+
+
   }
 
   @media screen and (max-width: 1160px) {
@@ -420,7 +427,7 @@
 
     .p_cards{
     font-size: 19px;
-  }
+   }
 
     .frontpage_opening_hours_and_booking {
       flex-direction: column;
@@ -450,11 +457,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 40px 0;
-    }
-
-    .frontpage_cards {
-    display: flex;
-    justify-content: center;
     }
 
     .img_cards {
