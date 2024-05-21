@@ -340,7 +340,7 @@ footer {
 .category-title {
   text-align: center;
   font-size: 55px;
-  padding: 3rem 0;
+  padding-bottom: 3rem;
 }
 
 /* Filter */
