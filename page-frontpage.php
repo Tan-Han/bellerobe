@@ -4,7 +4,7 @@
 
 <main>
 
-<!-- first section on the frontpage with the hero video/picture -->
+  <!-- first section on the frontpage with the hero video/picture -->
   <section class="frontpage_hero">
     <h1><?php the_field("hero_text_on_frontpage") ?></h1>
     <iframe
@@ -19,20 +19,20 @@
   <!-- padding for på siderne for alt andet end hero -->
   <div class="frontpage_pading">
 
-<!-- second section on the frontpage with the introduction text -->
+    <!-- second section on the frontpage with the introduction text -->
     <section class="section frontpage_introduction">
       <h2><?php the_field("introduction_header_on_frontpage") ?></h2>
       <p><?php the_field("introduction_text_on_frontpage") ?></p>
     </section>
 
-<!-- third section on the frontpage with four categories of products -->
+    <!-- third section on the frontpage with four categories of products -->
     <section class="section">
       <h2 class="big_h2 centered_text_frontpage"><?php the_field("introduction_to_cards_on_frontpage") ?></h2>
       <p class="centered_text_frontpage"><?php the_field("text_under_introduction_to_cards") ?></p>
 
       <div class="frontpage_cards_container">
-      
-      
+
+
         <!--first card-->
         <a href="/product-category/brudekjoler/">
           <div class="frontpage_cards">
@@ -50,9 +50,9 @@
             <img class="img_cards" src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
           </div>
         </a>
-   
 
-   
+
+
         <!--third card-->
         <a href="/product-category/konfirmationskjoler/">
           <div class="frontpage_cards">
@@ -74,100 +74,100 @@
       </div>
     </section>
 
-<!-- fourth section on the frontpage with the informations of opening hours and map -->
+    <!-- fourth section on the frontpage with the informations of opening hours and map -->
 
     <section class="section frontpage_opening_hours_and_booking">
-      
-    <!-- Code for opening hours on frontpage begins -->
-    <div class="opening_hours_container">
+
+      <!-- Code for opening hours on frontpage begins -->
+      <div class="opening_hours_container">
         <h3 class="h3_frontpage">Åbningstider</h3>
         <p><?php the_field("opening_hours_description") ?></p>
-        
+
         <!-- Div box for "åbningstider" with loop -->
         <div class="opening_hours_loop_frontpage">
-  
-        <?php $openHoursLoop = new WP_Query(
-                    array(
-                        "post_type" => "open_hours",
-                        "posts_per_page" => -1,
-                        "orderby" => "date",  // Order by date
-                        "order" => "ASC"     // Reverse order (latest posts first)
-                    )
-                ) ?>
 
-                <?php while ($openHoursLoop->have_posts()):
-                    $openHoursLoop->the_post() ?>
+          <?php $openHoursLoop = new WP_Query(
+            array(
+              "post_type" => "open_hours",
+              "posts_per_page" => -1,
+              "orderby" => "date",  // Order by date
+              "order" => "ASC"     // Reverse order (latest posts first)
+            )
+          ) ?>
 
-                    <div class="hours_frontpage">
-                        <b><?php the_title() ?>:&nbsp;</b>
+          <?php while ($openHoursLoop->have_posts()):
+            $openHoursLoop->the_post() ?>
 
-                        <?php if (!get_field('closed')) {
-                            if (get_field("open") && get_field("close")): ?>
-                                <p><?php the_field("open"); ?>&nbsp;-&nbsp;</p>
-                                <p><?php the_field("close"); ?></p>
-                            <?php endif;
-                        } ?>
+            <div class="hours_frontpage">
+              <b><?php the_title() ?>:&nbsp;</b>
 
-                        <?php
-                        if (!get_field('closed')) {
-                            $openingHours = get_field('open_later');
-                            if (!empty($openingHours['open_later']) && !empty($openingHours['close_later'])): ?>
-                                <p><?php echo '&nbsp;&&nbsp;'; ?></p>
-                                <p><?php echo $openingHours['open_late']; ?></p>
-                                <p><?php echo '&nbsp;-&nbsp;'; ?></p>
-                                <p><?php echo $openingHours['close_late']; ?></p>
-                            <?php endif;
-                        } ?>
+              <?php if (!get_field('closed')) {
+                if (get_field("open") && get_field("close")): ?>
+                  <p><?php the_field("open"); ?>&nbsp;-&nbsp;</p>
+                  <p><?php the_field("close"); ?></p>
+                <?php endif;
+              } ?>
 
-                        <?php if (get_field('closed')) {
-                            echo '<p>Lukket</p>';
-                        }
+              <?php
+              if (!get_field('closed')) {
+                $openingHours = get_field('open_later');
+                if (!empty($openingHours['open_later']) && !empty($openingHours['close_later'])): ?>
+                  <p><?php echo '&nbsp;&&nbsp;'; ?></p>
+                  <p><?php echo $openingHours['open_late']; ?></p>
+                  <p><?php echo '&nbsp;-&nbsp;'; ?></p>
+                  <p><?php echo $openingHours['close_late']; ?></p>
+                <?php endif;
+              } ?>
 
-                        if (get_field('book')) {
-                            echo '<p>Se tider ved booking</p>';
-                        }
-                        ?>
-                    </div>
+              <?php if (get_field('closed')) {
+                echo '<p>Lukket</p>';
+              }
 
-                <?php endwhile ?>
-                <?php wp_reset_postdata() ?>
+              if (get_field('book')) {
+                echo '<p>Se tider ved booking</p>';
+              }
+              ?>
+            </div>
+
+          <?php endwhile ?>
+          <?php wp_reset_postdata() ?>
         </div>
-        
+
         <!-- div box for "book tid"-->
         <div class="book_div_box">
           <p><?php the_field("tekst_til_book_tid") ?></p>
           <button class="book_tid_button"><a href="/booking/">Book tid</a></button>
         </div>
 
-    </div>
+      </div>
 
       <!-- Code for opening hours on frontpage ends -->
 
       <!-- Code for adress area on frontpage begins -->
       <div class="adress_section_container">
-          
-          <h3 class="h3_frontpage">Find vej</h3> 
 
-          <div>
-            <?php $addressLoop = new WP_Query(
-                array(
-                    "post_type" => "address",
-                    "posts_per_page" => -1,
-                )
-            ) ?>
+        <h3 class="h3_frontpage">Find vej</h3>
 
-            <?php while ($addressLoop->have_posts()):
-                $addressLoop->the_post() ?>
+        <div>
+          <?php $addressLoop = new WP_Query(
+            array(
+              "post_type" => "address",
+              "posts_per_page" => -1,
+            )
+          ) ?>
 
-                <p class="store-address"><?php the_field('street_number') ?>, <?php the_field('postal_code') ?></p>
+          <?php while ($addressLoop->have_posts()):
+            $addressLoop->the_post() ?>
 
-                <iframe class="maps"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4505.774172981708!2d8.478445877117661!3d55.621380402105835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b1e67d2f3d7db%3A0x1edb8a96de66a4e9!2sBelle%20Robe%20bridal%20and%20party%20dresses!5e0!3m2!1sen!2sdk!4v1715084743677!5m2!1sen!2sdk"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <?php endwhile ?>
-            <?php wp_reset_postdata() ?>
-          </div>
+            <p class="store-address"><?php the_field('street_number') ?>, <?php the_field('postal_code') ?></p>
+
+            <iframe class="maps"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4505.774172981708!2d8.478445877117661!3d55.621380402105835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b1e67d2f3d7db%3A0x1edb8a96de66a4e9!2sBelle%20Robe%20bridal%20and%20party%20dresses!5e0!3m2!1sen!2sdk!4v1715084743677!5m2!1sen!2sdk"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <?php endwhile ?>
+          <?php wp_reset_postdata() ?>
+        </div>
 
       </div>
       <!-- Code for adress area on frontpage ends -->
@@ -202,7 +202,7 @@
     font-size: 37px;
   }
 
-/* First section styling */
+  /* First section styling */
 
   .frontpage_hero {
     position: relative;
@@ -235,7 +235,7 @@
     /* 100% vidde på videoen, så den fylder fra kant til kant */
   }
 
-/* Third section styling */
+  /* Third section styling */
 
   .centered_text_frontpage {
     text-align: center;
@@ -253,7 +253,7 @@
     position: relative;
   }
 
-  .p_cards{
+  .p_cards {
     font-family: "garamond-premier-pro", serif;
     font-weight: 700;
     font-style: normal;
@@ -264,7 +264,7 @@
     bottom: 2rem;
     Left: 2rem;
     font-size: 36px;
-    overflow:hidden;
+    overflow: hidden;
   }
 
 
@@ -283,7 +283,7 @@
     transition: 0.4s;
   }
 
-/* Fourth section styling */
+  /* Fourth section styling */
   .frontpage_opening_hours_and_booking {
     display: flex;
     justify-content: space-between;
@@ -329,7 +329,7 @@
     margin-top: 20px;
   }
 
-  .book_div_box p{
+  .book_div_box p {
     color: var(--white);
     font-size: 17px;
     font-weight: 500;
@@ -370,64 +370,64 @@
 
   @media screen and (max-width: 2000px) {
     .img_cards {
-    height: 34rem;
+      height: 34rem;
     }
 
-    .p_cards{
-    font-size: 30px;
+    .p_cards {
+      font-size: 30px;
     }
   }
 
   @media screen and (max-width: 1700px) {
     .img_cards {
-    height: 29rem;
+      height: 29rem;
     }
 
-    .p_cards{
-    font-size: 25px;
-  }
+    .p_cards {
+      font-size: 25px;
+    }
 
   }
 
   @media screen and (max-width: 1500px) {
     .img_cards {
-    height: 22rem;
-    width: 240px;
+      height: 22rem;
+      width: 240px;
     }
 
-    .p_cards{
-    font-size: 21px;
-  }
+    .p_cards {
+      font-size: 21px;
+    }
   }
 
   @media screen and (max-width: 1300px) {
     .img_cards {
-    width: 200px;
+      width: 200px;
     }
 
     .frontpage_cards {
-    display: flex;
-    justify-content: center;
+      display: flex;
+      justify-content: center;
     }
 
-    .p_cards{
-    font-size: 20px;
-    bottom: 1rem;
-    Left: auto;
-  }
+    .p_cards {
+      font-size: 20px;
+      bottom: 1rem;
+      Left: auto;
+    }
 
 
   }
 
   @media screen and (max-width: 1160px) {
     .img_cards {
-    height: 17rem;
-    width: 170px;
+      height: 17rem;
+      width: 170px;
     }
 
-    .p_cards{
-    font-size: 19px;
-   }
+    .p_cards {
+      font-size: 19px;
+    }
 
     .frontpage_opening_hours_and_booking {
       flex-direction: column;
@@ -438,8 +438,8 @@
     }
 
     .book_div_box {
-    display: flex;
-    flex-direction: column;
+      display: flex;
+      flex-direction: column;
     }
 
     .adress_section_container {
@@ -454,9 +454,9 @@
     }
 
     .frontpage_cards_container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px 0;
     }
 
     .img_cards {
@@ -464,85 +464,73 @@
       width: 260px;
     }
 
-    .p_cards{
-    font-size: 18px;
-  }
-    
+    .p_cards {
+      font-size: 18px;
+    }
+
   }
 
   @media screen and (max-width: 696px) {
 
     .frontpage_cards_container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px 0;
     }
 
     .img_cards {
       height: 20rem;
       width: 220px;
     }
-    
+
   }
 
   @media screen and (max-width: 600px) {
 
-.frontpage_cards_container {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-gap: 40px 0;
-}
+    .frontpage_cards_container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 40px 0;
+    }
 
-.img_cards {
-  height: 15rem;
-  width: 170px;
-}
+    .img_cards {
+      height: 15rem;
+      width: 170px;
+    }
 
-.section {
-   padding-top: 40px;
-}
+    .section {
+      padding-top: 40px;
+    }
 
-}
+  }
 
-@media screen and (max-width: 496px) {
+  @media screen and (max-width: 500px) {
 
-.frontpage_cards_container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
-  gap: 30px 0px;
-}
+    .frontpage_cards_container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+      gap: 20px 0px;
+    }
 
-.img_cards {
-  height: 12rem;
-  width: 140px;
-}
+    .img_cards {
+      height: 12rem;
+      width: 130px;
+    }
 
-.big_h2 {
-    font-size: 30px;
-}
+    .big_h2 {
+      font-size: 28px;
+    }
 
-}
+    .p_cards {
+      font-size: 15px;
+    }
 
-@media screen and (max-width: 496px) {
+    .opening_hours_loop_frontpage {
+      background-image: none;
+      background-color: var(--tertiary-color);
+    }
 
-.frontpage_cards_container {
-  gap: 20px 0px;
-}
-
-.img_cards {
-  height: 12rem;
-  width: 130px;
-}
-
-.p_cards {
-  font-size: 15px;
-}
-
-.big_h2 {
-    font-size: 28px;
-}
-}
-
+  }
 </style>
 
 <?php get_footer() ?>
