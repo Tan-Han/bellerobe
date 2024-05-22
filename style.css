@@ -411,7 +411,7 @@ footer {
 .components-form-token-field__token-text {
   border: 1px solid var(--quaternary-color) !important;
   border-radius: 10px !important;
-  padding: .25em .5em .25em .75em !important;
+  padding: 0em .5em .25em .75em !important;
   width: fit-content !important;
   background-color: var(--forms) !important;
 }
