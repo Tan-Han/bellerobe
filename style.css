@@ -387,12 +387,14 @@ footer {
 
 .wc-block-attribute-filter .wc-blocks-components-form-token-field-wrapper .components-form-token-field__input-container .components-form-token-field__input::placeholder {
   color: var(--brown);
-}
-
-.wc-blocks-components-form-token-field-wrapper .components-form-token-field__input-container .components-form-token-field__input {
   font-size: 12px !important;
   min-height: 26px !important;
 }
+
+/* .wc-blocks-components-form-token-field-wrapper .components-form-token-field__input-container .components-form-token-field__input {
+  font-size: 12px !important;
+  min-height: 26px !important;
+} */
 
 .components-form-token-field__input-container ul {
   border-radius: 10px !important;
