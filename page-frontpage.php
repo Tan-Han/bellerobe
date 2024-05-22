@@ -529,7 +529,6 @@
       background-image: none;
       background-color: var(--tertiary-color);
     }
-
   }
 </style>
 
