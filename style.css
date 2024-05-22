@@ -389,6 +389,7 @@ footer {
   font-size: 12px !important;
   min-height: 26px !important;
   padding: 5px !important;
+  margin: 0 !important;
 }
 
 .components-form-token-field__input-container ul {
