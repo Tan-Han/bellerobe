@@ -199,18 +199,18 @@
 
     .fat_p_about_us {
         font-weight: 700;
-        padding: 0 5px 0 0;
+        padding: 0px 5px 0 0;
     }
 
     .dropdown_text_style_about_us {
-        padding: 0px 0px 17px 0px;
+        padding: 0px 24px 17px 24px;
         display: flex;
     }
 
     /* Style the links inside the dropdown */
     .dropdown_text_style_about_us a {
         color: var(--brown);
-        padding: 12px 16px;
+        padding: 12px 40px 12px 0px;
         text-decoration: none;
         display: block;
         transition: 0.3s;
