@@ -358,7 +358,7 @@ footer {
   display: flex;
   justify-content: left;
   gap: 1rem;
-  padding: 3rem 0 1rem 0;
+  padding: 1rem 0;
   flex-wrap: wrap;
 }
 
@@ -368,7 +368,7 @@ footer {
 
 .wp-block-woocommerce-filter-wrapper .wp-block-heading {
   color: var(--brown);
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .wc-block-attribute-filter {
@@ -385,12 +385,18 @@ footer {
   color: var(--brown);
 }
 
+.wc-blocks-components-form-token-field-wrapper .components-form-token-field__input-container .components-form-token-field__input {
+  font-size: 12px !important;
+  min-height: 22px;
+}
+
 .components-form-token-field__input-container ul {
   border-radius: 10px !important;
   border-color: var(--quaternary-color) !important;
   background-color: var(--forms);
   font-family: proxima-nove, sans-serif !important;
   color: var(--brown) !important;
+  font-size: 12px !important;
 }
 
 .components-form-token-field__input-container ul li {
