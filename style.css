@@ -387,7 +387,7 @@ footer {
 
 .wc-blocks-components-form-token-field-wrapper .components-form-token-field__input-container .components-form-token-field__input {
   font-size: 12px !important;
-  min-height: 22px;
+  min-height: 22px !important;
 }
 
 .components-form-token-field__input-container ul {
