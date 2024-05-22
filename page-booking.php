@@ -31,9 +31,7 @@
 
                         </div>
                         <p class="booking-description"><?php echo $bookingDress['booking_description']; ?></p>
-                        <button class="booking-btn livesite-schedule">
-                            Book tid
-                        </button>
+                        <button class="livesite-contact" data-options="title:Prøvning af brudekjole">Book tid</button>
                     </div>
                 <?php endif; ?>
             </div>
