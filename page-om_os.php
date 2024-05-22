@@ -54,8 +54,8 @@
 
                         <div class="collaboration_partner">
                             <a href="<?php echo esc_url($url_to_collaboration_partner); ?>">
-                                <?php the_field("collaboration_partner_job"); // Display the collaboration partners job ?>  
-                                <?php the_field("collaboration_partner_name"); // Display the collaboration partners name ?>     
+                                <p class="fat_p_about_us"><?php the_field("collaboration_partner_job"); // Display the collaboration partners job ?></p>
+                                <p><?php the_field("collaboration_partner_name"); // Display the collaboration partners name ?></p>      
                             </a>
                         </div>
 
@@ -189,6 +189,10 @@
 
     .dropdown_content_about_us p {
         padding: 17px 24px 25px 24px;
+    }
+
+    .fat_p_about_us {
+        font-weight: 700;
     }
 
     .dropdown_text_style_about_us {
