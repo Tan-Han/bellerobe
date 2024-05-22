@@ -31,9 +31,9 @@
 
                         </div>
                         <p class="booking-description"><?php echo $bookingDress['booking_description']; ?></p>
-                        <div class="booking-btn livesite-schedule">
-                            <p>Book tid</p>
-                        </div>
+                        <button class="booking-btn livesite-schedule">
+                            Book tid
+                        </button>
                     </div>
                 <?php endif; ?>
             </div>
