@@ -381,13 +381,17 @@ footer {
   background-color: var(--forms);
 }
 
+.wc-block-attribute-filter .wc-blocks-components-form-token-field-wrapper .components-form-token-field__input-container {
+  padding: 5px !important;
+}
+
 .wc-block-attribute-filter .wc-blocks-components-form-token-field-wrapper .components-form-token-field__input-container .components-form-token-field__input::placeholder {
   color: var(--brown);
 }
 
 .wc-blocks-components-form-token-field-wrapper .components-form-token-field__input-container .components-form-token-field__input {
   font-size: 12px !important;
-  min-height: 22px !important;
+  min-height: 26px !important;
 }
 
 .components-form-token-field__input-container ul {
@@ -411,9 +415,18 @@ footer {
 .components-form-token-field__token-text {
   border: 1px solid var(--quaternary-color) !important;
   border-radius: 10px !important;
-  padding: 0em .5em .25em .75em !important;
+  padding: .25em .5em .25em .75em !important;
   width: fit-content !important;
   background-color: var(--forms) !important;
+  line-height: normal;
+}
+
+.wc-blocks-components-form-token-field-wrapper .components-form-token-field__token {
+  color: var(--brown) !important;
+}
+
+.components-form-token-field__input-container .components-form-token-field__token {
+  font-size: 14px !important;
 }
 
 .product_filter .components-button {
