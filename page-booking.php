@@ -31,7 +31,25 @@
 
                         </div>
                         <p class="booking-description"><?php echo $bookingDress['booking_description']; ?></p>
-                        <button class="livesite-contact" data-options="title:Prøvning af brudekjole">Book tid</button>
+                        <div class="booking-btn">
+                            <!-- Google Calendar Appointment Scheduling begin -->
+                            <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+                            <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+                            <script>
+                                (function () {
+                                    var target = document.currentScript;
+                                    window.addEventListener('load', function () {
+                                        calendar.schedulingButton.load({
+                                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3GOSGr1Rb6EyjltOSWs0cdrIAd5gBnJ6RWV0rwXmnFbgxnaKsyXAPA6wRL6pdi6Ldl4tFAe208?gv=true',
+                                            color: '#52443b',
+                                            label: 'Book en aftale',
+                                            target,
+                                        });
+                                    });
+                                })();
+                            </script>
+                            <!-- end Google Calendar Appointment Scheduling -->
+                        </div>
                     </div>
                 <?php endif; ?>
             </div>
@@ -69,9 +87,9 @@
                                     var target = document.currentScript;
                                     window.addEventListener('load', function () {
                                         calendar.schedulingButton.load({
-                                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3rgkfC1es-OaLCs0claeBuIIy4neu6WscyHa7LYYbgm8ulq4kQINGqZuL8PLHzoya-HcC_aiEM?gv=true',
-                                            color: '#039BE5',
-                                            label: "Book pr\xF8vning",
+                                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3GOSGr1Rb6EyjltOSWs0cdrIAd5gBnJ6RWV0rwXmnFbgxnaKsyXAPA6wRL6pdi6Ldl4tFAe208?gv=true',
+                                            color: '#52443b',
+                                            label: 'Book en aftale',
                                             target,
                                         });
                                     });
@@ -116,9 +134,9 @@
                                     var target = document.currentScript;
                                     window.addEventListener('load', function () {
                                         calendar.schedulingButton.load({
-                                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3rgkfC1es-OaLCs0claeBuIIy4neu6WscyHa7LYYbgm8ulq4kQINGqZuL8PLHzoya-HcC_aiEM?gv=true',
-                                            color: '#039BE5',
-                                            label: "Book pr\xF8vning",
+                                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3GOSGr1Rb6EyjltOSWs0cdrIAd5gBnJ6RWV0rwXmnFbgxnaKsyXAPA6wRL6pdi6Ldl4tFAe208?gv=true',
+                                            color: '#52443b',
+                                            label: 'Book en aftale',
                                             target,
                                         });
                                     });
@@ -163,9 +181,9 @@
                                     var target = document.currentScript;
                                     window.addEventListener('load', function () {
                                         calendar.schedulingButton.load({
-                                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3rgkfC1es-OaLCs0claeBuIIy4neu6WscyHa7LYYbgm8ulq4kQINGqZuL8PLHzoya-HcC_aiEM?gv=true',
-                                            color: '#039BE5',
-                                            label: "Book pr\xF8vning",
+                                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3GOSGr1Rb6EyjltOSWs0cdrIAd5gBnJ6RWV0rwXmnFbgxnaKsyXAPA6wRL6pdi6Ldl4tFAe208?gv=true',
+                                            color: '#52443b',
+                                            label: 'Book en aftale',
                                             target,
                                         });
                                     });
@@ -210,9 +228,9 @@
                                     var target = document.currentScript;
                                     window.addEventListener('load', function () {
                                         calendar.schedulingButton.load({
-                                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3rgkfC1es-OaLCs0claeBuIIy4neu6WscyHa7LYYbgm8ulq4kQINGqZuL8PLHzoya-HcC_aiEM?gv=true',
-                                            color: '#039BE5',
-                                            label: "Book pr\xF8vning",
+                                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3GOSGr1Rb6EyjltOSWs0cdrIAd5gBnJ6RWV0rwXmnFbgxnaKsyXAPA6wRL6pdi6Ldl4tFAe208?gv=true',
+                                            color: '#52443b',
+                                            label: 'Book en aftale',
                                             target,
                                         });
                                     });
@@ -257,9 +275,9 @@
                                     var target = document.currentScript;
                                     window.addEventListener('load', function () {
                                         calendar.schedulingButton.load({
-                                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3rgkfC1es-OaLCs0claeBuIIy4neu6WscyHa7LYYbgm8ulq4kQINGqZuL8PLHzoya-HcC_aiEM?gv=true',
-                                            color: '#039BE5',
-                                            label: "Book pr\xF8vning",
+                                            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3GOSGr1Rb6EyjltOSWs0cdrIAd5gBnJ6RWV0rwXmnFbgxnaKsyXAPA6wRL6pdi6Ldl4tFAe208?gv=true',
+                                            color: '#52443b',
+                                            label: 'Book en aftale',
                                             target,
                                         });
                                     });
