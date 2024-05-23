@@ -190,7 +190,7 @@
     }
 
     .dropdown_introduction_text {
-        padding: 17px 24px 25px 24px;
+        padding: 17px 24px;
     }
 
     .collaboration_partner_text {
@@ -204,13 +204,12 @@
 
     .dropdown_text_style_about_us {
         padding: 0px 24px 17px 24px;
-        display: flex;
     }
 
     /* Style the links inside the dropdown */
     .dropdown_text_style_about_us a {
         color: var(--brown);
-        padding: 12px 40px 12px 0px;
+        padding: 10px 40px 10px 0px;
         text-decoration: none;
         display: block;
         transition: 0.3s;
