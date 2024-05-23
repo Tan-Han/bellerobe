@@ -200,6 +200,8 @@
     .fat_p_about_us {
         font-weight: 700;
         padding: 0px 5px 0 0;
+        font-family: "garamond-premier-pro", serif;
+        font-size: 18px;
     }
 
     .dropdown_text_style_about_us {
