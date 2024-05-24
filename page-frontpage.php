@@ -21,7 +21,7 @@
 
     <!-- second section on the frontpage with the introduction text -->
     <section class="section frontpage_introduction">
-      <h2><?php the_field("introduction_header_on_frontpage") ?></h2>
+      <h2 class="big_h2"><?php the_field("introduction_header_on_frontpage") ?></h2>
       <p><?php the_field("introduction_text_on_frontpage") ?></p>
     </section>
 
@@ -80,7 +80,7 @@
 
       <!-- Code for opening hours on frontpage begins -->
       <div class="opening_hours_container">
-        <h3 class="h3_frontpage">Åbningstider</h3>
+        <h3 class="big_h2">Åbningstider</h3>
         <p><?php the_field("opening_hours_description") ?></p>
 
         <!-- Div box for "åbningstider" with loop -->
@@ -146,7 +146,7 @@
       <!-- Code for adress area on frontpage begins -->
       <div class="adress_section_container">
 
-        <h3 class="h3_frontpage">Find vej</h3>
+        <h3 class="big_h2">Find vej</h3>
 
         <div>
           <?php $addressLoop = new WP_Query(
@@ -199,7 +199,7 @@
   }
 
   .big_h2 {
-    font-size: 37px;
+    font-size: 35px;
   }
 
   /* First section styling */
