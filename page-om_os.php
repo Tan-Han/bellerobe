@@ -228,6 +228,24 @@
         display: block;
     }   
 
+
+    @media screen and (max-width: 1355px) {
+        .introduction_text_and_video {
+            flex-direction: column;
+        }
+
+        .introduction_text {
+            width: 100%;
+        }
+
+        .introduction_video {
+            width: 100%;
+        }
+
+        
+
+    }
+
 </style>
 
 <?php get_footer() ?>
