@@ -550,14 +550,6 @@
         background-color: var(--primary-color) !important;
     }
 
-    /* GOOGLE CALENDAR BOOKING MODAL */
-
-    .KeYbG,
-    .lRIEIc,
-    .Evpc9c {
-        display: none !important;
-    }
-
     /* OPENING HOURS AND ADDRESS */
 
     .store-info {
