@@ -242,10 +242,11 @@
             width: 100%;
             display: flex;
             justify-content: center;
+            margin-top: 20px;
         }
 
         .introduction_video iframe {
-            width: 60%;
+            width: 70%;
         }
 
         
