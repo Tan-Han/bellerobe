@@ -256,6 +256,10 @@ footer {
   color: var(--white);
 }
 
+.contact_footer button:hover {
+  background-color: var(--quaternary-color);
+}
+
 .footer_contact .footer_logo {
   height: 65px;
 }
