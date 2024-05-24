@@ -653,7 +653,7 @@
     }
 
     #contactBtn:hover {
-        background-color: var(--quinary-color);
+        background-color: var(--secondary-color);
         color: var(--brown);
     }
 
