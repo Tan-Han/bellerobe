@@ -288,7 +288,6 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 100px;
-    margin-top: 50px;
   }
 
   .h3_frontpage {
