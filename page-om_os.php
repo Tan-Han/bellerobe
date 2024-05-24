@@ -240,6 +240,12 @@
 
         .introduction_video {
             width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .introduction_video iframe {
+            width: 60%;
         }
 
         
