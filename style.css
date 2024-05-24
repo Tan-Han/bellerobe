@@ -251,6 +251,11 @@ footer {
   gap: 1rem;
 }
 
+.contact_footer button {
+  background-color: var(--tertiary-color);
+  color: var(--white);
+}
+
 .footer_contact .footer_logo {
   height: 65px;
 }
