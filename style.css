@@ -705,6 +705,7 @@ footer {
   gap: .5rem;
   font-style: italic;
   font-family: proxima-nova, sans-serif;
+  padding-bottom: 1rem;
 }
 
 .woocommerce-notices-wrapper .woocommerce-message a {
