@@ -214,16 +214,19 @@
     width: 100%;
     z-index: 0;
     background-color: #52443B4D;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
   }
 
   .frontpage-video {
     width: 100%;
-  height: 900px;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+    height: 900px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
   }
 
   /* Second section styling */
