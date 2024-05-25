@@ -253,15 +253,38 @@
         }
     }
 
-    /*@media screen and (max-width: 1355px) {
+    @media screen and (max-width: 1355px) {
+
+        .introduction_video iframe {
+            width: 70%;
+            height: 25rem;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+
+        .introduction_video iframe {
+            width: 80%;
+            height: 23rem;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
 
         .introduction_video iframe {
             width: 90%;
-            height: 300px;
+            height: 20rem;
         }
-    
     }
-*/
+
+    @media screen and (max-width: 600px) {
+
+        .introduction_video iframe {
+            width: 100%;
+            height: 18rem;
+        }
+    }
+
 
 
 </style>
