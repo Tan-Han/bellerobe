@@ -214,31 +214,21 @@
     position: relative;
     /* For at kunne sætte teksen oven på videoen */
     width: 100%;
-  }
-
-  .frontpage_hero h1 {
-    position: absolute;
-    /* For at kunne sætte teksen oven på videoen */
-    z-index: 1;
-    /* For at kunne sætte teksen oven på videoen */
-    top: 50%;
-    /* For at placere tekst midt i */
-    left: 50%;
-    /* For at placere tekst midt i */
-    transform: translate(-50%, -50%);
-    /* For at placere tekst midt i */
-    text-shadow: 3px 3px 5px var(--brown);
-    color: var(--white);
-    font-size: 55px;
+    max-height: 600px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
   }
 
   .frontpage_hero iframe {
     max-width: 100vw;
     /* Max-width af video - for at den ikke går ud over kanten */
-    height: 600px;
+    height: auto;
     /* Sæt højden som ønsket - 600px er bare et eksempel */
     width: 100%;
     /* 100% vidde på videoen, så den fylder fra kant til kant */
+
   }
 
   /* Second section styling */
