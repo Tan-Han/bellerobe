@@ -6,8 +6,7 @@
 
   <!-- first section on the frontpage with the hero video/picture -->
   <section class="frontpage_hero">
-    <iframe
-      src="<?php the_field("hero_on_frontpage") ?>?autoplay=1&loop=1&controls=0&muted=1&showinfo=0"
+    <iframe src="<?php the_field("hero_on_frontpage") ?>?autoplay=1&loop=1&controls=0&muted=1&showinfo=0"
       title="Belle Robe - Stemningsvideo" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
@@ -28,7 +27,8 @@
     <section class="section">
       <h2 class="centered_text_frontpage"><?php the_field("introduction_to_cards_on_frontpage") ?></h2>
       <p class="centered_text_frontpage frontpage_text_with_margin_top_p">
-        <?php the_field("text_under_introduction_to_cards") ?></p>
+        <?php the_field("text_under_introduction_to_cards") ?>
+      </p>
 
       <div class="frontpage_cards_container">
 
@@ -214,19 +214,14 @@
     position: relative;
     /* For at kunne sætte teksen oven på videoen */
     width: 100%;
-    max-height: 600px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center ;
-    align-items: center;
   }
 
   .frontpage_hero iframe {
-    max-width: 100vw;
+    max-width: 100vw !important;
     /* Max-width af video - for at den ikke går ud over kanten */
-    height: auto;
+    height: 600px !important;
     /* Sæt højden som ønsket - 600px er bare et eksempel */
-    width: 100%;
+    width: 100% !important;
     /* 100% vidde på videoen, så den fylder fra kant til kant */
 
   }
@@ -550,8 +545,6 @@
       background-color: var(--tertiary-color);
     }
   }
-
-
 </style>
 
 <?php get_footer() ?>
