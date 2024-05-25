@@ -6,9 +6,7 @@
 
   <!-- first section on the frontpage with the hero video/picture -->
   <section class="frontpage_hero">
-    <video class="frontpage-video">
-      <source scr="<?php echo get_field("hero_on_frontpage") ?>">
-    </video>
+    <iframe src="<?php the_field("hero_on_frontpage") ?>" frameborder="0"></iframe>
     <!-- kode efter linket gør, at man kan autoplay og fjerne Youtube controls -->
   </section>
 
