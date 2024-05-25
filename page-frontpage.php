@@ -212,6 +212,7 @@
     position: relative;
     /* For at kunne sætte teksen oven på videoen */
     width: 100%;
+    height: 900px;
     z-index: 0;
     background-color: #52443B4D;
     margin: 0;
