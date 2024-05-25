@@ -303,7 +303,7 @@
   .img_cards {
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 3px 3px 5px #5C48337D;
+    box-shadow: 3px 3px 5px var(--quaternary-color);
     height: 38rem;
     width: 19vw;
     transition: 0.4s;
