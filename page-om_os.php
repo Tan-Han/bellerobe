@@ -271,6 +271,11 @@
 
     @media screen and (max-width: 700px) {
 
+        .introduction_video {
+            margin-top: 3rem;
+            margin-bottom: 0rem;
+        }
+
         .introduction_video iframe {
             width: 90%;
             height: 20rem;
@@ -278,10 +283,15 @@
     }
 
     @media screen and (max-width: 600px) {
-
         .introduction_video iframe {
             width: 100%;
             height: 18rem;
+        }
+    }
+
+    @media screen and (max-width: 500px) { 
+        .introduction_video iframe {
+            height: 15rem;
         }
     }
 
