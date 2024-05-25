@@ -10,7 +10,8 @@
       <source src="https://bellerobe.trshansen.online/wp-content/uploads/2024/05/stemmings.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <h1 class="hero-text">HELLO</h1>
+    <div class="video-overlay"></div>
+    <h1 class="hero-text">Velkommen til Belle Robe</h1>
   </section>
 
   <!-- padding for på siderne for alt andet end hero -->
@@ -234,23 +235,19 @@
     z-index: -1;
   }
 
-  .frontpage-video::before {
-    content: "";
+  .video-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 100vw;
-    width: 100%;
-    height: 750px;
-    background: #52443B4D;
-    /* Dark overlay */
-    pointer-events: none;
-    /* Allows interaction with the video */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #52443B4D; /* Dark overlay */
+      z-index: 1;
   }
 
   .hero-text {
     font-size: 55px;
-    color: var(--white);
+    color: var(--quinary-color);
     text-shadow: 1px 1px 3px var(--quaternary-color);
   }
 
