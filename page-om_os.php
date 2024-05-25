@@ -129,13 +129,13 @@
    }
 
     .introduction_video {
-         width: 42%;
+         width: 45%;
     }
 
     .introduction_video iframe {
         max-width: 100vw;
         /* Max-width af video - for at den ikke går ud over kanten */
-        height: 330px;
+        height: 25rem;
         width: 100%;
         /* 100% vidde på videoen, så den fylder fra kant til kant */
         border-radius: 10px;
@@ -229,13 +229,13 @@
     }   
 
 
-    @media screen and (max-width: 1355px) {
+    @media screen and (max-width: 1600px) {
         .introduction_text_and_video {
             flex-direction: column;
         }
 
         .introduction_text {
-            width: 100%;
+            width: 80%;
         }
 
         .introduction_video {
