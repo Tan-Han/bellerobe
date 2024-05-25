@@ -247,11 +247,17 @@
 
         .introduction_video iframe {
             width: 70%;
+            height: 300px;
+        }
+    }
+
+    @media screen and (max-width: 1355px) {
+
+        .introduction_video iframe {
+            width: 90%;
+            height: 300px;
         }
 
-        
-
-    }
 
 </style>
 

@@ -22,7 +22,7 @@
     <!-- second section on the frontpage with the introduction text -->
     <section class="section frontpage_introduction">
       <h2 class="big_h2"><?php the_field("introduction_header_on_frontpage") ?></h2>
-      <p><?php the_field("introduction_text_on_frontpage") ?></p>
+      <p class="frontpage_text_p"><?php the_field("introduction_text_on_frontpage") ?></p>
     </section>
 
     <!-- third section on the frontpage with four categories of products -->
@@ -146,7 +146,7 @@
       <!-- Code for adress area on frontpage begins -->
       <div class="adress_section_container">
 
-        <h3 class="big_h2">Find vej</h3>
+        <h3>Find vej</h3>
 
         <div>
           <?php $addressLoop = new WP_Query(
@@ -234,6 +234,13 @@
     width: 100%;
     /* 100% vidde på videoen, så den fylder fra kant til kant */
   }
+
+  /* Second section styling */
+
+  .frontpage_text_p {
+    column-count: 2;
+  }
+
 
   /* Third section styling */
 
