@@ -135,8 +135,8 @@
         <!-- div box for "book tid"-->
         <div class="book_div_box">
           <p><?php the_field("tekst_til_book_tid") ?></p>
-          <a href="/book-tid/">Book tid
-            <button class="book_tid_button"></button>
+          <a href="/book-tid/">
+            <button class="book_tid_button">Book tid</button>
           </a>
         </div>
 
