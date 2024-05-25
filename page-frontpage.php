@@ -6,7 +6,6 @@
 
   <!-- first section on the frontpage with the hero video/picture -->
   <section class="frontpage_hero">
-    <h1><?php the_field("hero_text_on_frontpage") ?></h1>
     <iframe
       src="<?php the_field("hero_on_frontpage") ?>?autoplay=1&controls=0&mute=1&modestbranding=1&disablekb=1&loop=1&playlist=<?php the_field("video_id") ?>"
       title="Belle Robe - Stemningsvideo" frameborder="0"
@@ -21,7 +20,7 @@
 
     <!-- second section on the frontpage with the introduction text -->
     <section class="section frontpage_introduction">
-      <h2><?php the_field("introduction_header_on_frontpage") ?></h2>
+      <h1><?php the_field("introduction_header_on_frontpage") ?></h1>
       <p class="frontpage_text_with_margin_top_p"><?php the_field("introduction_text_on_frontpage") ?></p>
     </section>
 
