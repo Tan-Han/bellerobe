@@ -201,7 +201,7 @@
   }
 
    h3 {
-    font-size: 28px;
+    font-size: 25px;
   }
 
   /* First section styling */
@@ -240,8 +240,6 @@
   /* Second section styling */
 
   .frontpage_text_p {
-    column-count: 2;
-    column-gap: 3rem;
     margin-top: 1rem;
   }
 
