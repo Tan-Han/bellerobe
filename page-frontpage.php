@@ -194,7 +194,7 @@
 
   .frontpage_pading {
     padding: 5rem 8rem 0 8rem;
-    box-shadow: 0 3px 5px var(--quaternary-color);
+    box-shadow: 0 -3px 5px var(--quaternary-color);
     position: relative;
     z-index: 2;
   }
