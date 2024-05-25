@@ -191,7 +191,7 @@
   }
 
   .section {
-    padding-top: 3rem;
+    padding-top: 5rem;
   }
 
   .frontpage_pading {
