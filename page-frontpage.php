@@ -6,7 +6,7 @@
 
   <!-- first section on the frontpage with the hero video/picture -->
   <section class="frontpage_hero">
-    <video class="frontpage-video" preload="auto" autoplay loop muted>
+    <video class="frontpage-video" id="heroVideo" preload="auto" autoplay loop muted>
       <source src="https://bellerobe.trshansen.online/wp-content/uploads/2024/05/stemmings.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>

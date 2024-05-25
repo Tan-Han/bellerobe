@@ -119,3 +119,5 @@ window.addEventListener("click", function (event) {
          modal.style.display = "none";
      }
  } 
+
+ document.getElementById('heroVideo').playbackRate = 0.5;
