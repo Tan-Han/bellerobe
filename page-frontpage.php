@@ -135,7 +135,7 @@
         <!-- div box for "book tid"-->
         <div class="book_div_box">
           <p><?php the_field("tekst_til_book_tid") ?></p>
-          <a href="/book-tid/">
+          <a class="book_tid_a" href="/book-tid/">
             <button class="book_tid_button">Book tid</button>
           </a>
         </div>
@@ -361,9 +361,6 @@
     margin-top: 10px;
   }
 
-  .book_tid_button a {
-    font-weight: 700;
-  }
 
   .book_tid_button:hover {
     background-color: var(--quinary-color);
@@ -455,6 +452,14 @@
     .book_div_box {
       display: flex;
       flex-direction: column;
+    }
+
+    .book_tid_a {
+      align-self: center;
+    }
+
+    .book_tid_button {
+      width: 100%;
     }
 
     .adress_section_container {
