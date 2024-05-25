@@ -193,7 +193,8 @@
   }
 
   .frontpage_pading {
-    padding: 0 8rem;
+    padding: 5rem 8rem 0 8rem;
+    box-shadow: 0 3px 5px var(--quaternary-color);
   }
 
   h2 {
@@ -237,12 +238,13 @@
 
   .video-overlay {
     position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: #52443B4D; /* Dark overlay */
-      z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #52443B4D;
+    /* Dark overlay */
+    z-index: 1;
   }
 
   .hero-text {
@@ -259,6 +261,7 @@
     border-top: 1px solid var(--tertiary-color);
     border-bottom: 1px solid var(--tertiary-color);
     padding: 2rem 3rem;
+    margin: 0 !important;
   }
 
 
@@ -483,7 +486,7 @@
 
   @media screen and (max-width: 960px) {
     .frontpage_pading {
-      padding: 0 3rem;
+      padding: 5rem 3rem 0 3rem;
     }
 
     .frontpage_cards_container {
