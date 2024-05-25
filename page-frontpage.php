@@ -219,7 +219,7 @@
     /* Max-width af video - for at den ikke går ud over kanten */
     height: 600px;
     /* Sæt højden som ønsket - 600px er bare et eksempel */
-    width: 100%;
+    width: 900px;
     /* 100% vidde på videoen, så den fylder fra kant til kant */
 
   }
