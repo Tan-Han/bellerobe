@@ -6,7 +6,7 @@
 
   <!-- first section on the frontpage with the hero video/picture -->
   <section class="frontpage_hero">
-    <video class="frontpage-video" controls>
+    <video class="frontpage-video" preload="auto" autoplay loop muted>
       <source src="https://bellerobe.trshansen.online/wp-content/uploads/2024/05/stemmings.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -212,16 +212,18 @@
     position: relative;
     /* For at kunne sætte teksen oven på videoen */
     width: 100%;
+    z-index: 0;
+    background-color: #52443B4D;
   }
 
   .frontpage-video {
-    max-width: 100vw;
-    /* Max-width af video - for at den ikke går ud over kanten */
-    height: 600px;
-    /* Sæt højden som ønsket - 600px er bare et eksempel */
-    width: 900px;
-    /* 100% vidde på videoen, så den fylder fra kant til kant */
-
+    width: 100%;
+  height: 900px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
   }
 
   /* Second section styling */
