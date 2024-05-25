@@ -11,7 +11,7 @@
       Your browser does not support the video tag.
     </video>
     <div class="video-overlay"></div>
-    <h1 class="hero-text">Velkommen til Belle Robe</h1>
+    <h1 class="hero-text"><?php the_field("hero_text_on_frontpage") ?></h1>
   </section>
 
   <!-- padding for på siderne for alt andet end hero -->
@@ -19,7 +19,7 @@
 
     <!-- second section on the frontpage with the introduction text -->
     <section class="section frontpage_introduction">
-      <h1><?php the_field("introduction_header_on_frontpage") ?></h1>
+      <h2><?php the_field("introduction_header_on_frontpage") ?></h2>
       <p class="frontpage_text_with_margin_top_p"><?php the_field("introduction_text_on_frontpage") ?></p>
     </section>
 
