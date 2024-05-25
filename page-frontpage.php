@@ -4,7 +4,7 @@
 
 <main>
 
-  <!-- first section on the frontpage with the hero video/picture -->
+<!-- first section on the frontpage with the hero video/picture -->
   <section class="frontpage_hero">
     <h1><?php the_field("hero_text_on_frontpage") ?></h1>
     <iframe
@@ -19,16 +19,16 @@
   <!-- padding for på siderne for alt andet end hero -->
   <div class="frontpage_pading">
 
-    <!-- second section on the frontpage with the introduction text -->
+<!-- second section on the frontpage with the introduction text -->
     <section class="section frontpage_introduction">
       <h2><?php the_field("introduction_header_on_frontpage") ?></h2>
-      <p class="frontpage_text_p"><?php the_field("introduction_text_on_frontpage") ?></p>
+      <p class="frontpage_text_with_margin_top_p"><?php the_field("introduction_text_on_frontpage") ?></p>
     </section>
 
-    <!-- third section on the frontpage with four categories of products -->
+<!-- third section on the frontpage with four categories of products -->
     <section class="section">
       <h2 class="centered_text_frontpage"><?php the_field("introduction_to_cards_on_frontpage") ?></h2>
-      <p class="centered_text_frontpage"><?php the_field("text_under_introduction_to_cards") ?></p>
+      <p class="centered_text_frontpage frontpage_text_with_margin_top_p"><?php the_field("text_under_introduction_to_cards") ?></p>
 
       <div class="frontpage_cards_container">
 
@@ -72,7 +72,7 @@
       </div>
     </section>
 
-    <!-- fourth section on the frontpage with the informations of opening hours and map -->
+<!-- fourth section on the frontpage with the informations of opening hours and map -->
 
     <section class="section frontpage_opening_hours_and_booking">
 
@@ -204,6 +204,10 @@
     font-size: 25px;
   }
 
+  .frontpage_text_with_margin_top_p {
+    margin-top: .5rem;
+  }
+
   /* First section styling */
 
   .frontpage_hero {
@@ -243,10 +247,6 @@
     border-top: 1px solid var( --tertiary-color);
     border-bottom: 1px solid var( --tertiary-color);
     padding: 2rem 3rem;
-  }
-
-  .frontpage_text_p {
-    margin-top: 1rem;
   }
 
 
