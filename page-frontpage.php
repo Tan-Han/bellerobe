@@ -8,7 +8,7 @@
   <section class="frontpage_hero">
     <h1><?php the_field("hero_text_on_frontpage") ?></h1>
     <iframe
-      src="<?php the_field("hero_on_frontpage") ?>?autoplay=1&controls=0&mute=1&modestbranding=1&disablekb=1&loop=1&playlist=<?php the_field("video_id") ?>"
+      src="<?php the_field("hero_on_frontpage") ?>?autoplay=1&loop=1&autopause=0"
       title="Belle Robe - Stemningsvideo" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
