@@ -21,13 +21,13 @@
 
     <!-- second section on the frontpage with the introduction text -->
     <section class="section frontpage_introduction">
-      <h2 class="big_h2"><?php the_field("introduction_header_on_frontpage") ?></h2>
+      <h2><?php the_field("introduction_header_on_frontpage") ?></h2>
       <p class="frontpage_text_p"><?php the_field("introduction_text_on_frontpage") ?></p>
     </section>
 
     <!-- third section on the frontpage with four categories of products -->
     <section class="section">
-      <h2 class="big_h2 centered_text_frontpage"><?php the_field("introduction_to_cards_on_frontpage") ?></h2>
+      <h2 class="centered_text_frontpage"><?php the_field("introduction_to_cards_on_frontpage") ?></h2>
       <p class="centered_text_frontpage"><?php the_field("text_under_introduction_to_cards") ?></p>
 
       <div class="frontpage_cards_container">
@@ -50,8 +50,6 @@
             <img class="img_cards" src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
           </div>
         </a>
-
-
 
         <!--third card-->
         <a href="/product-category/konfirmationskjoler/">
@@ -80,7 +78,7 @@
 
       <!-- Code for opening hours on frontpage begins -->
       <div class="opening_hours_container">
-        <h3 class="big_h2">Åbningstider</h3>
+        <h3>Åbningstider</h3>
         <p><?php the_field("opening_hours_description") ?></p>
 
         <!-- Div box for "åbningstider" with loop -->
@@ -198,8 +196,12 @@
     padding: 0 8rem;
   }
 
-  .big_h2 {
+ h2 {
     font-size: 35px;
+  }
+
+   h3 {
+    font-size: 28px;
   }
 
   /* First section styling */
