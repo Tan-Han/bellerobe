@@ -6,7 +6,7 @@
 
   <!-- first section on the frontpage with the hero video/picture -->
   <section class="frontpage_hero">
-    <video loop autoplay muted>
+    <video loop autoplay muted class="frontpage-video">
       <source scr="https://bellerobe.trshansen.online/wp-content/uploads/2024/05/stemmings.mp4" type="video/mp4">
     </video>
     <!-- kode efter linket gør, at man kan autoplay og fjerne Youtube controls -->
@@ -214,12 +214,12 @@
     width: 100%;
   }
 
-  .frontpage_hero iframe {
-    max-width: 100vw !important;
+  frontpage-video{
+    max-width: 100vw;
     /* Max-width af video - for at den ikke går ud over kanten */
-    height: 600px !important;
+    height: 600px;
     /* Sæt højden som ønsket - 600px er bare et eksempel */
-    width: 100% !important;
+    width: 100%;
     /* 100% vidde på videoen, så den fylder fra kant til kant */
 
   }
