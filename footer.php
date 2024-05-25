@@ -3,7 +3,7 @@
     <div class="footer_columns">
 
         <div class="footer_contact">
-            <img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/bellerobe_u_cirkel.svg" alt=""
+            <img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/bellerobe_u_cirkel.svg" alt="Belle Robe logo"
                 class="footer_logo">
 
             <?php $addressLoop = new WP_Query(

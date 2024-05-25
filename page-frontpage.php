@@ -4,12 +4,12 @@
 
 <main>
 
-<!-- first section on the frontpage with the hero video/picture -->
+  <!-- first section on the frontpage with the hero video/picture -->
   <section class="frontpage_hero">
     <h1><?php the_field("hero_text_on_frontpage") ?></h1>
     <iframe
       src="<?php the_field("hero_on_frontpage") ?>?autoplay=1&controls=0&mute=1&modestbranding=1&disablekb=1&loop=1&playlist=<?php the_field("video_id") ?>"
-      title="YouTube video player" frameborder="0"
+      title="Belle Robe - Stemningsvideo" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
     </iframe>
@@ -19,16 +19,17 @@
   <!-- padding for på siderne for alt andet end hero -->
   <div class="frontpage_pading">
 
-<!-- second section on the frontpage with the introduction text -->
+    <!-- second section on the frontpage with the introduction text -->
     <section class="section frontpage_introduction">
       <h2><?php the_field("introduction_header_on_frontpage") ?></h2>
       <p class="frontpage_text_with_margin_top_p"><?php the_field("introduction_text_on_frontpage") ?></p>
     </section>
 
-<!-- third section on the frontpage with four categories of products -->
+    <!-- third section on the frontpage with four categories of products -->
     <section class="section">
       <h2 class="centered_text_frontpage"><?php the_field("introduction_to_cards_on_frontpage") ?></h2>
-      <p class="centered_text_frontpage frontpage_text_with_margin_top_p"><?php the_field("text_under_introduction_to_cards") ?></p>
+      <p class="centered_text_frontpage frontpage_text_with_margin_top_p">
+        <?php the_field("text_under_introduction_to_cards") ?></p>
 
       <div class="frontpage_cards_container">
 
@@ -38,7 +39,7 @@
           <div class="frontpage_cards">
             <p class="p_cards">Brudekjoler</p>
             <?php $image = get_field("brudekjole_card_image") ?>
-            <img class="img_cards" src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
+            <img class="img_cards" src="<?php echo $image["sizes"]["large"] ?>" alt="<?php echo $image["alt"] ?>">
           </div>
         </a>
 
@@ -47,7 +48,7 @@
           <div class="frontpage_cards">
             <p class="p_cards">Fest- & gallekjoler</p>
             <?php $image = get_field("galla_og_festkjoler_card_image") ?>
-            <img class="img_cards" src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
+            <img class="img_cards" src="<?php echo $image["sizes"]["large"] ?>" alt="<?php echo $image["alt"] ?>">
           </div>
         </a>
 
@@ -56,7 +57,7 @@
           <div class="frontpage_cards">
             <p class="p_cards">Konfirmationskjoler</p>
             <?php $image = get_field("konfirmationskjoler_card_image") ?>
-            <img class="img_cards" src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
+            <img class="img_cards" src="<?php echo $image["sizes"]["large"] ?>" alt="<?php echo $image["alt"] ?>">
           </div>
         </a>
 
@@ -65,14 +66,14 @@
           <div class="frontpage_cards">
             <p class="p_cards">Sko & tilbehør</p>
             <?php $image = get_field("sko_og_tilbehor_card_image") ?>
-            <img class="img_cards" src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
+            <img class="img_cards" src="<?php echo $image["sizes"]["large"] ?>" alt="<?php echo $image["alt"] ?>">
           </div>
         </a>
 
       </div>
     </section>
 
-<!-- fourth section on the frontpage with the informations of opening hours and map -->
+    <!-- fourth section on the frontpage with the informations of opening hours and map -->
 
     <section class="section frontpage_opening_hours_and_booking">
 
@@ -174,8 +175,6 @@
 
     </section>
 
-
-
   </div>
 
 </main>
@@ -198,11 +197,11 @@
     padding: 0 8rem;
   }
 
- h2 {
+  h2 {
     font-size: 35px;
   }
 
-   h3 {
+  h3 {
     font-size: 25px;
   }
 
@@ -246,8 +245,8 @@
   /* Second section styling */
 
   .frontpage_introduction {
-    border-top: 1px solid var( --tertiary-color);
-    border-bottom: 1px solid var( --tertiary-color);
+    border-top: 1px solid var(--tertiary-color);
+    border-bottom: 1px solid var(--tertiary-color);
     padding: 2rem 3rem;
   }
 
