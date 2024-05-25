@@ -189,7 +189,7 @@
   }
 
   .section {
-    padding-top: 5rem;
+    margin-top: 5rem;
   }
 
   .frontpage_pading {
@@ -238,6 +238,12 @@
   }
 
   /* Second section styling */
+
+  .frontpage_introduction {
+    border: 3px solid var(--quinary-color);
+    border-radius: 10px;
+    padding: 2rem 4rem;
+  }
 
   .frontpage_text_p {
     margin-top: 1rem;
