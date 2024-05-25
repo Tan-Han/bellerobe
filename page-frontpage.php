@@ -240,9 +240,9 @@
   /* Second section styling */
 
   .frontpage_introduction {
-    border: 3px solid var(--quinary-color);
-    border-radius: 10px;
-    padding: 2rem 4rem;
+    border-top: 1px solid var( --tertiary-color);
+    border-bottom: 1px solid var( --tertiary-color);
+    padding: 2rem 3rem;
   }
 
   .frontpage_text_p {
