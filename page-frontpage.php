@@ -6,7 +6,7 @@
 
   <!-- first section on the frontpage with the hero video/picture -->
   <section class="frontpage_hero">
-    <video loop autoplay muted class="frontpage-video" width="320" height="240">
+    <video loop autoplay muted class="frontpage-video">
       <source scr="https://bellerobe.trshansen.online/wp-content/uploads/2024/05/stemmings.mp4">
     </video>
     <!-- kode efter linket gør, at man kan autoplay og fjerne Youtube controls -->
@@ -214,7 +214,7 @@
     width: 100%;
   }
 
-  frontpage-video{
+  .frontpage-video {
     max-width: 100vw;
     /* Max-width af video - for at den ikke går ud over kanten */
     height: 600px;
