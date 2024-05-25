@@ -6,10 +6,9 @@
 
   <!-- first section on the frontpage with the hero video/picture -->
   <section class="frontpage_hero">
-    <iframe src="https://bellerobe.trshansen.online/wp-content/uploads/2024/05/stemmings.mp4?autoplay=1&muted=1&loop=1&controls=0&showinfo=0"
-      title="Belle Robe - Stemningsvideo" frameborder="0"
-      allow="autoplay" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-    </iframe>
+    <video loop autoplay muted>
+      <source scr="https://bellerobe.trshansen.online/wp-content/uploads/2024/05/stemmings.mp4" type="video/mp4">
+    </video>
     <!-- kode efter linket gør, at man kan autoplay og fjerne Youtube controls -->
   </section>
 
