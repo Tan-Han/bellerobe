@@ -62,7 +62,7 @@
                         </div>
                     </li>
                     <li><a href="/om_os/">Om os</a></li>
-                    <li><a href="/booking/">Book tid</a></li>
+                    <li><a href="/book-tid/">Book tid</a></li>
                 </ul>
 
                 <div class="cart-btn-outer-box">
