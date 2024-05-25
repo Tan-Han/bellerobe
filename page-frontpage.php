@@ -214,7 +214,7 @@
     position: relative;
     /* For at kunne sætte teksen oven på videoen */
     width: 100%;
-    height: 750px;
+    height: 700px;
     z-index: 0;
     margin: 0;
     padding: 0;
@@ -227,7 +227,7 @@
   .frontpage-video {
     max-width: 100vw;
     width: 100%;
-    height: 750px;
+    height: 700px;
     object-fit: cover;
     position: absolute;
     top: 0;
