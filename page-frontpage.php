@@ -6,8 +6,10 @@
 
   <!-- first section on the frontpage with the hero video/picture -->
   <section class="frontpage_hero">
-    <iframe src="<?php the_field("hero_on_frontpage") ?>" frameborder="0"></iframe>
-    <!-- kode efter linket gør, at man kan autoplay og fjerne Youtube controls -->
+    <video class="frontpage-video" controls>
+      <source src="https://bellerobe.trshansen.online/wp-content/uploads/2024/05/stemmings.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </section>
 
   <!-- padding for på siderne for alt andet end hero -->
