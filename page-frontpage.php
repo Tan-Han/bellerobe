@@ -10,6 +10,7 @@
       <source src="https://bellerobe.trshansen.online/wp-content/uploads/2024/05/stemmings.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
+    <h1 class="hero-text">HELLO</h1>
   </section>
 
   <!-- padding for på siderne for alt andet end hero -->
@@ -212,23 +213,45 @@
     position: relative;
     /* For at kunne sætte teksen oven på videoen */
     width: 100%;
-    height: 900px;
+    height: 750px;
     z-index: 0;
-    background-color: #52443B4D;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .frontpage-video {
     max-width: 100vw;
     width: 100%;
-    height: 900px;
+    height: 750px;
     object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
+  }
+
+  .frontpage-video::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100vw;
+    width: 100%;
+    height: 750px;
+    background: #52443B4D;
+    /* Dark overlay */
+    pointer-events: none;
+    /* Allows interaction with the video */
+  }
+
+  .hero-text {
+    font-size: 55px;
+    color: var(--white);
+    text-shadow: 1px 1px 3px var(--quaternary-color);
   }
 
   /* Second section styling */
