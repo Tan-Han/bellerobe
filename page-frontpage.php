@@ -191,7 +191,7 @@
   }
 
   .section {
-    padding-top: 40px;
+    padding-top: 3rem;
   }
 
   .frontpage_pading {
@@ -240,6 +240,7 @@
   .frontpage_text_p {
     column-count: 2;
     column-gap: 3rem;
+    margin-top: 1rem;
   }
 
 
