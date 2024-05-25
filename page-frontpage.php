@@ -248,9 +248,9 @@
   .hero-text {
     position: relative;
     z-index: 2;
-    font-size: 55px;
+    font-size: 75px;
     color: var(--quinary-color);
-    text-shadow: 1px 1px 3px var(--quaternary-color);
+    text-shadow: 2px 2px 5px var(--quaternary-color);
   }
 
   /* Second section styling */
