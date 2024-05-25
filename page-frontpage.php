@@ -456,6 +456,8 @@
 
     .book_tid_a {
       align-self: center;
+      width: 40%;
+      margin-top: .5rem;
     }
 
     .book_tid_button {
@@ -532,12 +534,20 @@
       gap: 20px 0px;
     }
 
+    .frontpage_introduction {
+      padding: 2rem .5rem;
+    }
+
+    .book_tid_a {
+      width: 100%;
+    }
+
     .img_cards {
       height: 12rem;
       width: 130px;
     }
 
-    .big_h2 {
+    h2 {
       font-size: 28px;
     }
 
@@ -545,11 +555,14 @@
       font-size: 15px;
     }
 
+
     .opening_hours_loop_frontpage {
       background-image: none;
       background-color: var(--tertiary-color);
     }
   }
+
+
 </style>
 
 <?php get_footer() ?>
