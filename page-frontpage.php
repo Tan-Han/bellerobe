@@ -7,7 +7,7 @@
   <!-- first section on the frontpage with the hero video/picture -->
   <section class="frontpage_hero">
     <video class="frontpage-video">
-      <source scr="https://bellerobe.trshansen.online/wp-content/uploads/2024/05/stemmings.mp4">
+      <source scr="/wp-content/uploads/2024/05/stemmings.mp4">
     </video>
     <!-- kode efter linket gør, at man kan autoplay og fjerne Youtube controls -->
   </section>
