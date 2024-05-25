@@ -135,7 +135,9 @@
         <!-- div box for "book tid"-->
         <div class="book_div_box">
           <p><?php the_field("tekst_til_book_tid") ?></p>
-          <button class="book_tid_button"><a href="/book-tid/">Book tid</a></button>
+          <a class="book_tid_a" href="/book-tid/">
+            <button class="book_tid_button">Book tid</button>
+          </a>
         </div>
 
       </div>
@@ -359,9 +361,6 @@
     margin-top: 10px;
   }
 
-  .book_tid_button a {
-    font-weight: 700;
-  }
 
   .book_tid_button:hover {
     background-color: var(--quinary-color);
@@ -455,6 +454,16 @@
       flex-direction: column;
     }
 
+    .book_tid_a {
+      align-self: center;
+      width: 40%;
+      margin-top: .5rem;
+    }
+
+    .book_tid_button {
+      width: 100%;
+    }
+
     .adress_section_container {
       width: 100%;
       margin-top: 70px;
@@ -525,12 +534,20 @@
       gap: 20px 0px;
     }
 
+    .frontpage_introduction {
+      padding: 2rem .5rem;
+    }
+
+    .book_tid_a {
+      width: 100%;
+    }
+
     .img_cards {
       height: 12rem;
       width: 130px;
     }
 
-    .big_h2 {
+    h2 {
       font-size: 28px;
     }
 
@@ -538,11 +555,14 @@
       font-size: 15px;
     }
 
+
     .opening_hours_loop_frontpage {
       background-image: none;
       background-color: var(--tertiary-color);
     }
   }
+
+
 </style>
 
 <?php get_footer() ?>

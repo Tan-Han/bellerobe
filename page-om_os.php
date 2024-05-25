@@ -129,13 +129,13 @@
    }
 
     .introduction_video {
-         width: 42%;
+         width: 45%;
     }
 
     .introduction_video iframe {
         max-width: 100vw;
         /* Max-width af video - for at den ikke går ud over kanten */
-        height: 330px;
+        height: 25rem;
         width: 100%;
         /* 100% vidde på videoen, så den fylder fra kant til kant */
         border-radius: 10px;
@@ -229,34 +229,39 @@
     }   
 
 
-    @media screen and (max-width: 1355px) {
+    @media screen and (max-width: 1600px) {
         .introduction_text_and_video {
             flex-direction: column;
         }
 
         .introduction_text {
             width: 100%;
+            margin-top: 5rem;
         }
 
         .introduction_video {
             width: 100%;
             display: flex;
             justify-content: center;
-            margin-top: 20px;
+            margin-top: 5rem;
+            margin-bottom: 2rem;
         }
 
         .introduction_video iframe {
-            width: 70%;
-            height: 300px;
+            width: 52%;
+            height: px;
         }
     }
 
-    @media screen and (max-width: 1355px) {
+    /*@media screen and (max-width: 1355px) {
 
         .introduction_video iframe {
             width: 90%;
             height: 300px;
         }
+    
+    }
+*/
 
 
 </style>
