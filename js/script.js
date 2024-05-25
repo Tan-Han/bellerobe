@@ -120,4 +120,5 @@ window.addEventListener("click", function (event) {
      }
  } 
 
- document.getElementById('heroVideo').playbackRate = 0.5;
+ // Video speed on hero video
+ document.getElementById('heroVideo').playbackRate = 0.75;
