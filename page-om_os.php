@@ -14,7 +14,7 @@
         <div class="introduction_video">
             <iframe 
                 src="<?php the_field("about_us_video") ?>?controls=1&controls=0&mute=1&modestbranding=1&disablekb=1&loop=1&playlist=<?php the_field("video_id") ?>"
-                title="YouTube video player" frameborder="0"
+                title="Belle Robe - Om os video" frameborder="0"
                 allow="accelerometer; controls; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
             </iframe>
