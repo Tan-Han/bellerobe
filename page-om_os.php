@@ -235,28 +235,33 @@
         }
 
         .introduction_text {
-            width: 80%;
+            width: 100%;
+            margin-top: 5rem;
         }
 
         .introduction_video {
             width: 100%;
             display: flex;
             justify-content: center;
-            margin-top: 20px;
+            margin-top: 5rem;
+            margin-bottom: 2rem;
         }
 
         .introduction_video iframe {
-            width: 70%;
-            height: 300px;
+            width: 52%;
+            height: px;
         }
     }
 
-    @media screen and (max-width: 1355px) {
+    /*@media screen and (max-width: 1355px) {
 
         .introduction_video iframe {
             width: 90%;
             height: 300px;
         }
+    
+    }
+*/
 
 
 </style>
