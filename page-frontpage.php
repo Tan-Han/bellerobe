@@ -239,7 +239,7 @@
 
   .frontpage_text_p {
     column-count: 2;
-    column-gap: 4rem;
+    column-gap: 3rem;
   }
 
 
