@@ -11,7 +11,7 @@
 
 <body>
     <div class="logo-top">
-        <a href="/" class="logo-link"><img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/belle-robe.svg" alt=""
+        <a href="/" class="logo-link"><img src="https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/belle-robe.svg" alt="Belle Robe logo med grene"
                 class="logo"></a>
 
         <nav class="navbar">

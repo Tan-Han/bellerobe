@@ -38,7 +38,7 @@
           <div class="frontpage_cards">
             <p class="p_cards">Brudekjoler</p>
             <?php $image = get_field("brudekjole_card_image") ?>
-            <img class="img_cards" src="<?php echo $image["sizes"]["medium"] ?>" alt="<?php echo $image["alt"] ?>">
+            <img class="img_cards" src="<?php echo $image["sizes"]["large"] ?>" alt="<?php echo $image["alt"] ?>">
           </div>
         </a>
 
