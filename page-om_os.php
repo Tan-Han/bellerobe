@@ -243,13 +243,13 @@
             width: 100%;
             display: flex;
             justify-content: center;
-            margin-top: 5rem;
-            margin-bottom: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
         }
 
         .introduction_video iframe {
             width: 52%;
-            height: px;
+            height: 25rem;
         }
     }
 
@@ -257,11 +257,14 @@
 
         .introduction_video iframe {
             width: 70%;
-            height: 25rem;
         }
     }
 
     @media screen and (max-width: 900px) {
+
+        .introduction_video {
+            margin-bottom: 0rem;
+        }
 
         .introduction_video iframe {
             width: 80%;
@@ -271,10 +274,6 @@
 
     @media screen and (max-width: 700px) {
 
-        .introduction_video {
-            margin-top: 3rem;
-            margin-bottom: 0rem;
-        }
 
         .introduction_video iframe {
             width: 90%;
