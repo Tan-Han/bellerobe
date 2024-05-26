@@ -253,7 +253,7 @@
         }
     }
 
-    @media screen and (max-width: 1355px) {
+    @media screen and (max-width: 1380px) {
 
         .introduction_video iframe {
             width: 70%;
