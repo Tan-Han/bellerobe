@@ -229,7 +229,14 @@
     }   
 
 
-    @media screen and (max-width: 1400px) {
+    @media screen and (max-width: 1500px) {
+        .introduction_video iframe {
+        height: 22rem;
+        }   
+    }
+
+    @media screen and (max-width: 1350px) {
+
         .introduction_text_and_video {
             flex-direction: column;
         }
@@ -248,15 +255,8 @@
         }
 
         .introduction_video iframe {
-            width: 52%;
-            height: 25rem;
-        }
-    }
-
-    @media screen and (max-width: 1380px) {
-
-        .introduction_video iframe {
             width: 70%;
+            height: 25rem;
         }
     }
 
