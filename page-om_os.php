@@ -229,7 +229,7 @@
     }   
 
 
-    @media screen and (max-width: 1600px) {
+    @media screen and (max-width: 1400px) {
         .introduction_text_and_video {
             flex-direction: column;
         }
