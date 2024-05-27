@@ -39,7 +39,7 @@ function insert_product_title()
   <?php
 }
 
-add_action('woocommerce_single_product_summary', 'insert_product_title', 3);
+add_action('woocommerce_before_main_content', 'insert_product_title', 3);
 
 // Adding title to category pages
 
