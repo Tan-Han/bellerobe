@@ -46,7 +46,7 @@
                     $url_to_collaboration_partner = get_field('partner_url'); // Retrieve the URL from ACF field
                 ?>
                     <div class="collaboration_partner">
-                        <a href="<?php echo esc_url($url_to_collaboration_partner); ?>" target="_blank">
+                        <a href="<?php echo get_field("url_to_collaboration_partner"); ?>" target="_blank">
                             <div class="collaboration_partner_text">
                                 <p class="fat_p_about_us"><?php the_field("collaboration_partner_job"); ?>:</p>
                                 <p><?php the_field("collaboration_partner_name"); ?></p> 
@@ -241,6 +241,10 @@
     .show {
         display: block;
     }   
+
+    .customer_experiences {
+        padding: 2.5rem 4rem 1rem 4rem;
+    }
 
 
     @media screen and (max-width: 1500px) {
