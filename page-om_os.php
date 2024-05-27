@@ -289,6 +289,7 @@
         .customer_experiences_image_container {
         display: flex;
         justify-content: center;
+        margin-top: 1rem;
     }
 
         .customer_experiences img {
