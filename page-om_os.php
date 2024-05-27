@@ -261,7 +261,7 @@
     }
 
     .customer_experiences_image_container {
-        width: 45%;
+        width: 50%;
     }
 
     .customer_experiences img {
