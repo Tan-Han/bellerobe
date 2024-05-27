@@ -348,7 +348,8 @@
 
     @media screen and (max-width: 390px) { 
         .introduction_text h1 {
-            font-size: 35px !important;
+            font-size: 30px !important;
+            margin-bottom: 1rem;
         }
     }
 
