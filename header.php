@@ -29,7 +29,7 @@
                         <div class="dropdown-content" id="dropContentBrudekjoler">
                             <a href="/vare-kategori/brudekjoler/">Brudekjoler</a>
                             <a href="/vare-kategori/brudekjoler/baeredygtige/">Bæredygtige brudekjoler</a>
-                            <a href="/vare-kategori/brudekjoler/kun-fysisk-brudekjoler/">Kun i butikken</a>
+                            <a href="/vare-kategori/brudekjoler/fysisk-brud/">Kun i butikken</a>
                         </div>
                     </li>
                     <li class="dropdown">
