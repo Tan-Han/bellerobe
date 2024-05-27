@@ -225,15 +225,18 @@
     .dropdown_text_style_about_us a {
         
         padding: 10px 40px 10px 0px;
-        text-decoration: none;
         display: block;
         transition: 0.3s;
     }
 
     /* Change color of dropdown links on hover */
-    .dropdown-content_about_us a:hover {
+    .collaboration_partner_text p {
+        text-decoration: none;
+        transition: 0.3s;
+    }
+    .collaboration_partner_text p:hover {
         text-decoration: underline;
-        color: var(--brown);
+        color: var(--tertiary-color);
         transition: 0.3s;
     }
 
