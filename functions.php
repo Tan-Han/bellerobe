@@ -42,16 +42,30 @@ function insert_product_title()
 add_action('woocommerce_single_product_summary', 'insert_product_title', 3);
 
 // Adding title to category pages
-
-function add_category_title() {
+function add_category_title_with_description() {
   ?>
-  <h1 class="category-title">
-    <?php single_term_title(); ?>
-  </h1>
+  <div class="category-description">
+      <h1 class="category-title">
+          <?php single_term_title() ?>
+      </h1>
+      <?php
+      // Get the current category object
+      $category = get_queried_object();
+
+      // Display the category description if available
+      if ($category && !empty($category->description)) {
+          ?>
+          <div class="category-description">
+              <?php echo wpautop($category->description); ?>
+          </div>
+          <?php
+      }
+      ?>
+  </div>
   <?php
 }
 
-add_action('woocommerce_archive_description', 'add_category_title', 15);
+add_action("woocommerce_before_shop_loop", "add_category_title_with_description");
 
 // Creating new custom widget
 function product_filter_widget()
