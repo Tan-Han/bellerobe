@@ -250,11 +250,14 @@
     .customer_experiences {
         padding: 2.5rem 4rem 1rem 4rem;
         display: flex;
+        justify-content: space-between;
     }
 
     .customer_experiences img {
         width: 100%;
         height: 200px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px #52443B7D;
     }
 
 
