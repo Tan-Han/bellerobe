@@ -38,7 +38,7 @@
                         <div class="dropdown-content" id="dropContentGallakjoler">
                             <a href="/vare-kategori/gallakjoler/korte-kjoler/">Korte kjoler</a>
                             <a href="/vare-kategori/gallakjoler/lange-kjoler/">Lange kjoler</a>
-                            <a href="/vare-kategori/gallakjoler/kun-fysisk-gallakjoler/">Kun i butikken</a>
+                            <a href="/vare-kategori/gallakjoler/fysisk-galla/">Kun i butikken</a>
                             <a href="/vare-kategori/gallakjoler/">Alle fest- & gallakjoler</a>
                         </div>
                     </li>
