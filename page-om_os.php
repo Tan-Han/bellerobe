@@ -50,6 +50,8 @@
                             <div class="collaboration_partner_text">
                                 <p class="fat_p_about_us"><?php the_field("collaboration_partner_job"); ?>:</p>
                                 <p><?php the_field("collaboration_partner_name"); ?></p> 
+                                <?php $image = get_field("customer_experiences_image") ?>
+                                <img class="img_cards" src="<?php echo $image["sizes"]["large"] ?>" alt="<?php echo $image["alt"] ?>">
                             </div>     
                         </a>
                     </div>
@@ -104,9 +106,7 @@
                         <div class="customerexperiences_container">
                             <p class="fat_p_about_us"><?php the_field("customer_experiences_header"); ?>:</p>
                             <p><?php the_field("customer_experiences_p"); ?></p> 
-                            <?php if ($url_to_customer_experiences): ?>
-                                <a href="<?php echo esc_url($url_to_customer_experiences); ?>" target="_blank">Read More</a>
-                            <?php endif; ?>
+
                         </div> 
                     </div>
                 <?php endwhile; ?>
