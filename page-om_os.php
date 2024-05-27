@@ -65,7 +65,7 @@
         <i class="fa-solid fa-caret-down"></i>
     </div>
     <div id="myDropdown_about_us_2" class="dropdown_content_about_us">
-        <p><?php the_field("fortrolighedspolitik_tekst"); ?></p>
+        <p class="dropdown_introduction_text"><?php the_field("fortrolighedspolitik_tekst"); ?></p>
     </div>
 
     <!-- Third dropdown -->
