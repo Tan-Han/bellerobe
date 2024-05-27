@@ -199,9 +199,8 @@
         box-shadow: 3px 3px 5px #52443B7D;
         z-index: 1;
         border-left: 0.4px solid var(--brown);
-        border-right: 0.4px solid var(--brown);
-        border-bottom: 0.4px solid var(--brown);
         border-radius: 0 0 10px 10px;
+        margin-top: 1rem;
     }
 
     .dropdown_introduction_text {
