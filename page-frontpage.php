@@ -252,7 +252,7 @@
   .hero-text {
     position: relative;
     z-index: 2;
-    font-size: 75px;
+    font-size: 65px;
     color: var(--quinary-color);
     text-shadow: 2px 2px 5px var(--quaternary-color);
   }
@@ -298,7 +298,6 @@
     font-size: 36px;
     overflow: hidden;
   }
-
 
   .img_cards {
     object-fit: cover;
@@ -349,7 +348,6 @@
     padding: 4px 0;
     color: var(--white);
   }
-
 
   /* book tid styling */
   .book_div_box {
@@ -508,6 +506,12 @@
 
   }
 
+  @media screen and (max-width: 800px) {
+    .hero-text {
+      font-size: 60px;
+    }
+}
+
   @media screen and (max-width: 696px) {
 
     .frontpage_cards_container {
@@ -519,6 +523,10 @@
     .img_cards {
       height: 20rem;
       width: 220px;
+    }
+
+    .hero-text {
+      font-size: 50px;
     }
 
   }
@@ -538,6 +546,11 @@
 
     .section {
       padding-top: 40px;
+    }
+
+    .hero-text {
+      font-size: 50px;
+      max-width: 520px;
     }
 
   }

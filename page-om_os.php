@@ -82,7 +82,7 @@
         <h2>Kundeoplevelser</h2>
         <i class="fa-solid fa-caret-down"></i>
     </div>
-    <div id="myDropdown_about_us_4" class="dropdown_content_about_us">
+    <div id="myDropdown_about_us_4" class="dropdown_content_about_us collaboration_partner">
         <div>
 
         <!-- Customer experiences loop code start -->
@@ -105,7 +105,7 @@
                             <p class="fat_p_about_us"><?php the_field("customer_experiences_header"); ?>:</p>
                             <p><?php the_field("customer_experiences_p"); ?></p> 
                         </div> 
-                        <div>
+                        <div class="customer_experiences_image_container">
                             <?php $image = get_field("customer_experiences_image") ?>
                             <img class="img_cards" src="<?php echo $image["sizes"]["large"] ?>" alt="<?php echo $image["alt"] ?>">
                         </div>
@@ -198,10 +198,9 @@
         width: 100%;
         box-shadow: 3px 3px 5px #52443B7D;
         z-index: 1;
-        border-left: 0.4px solid var(--brown);
-        border-right: 0.4px solid var(--brown);
-        border-bottom: 0.4px solid var(--brown);
-        border-radius: 0 0 10px 10px;
+        border: 0.4px solid var(--brown);
+        border-radius: 10px;
+        margin-top: 0.4rem;
     }
 
     .dropdown_introduction_text {
@@ -247,15 +246,22 @@
         display: block;
     }   
 
+/* Styling for the fourth dropdown */
+
     .customer_experiences {
-        padding: 2.5rem 4rem 1rem 4rem;
+        padding: 2.5rem 4rem 4rem 4rem;
         display: flex;
         justify-content: space-between;
+        margin-right: 2%;
+    }
+
+    .customerexperiences_container{
+        width: 45%;
     }
 
     .customer_experiences img {
         width: 100%;
-        height: 200px;
+        height: 300px;
         border-radius: 10px;
         box-shadow: 3px 3px 5px #52443B7D;
     }
@@ -267,6 +273,28 @@
         }   
     }
 
+    @media screen and (max-width: 1300px) {
+        .customer_experiences {
+        padding: 2.5rem 4rem 4rem 4rem;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 0%;
+        }
+
+        .customerexperiences_container{
+            width: 100%;
+        }
+
+        .customer_experiences_image_container {
+        display: flex;
+        margin-top: 1rem;
+    }
+
+        .customer_experiences img {
+            height: auto;
+        }
+    }
+
     @media screen and (max-width: 1200px) {
 
         .introduction_text_and_video {
@@ -275,7 +303,7 @@
 
         .introduction_text {
             width: 100%;
-            margin-top: 5rem;
+            margin-top: 1rem;
         }
 
         .introduction_video {
@@ -304,6 +332,26 @@
             width: 80%;
             height: 23rem;
         }
+
+        .collaboration_partner_text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .dropdown_introduction_text {
+            padding: 2.5rem 2rem 1rem 2rem;
+
+        }
+
+        .dropdown_text_style_about_us{
+            padding: 1rem 2rem 2rem 2rem;
+        }
+
+        .customer_experiences {
+            padding: 2.5rem 2rem 2rem 2rem;
+
+    }
+
     }
 
     @media screen and (max-width: 700px) {
@@ -325,6 +373,13 @@
     @media screen and (max-width: 500px) { 
         .introduction_video iframe {
             height: 15rem;
+        }
+    }
+
+    @media screen and (max-width: 390px) { 
+        .introduction_text h1 {
+            font-size: 30px !important;
+            margin-bottom: 1rem;
         }
     }
 
