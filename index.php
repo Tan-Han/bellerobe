@@ -24,7 +24,6 @@
         if ($product_count == 0) {
 
             echo "<h2>$current_category->name</h2>";
-            echo '<div class="category-description">'wpautop($category->description)'</div>';
             echo "<p>Der er endnu ingen produkter i denne kategori.</p>";
 
         }
