@@ -47,8 +47,8 @@
                         <p class="dropbtn" onclick="dropdownMenuKonfirmation()">Konfirmation<i
                                 class="fa-solid fa-caret-down"></i></p>
                         <div class="dropdown-content" id="dropContentKonfirmation">
-                        <a href="/vare-kategori/konfirmation/konfirmationskjoler/">Konfirmation</a>
-                        <a href="/vare-kategori/konfirmation/kun-fysisk-konfirmationskjoler/">Kun i butikken</a>
+                        <a href="/vare-kategori/konfirmationskjoler">Konfirmation</a>
+                        <a href="/vare-kategori/konfirmationskjoler/kun-fysisk-konfirmationskjoler/">Kun i butikken</a>
                         </div>
                     </li>
 
