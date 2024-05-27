@@ -32,7 +32,7 @@
             }
 
 
-            echo "<p class='empty-category'>Der er endnu ingen produkter i denne kategori.</p>";
+            echo "<div class='empty-cat-box'><p class='empty-category'>Der er endnu ingen produkter i denne kategori.</p></div>";
 
         }
     }
