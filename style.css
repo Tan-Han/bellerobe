@@ -360,6 +360,11 @@ footer {
   padding-bottom: 1.5rem;
 }
 
+.empty-category {
+  font-style: italic;
+}
+
+
 /* Filter */
 
 .filter-button {

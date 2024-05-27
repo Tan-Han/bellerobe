@@ -23,7 +23,7 @@
     
         if ($product_count == 0) {
 
-            echo "<h2>$current_category->name</h2>";
+            echo "<h1 class='category-title'>$current_category->name</h1>";
 
             // Get and display the category description
             $category_description = category_description($current_category->term_id);
@@ -32,7 +32,7 @@
             }
 
 
-            echo "<p>Der er endnu ingen produkter i denne kategori.</p>";
+            echo "<p class='empty-category'>Der er endnu ingen produkter i denne kategori.</p>";
 
         }
     }
