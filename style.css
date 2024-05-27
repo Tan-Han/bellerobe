@@ -675,6 +675,7 @@ footer {
   /* Two columns */
   grid-template-rows: repeat(3, auto);
   column-gap: 8rem;
+  row-gap: 3rem;
   position: relative;
   overflow: hidden;
 }
