@@ -346,6 +346,10 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
 }
 
+.term-description {
+  display: none;
+}
+
 .category-title {
   text-align: center;
   font-size: 55px;
@@ -1597,9 +1601,6 @@ footer {
     left: -11rem;
   }
 }
-
-
-
 
 @media screen and (max-width: 1400px) {
 
