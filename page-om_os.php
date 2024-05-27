@@ -65,9 +65,7 @@
         <i class="fa-solid fa-caret-down"></i>
     </div>
     <div id="myDropdown_about_us_2" class="dropdown_content_about_us">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
+        <p class="dropdown_introduction_text"><?php the_field("fortrolighedspolitik_tekst"); ?></p>
     </div>
 
     <!-- Third dropdown -->
@@ -76,9 +74,7 @@
         <i class="fa-solid fa-caret-down"></i>
     </div>
     <div id="myDropdown_about_us_3" class="dropdown_content_about_us">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
+        <p class="dropdown_introduction_text"><?php the_field("handelsbetingelser_tekst"); ?></p>
     </div>
 
     <!-- Fourth dropdown -->
