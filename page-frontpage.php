@@ -572,7 +572,8 @@
   @media screen and (max-width: 500px) {
 
     .hero-text {
-      font-size: 55px;
+      font-size: 32px;
+      text-align: center;
     }
 
     .frontpage_cards_container {
