@@ -304,6 +304,19 @@
             width: 80%;
             height: 23rem;
         }
+
+        .customer_experiences {
+            padding: 2.5rem 2rem 1rem 2rem;
+        }
+
+        .dropdown_introduction_text {
+            padding: 2.5rem 2rem 1rem 2rem;
+
+        }
+
+        .dropdown_text_style_about_us{
+            padding: 1rem 2rem 2rem 2rem;
+        }
     }
 
     @media screen and (max-width: 700px) {
