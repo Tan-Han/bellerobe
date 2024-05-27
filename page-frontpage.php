@@ -495,6 +495,10 @@
       height: 500px;
     }
 
+    .hero-text {
+      font-size: 55px;
+    }
+
     .frontpage_pading {
       padding: 5rem 3rem 0 3rem;
     }
@@ -566,6 +570,10 @@
   }
 
   @media screen and (max-width: 500px) {
+
+    .hero-text {
+      font-size: 55px;
+    }
 
     .frontpage_cards_container {
       display: grid;
