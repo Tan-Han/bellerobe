@@ -65,7 +65,7 @@ function add_category_title_with_description() {
   <?php
 }
 
-add_action("woocommerce_archive_description", "add_category_title_with_description");
+add_action("woocommerce_before_shop_loop", "add_category_title_with_description");
 
 // Creating new custom widget
 function product_filter_widget()
