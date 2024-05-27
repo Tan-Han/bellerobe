@@ -248,12 +248,9 @@
     }   
 
 /* Styling for the fourth dropdown */
-    .collaboration_partner {
-        padding-bottom: 1rem;
-    }
 
     .customer_experiences {
-        padding: 2.5rem 4rem 1rem 4rem;
+        padding: 2.5rem 4rem 4rem 4rem;
         display: flex;
         justify-content: space-between;
         margin-right: 2%;
@@ -275,6 +272,23 @@
         .introduction_video iframe {
         height: 22rem;
         }   
+    }
+
+    @media screen and (max-width: 1300px) {
+        .customer_experiences {
+        padding: 2.5rem 4rem 4rem 4rem;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 0%;
+        }
+
+        .customerexperiences_container{
+            width: 100%;
+        }
+
+        .customer_experiences img {
+            height: 200px;
+        }
     }
 
     @media screen and (max-width: 1200px) {
