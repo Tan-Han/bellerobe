@@ -275,7 +275,7 @@
 
         .introduction_text {
             width: 100%;
-            margin-top: 5rem;
+            margin-top: 1rem;
         }
 
         .introduction_video {
@@ -305,8 +305,9 @@
             height: 23rem;
         }
 
-        .customer_experiences {
-            padding: 2.5rem 2rem 1rem 2rem;
+        .collaboration_partner_text {
+            display: flex;
+            flex-direction: column;
         }
 
         .dropdown_introduction_text {
@@ -316,6 +317,10 @@
 
         .dropdown_text_style_about_us{
             padding: 1rem 2rem 2rem 2rem;
+        }
+
+        .customer_experiences {
+            padding: 2.5rem 2rem 1rem 2rem;
         }
     }
 
@@ -338,6 +343,12 @@
     @media screen and (max-width: 500px) { 
         .introduction_video iframe {
             height: 15rem;
+        }
+    }
+
+    @media screen and (max-width: 390px) { 
+        .introduction_text h1 {
+            font-size: 35px;
         }
     }
 
