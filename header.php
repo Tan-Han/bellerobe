@@ -48,7 +48,7 @@
                                 class="fa-solid fa-caret-down"></i></p>
                         <div class="dropdown-content" id="dropContentKonfirmation">
                         <a href="/vare-kategori/konfirmationskjoler">Konfirmation</a>
-                        <a href="/vare-kategori/konfirmationskjoler/kun-fysisk-konfirmationskjoler/">Kun i butikken</a>
+                        <a href="/vare-kategori/konfirmationskjoler/fysisk-konfirmation/">Kun i butikken</a>
                         </div>
                     </li>
 
@@ -58,7 +58,7 @@
                         <div class="dropdown-content" id="dropContentSko">
                             <a href="/vare-kategori/sko-tilbehor/sko/">Sko</a>
                             <a href="/vare-kategori/sko-tilbehor/tilbehor/">Tilbehør</a>
-                            <a href="/vare-kategori/sko-tilbehor/kun-fysisk-sko-tilbehor/">Sko & Tilbehør - Kun i butikken</a>
+                            <a href="/vare-kategori/sko-tilbehor/fysisk-sko-tilbehor/">Sko & Tilbehør - Kun i butikken</a>
                         </div>
                     </li>
                     <li><a href="/om_os/">Om os</a></li>
