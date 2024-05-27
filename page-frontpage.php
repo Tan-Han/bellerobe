@@ -548,6 +548,11 @@
       padding-top: 40px;
     }
 
+    .hero-text {
+      font-size: 50px;
+      max-width: 520px;
+    }
+
   }
 
   @media screen and (max-width: 500px) {
