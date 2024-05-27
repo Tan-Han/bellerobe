@@ -82,7 +82,7 @@
         <h2>Kundeoplevelser</h2>
         <i class="fa-solid fa-caret-down"></i>
     </div>
-    <div id="myDropdown_about_us_4" class="dropdown_content_about_us">
+    <div id="myDropdown_about_us_4" class="dropdown_content_about_us collaboration_partner">
         <div>
 
         <!-- Customer experiences loop code start -->
@@ -246,6 +246,11 @@
     .show {
         display: block;
     }   
+
+/* Styling for the fourth dropdown */
+    .collaboration_partner {
+        padding-bottom: 1rem;
+    }
 
     .customer_experiences {
         padding: 2.5rem 4rem 1rem 4rem;
