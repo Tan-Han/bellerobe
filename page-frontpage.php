@@ -490,6 +490,11 @@
   }
 
   @media screen and (max-width: 960px) {
+
+    .frontpage_hero,.frontpage-video {
+      height: 500px;
+    }
+
     .frontpage_pading {
       padding: 5rem 3rem 0 3rem;
     }
