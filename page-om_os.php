@@ -200,7 +200,7 @@
         z-index: 1;
         border: 0.4px solid var(--brown);
         border-radius: 10px;
-        margin-top: 0.5rem;
+        margin-top: 0.4rem;
     }
 
     .dropdown_introduction_text {
