@@ -235,7 +235,7 @@
         }   
     }
 
-    @media screen and (max-width: 1350px) {
+    @media screen and (max-width: 1200px) {
 
         .introduction_text_and_video {
             flex-direction: column;
@@ -259,6 +259,8 @@
             height: 25rem;
         }
     }
+
+
 
     @media screen and (max-width: 900px) {
 
