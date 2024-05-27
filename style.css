@@ -353,6 +353,10 @@ footer {
 .category-title {
   text-align: center;
   font-size: 55px;
+  padding-bottom: .5rem;
+}
+
+.category-description {
   padding-bottom: 3rem;
 }
 
