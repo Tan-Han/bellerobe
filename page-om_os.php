@@ -46,7 +46,7 @@
                     $url_to_collaboration_partner = get_field('partner_url'); // Retrieve the URL from ACF field
                 ?>
                     <div class="collaboration_partner">
-                        <a href="<?php echo esc_url($url_to_collaboration_partner); ?>" target="_blank">
+                        <a href="<?php echo get_field("url_to_collaboration_partner"); ?>" target="_blank">
                             <div class="collaboration_partner_text">
                                 <p class="fat_p_about_us"><?php the_field("collaboration_partner_job"); ?>:</p>
                                 <p><?php the_field("collaboration_partner_name"); ?></p> 
@@ -104,9 +104,11 @@
                         <div class="customerexperiences_container">
                             <p class="fat_p_about_us"><?php the_field("customer_experiences_header"); ?>:</p>
                             <p><?php the_field("customer_experiences_p"); ?></p> 
+                        </div> 
+                        <div>
                             <?php $image = get_field("customer_experiences_image") ?>
                             <img class="img_cards" src="<?php echo $image["sizes"]["large"] ?>" alt="<?php echo $image["alt"] ?>">
-                        </div> 
+                        </div>
                     </div>
                 <?php endwhile; ?>
                 <?php wp_reset_postdata(); ?>
@@ -225,22 +227,38 @@
     .dropdown_text_style_about_us a {
         
         padding: 10px 40px 10px 0px;
-        text-decoration: none;
         display: block;
         transition: 0.3s;
     }
 
     /* Change color of dropdown links on hover */
-    .dropdown-content_about_us a:hover {
+    .collaboration_partner_text {
+        text-decoration: none;
+        transition: 0.2s;
+    }
+    .collaboration_partner_text:hover {
         text-decoration: underline;
-        color: var(--brown);
-        transition: 0.3s;
+        color: var(--tertiary-color);
+        transition: 0.2s;
     }
 
     /* Show the dropdown menu when the button is clicked */
     .show {
         display: block;
     }   
+
+    .customer_experiences {
+        padding: 2.5rem 4rem 1rem 4rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .customer_experiences img {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px #52443B7D;
+    }
 
 
     @media screen and (max-width: 1500px) {
