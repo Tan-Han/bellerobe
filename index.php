@@ -24,6 +24,14 @@
         if ($product_count == 0) {
 
             echo "<h2>$current_category->name</h2>";
+
+            // Get and display the category description
+            $category_description = category_description($current_category->term_id);
+            if ($category_description) {
+                echo "<div class='category-description'>{$category_description}</div>";
+            }
+
+
             echo "<p>Der er endnu ingen produkter i denne kategori.</p>";
 
         }
