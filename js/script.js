@@ -74,23 +74,28 @@ function toggleProductFilter() {
 
 // DROPDOWN MENU - OM OS PAGE
 
-// Get the dropdown button and content
-var dropdownBtn_about_us = document.getElementById("dropdownBtn_about_us");
-var dropdownContent_about_us = document.getElementById("myDropdown_about_us");
+// Helper function to toggle dropdown content
+function toggleDropdown(event) {
+    var dropdownContent = event.currentTarget.nextElementSibling;
+    dropdownContent.classList.toggle("show");
+}
 
-// Toggle the dropdown content when the button is clicked
-dropdownBtn_about_us.addEventListener("click", function () {
-    dropdownContent_about_us.classList.toggle("show");
+// Add event listeners to all dropdown buttons
+var dropdownBtns = document.querySelectorAll(".dropbtn_about_us");
+dropdownBtns.forEach(function (btn) {
+    btn.addEventListener("click", toggleDropdown);
 });
 
 // Close the dropdown content if the user clicks outside of it
 window.addEventListener("click", function (event) {
-    if (!event.target.matches("#dropdownBtn_about_us")) {
-        if (dropdownContent_about_us.classList.contains("show")) {
-            dropdownContent_about_us.classList.remove("show");
+    dropdownBtns.forEach(function (btn) {
+        var dropdownContent = btn.nextElementSibling;
+        if (!btn.contains(event.target) && dropdownContent.classList.contains("show")) {
+            dropdownContent.classList.remove("show");
         }
-    }
+    });
 });
+
 
 // CONTACT FORM MODAL
 

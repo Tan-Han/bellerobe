@@ -23,89 +23,76 @@
     </section>
 
 <!-- second section on about us page with drop down menues -->
-    <section class="information_drop_downs">
-        
-    <!-- First dropdowm -->
-        <div id="dropdownBtn_about_us" class="dropbtn_about_us">
-            <h2>Samarbejdspartnere</h2>
-            <i class="fa-solid fa-caret-down"></i>
+<section class="information_drop_downs">
+    <!-- First dropdown -->
+    <div id="dropdownBtn_about_us_1" class="dropbtn_about_us">
+        <h2>Samarbejdspartnere</h2>
+        <i class="fa-solid fa-caret-down"></i>
+    </div>
+    <div id="myDropdown_about_us_1" class="dropdown_content_about_us">
+        <p class="dropdown_introduction_text"><?php the_field("samarbejdspartnere_introduction") ?></p>
+        <div class="dropdown_text_style_about_us">
+            <!-- Collaboration partners loop code start -->
+            <?php $collaborationLoop = new WP_Query(
+                array(
+                    "post_type" => "collaboration",
+                    "posts_per_page" => -1,
+                    "orderby" => "date",  // Order by date
+                    "order" => "ASC"     // Reverse order (latest posts first)
+                )
+            ) ?>
+            <?php if ($collaborationLoop->have_posts()): ?>
+                <?php while ($collaborationLoop->have_posts()): $collaborationLoop->the_post(); 
+                    $url_to_collaboration_partner = get_field('partner_url'); // Retrieve the URL from ACF field
+                ?>
+                    <div class="collaboration_partner">
+                        <a href="<?php echo esc_url($url_to_collaboration_partner); ?>" target="_blank">
+                            <div class="collaboration_partner_text">
+                                <p class="fat_p_about_us"><?php the_field("collaboration_partner_job"); ?>:</p>
+                                <p><?php the_field("collaboration_partner_name"); ?></p> 
+                            </div>     
+                        </a>
+                    </div>
+                <?php endwhile ?>
+                <?php wp_reset_postdata() ?>
+            <?php endif; ?>
         </div>
-            
-        <div id="myDropdown_about_us" class="dropdown_content_about_us">
-            <p class="dropdown_introduction_text"><?php the_field("samarbejdspartnere_introduction") ?></p>
-            <div class="dropdown_text_style_about_us">
+    </div>
 
-                <!-- Collaboration partners loop code start -->
+    <!-- Second dropdown -->
+    <div id="dropdownBtn_about_us_2" class="dropbtn_about_us">
+        <h2>Fortrolighedspolitik</h2>
+        <i class="fa-solid fa-caret-down"></i>
+    </div>
+    <div id="myDropdown_about_us_2" class="dropdown_content_about_us">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
 
-                <?php $collaborationLoop = new WP_Query(
-                    array(
-                        "post_type" => "collaboration",
-                        "posts_per_page" => -1,
-                        "orderby" => "date",  // Order by date
-                        "order" => "ASC"     // Reverse order (latest posts first)
-                    )
-                ) ?>
+    <!-- Third dropdown -->
+    <div id="dropdownBtn_about_us_3" class="dropbtn_about_us">
+        <h2>Handelsbetingelser</h2>
+        <i class="fa-solid fa-caret-down"></i>
+    </div>
+    <div id="myDropdown_about_us_3" class="dropdown_content_about_us">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
 
-                
-                <?php if ($collaborationLoop->have_posts()): ?>
-                    <?php while ($collaborationLoop->have_posts()): $collaborationLoop->the_post(); 
-                        $url_to_collaboration_partner = get_field('partner_url'); // Retrieve the URL from ACF field
-                    ?>
+    <!-- Fourth dropdown -->
+    <div id="dropdownBtn_about_us_4" class="dropbtn_about_us">
+        <h2>Kundeoplevelser</h2>
+        <i class="fa-solid fa-caret-down"></i>
+    </div>
+    <div id="myDropdown_about_us_4" class="dropdown_content_about_us">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+</section>
 
-                        <div class="collaboration_partner">
-                            <a href="<?php echo esc_url($url_to_collaboration_partner); ?>">
-                                <div class="collaboration_partner_text">
-                                    <p class="fat_p_about_us"><?php the_field("collaboration_partner_job"); // Display the collaboration partners job ?>:</p>
-                                    <p><?php the_field("collaboration_partner_name"); // Display the collaboration partners name ?></p> 
-                                </div>     
-                            </a>
-                        </div>
-
-                    <?php endwhile ?>
-                    <?php wp_reset_postdata() ?>
-                <?php endif; ?>
-                
-            </div>
-        </div>
-
-    <!-- Second dropdowm -->
-        <div id="dropdownBtn_about_us" class="dropbtn_about_us">
-            <h2>Fortrolighedspolitik</h2>
-            <i class="fa-solid fa-caret-down"></i>
-        </div>
-            
-        <div id="myDropdown_about_us" class="dropdown_content_about_us">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-        </div>
-        
-
-    <!-- Third dropdowm -->
-        <div id="dropdownBtn_about_us" class="dropbtn_about_us">
-            <h2>Handelsbetingelser</h2>
-            <i class="fa-solid fa-caret-down"></i>
-        </div>
-            
-        <div id="myDropdown_about_us" class="dropdown_content_about_us">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-        </div>
-
-     <!-- Fourth dropdowm -->
-        <div id="dropdownBtn_about_us" class="dropbtn_about_us">
-            <h2>Kundeoplevelser</h2>
-            <i class="fa-solid fa-caret-down"></i>
-        </div>
-            
-        <div id="myDropdown_about_us" class="dropdown_content_about_us">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-        </div>
-
-    </section>
 
 </main>
 
@@ -190,7 +177,7 @@
     }
 
     .dropdown_introduction_text {
-        padding: 2rem 4rem 1rem 4rem;
+        padding: 2.5rem 4rem 1rem 4rem;
     }
 
     .collaboration_partner_text {
@@ -205,12 +192,12 @@
     }
 
     .dropdown_text_style_about_us {
-        padding: 0rem 4rem 2rem 4rem;
+        padding: .5rem 4rem 2rem 4rem;
     }
 
     /* Style the links inside the dropdown */
     .dropdown_text_style_about_us a {
-        color: var(--brown);
+        
         padding: 10px 40px 10px 0px;
         text-decoration: none;
         display: block;
@@ -220,6 +207,7 @@
     /* Change color of dropdown links on hover */
     .dropdown-content_about_us a:hover {
         text-decoration: underline;
+        color: var(--brown);
         transition: 0.3s;
     }
 
