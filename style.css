@@ -360,8 +360,17 @@ footer {
   padding-bottom: 1.5rem;
 }
 
+.empty-cat-box {
+  background-color: var(--quinary-color);
+  color: var(--brown);
+  width: fit-content;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+}
+
 .empty-category {
   font-style: italic;
+  font-weight: 700;
 }
 
 /* Filter */
