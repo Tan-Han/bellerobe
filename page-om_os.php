@@ -260,10 +260,6 @@
         width: 45%;
     }
 
-    .customer_experiences_image_container {
-        width: 50%;
-    }
-
     .customer_experiences img {
         width: 100%;
         height: 300px;
@@ -291,12 +287,13 @@
         }
 
         .customer_experiences_image_container {
-        width: 70%;
-        justify-self: center;
+        display: flex;
+        justify-content: center;
     }
 
         .customer_experiences img {
-            height: 200px;
+            height: 250px;
+            width: auto;
         }
     }
 
