@@ -427,6 +427,11 @@
   }
 
   @media screen and (max-width: 1300px) {
+
+    .frontpage_hero, .frontpage-video {
+      height: 600px;
+    }
+
     .img_cards {
       width: 200px;
     }
@@ -485,6 +490,15 @@
   }
 
   @media screen and (max-width: 960px) {
+
+    .frontpage_hero,.frontpage-video {
+      height: 500px;
+    }
+
+    .hero-text {
+      font-size: 55px;
+    }
+
     .frontpage_pading {
       padding: 5rem 3rem 0 3rem;
     }
@@ -556,6 +570,11 @@
   }
 
   @media screen and (max-width: 500px) {
+
+    .hero-text {
+      font-size: 32px;
+      text-align: center;
+    }
 
     .frontpage_cards_container {
       display: grid;
