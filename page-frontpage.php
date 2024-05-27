@@ -427,6 +427,11 @@
   }
 
   @media screen and (max-width: 1300px) {
+
+    .fontpage_hero, .frontpage-video {
+      height: 600px;
+    }
+
     .img_cards {
       width: 200px;
     }
