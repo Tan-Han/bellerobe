@@ -508,7 +508,7 @@
 
   @media screen and (max-width: 800px) {
     .hero-text {
-      font-size: 60px;
+      font-size: 50px;
     }
 }
 
