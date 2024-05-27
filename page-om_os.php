@@ -51,7 +51,7 @@
                                 <p class="fat_p_about_us"><?php the_field("collaboration_partner_job"); ?>:</p>
                                 <p><?php the_field("collaboration_partner_name"); ?></p> 
                                 <?php $image = get_field("customer_experiences_image") ?>
-                                <img class="img_cards" src="<?php echo $image["sizes"]["large"] ?>" alt="<?php echo $image["alt"] ?>">
+                                <img src="<?php echo $image["sizes"]["large"] ?>" alt="<?php echo $image["alt"] ?>">
                             </div>     
                         </a>
                     </div>
@@ -242,6 +242,12 @@
     .show {
         display: block;
     }   
+
+    .collaboration_partner_text img {
+        width: 300vw;
+        height: 100px;
+        border-radius: 10px;
+    }
 
 
     @media screen and (max-width: 1500px) {
