@@ -292,8 +292,7 @@
     }
 
         .customer_experiences img {
-            height: 250px;
-            width: auto;
+            height: auto;
         }
     }
 
@@ -351,6 +350,8 @@
 
         .customer_experiences {
             padding: 2.5rem 2rem 2rem 2rem;
+
+    }
 
     }
 
