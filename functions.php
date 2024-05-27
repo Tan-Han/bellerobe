@@ -43,16 +43,15 @@ add_action('woocommerce_single_product_summary', 'insert_product_title', 3);
 
 // Adding title to category pages
 
-function add_category_title()
-{
+function add_category_title() {
   ?>
   <h1 class="category-title">
-    <?php single_term_title() ?>
+    <?php single_term_title(); ?>
   </h1>
   <?php
 }
 
-add_action("woocommerce_archive_description", "add_category_title");
+add_action('woocommerce_archive_description', 'add_category_title', 5);
 
 // Creating new custom widget
 function product_filter_widget()
