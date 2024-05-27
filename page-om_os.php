@@ -104,9 +104,11 @@
                         <div class="customerexperiences_container">
                             <p class="fat_p_about_us"><?php the_field("customer_experiences_header"); ?>:</p>
                             <p><?php the_field("customer_experiences_p"); ?></p> 
+                        </div> 
+                        <div>
                             <?php $image = get_field("customer_experiences_image") ?>
                             <img class="img_cards" src="<?php echo $image["sizes"]["large"] ?>" alt="<?php echo $image["alt"] ?>">
-                        </div> 
+                        </div>
                     </div>
                 <?php endwhile; ?>
                 <?php wp_reset_postdata(); ?>
@@ -247,6 +249,12 @@
 
     .customer_experiences {
         padding: 2.5rem 4rem 1rem 4rem;
+        display: flex;
+    }
+
+    .customer_experiences img {
+        width: 100%;
+        height: 200px;
     }
 
 
