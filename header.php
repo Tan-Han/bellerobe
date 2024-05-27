@@ -28,7 +28,7 @@
                         </p>
                         <div class="dropdown-content" id="dropContentBrudekjoler">
                             <a href="/vare-kategori/brudekjoler/">Brudekjoler</a>
-                            <a href="/vare-kategori/brudekjoler/brudekjoler-til-leje/">Bæredygtige brudekjoler</a>
+                            <a href="/vare-kategori/brudekjoler/baeredygtige/">Bæredygtige brudekjoler</a>
                             <a href="/vare-kategori/brudekjoler/kun-fysisk-brudekjoler/">Kun i butikken</a>
                         </div>
                     </li>
@@ -47,8 +47,8 @@
                         <p class="dropbtn" onclick="dropdownMenuKonfirmation()">Konfirmation<i
                                 class="fa-solid fa-caret-down"></i></p>
                         <div class="dropdown-content" id="dropContentKonfirmation">
-                        <a href="/vare-kategori/konfirmation/konfirmationskjoler/">Konfirmation</a>
-                        <a href="/vare-kategori/konfirmation/kun-fysisk-konfirmationskjoler/">Kun i butikken</a>
+                        <a href="/vare-kategori/konfirmationskjoler">Konfirmation</a>
+                        <a href="/vare-kategori/konfirmationskjoler/kun-fysisk-konfirmationskjoler/">Kun i butikken</a>
                         </div>
                     </li>
 
