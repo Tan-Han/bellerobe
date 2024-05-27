@@ -234,7 +234,7 @@
         text-decoration: none;
         transition: 0.3s;
     }
-    .collaboration_partner_text p:hover {
+    .collaboration_partner_text:hover {
         text-decoration: underline;
         color: var(--tertiary-color);
         transition: 0.3s;
