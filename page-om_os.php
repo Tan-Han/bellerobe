@@ -230,14 +230,14 @@
     }
 
     /* Change color of dropdown links on hover */
-    .collaboration_partner_text p {
+    .collaboration_partner_text {
         text-decoration: none;
-        transition: 0.3s;
+        transition: 0.2s;
     }
     .collaboration_partner_text:hover {
         text-decoration: underline;
         color: var(--tertiary-color);
-        transition: 0.3s;
+        transition: 0.2s;
     }
 
     /* Show the dropdown menu when the button is clicked */
