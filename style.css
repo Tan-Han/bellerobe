@@ -336,7 +336,7 @@ footer {
 }
 
 .footer_payment i {
-  text-shadow: 2px 2px 3px #5C48337D;
+  text-shadow: 2px 2px 3px var(--quaternary-color);
 }
 
 /* PRODUCT CATEGORY PAGES */

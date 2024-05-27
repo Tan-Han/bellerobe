@@ -122,7 +122,7 @@
         width: 100%;
         /* 100% vidde på videoen, så den fylder fra kant til kant */
         border-radius: 10px;
-        box-shadow: 3px 3px 5px #5C48337D;
+        box-shadow: 3px 3px 5px #52443B7D;
     }
 
 /* Styling for the second section on the about us page with drop down menues */
@@ -141,7 +141,7 @@
         margin-top: 15px;
         display: flex;
         justify-content: space-between;
-        box-shadow: 3px 3px 5px #5C48337D;
+        box-shadow: 3px 3px 5px #52443B7D;
         border-radius: 10px;
     }
 
@@ -164,7 +164,7 @@
         display: none;
         background-color: var(--forms);
         width: 100%;
-        box-shadow: 3px 3px 5px #5C48337D;
+        box-shadow: 3px 3px 5px #52443B7D;
         z-index: 1;
         border-left: 0.4px solid var(--brown);
         border-right: 0.4px solid var(--brown);

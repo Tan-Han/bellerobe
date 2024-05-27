@@ -194,7 +194,7 @@
 
   .frontpage_pading {
     padding: 5rem 8rem 0 8rem;
-    box-shadow: 0 -3px 5px #5C48337D;
+    box-shadow: 0 -3px 5px #52443B7D;
     position: relative;
     z-index: 2;
   }
@@ -290,7 +290,7 @@
     font-weight: 700;
     font-style: normal;
     color: var(--white);
-    text-shadow: 1px 1px 2px var(--brown);
+    text-shadow: 1px 1px 2px var(--quaternary-color);
     position: absolute;
     z-index: 1;
     bottom: 2rem;
@@ -303,7 +303,7 @@
   .img_cards {
     object-fit: cover;
     border-radius: 10px;
-    box-shadow: 3px 3px 5px #5C48337D;
+    box-shadow: 3px 3px 5px #52443B7D;
     height: 38rem;
     width: 19vw;
     transition: 0.4s;
@@ -334,7 +334,7 @@
   .opening_hours_loop_frontpage {
     background-color: var(--tertiary-color);
     border-radius: 10px;
-    box-shadow: 3px 3px 5px #5C48337D;
+    box-shadow: 3px 3px 5px #52443B7D;
     padding: 20px;
     margin-top: 18px;
     background-image: url('https://trshansen.online/bellerobe/wp-content/themes/bellerobe/img/open-hours.svg');
@@ -355,7 +355,7 @@
   .book_div_box {
     background-color: var(--tertiary-color);
     border-radius: 10px;
-    box-shadow: 3px 3px 5px #5C48337D;
+    box-shadow: 3px 3px 5px #52443B7D;
     padding: 20px;
     margin-top: 20px;
   }
@@ -390,7 +390,7 @@
   .maps {
     border-radius: 10px;
     border: none !important;
-    box-shadow: 3px 3px 5px #5C48337D;
+    box-shadow: 3px 3px 5px #52443B7D;
     height: 415px;
     width: 100%;
     margin-top: 18px;
