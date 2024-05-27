@@ -105,7 +105,7 @@
                             <p class="fat_p_about_us"><?php the_field("customer_experiences_header"); ?>:</p>
                             <p><?php the_field("customer_experiences_p"); ?></p> 
                         </div> 
-                        <div clas="customer_experiences_image_container">
+                        <div class="customer_experiences_image_container">
                             <?php $image = get_field("customer_experiences_image") ?>
                             <img class="img_cards" src="<?php echo $image["sizes"]["large"] ?>" alt="<?php echo $image["alt"] ?>">
                         </div>
