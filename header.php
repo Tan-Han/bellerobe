@@ -58,7 +58,7 @@
                         <div class="dropdown-content" id="dropContentSko">
                             <a href="/vare-kategori/sko-tilbehor/sko/">Sko</a>
                             <a href="/vare-kategori/sko-tilbehor/tilbehor/">Tilbehør</a>
-                            <a href="/vare-kategori/sko-tilbehor/fysisk-tilbehor/">Sko & Tilbehør - Kun i butikken</a>
+                            <a href="/vare-kategori/sko-tilbehor/fysisk-sko-tilbehor/">Sko & Tilbehør - Kun i butikken</a>
                         </div>
                     </li>
                     <li><a href="/om_os/">Om os</a></li>
