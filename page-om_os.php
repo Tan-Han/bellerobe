@@ -349,6 +349,9 @@
             padding: 1rem 2rem 2rem 2rem;
         }
 
+        .customer_experiences {
+            padding: 2.5rem 2rem 2rem 2rem;
+
     }
 
     @media screen and (max-width: 700px) {
