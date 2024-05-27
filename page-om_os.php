@@ -288,7 +288,6 @@
 
         .customer_experiences_image_container {
         display: flex;
-        justify-content: center;
         margin-top: 1rem;
     }
 
@@ -350,9 +349,6 @@
             padding: 1rem 2rem 2rem 2rem;
         }
 
-        .customer_experiences {
-            padding: 2.5rem 2rem 1rem 2rem;
-        }
     }
 
     @media screen and (max-width: 700px) {
