@@ -59,7 +59,7 @@
         </div>
     </div>
 
-    <!-- Second dropdown -->
+<!-- Second dropdown -->
     <div id="dropdownBtn_about_us_2" class="dropbtn_about_us">
         <h2>Fortrolighedspolitik</h2>
         <i class="fa-solid fa-caret-down"></i>
@@ -68,7 +68,7 @@
         <p class="dropdown_introduction_text"><?php the_field("fortrolighedspolitik_tekst"); ?></p>
     </div>
 
-    <!-- Third dropdown -->
+<!-- Third dropdown -->
     <div id="dropdownBtn_about_us_3" class="dropbtn_about_us">
         <h2>Handelsbetingelser</h2>
         <i class="fa-solid fa-caret-down"></i>
@@ -77,16 +77,47 @@
         <p class="dropdown_introduction_text"><?php the_field("handelsbetingelser_tekst"); ?></p>
     </div>
 
-    <!-- Fourth dropdown -->
+<!-- Fourth dropdown -->
     <div id="dropdownBtn_about_us_4" class="dropbtn_about_us">
         <h2>Kundeoplevelser</h2>
         <i class="fa-solid fa-caret-down"></i>
     </div>
     <div id="myDropdown_about_us_4" class="dropdown_content_about_us">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
+        <div>
+
+        <!-- Customer experiences loop code start -->
+            <?php 
+            $customerexperiencesloop  = new WP_Query(
+                array(
+                    "post_type" => "customer_experiences",
+                    "posts_per_page" => -1,
+                    "orderby" => "date",  // Order by date
+                    "order" => "ASC"      // Ascending order
+                )
+            ); 
+            ?>
+            <?php if ($customerexperiencesloop->have_posts()): ?>
+                <?php while ($customerexperiencesloop->have_posts()): $customerexperiencesloop->the_post(); 
+                    $url_to_customer_experiences = get_field('customer_experiences_url'); // Retrieve the URL from ACF field
+                ?>
+                    <div class="customer_experiences">
+                        <div class="customerexperiences_container">
+                            <p class="fat_p_about_us"><?php the_field("customer_experiences_header"); ?>:</p>
+                            <p><?php the_field("customer_experiences_p"); ?></p> 
+                            <?php if ($url_to_customer_experiences): ?>
+                                <a href="<?php echo esc_url($url_to_customer_experiences); ?>" target="_blank">Read More</a>
+                            <?php endif; ?>
+                        </div> 
+                    </div>
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
+            <?php endif; ?>
+
+
+        </div>
+
     </div>
+
 </section>
 
 
