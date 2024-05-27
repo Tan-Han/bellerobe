@@ -39,7 +39,7 @@ function insert_product_title()
   <?php
 }
 
-add_action('woocommerce_before_main_content', 'insert_product_title', 3);
+add_action('woocommerce_single_product_summary', 'insert_product_title', 3);
 
 // Adding title to category pages
 
@@ -52,7 +52,7 @@ function add_category_title()
   <?php
 }
 
-add_action("woocommerce_before_shop_loop", "add_category_title");
+add_action("woocommerce_archive_description", "add_category_title");
 
 // Creating new custom widget
 function product_filter_widget()
