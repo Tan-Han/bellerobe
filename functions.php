@@ -52,7 +52,7 @@ function add_category_title()
   <?php
 }
 
-add_action("woocommerce_before_main_content", "add_category_title");
+add_action("woocommerce_before_shop_loop", "add_category_title");
 
 // Creating new custom widget
 function product_filter_widget()
